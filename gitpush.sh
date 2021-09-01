@@ -2,11 +2,11 @@
 
 TOKEN="${GH_TOKEN}"
 REPO='hub.fastgit.org/hansyao'
-APP='breakwall'
+APP='pool_checker'
 
 echo -e "从github克隆仓库"
 
-cp -r `pwd`/share/git-core /tmp/
+cp -r /opt/share/git-core /tmp/
 git config --global http.lowSpeedLimit 100
 git config --global http.lowSpeedTime 60
 git config --global init.templateDir /tmp/git-core/templates
@@ -15,9 +15,9 @@ git config --global init.defaultBranch master
 
 cd /tmp/
 if [[ ! -d ${APP} ]]; then
-    mkdir breakwall
+    mkdir ${APP}
 fi
-cd breakwall
+cd ${APP}
 git init
 git config core.sparsecheckout true
 git config --local pull.rebase false
