@@ -1,0 +1,81 @@
+#!/bin/bash
+
+set -euo pipefail
+
+START_CODE='c3994b0f0a54571650315cf8a1e0a0b3'
+STOP_CODE='2c9dacde06b78b7bbaea3d932dc206be'
+
+# Initialization - load function handler
+source ./"$(echo $_HANDLER | cut -d. -f1).sh"
+
+# 环境变量设置-二进制及库文件
+alias rm='rm'
+alias mv='mv'
+alias cp='cp'
+
+#git
+GIT_EXEC_PATH=`pwd`/bin/git-core
+PATH=`pwd`/bin:/tmp/bin:$PATH
+GITPERLLIB=`pwd`/lib/perl
+LD_LIBRARY_PATH=`pwd`/lib:$LD_LIBRARY_PATH
+
+export GIT_EXEC_PATH PATH GITPERLLIB LD_LIBRARY_PATH
+export HOME=/tmp/
+
+export LANGUAGE=zh_CN.UTF-8
+export LANG=zh_CN.UTF-8
+export LC_CTYPE=zh_CN.UTF-8
+export LC_COLLATE=zh_CN.UTF-8
+export LC_IDENTIFICATION=zh_CN.UTF-8
+export LC_ALL=zh_CN.UTF-8
+
+# Info custom runtime ready
+curl -d " " -X POST -s "http://$SCF_RUNTIME_API:$SCF_RUNTIME_API_PORT/runtime/init/ready"
+
+# Processing
+while true
+do
+  HEADERS="$(mktemp)"
+  # Get an event. The HTTP request will block until one is received
+  EVENT_DATA=$(curl -sS -LD "$HEADERS" -X GET -s "http://$SCF_RUNTIME_API:$SCF_RUNTIME_API_PORT/runtime/invocation/next")
+
+  echo -e "返回EVEN_DATA:"
+  echo -e ${EVENT_DATA}
+  echo -e "返回EVEN_DATA_BODY:"  
+  echo -e ${EVENT_DATA} | jq '.body' | jq -r
+  echo -e "返回header如下:"
+  cat ${HEADERS}
+
+  echo -e "检查jq路径"
+  whereis jq
+
+  echo -e "验证成功，开始执行节点抓取，请耐心等待，抓取成功后会邮件通知"
+
+  # 其他环境配置
+  # 1. 安装最新clash，2. 创建运行时文件夹和权限配置
+  ./env.sh
+
+  echo -e "当前环境变量"
+  echo -e "GIT_EXEC_PATH ${GIT_EXEC_PATH}"
+  echo -e "PATH ${PATH}"
+  echo -e "GITPERLLIB ${GITPERLLIB}"
+  echo -e "LD_LIBRARY_PATH ${LD_LIBRARY_PATH}"
+  echo -e "HOME ${HOME}"
+  echo -e "USER_CODE_ROOT ${USER_CODE_ROOT}"
+  
+  echo "当前设定的编码字符集 $(env|grep LANG)"
+  echo "系统支持的编码字符集"
+  locale -a
+
+  # 启动节点转换工具
+  ./Actions/convert.sh
+
+  # 执行主程序
+  ./Actions/pool.sh
+
+  # Execute the handler function from the script
+  RESPONSE=$($(echo "$_HANDLER" | cut -d. -f2) "$EVENT_DATA")
+
+  # Send the response
+  curl -X POST -s "http://$SCF_RUNTIME_API:$SCF_RUNTIME_API_PORT/runtime/invocation/response"  -d "$RESPONSE"
+done
