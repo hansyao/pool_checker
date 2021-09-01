@@ -31,7 +31,7 @@ git remote add origin https://${TOKEN}@${REPO}/${APP}.git
 echo Actions/subscribe > .git/info/sparse-checkout
 git pull --depth 1 origin master
 
-if [ -f Actions/subscribe ]; then
+if [[ ! -d Actions/subscribe ]]; then
     mkdir -p Actions/subscribe
 fi
 
