@@ -31,6 +31,10 @@ git remote add origin https://${TC_GH_TOKEN}@${REPO}/${APP}.git
 echo Actions/subscribe > .git/info/sparse-checkout
 git pull --depth 1 origin master
 
+if [ -f Actions/subscribe ]; then
+    mkdir Actions/subscribe
+fi
+
 # 判断爬取节点配置文件是否为空
 for arg; do
     if [[ ! -z $(cat "$arg" | grep -E 'The following link|No nodes were found') ]]; then
