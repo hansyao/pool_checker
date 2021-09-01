@@ -5,75 +5,68 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇦🇺 AU|澳大利亚|780014210|, server: www.freetouchor.xyz, port: 443, type: trojan, password: mima0.0.000, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK|中国|香港|772293741|, server: 103.85.20.176, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
-  - {name: 🇭🇰 HK|中国|香港|069824598|, server: 103.85.20.74, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
-  - {name: 🇭🇰 HK|中国|香港|877726347|, server: 103.115.67.145, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
+  - {name: 🇭🇰 HK|中国|香港|164282022|, server: 103.85.20.74, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
+  - {name: 🇭🇰 HK|中国|香港|571243823|, server: 103.115.67.145, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
+  - {name: 🇭🇰 HK|中国|香港|微软|164394778|, server: kaizen-hk-2.cn0.me, port: 443, type: trojan, password: 18e513fe-f7f4-353d-84ca-bc9646fb2528mielink, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇦🇺 AU|澳大利亚|780014210|
-      - 🇭🇰 HK|中国|香港|772293741|
-      - 🇭🇰 HK|中国|香港|069824598|
-      - 🇭🇰 HK|中国|香港|877726347|
+      - 🇭🇰 HK|中国|香港|164282022|
+      - 🇭🇰 HK|中国|香港|571243823|
+      - 🇭🇰 HK|中国|香港|微软|164394778|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇦🇺 AU|澳大利亚|780014210|
-      - 🇭🇰 HK|中国|香港|772293741|
-      - 🇭🇰 HK|中国|香港|069824598|
-      - 🇭🇰 HK|中国|香港|877726347|
+      - 🇭🇰 HK|中国|香港|164282022|
+      - 🇭🇰 HK|中国|香港|571243823|
+      - 🇭🇰 HK|中国|香港|微软|164394778|
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇦🇺 AU|澳大利亚|780014210|
-      - 🇭🇰 HK|中国|香港|772293741|
-      - 🇭🇰 HK|中国|香港|069824598|
-      - 🇭🇰 HK|中国|香港|877726347|
+      - 🇭🇰 HK|中国|香港|164282022|
+      - 🇭🇰 HK|中国|香港|571243823|
+      - 🇭🇰 HK|中国|香港|微软|164394778|
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 HK|中国|香港|772293741|
-      - 🇭🇰 HK|中国|香港|069824598|
-      - 🇭🇰 HK|中国|香港|877726347|
+      - 🇭🇰 HK|中国|香港|164282022|
+      - 🇭🇰 HK|中国|香港|571243823|
+      - 🇭🇰 HK|中国|香港|微软|164394778|
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇦🇺 AU|澳大利亚|780014210|
-      - 🇭🇰 HK|中国|香港|772293741|
-      - 🇭🇰 HK|中国|香港|069824598|
-      - 🇭🇰 HK|中国|香港|877726347|
+      - 🇭🇰 HK|中国|香港|164282022|
+      - 🇭🇰 HK|中国|香港|571243823|
+      - 🇭🇰 HK|中国|香港|微软|164394778|
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇦🇺 AU|澳大利亚|780014210|
-      - 🇭🇰 HK|中国|香港|772293741|
-      - 🇭🇰 HK|中国|香港|069824598|
-      - 🇭🇰 HK|中国|香港|877726347|
+      - 🇭🇰 HK|中国|香港|164282022|
+      - 🇭🇰 HK|中国|香港|571243823|
+      - 🇭🇰 HK|中国|香港|微软|164394778|
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇦🇺 AU|澳大利亚|780014210|
-      - 🇭🇰 HK|中国|香港|772293741|
-      - 🇭🇰 HK|中国|香港|069824598|
-      - 🇭🇰 HK|中国|香港|877726347|
+      - 🇭🇰 HK|中国|香港|164282022|
+      - 🇭🇰 HK|中国|香港|571243823|
+      - 🇭🇰 HK|中国|香港|微软|164394778|
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -89,10 +82,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇦🇺 AU|澳大利亚|780014210|
-      - 🇭🇰 HK|中国|香港|772293741|
-      - 🇭🇰 HK|中国|香港|069824598|
-      - 🇭🇰 HK|中国|香港|877726347|
+      - 🇭🇰 HK|中国|香港|164282022|
+      - 🇭🇰 HK|中国|香港|571243823|
+      - 🇭🇰 HK|中国|香港|微软|164394778|
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
