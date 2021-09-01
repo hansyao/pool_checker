@@ -222,7 +222,14 @@ function body() {
 		>${BODY_JSON}
 
 	elif [[ ${ACTION} == 'UpdateFunctionConfiguration' ]]; then
+		if [[ -n $4 && -n $5 ]]; then
+			local LAYERS="[{\"LayerName\": \"$4\", \"LayerVersion\": $5}]"
+		else
+			local LAYERS=\"\"
+		fi
+
 		echo -e "{\"FunctionName\": \"${FUNC_NAME}\", \
+		\"Layers\": ${LAYERS}, \
 		\"Environment\": {\"Variables\": [$(env_var)]}}" \
 		>${BODY_JSON}
 
@@ -328,7 +335,7 @@ if [[ "${ACTION}" == 'CreateFunction' ]]; then
 	# 函数存在，则更新
 	else
 		echo '更新环境变量'
-		body UpdateFunctionConfiguration "${FUNC_NAME}" "${BODY_JSON}"
+		body UpdateFunctionConfiguration "${FUNC_NAME}" "${BODY_JSON}" "$3" "$4"
 		post_result_func UpdateFunctionConfiguration "${BODY_JSON}"
 
 		echo -e "\\n更新代码"
