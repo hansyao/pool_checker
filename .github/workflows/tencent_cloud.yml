@@ -9,7 +9,7 @@ jobs:
     - name: 迁出代码
       uses: actions/checkout@v2
       with:
-        token: ${{ secrets.GH_TOKEN }}
+        token: ${{ secrets.GH_TOKEN_POOL }}
     - name: 设置时区
       run: |
         sudo timedatectl set-timezone 'UTC'
