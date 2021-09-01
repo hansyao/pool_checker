@@ -21,6 +21,5 @@ jobs:
         echo "发布函数层依赖"
         ./tencent_cf_deploy.sh PublishLayerVersion pool_check_layer
         export LayerVersion=$(./tencent_cf_deploy.sh ListLayerVersions testlayer | sed '$d' | jq -r '.Response.LayerVersions[].LayerVersion' | head -n 1)
-      run: |
         echo "发布函数"
         ./tencent_cf_deploy.sh CreateFunction pool_checker testlayer ${LayerVersion}
