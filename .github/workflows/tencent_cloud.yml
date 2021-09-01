@@ -1,0 +1,28 @@
+name: 发布腾讯云函数
+on: 
+  workflow_dispatch:
+
+jobs: 
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 迁出代码
+      uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.GH_TOKEN }}
+    - name: 设置时区
+      run: |
+        sudo timedatectl set-timezone 'UTC'
+    - name: 发布函数
+      env:
+        TC_SECRET_ID: ${{ secrets.TC_SECRET_ID }}
+        TC_SECRET_KEY: ${{ secrets.TC_SECRET_KEY }}
+      run: |
+        echo "发布函数层依赖"
+        ./tencent_cf_deploy.sh PublishLayerVersion pool_check_layer
+      env:
+        echo "将最新层版本写入环境变量"
+        LayerVersion: $(/tencent_cf_deploy.sh ListLayerVersions testlayer | sed '$d' | jq -r '.Response.LayerVersions[].LayerVersion' | head -n 1)
+      run: |
+        echo "发布函数"
+        ./tencent_cf_deploy.sh CreateFunction pool_checker testlayer ${LayerVersion}
