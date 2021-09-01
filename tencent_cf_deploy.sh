@@ -152,7 +152,8 @@ EOF
 function pack_code() {
 	local ZIP_FILE=/tmp/$1.zip	
 	# 打包代码
-	zip -r ${ZIP_FILE} ./ -x ".git/*" -x ".github/*" -x "./bin/*" -x "./lib/*" -x "./proxychain/*" -x "./share/*" >/dev/null
+	zip -r ${ZIP_FILE} ./ -x ".git/*" -x ".github/*" -x "./bin/*" \
+		-x "./lib/*" -x "./proxychain/*" -x "./share/*" >/dev/null
 	echo -e "${ZIP_FILE}"
 }
 
