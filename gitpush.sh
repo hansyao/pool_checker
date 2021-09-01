@@ -32,7 +32,7 @@ echo Actions/subscribe > .git/info/sparse-checkout
 git pull --depth 1 origin master
 
 if [ -f Actions/subscribe ]; then
-    mkdir Actions/subscribe
+    mkdir -p Actions/subscribe
 fi
 
 # 判断爬取节点配置文件是否为空
