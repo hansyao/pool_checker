@@ -27,7 +27,7 @@ git config --local --unset http.proxy
 
 
 mkdir -p .git/info
-git remote add origin https://${TC_GH_TOKEN}@${REPO}/${APP}.git
+git remote add origin https://${TOKEN}@${REPO}/${APP}.git
 echo Actions/subscribe > .git/info/sparse-checkout
 git pull --depth 1 origin master
 
