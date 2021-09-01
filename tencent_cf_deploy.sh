@@ -51,8 +51,15 @@ function env_var() {
 
 	# done
 	# 腾讯环境变量
+	TC_GH_TOKEN=$(env | grep TC_GH_TOKEN | cut -d "=" -f2)
+	TC_GH_USER=$(env | grep TC_GH_USER | cut -d "=" -f2)
+	TC_GH_EMAIL=$(env | grep TC_GH_EMAIL | cut -d "=" -f2)
 	TC_SECRET_ID=$(env | grep TC_SECRET_ID | cut -d "=" -f2)
 	TC_SECRET_KEY=$(env | grep TC_SECRET_KEY | cut -d "=" -f2)
+
+	echo -n "{\"Key\":\"TC_GH_TOKEN\", \"Value\":\"${TC_GH_TOKEN}\"},"
+	echo -n "{\"Key\":\"TC_GH_USER\", \"Value\":\"${TC_GH_USER}\"},"
+	echo -n "{\"Key\":\"TC_GH_EMAIL\", \"Value\":\"${TC_GH_EMAIL}\"},"
 	echo -n "{\"Key\":\"TC_SECRET_ID\", \"Value\":\"${TC_SECRET_ID}\"},"
 	echo -n "{\"Key\":\"TC_SECRET_KEY\", \"Value\":\"${TC_SECRET_KEY}\"}"
 }

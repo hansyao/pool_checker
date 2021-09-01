@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TOKEN="${GH_TOKEN}"
+TOKEN="${TC_GH_TOKEN}"
 REPO='hub.fastgit.org/hansyao'
 APP='pool_checker'
 
@@ -21,13 +21,13 @@ cd ${APP}
 git init
 git config core.sparsecheckout true
 git config --local pull.rebase false
-git config --local user.name "${GH_USER}"
-git config --local user.email "${GH_EMAIL}"
+git config --local user.name "${TC_GH_USER}"
+git config --local user.email "${TC_GH_EMAIL}"
 git config --local --unset http.proxy
 
 
 mkdir -p .git/info
-git remote add origin https://${TOKEN}@${REPO}/${APP}.git
+git remote add origin https://${TC_GH_TOKEN}@${REPO}/${APP}.git
 echo Actions/subscribe > .git/info/sparse-checkout
 git pull --depth 1 origin master
 
