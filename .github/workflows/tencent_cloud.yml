@@ -21,7 +21,6 @@ jobs:
         echo "发布函数层依赖"
         ./tencent_cf_deploy.sh PublishLayerVersion pool_check_layer
       env:
-        echo "将最新层版本写入环境变量"
         LayerVersion: $(/tencent_cf_deploy.sh ListLayerVersions testlayer | sed '$d' | jq -r '.Response.LayerVersions[].LayerVersion' | head -n 1)
       run: |
         echo "发布函数"
