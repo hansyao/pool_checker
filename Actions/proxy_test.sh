@@ -65,7 +65,7 @@ get_config() {
 
 get_clash() {
  
-	CLASH=`pwd`/VmessActions/clash
+	CLASH=`pwd`/Actions/clash
 	if [ -e ${CLASH} ]; then
 		echo ${CLASH} 已经存在
 		unset CLASH
@@ -90,7 +90,7 @@ clash_help() {
 clash() {
 	LOG=${CLASH_LOG}
 	#CLASH=$(get_clash)
-	CLASH='./VmessActions/clash'
+	CLASH='./Actions/clash'
 	
 	sudo setcap cap_net_bind_service,cap_net_admin+ep ${CLASH}
 	
