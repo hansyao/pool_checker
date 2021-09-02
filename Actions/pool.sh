@@ -149,7 +149,7 @@ echo CLASH2=clash.yaml                               #缺省（亚太和美国�
 echo CLASH3=clash_asia.yaml                          #亚太（香港，台湾，日本，韩国, 澳洲）
 echo CLASH4=clash_south_asia.yaml                    #南亚（印度，新加坡，印尼，巴基斯坦，泰国，越南, 土耳其等)
 echo CLASH5=clash_china.yaml                         #回国模式，中国内地
-echo CLASH6=clash_others.yaml                             #其他 (非洲，欧洲，南美等)
+echo CLASH6=clash_others.yaml                        #其他 (非洲，欧洲，南美等)
 
 
 echo -e "回国模式China Only $(timestamp)"
