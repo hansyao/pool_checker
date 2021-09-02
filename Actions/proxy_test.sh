@@ -35,7 +35,7 @@ firwall_set() {
 	sudo iptables -t nat -A REDSOCKS -d 224.0.0.0/4 -j RETURN
 	sudo iptables -t nat -A REDSOCKS -d 240.0.0.0/4 -j RETURN
 
-	sudo iptables -t nat -A REDSOCKS -d 240.0.0.0/4 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 101.132.192.212 -j RETURN
 
 	# 把流量转发到 12345 端口，即redsocks
 	sudo iptables -t nat -A REDSOCKS -p tcp -j REDIRECT --to-ports 12345
