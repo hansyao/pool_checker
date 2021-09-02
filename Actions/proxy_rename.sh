@@ -86,18 +86,18 @@ function patch_location() {
 function pool() {
 	local POOL=$1
 	local LIST=$(cat ${POOL} | grep "\-\ {")
-	
+
 	local NUM=$(echo -e "${LIST}" | head -n 1 | sed 's/[^\"]*//g' | wc -c)
 	# 有引号分隔的yaml格式
-    if [[ $[NUM] -gt 6 ]]; then
+	if [[ $[NUM] -gt 6 ]]; then
 		echo -e "${LIST}" | awk -F '\"server\":' '{print $2}' \
 			| awk -F',' '{print $1}' | sed 's/\"//g' | sort | uniq \
 			| sed -r '/^\s*$/d'
-    else
-    # 没有引号分隔的yaml格式
+	else
+	# 没有引号分隔的yaml格式
 		echo -e "${LIST}" | awk -F "server:" '{print $2}'| cut -d "," -f1 \
 		| sed -e 's/^[ ]*//g' | sed -e 's/[ ]*$//g' | sort | uniq | sed -r '/^\s*$/d'
-    fi
+	fi
 }
 
 # 批量获取所有IP地域信息并写入文件
