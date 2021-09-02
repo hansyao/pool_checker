@@ -6,7 +6,6 @@ APP='pool_checker'
 
 echo -e "从github克隆仓库"
 
-cp -r /opt/share/git-core /tmp/
 git config --global http.lowSpeedLimit 100
 git config --global http.lowSpeedTime 60
 git config --global init.templateDir /tmp/git-core/templates

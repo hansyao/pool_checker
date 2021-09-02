@@ -13,7 +13,7 @@ if [ $1 == 'clean' ]; then
 fi
 
 if [ $1 == 'run' ]; then
-	source .profile
+	# source .profile
 	./env.sh
 	./Actions/convert.sh
 	./Actions/pool.sh
