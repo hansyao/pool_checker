@@ -25,10 +25,10 @@ jobs:
       run: |
         sed -i s/^PLATFORM\=./PLATFORM\=1/g env.sh
         sed -i s/^PLATFORM\=./PLATFORM\=1/g Actions/pool.sh
-        sed -i s/^TARGET_NODES\=./TARGET_NODES\=200/g Actions/pool.sh
-        sed -i s/^BLOCK_SIZE\=./BLOCK_SIZE\=200/g Actions/pool.sh
-        sed -i s/^THREADNUMBER=\=./PLATFORM\=15/g Actions/pool.sh
-        sed -i s/^THREADNUMBE2=\=./PLATFORM\=5/g Actions/pool.sh
+        sed -i s/^TARGET_NODES\=.*/TARGET_NODES\=200/g Actions/pool.sh
+        sed -i s/^BLOCK_SIZE\=.*/BLOCK_SIZE\=200/g Actions/pool.sh
+        sed -i s/^THREADNUMBER\=.*/PLATFORM\=15/g Actions/pool.sh
+        sed -i s/^THREADNUMBE2\=.*/PLATFORM\=5/g Actions/pool.sh
         echo "发布函数层依赖"
         ./tencent_cf_deploy.sh PublishLayerVersion pool_check_layer
         export LayerVersion=$(./tencent_cf_deploy.sh ListLayerVersions pool_check_layer | sed '$d' | jq -r '.Response.LayerVersions[].LayerVersion' | head -n 1)
