@@ -45,10 +45,10 @@ firwall_set() {
 	sudo iptables -t nat -A REDSOCKS -d 132.0.0.0/8 -j RETURN
 	sudo iptables -t nat -A REDSOCKS -d 134.0.0.0/8 -j RETURN
 
-	sudo iptables -t nat -A SS -p tcp -j REDIRECT --to-port 3128
+	sudo iptables -t nat -A REDSOCKS -p tcp -j REDIRECT --to-port 3128
 
-	sudo iptables -t nat -A PREROUTING -p tcp -j SS
-	sudo iptables -t nat -A OUTPUT -p tcp -j SS
+	sudo iptables -t nat -A PREROUTING -p tcp -j REDSOCKS
+	sudo iptables -t nat -A OUTPUT -p tcp -j REDSOCKS
 }
 
 get_config() {
