@@ -10,58 +10,23 @@ function timestamp() {
 	fi
 }
 
-function get_client_info() {
+function get_tc_env() {
 
-	local CLIENT_NAME="$(mktemp)"
-	local CLIENT_ID="$(mktemp)"
-	local CLIENT_SECRET="$(mktemp)"
-	local REFESH_TOKEN="$(mktemp)"
-
-	env | grep 'CLIENT_ID' | sort | uniq | cut -d "=" -f1 >${CLIENT_NAME}
-	env | grep 'CLIENT_ID' | sort | uniq | cut -d "=" -f2 >${CLIENT_ID}
-	env | grep 'CLIENT_SECRET' | sort | uniq | cut -d "=" -f2 >${CLIENT_SECRET}
-	env | grep 'REFESH_TOKEN' |sort | uniq | cut -d "=" -f2 >${REFESH_TOKEN}
-
-	paste "${CLIENT_NAME}" "${CLIENT_ID}" "${CLIENT_SECRET}" \
-		"${REFESH_TOKEN}" | grep -v '^$'
-
-	rm -f ${CLIENT_NAME}
-	rm -f ${CLIENT_ID}
-	rm -f ${CLIENT_SECRET}
-	rm -f ${REFESH_TOKEN}
+	env | grep "$1" | sort | uniq
 }
 
 function env_var() {
-	# local CLIENT_LIST=$(get_client_info)
-	# if [[ -z ${CLIENT_LIST} ]]; then
-	# 	echo "API账号未设置, 结束任务"
-	# 	exit 0
-	# fi
-	# echo -e "${CLIENT_LIST}" | while read ACCOUNT && [[ -n "${ACCOUNT}" ]]
-	# do
-	# 	# 微软环境变量
-	# 	local NAME=$(echo -e "${ACCOUNT}" | awk '{print $1}' | sed s/"CLIENT_ID"//g)
-	# 	local CLIENT_ID=$(echo -e "${ACCOUNT}" | awk '{print $2}')
-	# 	local CLIENT_SECRET=$(echo -e "${ACCOUNT}" | awk '{print $3}')
-	# 	local REFESH_TOKEN=$(echo -e "${ACCOUNT}" | awk '{print $4}')
-		
-	# 	echo -n "{\"Key\":\"CLIENT_ID${NAME}\", \"Value\":\"${CLIENT_ID}\"},"
-	# 	echo -n "{\"Key\":\"CLIENT_SECRET${NAME}\", \"Value\":\"${CLIENT_SECRET}\"},"
-	# 	echo -n "{\"Key\":\"REFESH_TOKEN${NAME}\", \"Value\":\"${REFESH_TOKEN}\"},"
-
-	# done
-	# 腾讯环境变量
-	TC_GH_TOKEN=$(env | grep TC_GH_TOKEN | cut -d "=" -f2)
-	TC_GH_USER=$(env | grep TC_GH_USER | cut -d "=" -f2)
-	TC_GH_EMAIL=$(env | grep TC_GH_EMAIL | cut -d "=" -f2)
-	TC_SECRET_ID=$(env | grep TC_SECRET_ID | cut -d "=" -f2)
-	TC_SECRET_KEY=$(env | grep TC_SECRET_KEY | cut -d "=" -f2)
-
-	echo -n "{\"Key\":\"TC_GH_TOKEN\", \"Value\":\"${TC_GH_TOKEN}\"},"
-	echo -n "{\"Key\":\"TC_GH_USER\", \"Value\":\"${TC_GH_USER}\"},"
-	echo -n "{\"Key\":\"TC_GH_EMAIL\", \"Value\":\"${TC_GH_EMAIL}\"},"
-	echo -n "{\"Key\":\"TC_SECRET_ID\", \"Value\":\"${TC_SECRET_ID}\"},"
-	echo -n "{\"Key\":\"TC_SECRET_KEY\", \"Value\":\"${TC_SECRET_KEY}\"}"
+	local ENV_LIST=$(get_tc_env 'TC_')
+	if [[ -z ${ENV_LIST} ]]; then
+		echo "没有有效的环境变量, 结束任务"
+		exit 0
+	fi
+	echo -e "${ENV_LIST}" | while read ACCOUNT && [[ -n "${ACCOUNT}" ]]
+	do
+		local KEY=$(echo -e "${ACCOUNT}" | cut -d "=" -f1)
+		local VALUE=$(echo -e "${ACCOUNT}" | cut -d "=" -f2)
+		echo -n "{\"Key\":\"${KEY}\", \"Value\":\"${VALUE}\"},${ENV}"
+	done
 }
 
 function hmac256_py() {
@@ -201,7 +166,7 @@ function body() {
 		\"Timeout\": ${TIMEOUT}, \
 		\"Layers\": ${LAYERS}, \
 		\"Code\": {\"${CODE}\": \"${ZIPFILE_BASE64}\"}, \
-		\"Environment\": {\"Variables\": [$(env_var)]}}" \
+		\"Environment\": {\"Variables\": [$(echo -n "$(env_var)" | sed s'/.$//')]}}" \
 		>${BODY_JSON}
 
 	elif [[ ${ACTION} == 'UpdateFunctionCode' ]]; then
@@ -232,7 +197,7 @@ function body() {
 
 		echo -e "{\"FunctionName\": \"${FUNC_NAME}\", \
 		\"Layers\": ${LAYERS}, \
-		\"Environment\": {\"Variables\": [$(env_var)]}}" \
+		\"Environment\": {\"Variables\": [$(echo -n "$(env_var)" | sed s'/.$//')]}}" \
 		>${BODY_JSON}
 
 	elif [[ "${ACTION}" == 'CreateTrigger' || "${ACTION}" == 'DeleteTrigger' ]]; then
@@ -316,6 +281,34 @@ function post_result_func() {
 	curl -s -H "${ARGS[@]}" -d @${BODY_JSON} "https://${HOST}/"
 }
 
+function wait_func_ready() {
+	local FUNC_NAME=$1
+	local BODY_JSON=$2
+
+	local i=0
+	while :
+	do
+		if [[ $[i] -ge 10 ]]; then
+			echo -e "函数 ${FUNC_NAME} 更新超时$[i]秒"
+			echo -e "结束任务"
+			# 清理临时文件
+			rm -f  ${ZIP_FILE}
+			rm -f ${HEADER}
+			rm -f ${BODY_JSON}
+			return 1
+		fi
+		body 'GetFunction' "${FUNC_NAME}" "${BODY_JSON}"
+		local RESPONSE=$(post_result_func GetFunction "${BODY_JSON}" \
+			| jq -r '.Response.Status')
+		if [[ "${RESPONSE}" == 'Active' ]]; then
+			echo -e "函数 ${FUNC_NAME} 已经准备好"
+			break
+		fi
+		sleep 1
+		let i++
+	done
+}
+
 ACTION=$1
 FUNC_NAME=$2
 BODY_JSON='/tmp/body.json'
@@ -341,56 +334,18 @@ if [[ "${ACTION}" == 'CreateFunction' ]]; then
 		post_result_func UpdateFunctionConfiguration "${BODY_JSON}"
 
 		echo -e "\\n等待环境变量更新成功"
-		i=0
-		while :
-		do
-			if [[ $[i] -ge 10 ]]; then
-				echo -e "函数 ${FUNC_NAME} 环境变量更新超时$[i]秒"
-				echo -e "结束任务"
-				# 清理临时文件
-				rm -f  ${ZIP_FILE}
-				rm -f ${HEADER}
-				rm -f ${BODY_JSON}
-				exit 0
-			fi
-			body 'GetFunction' "${FUNC_NAME}" "${BODY_JSON}"
-			RESPONSE=$(post_result_func GetFunction "${BODY_JSON}" \
-				| jq -r '.Response.Status')
-			if [[ "${RESPONSE}" == 'Active' ]]; then
-				echo -e "函数 ${FUNC_NAME} 环境变量更新成功"
-				break
-			fi
-			sleep 1
-			let i++
-		done
+		wait_func_ready "${FUNC_NAME}" "${BODY_JSON}"
+		if [[ $? -eq 1 ]]; then exit 0; fi
 
 		echo -e "\\n更新代码"
 		body UpdateFunctionCode "${FUNC_NAME}" "${BODY_JSON}"
 		post_result_func UpdateFunctionCode "${BODY_JSON}"
 	fi
+	
 	echo -e "\\n等待函数发布成功"
-	i=0
-	while :
-	do
-		if [[ $[i] -ge 10 ]]; then
-			echo -e "函数 ${FUNC_NAME} 发布超时$[i]秒"
-			echo -e "结束任务"
-			# 清理临时文件
-			rm -f  ${ZIP_FILE}
-			rm -f ${HEADER}
-			rm -f ${BODY_JSON}
-			exit 0
-		fi
-		body 'GetFunction' "${FUNC_NAME}" "${BODY_JSON}"
-		RESPONSE=$(post_result_func GetFunction "${BODY_JSON}" \
-			| jq -r '.Response.Status')
-		if [[ "${RESPONSE}" == 'Active' ]]; then
-			echo -e "函数 ${FUNC_NAME} 发布成功"
-			break
-		fi
-		sleep 1
-		let i++
-	done
+	wait_func_ready "${FUNC_NAME}" "${BODY_JSON}"
+	if [[ $? -eq 1 ]]; then exit 0; fi
+
 	echo '开始测试运行函数'
 	body Invoke "${FUNC_NAME}" "${BODY_JSON}"
 	post_result_func Invoke "${BODY_JSON}"
