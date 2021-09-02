@@ -151,6 +151,10 @@ function init_redsocks() {
 	cat redsocks.conf.example | sed "s/port\ \=\ 1080/port\ \=\ 7981/g" > /tmp/redsocks.conf
 	sed -i "s/ip\ \=\ example.org/ip\ \=\ 127.0.0.1/g" /tmp/redsocks.conf
 	sed -i "s/log_debug\ =.*/log_debug\ = on;/g" /tmp/redsocks.conf
+	sed -i "s/ip\ \=\ 10.0.0.1/ip\ \=\ 127.0.0.1/g" /tmp/redsocks.conf
+	sed -i "s/login\ \=\ username/\/\/login\ \=\ username" /tmp/redsocks.conf
+	sed -i "s/password\ \=\ pazzw0rd/\/\/password\ \=\ pazzw0rd" /tmp/redsocks.conf
+
 	
 	echo "启动redsocks"
 	redsocks -c /tmp/redsocks.conf &
