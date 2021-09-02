@@ -22,34 +22,31 @@ ip_foward() {
 }
 
 firwall_set() {
-  # ROUTE RULES
-  sudo ip rule add fwmark 1 table 100
-  sudo ip route add local 0.0.0.0/0 dev lo table 100
+	# ROUTE RULES
+	sudo ip rule add fwmark 1 table 100
+	sudo ip route add local 0.0.0.0/0 dev lo table 100
 
-  # CREATE TABLE
-  sudo iptables -t mangle -N clash
+	# CREATE TABLE
+	sudo iptables -t mangle -N clash
 
-  # RETURN LOCAL AND LANS
-  sudo iptables -t mangle -A clash -d 0.0.0.0/8 -j RETURN
-  sudo iptables -t mangle -A clash -d 10.0.0.0/8 -j RETURN
-  sudo iptables -t mangle -A clash -d 10.1.0.0/16 -j RETURN
-  sudo iptables -t mangle -A clash -d 127.0.0.0/8 -j RETURN
-  sudo iptables -t mangle -A clash -d 169.254.0.0/16 -j RETURN
-  sudo iptables -t mangle -A clash -d 172.16.0.0/12 -j RETURN
-  sudo iptables -t mangle -A clash -d 172.17.0.0/24 -j RETURN  
-  sudo iptables -t mangle -A clash -d 192.168.50.0/16 -j RETURN
-  sudo iptables -t mangle -A clash -d 192.168.9.0/16 -j RETURN
-  
-  sudo iptables -t mangle -A clash -d 224.0.0.0/4 -j RETURN
-  sudo iptables -t mangle -A clash -d 240.0.0.0/4 -j RETURN
+	# RETURN LOCAL AND LANS
+	sudo iptables -t mangle -A clash -d 0.0.0.0/8 -j RETURN
+	sudo iptables -t mangle -A clash -d 10.0.0.0/8 -j RETURN
+	sudo iptables -t mangle -A clash -d 10.1.0.0/16 -j RETURN
+	sudo iptables -t mangle -A clash -d 127.0.0.0/8 -j RETURN
+	sudo iptables -t mangle -A clash -d 169.254.0.0/16 -j RETURN
+	sudo iptables -t mangle -A clash -d 172.16.0.0/12 -j RETURN
+	sudo iptables -t mangle -A clash -d 172.17.0.0/24 -j RETURN  
+	sudo iptables -t mangle -A clash -d 192.168.50.0/16 -j RETURN
+	sudo iptables -t mangle -A clash -d 192.168.9.0/16 -j RETURN
 
-  # FORWARD ALL
-  sudo iptables -t mangle -A clash -p udp -j TPROXY --on-port 7893 --tproxy-mark 1
-  sudo iptables -t mangle -A clash -p tcp -j TPROXY --on-port 7893 --tproxy-mark 1
+	sudo iptables -t mangle -A clash -d 224.0.0.0/4 -j RETURN
+	sudo iptables -t mangle -A clash -d 240.0.0.0/4 -j RETURN
 
-  # REDIRECT
-  sudo iptables -t mangle -A PREROUTING -j clash
- 
+	# REDIRECT
+	sudo iptables -t mangle -A clash -p tcp -j REDIRECT --to-ports 12345
+
+	sudo iptables -t mangle -A PREROUTING -i eth0 -p tcp -j REDSOCKS
 }
 
 get_config() {
@@ -141,11 +138,26 @@ EOL
 	cd ..
 }
 
+
+function redsocks() {
+	git clone --depth 1 git@github.com:darkk/redsocks.git
+	cd redsocks
+	make
+	sudo make install
+	cat redsocks.conf.example | sed "s/port\ \=\ 1080/port\ \=\ 7981/g" > /tmp/redsocks.conf
+	sed -i "s/ip\ \=\ example.org/ip\ \=\ 127.0.0.1/g" /tmp/redsocks.conf
+	sed -i "s/log_debug\ =.*/log_debug\ = on;/g" /tmp/redsocks.conf
+	redsocks -c /tmp/redsocks.conf &
+}
+
 echo -e "本地流量转发"
 ip_foward
 
 echo -e "iptables防火墙配置"
-firwall_set
+# firwall_set
+ifconfig
+
+sleep 100
 
 echo -e "部署clash环境"
 get_clash
