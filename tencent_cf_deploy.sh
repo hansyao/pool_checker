@@ -11,7 +11,6 @@ function timestamp() {
 }
 
 function get_tc_env() {
-
 	env | grep "$1" | sort | uniq
 }
 
@@ -341,7 +340,7 @@ if [[ "${ACTION}" == 'CreateFunction' ]]; then
 		body UpdateFunctionCode "${FUNC_NAME}" "${BODY_JSON}"
 		post_result_func UpdateFunctionCode "${BODY_JSON}"
 	fi
-	
+
 	echo -e "\\n等待函数发布成功"
 	wait_func_ready "${FUNC_NAME}" "${BODY_JSON}"
 	if [[ $? -eq 1 ]]; then exit 0; fi
