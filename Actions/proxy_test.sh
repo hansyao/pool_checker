@@ -23,27 +23,21 @@ ip_foward() {
 
 firwall_set() {
 	
-	# CREATE TABLE
-	sudo iptables -t nat -N clash
+	sudo iptables -t nat -N REDSOCKS || true
 
-	# RETURN LOCAL AND LANS
-	sudo iptables -t nat -A clash -d 0.0.0.0/8 -j RETURN
-	sudo iptables -t nat -A clash -d 10.0.0.0/8 -j RETURN
-	sudo iptables -t nat -A clash -d 10.1.0.0/16 -j RETURN
-	sudo iptables -t nat -A clash -d 127.0.0.0/8 -j RETURN
-	sudo iptables -t nat -A clash -d 169.254.0.0/16 -j RETURN
-	sudo iptables -t nat -A clash -d 172.16.0.0/12 -j RETURN
-	sudo iptables -t nat -A clash -d 172.17.0.0/24 -j RETURN  
-	sudo iptables -t nat -A clash -d 192.168.50.0/16 -j RETURN
-	sudo iptables -t nat -A clash -d 192.168.9.0/16 -j RETURN
+	sudo iptables -t nat -F REDSOCKS
+	sudo iptables -t nat -A REDSOCKS -d 0.0.0.0/8 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 10.0.0.0/8 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 127.0.0.0/8 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 169.254.0.0/16 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 172.16.0.0/12 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 192.168.0.0/16 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 224.0.0.0/4 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 240.0.0.0/4 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -p tcp -j REDIRECT --to-ports 6666
+	sudo iptables -t nat -A REDSOCKS -p udp -j REDIRECT --to-ports 8888
 
-	sudo iptables -t nat -A clash -d 224.0.0.0/4 -j RETURN
-	sudo iptables -t nat -A clash -d 240.0.0.0/4 -j RETURN
-
-	# REDIRECT
-	sudo iptables -t nat -A clash -p tcp -j REDIRECT --to-ports 12345
-
-	sudo iptables -t nat -A PREROUTING -i eth0 -p tcp -j clash
+	sudo iptables -t nat -A OUTPUT -p tcp -j REDSOCKS
 }
 
 get_config() {
@@ -138,27 +132,47 @@ EOL
 
 function init_redsocks() {
 	echo "拉取代码"
-	git clone --depth 1 https://github.com/semigodking/redsocks.git
+	git clone --depth 1 https://github.com/darkk/redsocks.git
 	cd redsocks
 	echo "安装依赖"
 	sudo apt install libevent-dev
-	sudo apt install libcrypt-dev
 
 	echo "开始编译"
 	make
 	echo "安装到/usr/local/bin/"
-	sudo cp -f redsocks2 /usr/local/bin/redsocks
+	sudo cp -f redsocks /usr/local/bin/redsocks
 	
-	echo "修改配置文件"
-	cat redsocks.conf.example | sed "s/port\ \=\ 1080/port\ \=\ 7981/g" > /tmp/redsocks.conf
-	sed -i "s/ip\ \=\ example.org/ip\ \=\ 127.0.0.1/g" /tmp/redsocks.conf
-	sed -i "s/log_debug\ =.*/log_debug\ = on;/g" /tmp/redsocks.conf
-	sed -i "s/ip\ \=\ 10.0.0.1/ip\ \=\ 127.0.0.1/g" /tmp/redsocks.conf
-	sed -i "s/login\ \=\ username/\/\/login\ \=\ username/g" /tmp/redsocks.conf
-	sed -i "s/password\ \=\ pazzw0rd/\/\/password\ \=\ pazzw0rd/g" /tmp/redsocks.conf
-	sed -i "s/...log\ =\ \"file.*/log\ \=\ \"file:\/tmp\/redsocks.log\";/g" /tmp/redsocks.conf
-	sed -i "s/bind\ \=\ \"127.0.0.1:12345\"/bind\ \= \"0.0.0.0:12345\"/g" /tmp/redsocks.conf
-	
+	echo "定义配置文件"
+	cat >> /tmp/redsocks.conf << EOF
+base {
+	log_debug = on;
+	log_info = on;
+	daemon = on;
+	redirector = iptables;
+}
+
+redsocks {
+	local_ip = 0.0.0.0;
+	local_port = 6666;
+	ip = 127.0.0.1;
+	port = 7891;
+	type = socks5;
+}
+
+redudp {
+	local_ip = 127.0.0.1;
+	local_port = 8888;
+	ip = 0.0.0.0;
+	port = 7891;
+}
+
+dnstc {
+	local_ip = 127.0.0.1;
+	local_port = 5300;
+}
+
+EOF
+
 	echo "启动redsocks"
 	redsocks -c /tmp/redsocks.conf &
 
