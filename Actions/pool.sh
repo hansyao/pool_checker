@@ -196,5 +196,5 @@ if [[ $[PLATFORM] -ne 2 ]]; then
 fi
 
 if [[ ! -d subscribe ]]; then mkdir subscribe; fi
-cp -f ${SUSCRIBE_DIR}/clash.yaml ./subscribe/
+cp -f ${SUSCRIBE_DIR}/clash*.yaml ./subscribe/
 cp -f "${SUSCRIBE_DIR}/${POOL_VERIFIED}" ./subscribe/
