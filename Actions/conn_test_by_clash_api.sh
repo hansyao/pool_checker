@@ -318,10 +318,10 @@ function connetion_test_split() {
     else
         echo "代理池节点数小于目标节点数，无需分割"
         rm -rf ${SPLIT_FOLDER}
-        mkdir ${SPLIT_FOLDER}        
+        mkdir ${SPLIT_FOLDER}
         local LIST=$(cat ${POOL} | grep "\-\ {")
         echo -e "proxies:" >${SPLIT_FOLDER}/1.yaml
-        echo -e "{LIST}" >>${SPLIT_FOLDER}/1.yaml
+        echo -e "${LIST}" >>${SPLIT_FOLDER}/1.yaml
         local CONFIG='1'
     fi
 
