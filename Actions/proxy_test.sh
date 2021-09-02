@@ -54,7 +54,6 @@ get_config() {
 	mv mmdb ~/.config/clash/Country.mmdb
 }
 
-
 get_clash() {
  
 	CLASH=`pwd`/Actions/clash
@@ -185,12 +184,6 @@ ip_foward
 echo -e "查看网络接口"
 ifconfig
 
-echo -e "部署redsocks"
-init_redsocks
-
-echo -e "iptables防火墙配置"
-firwall_set
-
 echo -e "部署clash环境"
 get_clash
 
@@ -204,6 +197,12 @@ get_config ${CLASH_CONFIG} ${FINAL_CONFIG}
 
 echo -e "启动CLASH"
 clash start ${FINAL_CONFIG} ${CLASH_PID}
+
+echo -e "部署redsocks"
+init_redsocks
+
+echo -e "iptables防火墙配置"
+firwall_set
 
 # echo -e "启动proxy_chain"
 # proxy_chain
