@@ -181,7 +181,7 @@ curl -s http://127.0.0.1:25500/sub\?target\=clash\&emoji\=true\&exclude=$EXCL\&u
 
 echo -e "clash规则转化完成 $(timestamp)"
 
-if [[ $[PLATFORM] -ne 2 ]]; then
+if [ ${PLATFORM} -ne 2 ]; then
         ./gitpush.sh "${SUSCRIBE_DIR}/${CLASH1}" \
                 "${SUSCRIBE_DIR}/${CLASH2}" "${SUSCRIBE_DIR}/${CLASH3}" \
                 "${SUSCRIBE_DIR}/${CLASH4}" "${SUSCRIBE_DIR}/${CLASH5}" \
