@@ -38,7 +38,7 @@ mkdir /tmp/subscribe
 mkdir -p /tmp/tmp 
 mkdir /tmp/.config
 ulimit -SHn 65536
-	
+
 get_clash
 
 unset GITHUB
