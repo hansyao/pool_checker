@@ -154,6 +154,7 @@ function init_redsocks() {
 	sed -i "s/ip\ \=\ 10.0.0.1/ip\ \=\ 127.0.0.1/g" /tmp/redsocks.conf
 	sed -i "s/login\ \=\ username/\/\/login\ \=\ username/g" /tmp/redsocks.conf
 	sed -i "s/password\ \=\ pazzw0rd/\/\/password\ \=\ pazzw0rd/g" /tmp/redsocks.conf
+	sed -i "s/...log\ =\ \"file.*/log\ \=\ \"file:\/tmp\/redsocks.log\";/g" /tmp/redsocks.conf
 
 	
 	echo "启动redsocks"
@@ -207,6 +208,7 @@ echo -e "公网IP信息： ${IPINFO}"
 echo -e "${STATUS}"
 cat ${CLASH_LOG}
 
+cat /tmp/redsocks.log
 
 unset STATUS
 unset IP
