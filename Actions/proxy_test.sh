@@ -168,7 +168,7 @@ echo "延迟 3 等待透明代理启动"
 sleep 3
 
 echo -e "测试网络连通性 ($[i])"
-STATUS=$(proxychains4 curl -s -i https://connect.rom.miui.com/generate_204 | grep 204)
+STATUS=$(proxychains4 curl --connect-timeout 4 -m 6 -s -i  https://connect.rom.miui.com/generate_204 | grep 204)
 if [[ -z ${STATUS} ]]; then
 	echo -e "网络连通测试失败"
 fi
