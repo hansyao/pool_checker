@@ -4,14 +4,14 @@
 RENAME='yes'                    #是否重新命名
 CONVERT='yes'                   #是否规则转换
 DURATION=1500                   #目标运行时间：秒
-TARGET_NODES=200                #目标验证节点数
+TARGET_NODES=10000              #目标验证节点数
 TIMEOUT=1                       #连接超时：秒
-BLOCK_SIZE=200                  #配置文件切分大小
-THREADNUMBER=15                 #线程数：按性能调整
-THREADNUMBER2=5                 #线程数：按性能调整
+BLOCK_SIZE=500                  #配置文件切分大小
+THREADNUMBER=300                 #线程数：按性能调整
+THREADNUMBER2=50                 #线程数：按性能调整
 ALGORITHM=3                     #多线程算法:1-队列；2-动态分组; 3-队列（CLASH API）
 URL=${TC_POOL_URL}              # 代理池URL地址
-PLATFORM=2
+PLATFORM=2                      # 1 - 腾讯云函数	2 - github	3 - 其他
 # ***********************参数初始化完成********************* /
 
 SUSCRIBE_DIR=/tmp/subscribe
