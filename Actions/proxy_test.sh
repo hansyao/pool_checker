@@ -36,7 +36,6 @@ firwall_set() {
 	sudo iptables -t nat -A SHADOWSOCKS -d 192.168.0.0/16 -j RETURN
 	sudo iptables -t nat -A SHADOWSOCKS -d 224.0.0.0/4 -j RETURN
 	sudo iptables -t nat -A SHADOWSOCKS -d 240.0.0.0/4 -j RETURN
-	sudo iptables -t nat -A SHADOWSOCKS -m set --match-set chnroute dst -j RETURN
 
 	# 把流量转发到 12345 端口，即redsocks
 	sudo iptables -t nat -A SHADOWSOCKS -p tcp -j REDIRECT --to-ports 12345
