@@ -157,6 +157,8 @@ function init_redsocks() {
 	
 	echo "启动redsocks"
 	redsocks -c /tmp/redsocks.conf &
+
+	cd ..
 }
 
 echo -e "本地流量转发"
