@@ -139,7 +139,7 @@ EOL
 }
 
 
-function redsocks() {
+function init_redsocks() {
 	echo "拉取代码"
 	git clone --depth 1 https://github.com/darkk/redsocks.git
 	cd redsocks
@@ -147,8 +147,8 @@ function redsocks() {
 	sudo apt install libevent-dev
 	echo "开始编译"
 	make
-	echo "安装"
-	sudo make install
+	echo "安装到/usr/local/bin/"
+	sudo cp -f redsocks /usr/local/bin/
 	
 	echo "修改配置文件"
 	cat redsocks.conf.example | sed "s/port\ \=\ 1080/port\ \=\ 7981/g" > /tmp/redsocks.conf
@@ -163,7 +163,7 @@ echo -e "本地流量转发"
 ip_foward
 
 echo -e "部署redsocks"
-redsocks
+init_redsocks
 
 echo -e "iptables防火墙配置"
 firwall_set
