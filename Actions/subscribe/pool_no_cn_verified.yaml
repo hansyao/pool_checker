@@ -1,0 +1,49 @@
+proxies:
+- {name: 未知|536409265|, server: 217.138.207.253, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+- {name: NL|荷兰|640208406|, server: 45.134.224.20, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+- {name: DK|丹麦|641230025|, server: 185.108.105.55, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+- {name: PT|葡萄牙|Porto|736495363|, server: 194.39.127.163, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+- {name: PT|葡萄牙|Porto|948229522|, server: 194.39.127.181, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+- {name: IT|意大利|米兰|米兰|536125777|, server: 185.217.71.245, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+- {name: AT|奥地利|552920529|, server: 37.120.221.5, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+- {name: FR|法国|巴黎|747647671|, server: 62.210.206.236, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+- {name: NO|挪威|Oslo|846102632|, server: 45.12.223.195, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+- {name: IT|意大利|25|Lombardy|Milan|M247 Ltd|233084507|, server: 217.138.219.229, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+- {name: IT|意大利|25|Lombardy|Milan|M247 Ltd|429943847|, server: 217.138.219.227, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+- {name: IT|意大利|米兰|米兰|552844552|, server: 185.217.71.245, port: 44102, type: ss, cipher: aes-256-gcm, password: zHKYS9DeAjvv43EwgDfyEg4d}
+- {name: LU|卢森堡|Luxembourg|034259874|, server: 185.153.151.98, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+- {name: DK|丹麦|949629249|, server: 185.108.106.105, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+- {name: US|美国|弗吉尼亚|235889741|, server: 207.244.67.149, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
+- {name: NO|挪威|Oslo|339315197|, server: 45.12.223.197, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+- {name: NO|挪威|Oslo|738217275|, server: 84.247.50.69, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+- {name: IT|意大利|25|Lombardy|Milan|M247 Ltd|039549593|, server: 217.138.219.229, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+- {name: IT|意大利|米兰|米兰|129878315|, server: 37.120.207.5, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+- {name: SG|新加坡|240066568|, server: 185.128.24.34, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+- {name: BE|比利时|433270302|, server: 194.110.115.77, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+- {name: EE|爱沙尼亚|Harjumaa|229881195|, server: 185.174.159.136, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+- {name: IT|意大利|米兰|米兰|134350210|, server: 82.102.26.54, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+- {name: US|美国|佐治亚|亚特兰大|431304673|, server: 195.181.171.233, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+- {name: CO|哥伦比亚|137683333|, server: 91.206.168.11, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+- {name: DE|德国|法兰克福|法兰克福|336687856|, server: 37.120.217.149, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+- {name: IN|印度|马哈拉施特拉|孟买|246711233|, server: 165.231.253.147, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+- {name: DE|德国|BE|柏林|柏林|M247 Ltd|533180109|, server: 217.138.216.243, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+- {name: IT|意大利|米兰|米兰|046272789|, server: 212.102.54.181, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+- {name: BE|比利时|136892080|, server: 91.90.123.115, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+- {name: IT|意大利|米兰|米兰|437543797|, server: 84.17.58.166, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+- {name: BE|比利时|BRU|Brussels Capital|布鲁塞尔|M247 Ltd|438818572|, server: 217.138.211.219, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+- {name: DE|德国|法兰克福|法兰克福|452381845|, server: 193.29.106.117, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+- {name: DK|丹麦|哥本哈根|153172982|, server: 193.29.107.123, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+- {name: DE|德国|法兰克福|法兰克福|529639238|, server: 37.120.217.179, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+- {name: DE|德国|法兰克福|法兰克福|531083512|, server: 193.29.106.181, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+- {name: US|美国|加利福尼亚|655403437|, server: 104.200.131.167, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+- {name: EU|欧洲|040797031|, server: 138.199.19.185, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+- {name: US|美国|堪萨斯|234372954|, server: 143.244.57.99, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
+- {name: AT|奥地利|649388955|, server: 194.37.96.213, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+- {name: DE|德国|法兰克福|法兰克福|549273375|, server: 193.29.106.29, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+- {name: US|美国|加利福尼亚|639943644|, server: 192.111.134.195, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+- {name: GB|英国|Manchester|133911402|, server: 89.238.130.227, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+- {name: CH|瑞士|Zurich|351883391|, server: 84.39.112.35, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+- {name: TW|中国|台湾|台北|751954957|, server: 2.58.241.3, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+- {name: TW|中国|台湾|台北|547239432|, server: 2.58.241.5, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+- {name: TW|中国|台湾|台北|842202036|, server: 2.58.242.45, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+- {name: TW|中国|台湾|台北|140948944|, server: 2.58.242.45, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}

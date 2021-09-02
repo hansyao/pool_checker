@@ -5,67 +5,76 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇦🇺 AU|澳大利亚|942787440|, server: www.freetouchor.xyz, port: 443, type: trojan, password: mima0.0.000, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK|中国|香港|143639349|, server: 103.85.20.176, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
-  - {name: 🇭🇰 HK|中国|香港|929925953|, server: 103.115.67.145, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
+  - {name: 🇨🇳 TW|中国|台湾|台北|751954957|, server: 2.58.241.3, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇨🇳 TW|中国|台湾|台北|547239432|, server: 2.58.241.5, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇨🇳 TW|中国|台湾|台北|842202036|, server: 2.58.242.45, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇨🇳 TW|中国|台湾|台北|140948944|, server: 2.58.242.45, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇦🇺 AU|澳大利亚|942787440|
-      - 🇭🇰 HK|中国|香港|143639349|
-      - 🇭🇰 HK|中国|香港|929925953|
+      - 🇨🇳 TW|中国|台湾|台北|751954957|
+      - 🇨🇳 TW|中国|台湾|台北|547239432|
+      - 🇨🇳 TW|中国|台湾|台北|842202036|
+      - 🇨🇳 TW|中国|台湾|台北|140948944|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇦🇺 AU|澳大利亚|942787440|
-      - 🇭🇰 HK|中国|香港|143639349|
-      - 🇭🇰 HK|中国|香港|929925953|
+      - 🇨🇳 TW|中国|台湾|台北|751954957|
+      - 🇨🇳 TW|中国|台湾|台北|547239432|
+      - 🇨🇳 TW|中国|台湾|台北|842202036|
+      - 🇨🇳 TW|中国|台湾|台北|140948944|
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇦🇺 AU|澳大利亚|942787440|
-      - 🇭🇰 HK|中国|香港|143639349|
-      - 🇭🇰 HK|中国|香港|929925953|
+      - 🇨🇳 TW|中国|台湾|台北|751954957|
+      - 🇨🇳 TW|中国|台湾|台北|547239432|
+      - 🇨🇳 TW|中国|台湾|台北|842202036|
+      - 🇨🇳 TW|中国|台湾|台北|140948944|
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 HK|中国|香港|143639349|
-      - 🇭🇰 HK|中国|香港|929925953|
+      - 🇨🇳 TW|中国|台湾|台北|751954957|
+      - 🇨🇳 TW|中国|台湾|台北|547239432|
+      - 🇨🇳 TW|中国|台湾|台北|842202036|
+      - 🇨🇳 TW|中国|台湾|台北|140948944|
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇦🇺 AU|澳大利亚|942787440|
-      - 🇭🇰 HK|中国|香港|143639349|
-      - 🇭🇰 HK|中国|香港|929925953|
+      - 🇨🇳 TW|中国|台湾|台北|751954957|
+      - 🇨🇳 TW|中国|台湾|台北|547239432|
+      - 🇨🇳 TW|中国|台湾|台北|842202036|
+      - 🇨🇳 TW|中国|台湾|台北|140948944|
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇦🇺 AU|澳大利亚|942787440|
-      - 🇭🇰 HK|中国|香港|143639349|
-      - 🇭🇰 HK|中国|香港|929925953|
+      - 🇨🇳 TW|中国|台湾|台北|751954957|
+      - 🇨🇳 TW|中国|台湾|台北|547239432|
+      - 🇨🇳 TW|中国|台湾|台北|842202036|
+      - 🇨🇳 TW|中国|台湾|台北|140948944|
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇦🇺 AU|澳大利亚|942787440|
-      - 🇭🇰 HK|中国|香港|143639349|
-      - 🇭🇰 HK|中国|香港|929925953|
+      - 🇨🇳 TW|中国|台湾|台北|751954957|
+      - 🇨🇳 TW|中国|台湾|台北|547239432|
+      - 🇨🇳 TW|中国|台湾|台北|842202036|
+      - 🇨🇳 TW|中国|台湾|台北|140948944|
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -81,9 +90,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇦🇺 AU|澳大利亚|942787440|
-      - 🇭🇰 HK|中国|香港|143639349|
-      - 🇭🇰 HK|中国|香港|929925953|
+      - 🇨🇳 TW|中国|台湾|台北|751954957|
+      - 🇨🇳 TW|中国|台湾|台北|547239432|
+      - 🇨🇳 TW|中国|台湾|台北|842202036|
+      - 🇨🇳 TW|中国|台湾|台北|140948944|
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
