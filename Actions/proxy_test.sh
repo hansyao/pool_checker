@@ -22,31 +22,28 @@ ip_foward() {
 }
 
 firwall_set() {
-	# ROUTE RULES
-	sudo ip rule add fwmark 1 table 100
-	sudo ip route add local 0.0.0.0/0 dev lo table 100
-
+	
 	# CREATE TABLE
-	sudo iptables -t mangle -N clash
+	sudo iptables -t nat -N clash
 
 	# RETURN LOCAL AND LANS
-	sudo iptables -t mangle -A clash -d 0.0.0.0/8 -j RETURN
-	sudo iptables -t mangle -A clash -d 10.0.0.0/8 -j RETURN
-	sudo iptables -t mangle -A clash -d 10.1.0.0/16 -j RETURN
-	sudo iptables -t mangle -A clash -d 127.0.0.0/8 -j RETURN
-	sudo iptables -t mangle -A clash -d 169.254.0.0/16 -j RETURN
-	sudo iptables -t mangle -A clash -d 172.16.0.0/12 -j RETURN
-	sudo iptables -t mangle -A clash -d 172.17.0.0/24 -j RETURN  
-	sudo iptables -t mangle -A clash -d 192.168.50.0/16 -j RETURN
-	sudo iptables -t mangle -A clash -d 192.168.9.0/16 -j RETURN
+	sudo iptables -t nat -A clash -d 0.0.0.0/8 -j RETURN
+	sudo iptables -t nat -A clash -d 10.0.0.0/8 -j RETURN
+	sudo iptables -t nat -A clash -d 10.1.0.0/16 -j RETURN
+	sudo iptables -t nat -A clash -d 127.0.0.0/8 -j RETURN
+	sudo iptables -t nat -A clash -d 169.254.0.0/16 -j RETURN
+	sudo iptables -t nat -A clash -d 172.16.0.0/12 -j RETURN
+	sudo iptables -t nat -A clash -d 172.17.0.0/24 -j RETURN  
+	sudo iptables -t nat -A clash -d 192.168.50.0/16 -j RETURN
+	sudo iptables -t nat -A clash -d 192.168.9.0/16 -j RETURN
 
-	sudo iptables -t mangle -A clash -d 224.0.0.0/4 -j RETURN
-	sudo iptables -t mangle -A clash -d 240.0.0.0/4 -j RETURN
+	sudo iptables -t nat -A clash -d 224.0.0.0/4 -j RETURN
+	sudo iptables -t nat -A clash -d 240.0.0.0/4 -j RETURN
 
 	# REDIRECT
-	sudo iptables -t mangle -A clash -p tcp -j REDIRECT --to-ports 12345
+	sudo iptables -t nat -A clash -p tcp -j REDIRECT --to-ports 12345
 
-	sudo iptables -t mangle -A PREROUTING -i eth0 -p tcp -j clash
+	sudo iptables -t nat -A PREROUTING -i eth0 -p tcp -j clash
 }
 
 get_config() {
