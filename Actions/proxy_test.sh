@@ -153,7 +153,7 @@ base {
 }
 
 redsocks {
-	local_ip = 0.0.0.0;
+	local_ip = 127.0.0.1;
 	local_port = 6666;
 	ip = 127.0.0.1;
 	port = 7891;
