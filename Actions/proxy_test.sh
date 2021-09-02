@@ -22,33 +22,26 @@ ip_foward() {
 }
 
 firwall_set() {
-	sudo iptables -F
-	sudo iptables -X
-	sudo iptables -Z
+	sudo iptables -t nat -N SHADOWSOCKS
 
-	sudo iptables -P INPUT DROP
-	sudo iptables -P OUTPUT ACCEPT
-	sudo iptables -P FORWARD ACCEPT
+	# 注意这里要把 $server_IP 改成你自己的 socks5 远程IP，即你的VPS IP，不然无法正常工作
+	sudo iptables -t nat -A SHADOWSOCKS -d 127.0.0.1 -j RETURN
 
-	sudo iptables -A INPUT -m state --state NEW,ESTABLISHED -j ACCEPT
-	sudo iptables -A INPUT -p icmp -j ACCEPT
-	sudo iptables -A INPUT -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
-	sudo iptables -A INPUT -p tcp --dport 3128 -m state --state NEW,ESTABLISHED -j ACCEPT
+	# 忽略局域网地址
+	sudo iptables -t nat -A SHADOWSOCKS -d 0.0.0.0/8 -j RETURN
+	sudo iptables -t nat -A SHADOWSOCKS -d 10.0.0.0/8 -j RETURN
+	sudo iptables -t nat -A SHADOWSOCKS -d 127.0.0.0/8 -j RETURN
+	sudo iptables -t nat -A SHADOWSOCKS -d 169.254.0.0/16 -j RETURN
+	sudo iptables -t nat -A SHADOWSOCKS -d 172.16.0.0/12 -j RETURN
+	sudo iptables -t nat -A SHADOWSOCKS -d 192.168.0.0/16 -j RETURN
+	sudo iptables -t nat -A SHADOWSOCKS -d 224.0.0.0/4 -j RETURN
+	sudo iptables -t nat -A SHADOWSOCKS -d 240.0.0.0/4 -j RETURN
+	sudo iptables -t nat -A SHADOWSOCKS -m set --match-set chnroute dst -j RETURN
 
-	sudo iptables -t nat -A POSTROUTING -s 192.168.1.0/24 -j MASQUERADE
-	sudo iptables -t nat -N REDSOCKS
-
-	sudo iptables -t nat -A REDSOCKS -d 127.0.0.1 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 10.0.0.0/8 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 172.0.0.0/8 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 192.168.0.0/16 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 132.0.0.0/8 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 134.0.0.0/8 -j RETURN
-
-	sudo iptables -t nat -A REDSOCKS -p tcp -j REDIRECT --to-port 3128
-
-	sudo iptables -t nat -A PREROUTING -p tcp -j REDSOCKS
-	sudo iptables -t nat -A OUTPUT -p tcp -j REDSOCKS
+	# 把流量转发到 12345 端口，即redsocks
+	sudo iptables -t nat -A SHADOWSOCKS -p tcp -j REDIRECT --to-ports 12345
+	sudo iptables -t nat -A OUTPUT -p tcp -j SHADOWSOCKS
+	sudo iptables -t nat -A PREROUTING -p tcp -j SHADOWSOCKS
 }
 
 get_config() {
@@ -163,7 +156,7 @@ base {
 }
 redsocks {
     local_ip = 0.0.0.0;
-    local_port = 3128;
+    local_port = 12345;
     ip = 127.0.0.1;
     port = 7891;
     type = socks5;
