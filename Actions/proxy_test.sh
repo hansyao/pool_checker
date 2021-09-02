@@ -46,7 +46,7 @@ firwall_set() {
 	# REDIRECT
 	sudo iptables -t mangle -A clash -p tcp -j REDIRECT --to-ports 12345
 
-	sudo iptables -t mangle -A PREROUTING -i eth0 -p tcp -j REDSOCKS
+	sudo iptables -t mangle -A PREROUTING -i eth0 -p tcp -j clash
 }
 
 get_config() {
@@ -140,24 +140,31 @@ EOL
 
 
 function redsocks() {
+	echo "拉取代码"
 	git clone --depth 1 git@github.com:darkk/redsocks.git
 	cd redsocks
+	echo "开始编译"
 	make
+	echo "安装"
 	sudo make install
+	
+	echo "修改配置文件"
 	cat redsocks.conf.example | sed "s/port\ \=\ 1080/port\ \=\ 7981/g" > /tmp/redsocks.conf
 	sed -i "s/ip\ \=\ example.org/ip\ \=\ 127.0.0.1/g" /tmp/redsocks.conf
 	sed -i "s/log_debug\ =.*/log_debug\ = on;/g" /tmp/redsocks.conf
+	
+	echo "启动redsocks"
 	redsocks -c /tmp/redsocks.conf &
 }
 
 echo -e "本地流量转发"
 ip_foward
 
-echo -e "iptables防火墙配置"
-# firwall_set
-ifconfig
+echo -e "部署redsocks"
+redsocks
 
-sleep 100
+echo -e "iptables防火墙配置"
+firwall_set
 
 echo -e "部署clash环境"
 get_clash
@@ -173,14 +180,14 @@ get_config ${CLASH_CONFIG} ${FINAL_CONFIG}
 echo -e "启动CLASH"
 clash start ${FINAL_CONFIG} ${CLASH_PID}
 
-echo -e "启动proxy_chain"
-proxy_chain
+# echo -e "启动proxy_chain"
+# proxy_chain
 
 echo "延迟 3 等待透明代理启动"
 sleep 3
 
 echo -e "测试网络连通性 ($[i])"
-STATUS=$(proxychains4 curl --connect-timeout 4 -m 6 -s -i  https://connect.rom.miui.com/generate_204 | grep 204)
+STATUS=$(curl --connect-timeout 4 -m 6 -s -i  https://connect.rom.miui.com/generate_204 | grep 204)
 if [[ -z ${STATUS} ]]; then
 	echo -e "网络连通测试失败"
 fi
