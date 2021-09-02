@@ -22,25 +22,23 @@ ip_foward() {
 }
 
 firwall_set() {
-	sudo iptables -t nat -N SHADOWSOCKS
-
-	# 注意这里要把 $server_IP 改成你自己的 socks5 远程IP，即你的VPS IP，不然无法正常工作
-	# sudo iptables -t nat -A SHADOWSOCKS -d 127.0.0.1 -j RETURN
+	sudo iptables -t nat -N REDSOCKS
 
 	# 忽略局域网地址
-	sudo iptables -t nat -A SHADOWSOCKS -d 0.0.0.0/8 -j RETURN
-	sudo iptables -t nat -A SHADOWSOCKS -d 10.0.0.0/8 -j RETURN
-	sudo iptables -t nat -A SHADOWSOCKS -d 127.0.0.0/8 -j RETURN
-	sudo iptables -t nat -A SHADOWSOCKS -d 169.254.0.0/16 -j RETURN
-	sudo iptables -t nat -A SHADOWSOCKS -d 172.16.0.0/12 -j RETURN
-	sudo iptables -t nat -A SHADOWSOCKS -d 192.168.0.0/16 -j RETURN
-	sudo iptables -t nat -A SHADOWSOCKS -d 224.0.0.0/4 -j RETURN
-	sudo iptables -t nat -A SHADOWSOCKS -d 240.0.0.0/4 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 0.0.0.0/8 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 10.0.0.0/8 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 127.0.0.0/8 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 169.254.0.0/16 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 172.16.0.0/12 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 192.168.0.0/16 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 224.0.0.0/4 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 240.0.0.0/4 -j RETURN
 
 	# 把流量转发到 12345 端口，即redsocks
-	sudo iptables -t nat -A SHADOWSOCKS -p tcp -j REDIRECT --to-ports 12345
-	sudo iptables -t nat -A OUTPUT -p tcp -j SHADOWSOCKS
-	sudo iptables -t nat -A PREROUTING -p tcp -j SHADOWSOCKS
+	sudo iptables -t nat -A REDSOCKS -p tcp -j REDIRECT --to-ports 12345
+	
+	# 转发给代理端口
+	sudo iptables -t nat -A OUTPUT -p tcp -dport 7891 -j REDSOCKS
 }
 
 get_config() {
