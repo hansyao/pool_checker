@@ -89,7 +89,7 @@ function start_clash() {
 function is_connected() {
     local NAME=$(urlencode "$1")
     local TIMEOUT=$2
-    local STATUS=$(curl --connect-timeout 1 -m 2 -s -G -d "url=${TEST_URL}" -d "timeout=${TIMEOUT}" GET "${CONTROLLER}/proxies/${NAME}/delay")
+    local STATUS=$(curl --connect-timeout 4 -m 6 -s -G -d "url=${TEST_URL}" -d "timeout=${TIMEOUT}" GET "${CONTROLLER}/proxies/${NAME}/delay")
 
     if [[ -z $(echo ${STATUS} | grep 'delay') ]]; then
         echo $1 $(echo -e "${STATUS}")
@@ -182,7 +182,7 @@ function connetion_test() {
     local CONTROLLER=${CONTROLLER}
 
     echo "开始规则转换，并启动clash客户端"
-    sudo netplan apply
+    # sudo netplan apply
     start_clash ${POOL}
 	echo "暂停 2 秒 确保clash启动正常"
     sleep 2
