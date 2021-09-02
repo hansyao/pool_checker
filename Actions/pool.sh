@@ -11,7 +11,7 @@ THREADNUMBER=15                 #线程数：按性能调整
 THREADNUMBER2=5                 #线程数：按性能调整
 ALGORITHM=3                     #多线程算法:1-队列；2-动态分组; 3-队列（CLASH API）
 # 代理池URL地址
-URL=https://lingering-math-d2ca.hansyow.workers.dev/https/proxy.yugogo.xyz/clash/proxies
+URL=${TC_POOL_URL}
 # ***********************参数初始化完成********************* /
 
 SUSCRIBE_DIR=/tmp/subscribe
