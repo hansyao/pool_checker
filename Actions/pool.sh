@@ -181,9 +181,19 @@ curl -s http://127.0.0.1:25500/sub\?target\=clash\&emoji\=true\&exclude=$EXCL\&u
 
 echo -e "clash规则转化完成 $(timestamp)"
 
-./gitpush.sh "${SUSCRIBE_DIR}/${CLASH1}" "${SUSCRIBE_DIR}/${CLASH2}" "${SUSCRIBE_DIR}/${CLASH3}" "${SUSCRIBE_DIR}/${CLASH4}" "${SUSCRIBE_DIR}/${CLASH5}" "${SUSCRIBE_DIR}/${CLASH6}" "${SUSCRIBE_DIR}/${POOL_VERIFIED}"
+if [[ ! $[PLATFORM] -eq 2 ]]; then
+        ./gitpush.sh "${SUSCRIBE_DIR}/${CLASH1}" \
+                "${SUSCRIBE_DIR}/${CLASH2}" "${SUSCRIBE_DIR}/${CLASH3}" \
+                "${SUSCRIBE_DIR}/${CLASH4}" "${SUSCRIBE_DIR}/${CLASH5}" \
+                "${SUSCRIBE_DIR}/${CLASH6}" "${SUSCRIBE_DIR}/${POOL_VERIFIED}"
 
-echo -e '清除环境....'
-./start.sh clean
+        echo -e '清除环境....'
+        ./start.sh clean
 
-echo -e '清除环境完成，结束任务退出....'
+        echo -e '清除环境完成，结束任务退出....'
+        exit 0
+fi
+
+if [[ ! -d subscribe ]]; then mkdir subscribe; fi
+cp -f ${SUSCRIBE_DIR}/clash.yaml ./subscribe/
+cp -f "${SUSCRIBE_DIR}/${POOL_VERIFIED}" ./subscribe/

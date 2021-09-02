@@ -24,4 +24,11 @@ jobs:
         TC_POOL_URL: ${{ secrets.TC_POOL_URL }}
       run: |
         ./start.sh run
-
+    - name: 提交订阅更新
+      run: |
+        git config --global user.email "hansyow@gmail.com"
+        git config --global user.name "hansyao"      
+        git pull
+        git add subscribe/
+        git commit -m "订阅更新(by github actions)"
+        git push -u origin master

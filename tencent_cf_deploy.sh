@@ -118,7 +118,7 @@ function pack_code() {
 	# 打包代码
 	zip -r ${ZIP_FILE} ./ -x ".git/*" -x ".github/*" -x "./bin/*" \
 		-x "./lib/*" -x "./proxychain/*" -x "./share/*" \
-		-x "./Actions/subscribe/*" >/dev/null
+		-x "./Actions/subscribe/*" -x "./subscribe/*" >/dev/null
 	echo -e "${ZIP_FILE}"
 }
 
