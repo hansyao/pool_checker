@@ -55,6 +55,7 @@ firwall_set() {
 get_config() {
 	cat $1 | sed '/全球直连/d' > $2
 	sed -i '1 i\tproxy-port: 7893' $2
+	sed -i "s/log-level:.*/log-level: info/g" $2
 	#sed -i "/mode:/c\mode: Global" $2
 	
 	curl -s -L https://raw.githubusercontent.com/wp-statistics/GeoLite2-Country/master/GeoLite2-Country.mmdb.gz -o mmdb.gz
