@@ -143,6 +143,8 @@ function redsocks() {
 	echo "拉取代码"
 	git clone --depth 1 https://github.com/darkk/redsocks.git
 	cd redsocks
+	echo "安装依赖"
+	sudo apt install libevent-dev
 	echo "开始编译"
 	make
 	echo "安装"
