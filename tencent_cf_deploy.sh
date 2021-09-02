@@ -340,6 +340,30 @@ if [[ "${ACTION}" == 'CreateFunction' ]]; then
 		body UpdateFunctionConfiguration "${FUNC_NAME}" "${BODY_JSON}" "$3" "$4"
 		post_result_func UpdateFunctionConfiguration "${BODY_JSON}"
 
+		echo -e "\\n等待环境变量更新成功"
+		i=0
+		while :
+		do
+			if [[ $[i] -ge 10 ]]; then
+				echo -e "函数 ${FUNC_NAME} 环境变量更新超时$[i]秒"
+				echo -e "结束任务"
+				# 清理临时文件
+				rm -f  ${ZIP_FILE}
+				rm -f ${HEADER}
+				rm -f ${BODY_JSON}
+				exit 0
+			fi
+			body 'GetFunction' "${FUNC_NAME}" "${BODY_JSON}"
+			RESPONSE=$(post_result_func GetFunction "${BODY_JSON}" \
+				| jq -r '.Response.Status')
+			if [[ "${RESPONSE}" == 'Active' ]]; then
+				echo -e "函数 ${FUNC_NAME} 环境变量更新成功"
+				break
+			fi
+			sleep 1
+			let i++
+		done
+
 		echo -e "\\n更新代码"
 		body UpdateFunctionCode "${FUNC_NAME}" "${BODY_JSON}"
 		post_result_func UpdateFunctionCode "${BODY_JSON}"
