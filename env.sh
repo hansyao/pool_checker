@@ -5,7 +5,7 @@ APP='clash'
 REPO=$USER/$APP
 FILE=/tmp/bin/$APP.gz
 PROXY_URL='https://lingering-math-d2ca.hansyow.workers.dev/'
-export PLATFORM=2	# 1 - 腾讯云函数	2 - github	3 - 其他
+PLATFORM=2	# 1 - 腾讯云函数	2 - github	3 - 其他
 
 get_latest_release() {
   curl --silent "${PROXY_URL}https/api.github.com/repos/$1/releases/latest" | # Get latest release from GitHub api
