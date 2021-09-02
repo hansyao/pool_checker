@@ -182,7 +182,7 @@ function connetion_test() {
     local CONTROLLER=${CONTROLLER}
 
     echo "开始规则转换，并启动clash客户端"
-    sudo /etc/init.d/networking restart
+    sudo /etc/init.d/network-manager restart
     start_clash ${POOL}
 	echo "暂停 2 秒 确保clash启动正常"
     sleep 2
