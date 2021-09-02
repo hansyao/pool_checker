@@ -30,5 +30,7 @@ echo -e "设置权限 chmod 755 ${TEMP_DIR}/$APP/$APP"
 chmod 755 ${TEMP_DIR}/$APP/$APP
 echo -e "扩充EMOJI库"
 cp -f ./Actions/emoji.txt ${TEMP_DIR}/${APP}/snippets/emoji.txt
+echo -e "更改缺省参数"
+sed -i "s/log_level\=.*/log_level\=silent/g" ${TEMP_DIR}/${APP}/pref.ini
 echo -e "运行规则转换工具"
 ${TEMP_DIR}/$APP/$APP >/dev/null 2>&1 &
