@@ -133,7 +133,7 @@ remote_dns_subnet 224
 tcp_read_time_out 15000
 tcp_connect_time_out 8000
 [ProxyList]
-socks5 	127.0.0.1 7891
+socks5 	127.0.0.1 7893
 EOL
 
 	sudo cp -f proxychains.conf /etc/proxychains.conf && rm proxychains.conf
