@@ -138,14 +138,14 @@ EOL
 
 function init_redsocks() {
 	echo "拉取代码"
-	git clone --depth 1 https://github.com/darkk/redsocks.git
+	git clone --depth 1 https://github.com/semigodking/redsocks.git
 	cd redsocks
 	echo "安装依赖"
 	sudo apt install libevent-dev
 	echo "开始编译"
 	make
 	echo "安装到/usr/local/bin/"
-	sudo cp -f redsocks /usr/local/bin/
+	sudo cp -f redsocks2 /usr/local/bin/redsocks
 	
 	echo "修改配置文件"
 	cat redsocks.conf.example | sed "s/port\ \=\ 1080/port\ \=\ 7981/g" > /tmp/redsocks.conf
@@ -155,7 +155,7 @@ function init_redsocks() {
 	sed -i "s/login\ \=\ username/\/\/login\ \=\ username/g" /tmp/redsocks.conf
 	sed -i "s/password\ \=\ pazzw0rd/\/\/password\ \=\ pazzw0rd/g" /tmp/redsocks.conf
 	sed -i "s/...log\ =\ \"file.*/log\ \=\ \"file:\/tmp\/redsocks.log\";/g" /tmp/redsocks.conf
-	sed -i "s/local_ip\ \=\ 127.0.0.1/local_ip\ \=\ 0.0.0.0/g" /tmp/redsocks.conf
+	sed -i "s/bind\ \=\ \"127.0.0.1:12345\"/bind\ \= \"0.0.0.0:12345\"/g" /tmp/redsocks.conf
 	
 	echo "启动redsocks"
 	redsocks -c /tmp/redsocks.conf &
@@ -210,8 +210,6 @@ echo -e "公网IP信息： ${IPINFO}"
 
 echo -e "${STATUS}"
 cat ${CLASH_LOG}
-
-cat /tmp/redsocks.log
 
 unset STATUS
 unset IP
