@@ -142,7 +142,8 @@ function init_redsocks() {
 	cd redsocks
 	echo "安装依赖"
 	sudo apt install libevent-dev
-	sudo apt install libssl-dev
+	sudo apt install libcrypt-dev
+
 	echo "开始编译"
 	make
 	echo "安装到/usr/local/bin/"
