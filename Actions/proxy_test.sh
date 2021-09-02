@@ -201,11 +201,11 @@ get_config ${CLASH_CONFIG} ${FINAL_CONFIG}
 echo -e "启动CLASH"
 clash start ${FINAL_CONFIG} ${CLASH_PID}
 
-echo -e "iptables防火墙配置"
-firwall_set
-
 echo -e "部署redsocks"
 init_redsocks
+
+echo -e "iptables防火墙配置"
+firwall_set
 
 # echo -e "启动proxy_chain"
 # proxy_chain
