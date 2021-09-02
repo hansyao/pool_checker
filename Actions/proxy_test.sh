@@ -25,7 +25,7 @@ firwall_set() {
 	sudo iptables -t nat -N SHADOWSOCKS
 
 	# 注意这里要把 $server_IP 改成你自己的 socks5 远程IP，即你的VPS IP，不然无法正常工作
-	sudo iptables -t nat -A SHADOWSOCKS -d 127.0.0.1 -j RETURN
+	# sudo iptables -t nat -A SHADOWSOCKS -d 127.0.0.1 -j RETURN
 
 	# 忽略局域网地址
 	sudo iptables -t nat -A SHADOWSOCKS -d 0.0.0.0/8 -j RETURN
@@ -154,7 +154,7 @@ base {
     redirector = iptables;
 }
 redsocks {
-    local_ip = 0.0.0.0;
+    local_ip = 127.0.0.1;
     local_port = 12345;
     ip = 127.0.0.1;
     port = 7891;
