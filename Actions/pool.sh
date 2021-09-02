@@ -11,6 +11,7 @@ THREADNUMBER=15                 #线程数：按性能调整
 THREADNUMBER2=5                 #线程数：按性能调整
 ALGORITHM=3                     #多线程算法:1-队列；2-动态分组; 3-队列（CLASH API）
 URL=${TC_POOL_URL}              # 代理池URL地址
+PLATFORM=2
 # ***********************参数初始化完成********************* /
 
 SUSCRIBE_DIR=/tmp/subscribe
@@ -181,7 +182,7 @@ curl -s http://127.0.0.1:25500/sub\?target\=clash\&emoji\=true\&exclude=$EXCL\&u
 
 echo -e "clash规则转化完成 $(timestamp)"
 
-if [ ${PLATFORM} -ne 2 ]; then
+if [[ $[PLATFORM] -ne 2 ]]; then
         ./gitpush.sh "${SUSCRIBE_DIR}/${CLASH1}" \
                 "${SUSCRIBE_DIR}/${CLASH2}" "${SUSCRIBE_DIR}/${CLASH3}" \
                 "${SUSCRIBE_DIR}/${CLASH4}" "${SUSCRIBE_DIR}/${CLASH5}" \
