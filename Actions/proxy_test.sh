@@ -78,7 +78,7 @@ get_clash() {
         curl -L -s ${GITHUB}/${USER}/${APP}/releases/download/${VERSION}/${APP}-${OS}-${VERSION}.gz -o ${FILE}
         gzip -d ${FILE}
 	chmod 755 clash
-  echo ${CLASH} 部署成功
+  	echo ${CLASH} 部署成功
   
 	unset CLASH
 }
