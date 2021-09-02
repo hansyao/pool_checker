@@ -141,7 +141,7 @@ EOL
 
 function redsocks() {
 	echo "拉取代码"
-	git clone --depth 1 git@github.com:darkk/redsocks.git
+	git clone --depth 1 https://github.com/darkk/redsocks.git
 	cd redsocks
 	echo "开始编译"
 	make
