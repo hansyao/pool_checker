@@ -152,8 +152,8 @@ function init_redsocks() {
 	sed -i "s/ip\ \=\ example.org/ip\ \=\ 127.0.0.1/g" /tmp/redsocks.conf
 	sed -i "s/log_debug\ =.*/log_debug\ = on;/g" /tmp/redsocks.conf
 	sed -i "s/ip\ \=\ 10.0.0.1/ip\ \=\ 127.0.0.1/g" /tmp/redsocks.conf
-	sed -i "s/login\ \=\ username/\/\/login\ \=\ username" /tmp/redsocks.conf
-	sed -i "s/password\ \=\ pazzw0rd/\/\/password\ \=\ pazzw0rd" /tmp/redsocks.conf
+	sed -i "s/login\ \=\ username/\/\/login\ \=\ username/g" /tmp/redsocks.conf
+	sed -i "s/password\ \=\ pazzw0rd/\/\/password\ \=\ pazzw0rd/g" /tmp/redsocks.conf
 
 	
 	echo "启动redsocks"
