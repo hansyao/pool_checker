@@ -208,8 +208,8 @@ if [[ -z ${STATUS} ]]; then
 	echo -e "网络连通测试失败"
 fi
 
-IP=$(curl -s -L https://api.ipify.org)
-IPINFO=$(curl -s -X POST https://ip.taobao.com/outGetIpInfo\?ip\=${IP}\&accessKey\=alibaba-inc)
+IP=$(curl --connect-timeout 4 -m 6 -s -L https://api.ipify.org)
+IPINFO=$(curl --connect-timeout 4 -m 6 -s -X POST https://ip.taobao.com/outGetIpInfo\?ip\=${IP}\&accessKey\=alibaba-inc)
 
 echo -e "公网IP信息： ${IPINFO}"
 #echo -e "网卡信息"
