@@ -22,24 +22,33 @@ ip_foward() {
 }
 
 firwall_set() {
-	
-	sudo iptables -t nat -N REDSOCKS || true
+	sudo iptables -F
+	sudo iptables -X
+	sudo iptables -Z
 
-	sudo iptables -t nat -F REDSOCKS
-	sudo iptables -t nat -A REDSOCKS -d 0.0.0.0/8 -j RETURN
+	sudo iptables -P INPUT DROP
+	sudo iptables -P OUTPUT ACCEPT
+	sudo iptables -P FORWARD ACCEPT
+
+	sudo iptables -A INPUT -m state --state NEW,ESTABLISHED -j ACCEPT
+	sudo iptables -A INPUT -p icmp -j ACCEPT
+	sudo iptables -A INPUT -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+	sudo iptables -A INPUT -p tcp --dport 3128 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+	sudo iptables -t nat -A POSTROUTING -s 192.168.1.0/24 -j MASQUERADE
+	sudo iptables -t nat -N REDSOCKS
+
+	sudo iptables -t nat -A REDSOCKS -d 127.0.0.1 -j RETURN
 	sudo iptables -t nat -A REDSOCKS -d 10.0.0.0/8 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 10.1.0.0/8 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 127.0.0.0/8 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 169.254.0.0/16 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 172.16.0.0/12 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 172.17.0.0/12 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 172.0.0.0/8 -j RETURN
 	sudo iptables -t nat -A REDSOCKS -d 192.168.0.0/16 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 224.0.0.0/4 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 240.0.0.0/4 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -p tcp -j REDIRECT --to-ports 6666
-	sudo iptables -t nat -A REDSOCKS -p udp -j REDIRECT --to-ports 8888
+	sudo iptables -t nat -A REDSOCKS -d 132.0.0.0/8 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 134.0.0.0/8 -j RETURN
 
-	sudo iptables -t nat -A OUTPUT -p tcp -j REDSOCKS
+	sudo iptables -t nat -A SS -p tcp -j REDIRECT --to-port 3128
+
+	sudo iptables -t nat -A PREROUTING -p tcp -j SS
+	sudo iptables -t nat -A OUTPUT -p tcp -j SS
 }
 
 get_config() {
@@ -146,30 +155,18 @@ function init_redsocks() {
 	echo "定义配置文件"
 	cat >> /tmp/redsocks.conf << EOF
 base {
-	log_debug = on;
-	log_info = on;
-	daemon = on;
-	redirector = iptables;
+    log_debug = off;
+    log_info = on;
+    log = "file:/tmp/redsocks.log";
+    daemon = off;
+    redirector = iptables;
 }
-
 redsocks {
-	local_ip = 127.0.0.1;
-	local_port = 6666;
-	ip = 127.0.0.1;
-	port = 7891;
-	type = socks5;
-}
-
-redudp {
-	local_ip = 127.0.0.1;
-	local_port = 8888;
-	ip = 127.0.0.1;
-	port = 7891;
-}
-
-dnstc {
-	local_ip = 127.0.0.1;
-	local_port = 5300;
+    local_ip = 0.0.0.0;
+    local_port = 3128;
+    ip = 127.0.0.1;
+    port = 7891;
+    type = socks5;
 }
 
 EOF
