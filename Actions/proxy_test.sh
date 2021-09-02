@@ -59,7 +59,10 @@ get_config() {
 	
 	curl -s -L https://raw.githubusercontent.com/wp-statistics/GeoLite2-Country/master/GeoLite2-Country.mmdb.gz -o mmdb.gz
 	gzip -d mmdb.gz
-	mv mmdb Country.mmdb
+	if [ ! -d ~/.config/clash/ ];
+		mkdir -p ~/.config/clash
+	fi
+	mv mmdb ~/.config/clash/Country.mmdb
 }
 
 
