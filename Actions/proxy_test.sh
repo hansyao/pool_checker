@@ -175,6 +175,7 @@ dnstc {
 EOF
 
 	echo "启动redsocks"
+	pkill redsocks
 	redsocks -c /tmp/redsocks.conf &
 
 	cd ..
