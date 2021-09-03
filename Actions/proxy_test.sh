@@ -207,10 +207,10 @@ firwall_set ${MYUID}
 # echo -e "启动proxy_chain"
 # proxy_chain
 
-echo "延迟 3 等待透明代理启动"
+echo "延迟 3s 等待透明代理启动"
 sleep 3
 
-echo -e "测试网络连通性 ($[i])"
+echo -e "测试网络连通性"
 STATUS=$(curl --connect-timeout 4 -m 6 -s -i  https://connect.rom.miui.com/generate_204 | grep 204)
 if [[ -z ${STATUS} ]]; then
 	echo -e "网络连通测试失败"
