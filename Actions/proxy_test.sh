@@ -88,7 +88,7 @@ clash_help() {
 clash() {
 	LOG=${CLASH_LOG}
 	#CLASH=$(get_clash)
-	CLASH='./Actions/clash'
+	CLASH='/tmp/bin/clash'
 	
 	sudo setcap cap_net_bind_service,cap_net_admin+ep ${CLASH}
 	
