@@ -1,4 +1,4 @@
-name: 代理池检查
+name: 代理池验证
 on: 
   workflow_dispatch:
 
