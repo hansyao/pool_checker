@@ -13,6 +13,14 @@ jobs:
     - name: 设置时区
       run: |
         sudo timedatectl set-timezone 'UTC'
+        sudo apt-get update && sudo apt-get install tzdata locales -y && sudo locale-gen zh_CN.UTF-8
+        sudo localectl set-locale LANG="zh_CN.UTF-8"
+        export LC_ALL=zh_CN.UTF-8
+        sudo update-locale
+        locale -a
+        locale
+        locale -c -k LC_NUMERIC
+        localectl status        
     - name: 测试代理池
       env:
         TC_GH_REPO: ${{ github.repository }}
