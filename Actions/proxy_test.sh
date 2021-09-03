@@ -22,7 +22,7 @@ ip_foward() {
 }
 
 firwall_set() {
-	local UID=$1
+	local UID=1002
 	sudo iptables -t nat -N CLASH
 
 	# 忽略局域网地址
@@ -193,7 +193,7 @@ get_config ${CLASH_CONFIG} ${FINAL_CONFIG}
 
 echo -e "新建user clash"
 sudo adduser clash
-UID=$(id clash | cut -d "=" -f2 | cut -d "(" -f1)
+# UID=$(id clash | cut -d "=" -f2 | cut -d "(" -f1)
 
 echo UID: ${UID}
 
