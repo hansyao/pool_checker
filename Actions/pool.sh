@@ -170,7 +170,7 @@ INCL=\(HK\|香港\|TW\|台湾\|JP\|日本\|KR\|韩国\|澳洲\|澳大利亚\)
 echo -e '转换亚太区+澳洲(台湾|日本|韩国|香港|澳大利亚)' $(timestamp)
 curl -s http://127.0.0.1:25500/sub\?target\=clash\&emoji\=true\&include=$INCL\&url\=../subscribe/${POOL_VERIFIED}  -o "${SUSCRIBE_DIR}/${CLASH3}" >/dev/null 2>&1 
 
-INCL=\(\|印度\|新加坡\|印尼\|印度尼西亚\|巴基斯坦\|泰国\|越南\|土耳其\)
+INCL=\(IN\|印度\|SG\|新加坡\|印尼\|印度尼西亚\|巴基斯坦\|泰国\|越南\|土耳其\)
 echo -e '转换南亚区(印度，新加坡，印尼，巴基斯坦，泰国，越南, 土耳其)' $(timestamp)
 curl -s http://127.0.0.1:25500/sub\?target\=clash\&emoji\=true\&include=$INCL\&url\=../subscribe/${POOL_VERIFIED}  -o "${SUSCRIBE_DIR}/${CLASH4}" >/dev/null 2>&1 
 
