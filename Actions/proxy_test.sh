@@ -6,8 +6,8 @@ REPO=$USER/$APP
 FILE=$APP.gz
 CLASH_CONFIG=Actions/subscribe/clash_china.yaml
 FINAL_CONFIG=clash_cn_final.yaml
-CLASH_PID='clash.pid'
-CLASH_LOG='clash.log'
+CLASH_PID='/tmp/clash.pid'
+CLASH_LOG='/tmp/clash.log'
 
 get_latest_release() {
   curl --silent "https://api.github.com/repos/$1/releases/latest" | # Get latest release from GitHub api
@@ -22,7 +22,7 @@ ip_foward() {
 }
 
 firwall_set() {
-	local UID=1002
+	local MYUID=$1
 	sudo iptables -t nat -N CLASH
 
 	# 忽略局域网地址
@@ -41,7 +41,7 @@ firwall_set() {
 	sudo iptables -t nat -A CLASH -p tcp -j REDIRECT --to-ports 12345
 	
 	# 转发给代理端口
-	sudo iptables -t nat -A OUTPUT -m owner --uid-owner ${UID} -j RETURN
+	sudo iptables -t nat -A OUTPUT -m owner --uid-owner ${MYUID} -j RETURN
 	sudo iptables -t nat -A OUTPUT -p tcp -j CLASH
 	sudo iptables -t nat -A POSTROUTING -j MASQUERADE
 }
@@ -195,8 +195,6 @@ echo -e "新建user clash"
 sudo adduser clash
 # UID=$(id clash | cut -d "=" -f2 | cut -d "(" -f1)
 
-echo UID: ${UID}
-
 echo -e "启动CLASH"
 clash start ${FINAL_CONFIG} ${CLASH_PID}
 
@@ -204,7 +202,7 @@ clash start ${FINAL_CONFIG} ${CLASH_PID}
 # init_redsocks
 
 echo -e "iptables防火墙配置"
-firwall_set ${UID}
+firwall_set 1002
 
 # echo -e "启动proxy_chain"
 # proxy_chain
