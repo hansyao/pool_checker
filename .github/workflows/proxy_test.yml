@@ -38,7 +38,5 @@ jobs:
         mkdir /tmp/bin
         mv clash /tmp/bin/clash && chmod 755 /tmp/bin/clash 
     - name: 代理测试
-      env:
-        HOME: $RUNNER_TEMP
       run: |
         ./Actions/proxy_test.sh
