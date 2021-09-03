@@ -37,7 +37,7 @@ firwall_set() {
 	sudo iptables -t nat -A CLASH -d 224.0.0.0/4 -j RETURN
 	sudo iptables -t nat -A CLASH -d 240.0.0.0/4 -j RETURN
 
-	# 把流量转发到 12345 端口，即redsocks
+	# 把流量转发到 12345 端口
 	sudo iptables -t nat -A CLASH -p tcp -j REDIRECT --to-ports 12345
 	
 	# 转发给CLASH
