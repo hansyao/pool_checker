@@ -40,7 +40,7 @@ firwall_set() {
 	# 把流量转发到 12345 端口，即redsocks
 	sudo iptables -t nat -A CLASH -p tcp -j REDIRECT --to-ports 12345
 	
-	# 转发给代理端口
+	# 转发给CLASH
 	sudo iptables -t nat -A OUTPUT -m owner --uid-owner ${MYUID} -j RETURN
 	sudo iptables -t nat -A OUTPUT -p tcp -j CLASH
 	# sudo iptables -t nat -A POSTROUTING -j MASQUERADE
