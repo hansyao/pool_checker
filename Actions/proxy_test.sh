@@ -177,8 +177,8 @@ EOF
 echo -e "本地流量转发"
 ip_foward
 
-echo -e "查看网络接口"
-ifconfig
+# echo -e "查看网络接口"
+# ifconfig
 
 echo -e "部署clash环境"
 get_clash
