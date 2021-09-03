@@ -133,7 +133,7 @@ echo -e "查询IP地域总耗时: `expr $[STOP_TIME] - $[START_TIME]` 秒"
 echo -e "开始节点重命名 $(timestamp)"
 cp "${SUSCRIBE_DIR}/${VALID_POOL}" "${SUSCRIBE_DIR}/${ALLPOOL}"
 
-if [[ $[ALGORITHM] -eq 3 ]]; then
+if [[ $[ALGORITHM] -eq 10 ]]; then
         multi_pool_rename_fd "${SUSCRIBE_DIR}/${VALID_POOL}" "${SUSCRIBE_DIR}/${ALLPOOL_RENAMED}" "$[THREADNUMBER2]"
 else
         NUM=$(($(cat ${SUSCRIBE_DIR}/${VALID_POOL} | wc -l) / $[THREADNUMBER2]))
