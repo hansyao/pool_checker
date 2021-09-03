@@ -190,7 +190,7 @@ if [ ! -e ${CLASH_CONFIG} ]; then
 fi
 
 echo -e "新建user clash"
-sudo adduser clash
+sudo adduser clash >/dev/null
 MYUID=$(id clash | cut -d "=" -f2 | cut -d "(" -f1)
 
 get_config ${CLASH_CONFIG} ${FINAL_CONFIG}
