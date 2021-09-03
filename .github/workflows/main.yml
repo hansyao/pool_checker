@@ -16,6 +16,8 @@ jobs:
         sudo apt-get update && sudo apt-get install tzdata locales -y && sudo locale-gen zh_CN.UTF-8
         sudo localectl set-locale LANG="zh_CN.UTF-8"
         export LC_ALL=zh_CN.UTF-8
+        export LANGUAGE=zh_CN.UTF-8
+        export LANG=zh_CN.UTF-8
         sudo update-locale
         locale -a
         locale
