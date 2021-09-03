@@ -32,7 +32,7 @@ jobs:
         sed -i s/^THREADNUMBER2\=.*/THREADNUMBER2\=5/g Actions/pool.sh
         echo "发布函数层依赖"
         ./tencent_cf_deploy.sh PublishLayerVersion pool_check_layer
-        export LayerVersion=$(./tencent_cf_deploy.sh ListLayerVersions pool_check_layer | jq -r '.Response.LayerVersions[].LayerVersion' | head -n 1)
         sleep 5
+        export LayerVersion=$(./tencent_cf_deploy.sh ListLayerVersions pool_check_layer | jq -r '.Response.LayerVersions[].LayerVersion' | head -n 1)
         echo "发布函数"
         ./tencent_cf_deploy.sh CreateFunction pool_checker pool_check_layer ${LayerVersion}
