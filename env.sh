@@ -50,11 +50,6 @@ if [[ $[PLATFORM] -eq 1 ]]; then
 	exit 0
 fi
 
-GIT_EXEC_PATH=`pwd`/bin/git-core
-PATH=`pwd`/bin:/tmp/bin:$PATH
-GITPERLLIB=`pwd`/lib/perl
-LD_LIBRARY_PATH=`pwd`/lib:$LD_LIBRARY_PATH
-
 cp -rf `pwd`/share/git-core /tmp/
 cp -rf `pwd`/subconverter /tmp/
 
@@ -68,15 +63,5 @@ net.ipv4.tcp_max_syn_backlog = 8192
 net.ipv4.tcp_max_tw_buckets = 500
 EOF'
 sudo sysctl -p
-
-export GIT_EXEC_PATH PATH GITPERLLIB LD_LIBRARY_PATH
-export HOME=/tmp/
-
-export LANGUAGE=zh_CN.UTF-8
-export LANG=zh_CN.UTF-8
-export LC_CTYPE=zh_CN.UTF-8
-export LC_COLLATE=zh_CN.UTF-8
-export LC_IDENTIFICATION=zh_CN.UTF-8
-export LC_ALL=zh_CN.UTF-8
 
 exit 0
