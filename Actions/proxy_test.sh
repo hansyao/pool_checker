@@ -4,8 +4,8 @@ USER='Dreamacro'
 APP='clash'
 REPO=$USER/$APP
 FILE=$APP.gz
-CLASH_CONFIG=${GITHUB_WORKSPACE}/Actions/subscribe/clash_china.yaml
-FINAL_CONFIG=/tmp/clash_cn_final.yaml
+CLASH_CONFIG=${GITHUB_WORKSPACE}/Actions/subscribe/clash.yaml
+FINAL_CONFIG=/tmp/clash_final.yaml
 CLASH_PID='/tmp/clash.pid'
 CLASH_LOG='/tmp/clash.log'
 
