@@ -93,13 +93,13 @@ clash() {
 	sudo setcap cap_net_bind_service,cap_net_admin+ep ${CLASH}
 	
 	if [[ $1 == 'start' && -n $2 && -n $3 ]]; then
-		runuser -l clash -c "nohup ${CLASH} -f $2 > ${LOG} 2>&1 &"
+		sudo runuser -l clash -c "nohup ${CLASH} -f $2 > ${LOG} 2>&1 &"
 		echo "$!" > $3
 	elif [[ $1 == 'stop' && -n $2 && -n $3 ]]; then
 		sudo kill `cat $3`
 	elif [[ $1 == 'restart' && -n $2 && -n $3 ]]; then
 		sudo kill `cat $3`
-		runuser -l clash -c "nohup ${CLASH} -f $2 > ${LOG} 2>&1 &"
+		sudo runuser -l clash -c "nohup ${CLASH} -f $2 > ${LOG} 2>&1 &"
 		echo "$!" > $3
 	else
 		clash_help
@@ -194,6 +194,8 @@ get_config ${CLASH_CONFIG} ${FINAL_CONFIG}
 echo -e "新建user clash"
 sudo adduser clash
 UID=$(id clash | cut -d "=" -f2 | cut -d "(" -f1)
+
+echo UID: ${UID}
 
 echo -e "启动CLASH"
 clash start ${FINAL_CONFIG} ${CLASH_PID}
