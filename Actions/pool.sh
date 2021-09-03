@@ -48,18 +48,6 @@ function roundup() {
         unset ADD
 }
 
-if [[ $[PLATFORM] -ne 1 ]]; then
-
-        export HOME=/tmp/
-
-        export LANGUAGE=zh_CN.UTF-8
-        export LANG=zh_CN.UTF-8
-        export LC_CTYPE=zh_CN.UTF-8
-        export LC_COLLATE=zh_CN.UTF-8
-        export LC_IDENTIFICATION=zh_CN.UTF-8
-        export LC_ALL=zh_CN.UTF-8
-fi
-
 echo 0 >/tmp/total_valid_nodes
 START_TIME=$(date +%s)
 echo -e "开始爬取 $(timestamp)"
