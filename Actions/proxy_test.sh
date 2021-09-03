@@ -22,43 +22,34 @@ ip_foward() {
 }
 
 firwall_set() {
-	sudo iptables -t nat -N REDSOCKS
-
-	# 忽略server地址
-	sudo iptables -t nat -A REDSOCKS -d 120.41.41.56 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 168.63.129.16 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d music.desperadoj.com -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 101.132.192.212 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 120.41.41.215 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 117.28.243.187 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 120.232.174.117 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d p5.22332e.com -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d ntemp09.boom.party -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d cu.newhost.cc -j RETURN
+	local UID=$1
+	sudo iptables -t nat -N CLASH
 
 	# 忽略局域网地址
-	sudo iptables -t nat -A REDSOCKS -d 0.0.0.0/8 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 10.0.0.0/8 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 10.1.0.0/8 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 127.0.0.0/8 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 169.254.0.0/16 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 172.16.0.0/12 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 172.17.0.0/12 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 192.168.0.0/16 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 224.0.0.0/4 -j RETURN
-	sudo iptables -t nat -A REDSOCKS -d 240.0.0.0/4 -j RETURN
+	sudo iptables -t nat -A CLASH -d 0.0.0.0/8 -j RETURN
+	sudo iptables -t nat -A CLASH -d 10.0.0.0/8 -j RETURN
+	sudo iptables -t nat -A CLASH -d 10.1.0.0/8 -j RETURN
+	sudo iptables -t nat -A CLASH -d 127.0.0.0/8 -j RETURN
+	sudo iptables -t nat -A CLASH -d 169.254.0.0/16 -j RETURN
+	sudo iptables -t nat -A CLASH -d 172.16.0.0/12 -j RETURN
+	sudo iptables -t nat -A CLASH -d 172.17.0.0/12 -j RETURN
+	sudo iptables -t nat -A CLASH -d 192.168.0.0/16 -j RETURN
+	sudo iptables -t nat -A CLASH -d 224.0.0.0/4 -j RETURN
+	sudo iptables -t nat -A CLASH -d 240.0.0.0/4 -j RETURN
 
 	# 把流量转发到 12345 端口，即redsocks
-	sudo iptables -t nat -A REDSOCKS -p tcp -j REDIRECT --to-ports 12345
+	sudo iptables -t nat -A CLASH -p tcp -j REDIRECT --to-ports 12345
 	
 	# 转发给代理端口
-	sudo iptables -t nat -A OUTPUT -p tcp -j REDSOCKS
+	sudo iptables -t nat -A OUTPUT -m owner --uid-owner ${UID} -j RETURN
+	sudo iptables -t nat -A OUTPUT -p tcp -j CLASH
 	sudo iptables -t nat -A POSTROUTING -j MASQUERADE
 }
 
 get_config() {
 	cat $1 | sed '/全球直连/d' > $2
 	sed -i '1 i\tproxy-port: 7893' $2
+	sed -i '1 i\redir-port: 12345' $2
 	sed -i "s/log-level:.*/log-level: info/g" $2
 	#sed -i "/mode:/c\mode: Global" $2
 	
@@ -102,13 +93,13 @@ clash() {
 	sudo setcap cap_net_bind_service,cap_net_admin+ep ${CLASH}
 	
 	if [[ $1 == 'start' && -n $2 && -n $3 ]]; then
-		nohup ${CLASH} -f $2 > ${LOG} 2>&1 &
+		runuser -l clash -c "nohup ${CLASH} -f $2 > ${LOG} 2>&1 &"
 		echo "$!" > $3
 	elif [[ $1 == 'stop' && -n $2 && -n $3 ]]; then
-		kill `cat $3`
+		sudo kill `cat $3`
 	elif [[ $1 == 'restart' && -n $2 && -n $3 ]]; then
-		kill `cat $3`
-		nohup ${CLASH} -f $2 > ${LOG} 2>&1 &
+		sudo kill `cat $3`
+		runuser -l clash -c "nohup ${CLASH} -f $2 > ${LOG} 2>&1 &"
 		echo "$!" > $3
 	else
 		clash_help
@@ -200,14 +191,18 @@ fi
 
 get_config ${CLASH_CONFIG} ${FINAL_CONFIG}
 
+echo -e "新建user clash"
+sudo adduser clash
+UID=$(id clash | cut -d "=" -f2 | cut -d "(" -f1)
+
 echo -e "启动CLASH"
 clash start ${FINAL_CONFIG} ${CLASH_PID}
 
-echo -e "部署redsocks"
-init_redsocks
+# echo -e "部署redsocks"
+# init_redsocks
 
 echo -e "iptables防火墙配置"
-firwall_set
+firwall_set ${UID}
 
 # echo -e "启动proxy_chain"
 # proxy_chain
