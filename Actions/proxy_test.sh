@@ -52,7 +52,6 @@ firwall_set() {
 	sudo iptables -t nat -A REDSOCKS -p tcp -j REDIRECT --to-ports 12345
 	
 	# 转发给代理端口
-	sudo iptables -t nat -A OUTPUT -p tcp --dport 7891 -j REDSOCKS
 	sudo iptables -t nat -A OUTPUT -p tcp -j REDSOCKS
 	sudo iptables -t nat -A POSTROUTING -j MASQUERADE
 }
