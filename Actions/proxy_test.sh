@@ -139,7 +139,7 @@ echo -e "状态码： ${STATUS}"
 
 IP=$(curl --connect-timeout 4 -m 6 -s -L https://api.ipify.org)
 IPINFO=$(curl --connect-timeout 4 -m 6 -s -X POST https://ip.taobao.com/outGetIpInfo\?ip\=${IP}\&accessKey\=alibaba-inc)
-echo -e "我的IP： ${IP}"
+echo -e "公网IP地址： ${IP}"
 echo -e "公网IP信息： ${IPINFO}"
 
 echo "CLASH 日志："
