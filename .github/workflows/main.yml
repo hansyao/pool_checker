@@ -24,7 +24,6 @@ jobs:
         TC_POOL_URL: ${{ secrets.TC_POOL_URL }}
       run: |
         ulimit -SHn 65536
-        sudo bash -c "echo 1 >/proc/sys/net/ipv4/tcp_tw_reuse"
         ./start.sh run
     - name: 提交订阅更新
       run: |
