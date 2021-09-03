@@ -135,45 +135,6 @@ EOL
 	cd ..
 }
 
-
-function init_redsocks() {
-	echo "拉取代码"
-	git clone --depth 1 https://github.com/darkk/redsocks.git
-	cd redsocks
-	echo "安装依赖"
-	sudo apt install libevent-dev
-
-	echo "开始编译"
-	make
-	echo "安装到/usr/local/bin/"
-	sudo cp -f redsocks /usr/local/bin/redsocks
-	
-	echo "定义配置文件"
-	cat >> /tmp/redsocks.conf << EOF
-base {
-    log_debug = off;
-    log_info = on;
-    log = "file:/tmp/redsocks.log";
-    daemon = off;
-    redirector = iptables;
-}
-redsocks {
-    local_ip = 0.0.0.0;
-    local_port = 12345;
-    ip = 127.0.0.1;
-    port = 7891;
-    type = socks5;
-}
-
-EOF
-
-	echo "启动redsocks"
-	pkill redsocks
-	redsocks -c /tmp/redsocks.conf &
-
-	cd ..
-}
-
 echo -e "本地流量转发"
 ip_foward
 
@@ -197,9 +158,6 @@ get_config ${CLASH_CONFIG} ${FINAL_CONFIG}
 
 echo -e "启动CLASH"
 clash start ${FINAL_CONFIG} ${CLASH_PID}
-
-# echo -e "部署redsocks"
-# init_redsocks
 
 echo -e "iptables防火墙配置"
 firwall_set ${MYUID}
