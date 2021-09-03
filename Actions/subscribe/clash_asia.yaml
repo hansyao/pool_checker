@@ -5,59 +5,100 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 JP|日本|东京都|东京|亚马逊|873767050|, server: t6.ssrsub.one, port: 8443, type: trojan, password: 18395e1a-0bf7-42da-a264-4de396141e83, sni: t6.ssrsub.one, udp: true}
-  - {name: 🇭🇰 HK|中国|香港|362944920|, server: 103.115.67.145, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
+  - {name: 🇭🇰 HK|中国|香港|386263677|, server: 103.85.20.176, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
+  - {name: 🇭🇰 HK|中国|香港|979483157|, server: 103.115.67.145, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
+  - {name: 🇭🇰 HK|中国|香港|471190931|, server: 193.110.203.86, port: 18336, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 🇭🇰 HK|中国|香港|871951081|, server: 118.107.244.111, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇭🇰 HK|中国|香港|微软|386692082|, server: kaizen-hk-2.cn0.me, port: 443, type: trojan, password: 18e513fe-f7f4-353d-84ca-bc9646fb2528mielink, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK|中国|香港|微软|479803638|, server: 65.52.179.0, port: 80, type: vmess, uuid: f1588098-ed63-4e61-b3c4-ddbfa920c0f5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 65.52.179.0}}
+  - {name: 🇭🇰 HK|中国|香港|微软|575828541|, server: kaizen-hk-4.cn0.me, port: 443, type: trojan, password: 18e513fe-f7f4-353d-84ca-bc9646fb2528mielink, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 JP|日本|东京都|东京|亚马逊|873767050|
-      - 🇭🇰 HK|中国|香港|362944920|
+      - 🇭🇰 HK|中国|香港|386263677|
+      - 🇭🇰 HK|中国|香港|979483157|
+      - 🇭🇰 HK|中国|香港|471190931|
+      - 🇭🇰 HK|中国|香港|871951081|
+      - 🇭🇰 HK|中国|香港|微软|386692082|
+      - 🇭🇰 HK|中国|香港|微软|479803638|
+      - 🇭🇰 HK|中国|香港|微软|575828541|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇯🇵 JP|日本|东京都|东京|亚马逊|873767050|
-      - 🇭🇰 HK|中国|香港|362944920|
+      - 🇭🇰 HK|中国|香港|386263677|
+      - 🇭🇰 HK|中国|香港|979483157|
+      - 🇭🇰 HK|中国|香港|471190931|
+      - 🇭🇰 HK|中国|香港|871951081|
+      - 🇭🇰 HK|中国|香港|微软|386692082|
+      - 🇭🇰 HK|中国|香港|微软|479803638|
+      - 🇭🇰 HK|中国|香港|微软|575828541|
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 JP|日本|东京都|东京|亚马逊|873767050|
-      - 🇭🇰 HK|中国|香港|362944920|
+      - 🇭🇰 HK|中国|香港|386263677|
+      - 🇭🇰 HK|中国|香港|979483157|
+      - 🇭🇰 HK|中国|香港|471190931|
+      - 🇭🇰 HK|中国|香港|871951081|
+      - 🇭🇰 HK|中国|香港|微软|386692082|
+      - 🇭🇰 HK|中国|香港|微软|479803638|
+      - 🇭🇰 HK|中国|香港|微软|575828541|
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 HK|中国|香港|362944920|
+      - 🇭🇰 HK|中国|香港|386263677|
+      - 🇭🇰 HK|中国|香港|979483157|
+      - 🇭🇰 HK|中国|香港|471190931|
+      - 🇭🇰 HK|中国|香港|871951081|
+      - 🇭🇰 HK|中国|香港|微软|386692082|
+      - 🇭🇰 HK|中国|香港|微软|479803638|
+      - 🇭🇰 HK|中国|香港|微软|575828541|
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇯🇵 JP|日本|东京都|东京|亚马逊|873767050|
-      - 🇭🇰 HK|中国|香港|362944920|
+      - 🇭🇰 HK|中国|香港|386263677|
+      - 🇭🇰 HK|中国|香港|979483157|
+      - 🇭🇰 HK|中国|香港|471190931|
+      - 🇭🇰 HK|中国|香港|871951081|
+      - 🇭🇰 HK|中国|香港|微软|386692082|
+      - 🇭🇰 HK|中国|香港|微软|479803638|
+      - 🇭🇰 HK|中国|香港|微软|575828541|
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇯🇵 JP|日本|东京都|东京|亚马逊|873767050|
-      - 🇭🇰 HK|中国|香港|362944920|
+      - 🇭🇰 HK|中国|香港|386263677|
+      - 🇭🇰 HK|中国|香港|979483157|
+      - 🇭🇰 HK|中国|香港|471190931|
+      - 🇭🇰 HK|中国|香港|871951081|
+      - 🇭🇰 HK|中国|香港|微软|386692082|
+      - 🇭🇰 HK|中国|香港|微软|479803638|
+      - 🇭🇰 HK|中国|香港|微软|575828541|
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 JP|日本|东京都|东京|亚马逊|873767050|
-      - 🇭🇰 HK|中国|香港|362944920|
+      - 🇭🇰 HK|中国|香港|386263677|
+      - 🇭🇰 HK|中国|香港|979483157|
+      - 🇭🇰 HK|中国|香港|471190931|
+      - 🇭🇰 HK|中国|香港|871951081|
+      - 🇭🇰 HK|中国|香港|微软|386692082|
+      - 🇭🇰 HK|中国|香港|微软|479803638|
+      - 🇭🇰 HK|中国|香港|微软|575828541|
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -73,8 +114,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 JP|日本|东京都|东京|亚马逊|873767050|
-      - 🇭🇰 HK|中国|香港|362944920|
+      - 🇭🇰 HK|中国|香港|386263677|
+      - 🇭🇰 HK|中国|香港|979483157|
+      - 🇭🇰 HK|中国|香港|471190931|
+      - 🇭🇰 HK|中国|香港|871951081|
+      - 🇭🇰 HK|中国|香港|微软|386692082|
+      - 🇭🇰 HK|中国|香港|微软|479803638|
+      - 🇭🇰 HK|中国|香港|微软|575828541|
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
