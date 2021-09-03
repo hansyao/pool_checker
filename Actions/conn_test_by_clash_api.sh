@@ -87,7 +87,7 @@ function start_clash() {
 }
 
 function is_connected() {
-    local NAME=$(urlencode "$1")
+    local NAME=$(LANG=zh_CN.utf-8 urlencode "$1")
     local TIMEOUT=$2
     local STATUS=$(curl --connect-timeout 4 -m 6 -s -G -d "url=${TEST_URL}" -d "timeout=${TIMEOUT}" GET "${CONTROLLER}/proxies/${NAME}/delay")
 
