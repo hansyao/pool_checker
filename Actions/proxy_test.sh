@@ -189,11 +189,11 @@ if [ ! -e ${CLASH_CONFIG} ]; then
   exit 0
 fi
 
-get_config ${CLASH_CONFIG} ${FINAL_CONFIG}
-
 echo -e "新建user clash"
 sudo adduser clash
 # UID=$(id clash | cut -d "=" -f2 | cut -d "(" -f1)
+
+get_config ${CLASH_CONFIG} ${FINAL_CONFIG}
 
 echo -e "启动CLASH"
 clash start ${FINAL_CONFIG} ${CLASH_PID}
