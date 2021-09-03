@@ -343,7 +343,7 @@ function connetion_test_split() {
 
     local CURRENT_NODES=$(($(cat ${VERIFIED_POOL} | wc -l) - 1))
     local STOP_TIME=$(date +%s)
-    echo -e "\\n全部检测完成!!\\n可用节点:${CURRENT_NODES} 共检测节点: $(cat /tmp/check_count_total) of $(cat ${POOL} | wc -l)  总耗时:`expr $[STOP_TIME] - $[START_TIME]` 秒"
+    echo -e "\\n全部检测完成!!\\n可用节点:${CURRENT_NODES} 共检测节点: $(cat /tmp/check_count_total) of $(($(cat ${POOL} | wc -l) - 1))  总耗时:`expr $[STOP_TIME] - $[START_TIME]` 秒"
 }
 
 # connetion_test_split "${POOL}" "${VERIFIED_POOL}" $[TARGET_NODES] $[DURATION] $[THREADNUMBER] $[TIMEOUT] $[BLOCK_SIZE]
