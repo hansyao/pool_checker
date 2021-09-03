@@ -18,7 +18,7 @@ function urlencode() {
     local LEN="${#1}"
 
     old_lc_collate=$LC_COLLATE
-    LC_COLLATE=C
+    LC_COLLATE= zh_CN.UTF-8
 
     for (( i = 0; i < $[LEN]; i++ )); do
         c="${1:$i:1}"
