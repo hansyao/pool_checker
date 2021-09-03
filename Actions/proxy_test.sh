@@ -191,7 +191,7 @@ fi
 
 echo -e "新建user clash"
 sudo adduser clash
-echo UID: $(id clash | cut -d "=" -f2 | cut -d "(" -f1)
+MYUID=$(id clash | cut -d "=" -f2 | cut -d "(" -f1)
 
 get_config ${CLASH_CONFIG} ${FINAL_CONFIG}
 
@@ -202,7 +202,7 @@ clash start ${FINAL_CONFIG} ${CLASH_PID}
 # init_redsocks
 
 echo -e "iptables防火墙配置"
-firwall_set 1002
+firwall_set ${MYUID}
 
 # echo -e "启动proxy_chain"
 # proxy_chain
