@@ -57,8 +57,8 @@ LD_LIBRARY_PATH=`pwd`/lib:$LD_LIBRARY_PATH
 cp -r `pwd`/share/git-core /tmp/
 
 sudo bash -c 'cat >> /etc/sysctl.conf <<EOF
-net.ipv4.tcp_fin_timeout = 30
-net.ipv4.tcp_keepalive_time = 1200
+net.ipv4.tcp_fin_timeout = 10
+net.ipv4.tcp_keepalive_time = 10
 net.ipv4.tcp_syncookies = 1
 net.ipv4.tcp_tw_reuse = 1
 net.ipv4.ip_local_port_range = 10000 65000
