@@ -191,7 +191,7 @@ fi
 
 echo -e "新建user clash"
 sudo adduser clash
-# UID=$(id clash | cut -d "=" -f2 | cut -d "(" -f1)
+echo UID: $(id clash | cut -d "=" -f2 | cut -d "(" -f1)
 
 get_config ${CLASH_CONFIG} ${FINAL_CONFIG}
 
