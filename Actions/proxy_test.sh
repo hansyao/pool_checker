@@ -5,7 +5,7 @@ APP='clash'
 REPO=$USER/$APP
 FILE=$APP.gz
 CLASH_CONFIG=${GITHUB_WORKSPACE}/Actions/subscribe/clash_china.yaml
-FINAL_CONFIG=${GITHUB_WORKSPACE}/clash_cn_final.yaml
+FINAL_CONFIG=/tmp/clash_cn_final.yaml
 CLASH_PID='/tmp/clash.pid'
 CLASH_LOG='/tmp/clash.log'
 
@@ -55,10 +55,10 @@ get_config() {
 	
 	curl -s -L https://raw.githubusercontent.com/wp-statistics/GeoLite2-Country/master/GeoLite2-Country.mmdb.gz -o mmdb.gz
 	gzip -d mmdb.gz
-	if [ ! -d /tmp/.config/clash/ ]; then
-		mkdir -p /tmp/.config/clash
+	if [ ! -d /home/clash/.config/clash/ ]; then
+		mkdir -p /home/clash/.config/clash
 	fi
-	mv mmdb /tmp/.config/clash/Country.mmdb
+	mv mmdb /home/clash/.config/clash/Country.mmdb
 }
 
 get_clash() {
