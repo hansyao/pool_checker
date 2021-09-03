@@ -4,7 +4,7 @@
 RENAME='yes'                    #是否重新命名
 CONVERT='yes'                   #是否规则转换
 DURATION=1500                   #目标运行时间：秒
-TARGET_NODES=15000              #目标验证节点数
+TARGET_NODES=20000              #目标验证节点数
 TIMEOUT=2                       #连接超时：秒
 BLOCK_SIZE=300                  #配置文件切分大小
 THREADNUMBER=150                 #线程数(连接数check)：按性能调整
