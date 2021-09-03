@@ -15,11 +15,6 @@ TEST_URL='https://www.gstatic.com/generate_204'
 # TEST_URL=http://cp.cloudflare.com/generate_204
 
 function urlencode() {
-    which "curl" >/dev/null 2>&1
-    if [ ! $? -eq 0 ]; then
-        echo -E "$1"
-        return
-    fi
     encode_str=$(echo -E "$1" |sed "s/%/%%/g")
     printf -- "$encode_str" | curl -Gso /dev/null -w %{url_effective} --data-urlencode @- "" |cut -c 3-
 }
