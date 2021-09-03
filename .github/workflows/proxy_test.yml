@@ -35,7 +35,10 @@ jobs:
                 chmod 755 clash
         }
         get_clash
-        mv clash Actions/clash && chmod 755 Actions/clash 
+        mkdir /tmp/bin
+        mv clash /tmp/bin/clash && chmod 755 /tmp/bin/clash 
     - name: 代理测试
+      env:
+        HOME: $RUNNER_TEMP
       run: |
         ./Actions/proxy_test.sh
