@@ -4,7 +4,7 @@ USER='Dreamacro'
 APP='clash'
 REPO=$USER/$APP
 FILE=$APP.gz
-CLASH_CONFIG=Actions/subscribe/clash.yaml
+CLASH_CONFIG=Actions/subscribe/clash_china.yaml
 FINAL_CONFIG=clash_cn_final.yaml
 CLASH_PID='clash.pid'
 CLASH_LOG='clash.log'
@@ -23,6 +23,17 @@ ip_foward() {
 
 firwall_set() {
 	sudo iptables -t nat -N REDSOCKS
+
+	# 忽略server地址
+	sudo iptables -t nat -A REDSOCKS -d 120.41.41.56 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d music.desperadoj.com -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 101.132.192.212 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 120.41.41.215 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 117.28.243.187 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 120.232.174.117 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d p5.22332e.com -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d ntemp09.boom.party -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d cu.newhost.cc -j RETURN
 
 	# 忽略局域网地址
 	sudo iptables -t nat -A REDSOCKS -d 0.0.0.0/8 -j RETURN
