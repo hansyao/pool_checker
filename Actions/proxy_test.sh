@@ -26,6 +26,7 @@ firwall_set() {
 
 	# 忽略server地址
 	sudo iptables -t nat -A REDSOCKS -d 120.41.41.56 -j RETURN
+	sudo iptables -t nat -A REDSOCKS -d 168.63.129.16 -j RETURN
 	sudo iptables -t nat -A REDSOCKS -d music.desperadoj.com -j RETURN
 	sudo iptables -t nat -A REDSOCKS -d 101.132.192.212 -j RETURN
 	sudo iptables -t nat -A REDSOCKS -d 120.41.41.215 -j RETURN
