@@ -48,6 +48,17 @@ function roundup() {
         unset ADD
 }
 
+        sudo apt-get update && sudo apt-get install tzdata locales -y && sudo locale-gen zh_CN.UTF-8
+        sudo localectl set-locale LANG="zh_CN.UTF-8"
+        export LC_ALL=zh_CN.UTF-8
+        export LANGUAGE=zh_CN.UTF-8
+        export LANG=zh_CN.UTF-8
+        sudo update-locales
+        locale -a
+        locale
+        locale -c -k LC_NUMERIC
+        localectl status  
+
 echo 0 >/tmp/total_valid_nodes
 START_TIME=$(date +%s)
 echo -e "开始爬取 $(timestamp)"
