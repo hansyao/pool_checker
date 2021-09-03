@@ -17,6 +17,9 @@ TEST_URL='https://www.gstatic.com/generate_204'
 function urlencode() {
     local LEN="${#1}"
 
+    old_lc_collate=$LC_COLLATE
+    LC_COLLATE=C
+
     for (( i = 0; i < $[LEN]; i++ )); do
         c="${1:$i:1}"
         case $c in
@@ -24,6 +27,7 @@ function urlencode() {
             *) printf '%%%02X' "'$c" ;;
         esac
     done
+    LC_COLLATE=$old_lc_collate
 }
 
 function urldecode() {
@@ -87,7 +91,7 @@ function start_clash() {
 }
 
 function is_connected() {
-    local NAME=$(LANG=zh_CN.utf-8 urlencode "$1")
+    local NAME=$(urlencode "$1")
     local TIMEOUT=$2
     local STATUS=$(curl --connect-timeout 4 -m 6 -s -G -d "url=${TEST_URL}" -d "timeout=${TIMEOUT}" GET "${CONTROLLER}/proxies/${NAME}/delay")
 
