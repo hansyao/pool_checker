@@ -236,7 +236,7 @@ function connetion_test() {
 
             local DELAY=$(is_connected "${line}" $[TIMEOUT])
             if [[ -z ${DELAY} || ${DELAY} == 'null' ]]; then echo >&3; exit 0; fi
-            # echo "Delay ${DELAY}"
+            echo "Delay ${DELAY}"
             if [[ $(is_num ${DELAY}) == 'yes' ]]; then
                 read -u4 TOTAL_VALID_COUNT
                 local TOTAL_VALID_COUNT=$(($[TOTAL_VALID_COUNT] + 1))
