@@ -86,9 +86,9 @@ clash_help() {
 }
 
 clash() {
-	LOG=${CLASH_LOG}
+	local LOG=${CLASH_LOG}
 	#CLASH=$(get_clash)
-	CLASH='/tmp/bin/clash'
+	local CLASH='/tmp/bin/clash'
 	
 	sudo setcap cap_net_bind_service,cap_net_admin+ep ${CLASH}
 	
@@ -104,42 +104,10 @@ clash() {
 	else
 		clash_help
 	fi
-
-	unset CONFIG
-	unset PID
-	unset LOG
-	unset CLASH
-}
-
-proxy_chain() {
-	git clone https://github.com/rofl0r/proxychains-ng.git
-	cd proxychains-ng
-	echo "开始编译proxychains"	
-	./configure --prefix=/usr --sysconfdir=/etc >/dev/null
-	make >/dev/null
-	sudo make install >/dev/null
-	echo "编译并安装成功"
-	sudo rm -rf /etc/proxychains.conf
-	echo "设置代理配置文件"
-	cat > proxychains.conf <<EOL
-strict_chain
-proxy_dns
-remote_dns_subnet 224
-tcp_read_time_out 15000
-tcp_connect_time_out 8000
-[ProxyList]
-socks5 	127.0.0.1 7891
-EOL
-
-	sudo cp -f proxychains.conf /etc/proxychains.conf && rm proxychains.conf
-	cd ..
 }
 
 echo -e "本地流量转发"
 ip_foward
-
-# echo -e "查看网络接口"
-# ifconfig
 
 echo -e "部署clash环境"
 get_clash
@@ -162,27 +130,18 @@ clash start ${FINAL_CONFIG} ${CLASH_PID}
 echo -e "iptables防火墙配置"
 firwall_set ${MYUID}
 
-# echo -e "启动proxy_chain"
-# proxy_chain
-
-echo "延迟 3s 等待透明代理启动"
-sleep 3
-
 echo -e "测试网络连通性"
 STATUS=$(curl --connect-timeout 4 -m 6 -s -i  https://connect.rom.miui.com/generate_204 | grep 204)
 if [[ -z ${STATUS} ]]; then
 	echo -e "网络连通测试失败"
 fi
+echo -e "状态码： ${STATUS}"
 
 IP=$(curl --connect-timeout 4 -m 6 -s -L https://api.ipify.org)
 IPINFO=$(curl --connect-timeout 4 -m 6 -s -X POST https://ip.taobao.com/outGetIpInfo\?ip\=${IP}\&accessKey\=alibaba-inc)
 
 echo -e "公网IP信息： ${IPINFO}"
-#echo -e "网卡信息"
-#ifconfig
 
-echo -e "${STATUS}"
+echo "CLASH 日志："
 cat ${CLASH_LOG}
 
-unset STATUS
-unset IP
