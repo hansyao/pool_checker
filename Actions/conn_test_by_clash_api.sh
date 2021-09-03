@@ -305,12 +305,12 @@ function connetion_test_split() {
     echo 0 >/tmp/check_count_total
 
     echo "开始分割文件"
-    if [[ $(cat ${POOL} | wc -l) -gt  $[TARGET_NODES_INIT] ]]; then
+    if [[ $(cat ${POOL} | wc -l) -gt  $[BLOCK_SIZE] ]]; then
         local SEGMENT=$(split_config ${POOL} $[BLOCK_SIZE])
         local CONFIG=$(echo -e "${SEGMENT}" | awk '{print $1}')
         echo "完成文件分割"  
     else
-        echo "代理池节点数小于目标节点数，无需分割"
+        echo "代理池节点数小于指定切分节点数，无需分割"
         rm -rf ${SPLIT_FOLDER}
         mkdir ${SPLIT_FOLDER}
         local LIST=$(cat ${POOL} | grep "\-\ {")
