@@ -45,7 +45,8 @@ ulimit -SHn 65536
 get_clash
 
 if [[ $[PLATFORM] -eq 1 ]]; then
-	cp -r /opt/share/git-core /tmp/
+	cp -rf /opt/share/git-core /tmp/
+	cp -rf /opt/subconverter /tmp/
 	exit 0
 fi
 
@@ -54,7 +55,8 @@ PATH=`pwd`/bin:/tmp/bin:$PATH
 GITPERLLIB=`pwd`/lib/perl
 LD_LIBRARY_PATH=`pwd`/lib:$LD_LIBRARY_PATH
 
-cp -r `pwd`/share/git-core /tmp/
+cp -rf `pwd`/share/git-core /tmp/
+cp -rf `pwd`/subconverter /tmp/
 
 sudo bash -c 'cat >> /etc/sysctl.conf <<EOF
 net.ipv4.tcp_fin_timeout = 10

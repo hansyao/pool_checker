@@ -125,7 +125,7 @@ function pack_code() {
 function pack_code_layer() {
 	local ZIP_FILE=/tmp/$1.zip	
 	# 打包代码
-	zip -r ${ZIP_FILE} ./ -i "bin/*" -i "lib/*" -i "proxychain/*" -i "share/*" >/dev/null
+	zip -r ${ZIP_FILE} ./ -i "bin/*" -i "lib/*" -i "proxychain/*" -i "share/*" -i "subconverter/*" >/dev/null
 	echo -e "${ZIP_FILE}"
 }
 
