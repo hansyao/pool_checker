@@ -50,12 +50,6 @@ function roundup() {
 
 if [[ $[PLATFORM] -ne 1 ]]; then
 
-        GIT_EXEC_PATH=`pwd`/bin/git-core
-        PATH=$PATH:`pwd`/bin:/tmp/bin
-        GITPERLLIB=`pwd`/lib/perl
-        LD_LIBRARY_PATH=$LD_LIBRARY_PATH:`pwd`/lib
-
-        export GIT_EXEC_PATH PATH GITPERLLIB LD_LIBRARY_PATH
         export HOME=/tmp/
 
         export LANGUAGE=zh_CN.UTF-8
