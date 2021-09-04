@@ -252,7 +252,7 @@ function multi_pool_rename_pid() {
 		mkdir -p ${TEMP_DIR}
 	fi
 
-	if [[ $[n] -le 0 ]]; then
+	if [[ $[n] -le 1 ]]; then
 		cat $1 >${TEMP_DIR}/1.yaml
 		pool_rename ${TEMP_DIR}/1.yaml ${TEMP_DIR}/FINAL-1.yaml
 		cat ${TEMP_DIR}/FINAL-1.yaml >> $2
