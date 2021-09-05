@@ -24,7 +24,7 @@ git init
 git config core.sparsecheckout true
 git config --local pull.rebase false
 git config --local user.name "${TC_GH_USER}"
-git config --local user.email "${TC_GH_EMAIL}"
+git config --local user.email '<>'
 git config --local --unset http.proxy
 
 
