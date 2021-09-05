@@ -138,6 +138,7 @@ if [[ $[ALGORITHM] -eq 0 ]]; then
 else
         NUM=$(($(cat ${SUSCRIBE_DIR}/${VALID_POOL} | wc -l) / $[THREADNUMBER2]))
         NUM=$(roundup $[NUM])
+        if [[ $[NUM] -eq 0 ]]; then NUM=1; fi
         multi_pool_rename_pid "${SUSCRIBE_DIR}/${VALID_POOL}" "${SUSCRIBE_DIR}/${ALLPOOL_RENAMED}" "$[NUM]"
 fi
 
