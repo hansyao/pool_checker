@@ -19,7 +19,7 @@ function update_env() {
         sed -i s/^PLATFORM\=./PLATFORM\=3/g Actions/pool.sh
         sed -i s/^TIMEOUT\=.*/TIMEOUT\=1/g Actions/pool.sh
 
-	sed -i "s/\/opt\//\`pwd\`\//g" .profile
+	sed -i "s/\/opt\//\`pwd\`\/pool_checker\//g" .profile
 	sed -i "s/^.*HOME\=.*//g" .profile
 	echo -e "$(env | grep TC_GH | awk '{print "export", $0}')" >> .profile
 	echo -e export $(env | grep TC_POOL_URL) >>.profile
