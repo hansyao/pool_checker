@@ -1,4 +1,4 @@
-name: 发布到VPS
+name: 发布到远程服务器
 on: 
   workflow_dispatch:
 
