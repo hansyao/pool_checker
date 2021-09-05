@@ -17,7 +17,6 @@ jobs:
       env:
         TC_GH_REPO: ${{ github.repository }}
         TC_GH_TOKEN: ${{ secrets.TC_GH_TOKEN }}
-        TC_GH_USER: ${GITHUB_ARCTOR}
         TC_SECRET_ID: ${{ secrets.TC_SECRET_ID }}
         TC_SECRET_KEY: ${{ secrets.TC_SECRET_KEY }}
         TC_POOL_URL: ${{ secrets.TC_POOL_URL }}
@@ -27,7 +26,7 @@ jobs:
     - name: 提交订阅更新
       run: |
         git config --global user.email '<>'
-        git config --global user.name ${TC_GH_USER}
+        git config --global user.name ${GITHUB_ACTOR}
         git pull
         git add subscribe/
         git commit -m "订阅更新(by github actions)"
