@@ -26,5 +26,4 @@ jobs:
         REMOTE_PASSWORD: ${{ secrets.REMOTE_PASSWORD }}
         REMOTE_SSH_KEY: ${{ secrets.REMOTE_SSH_KEY }}
       run: |
-        sudo apt-get install sshpass
         ./deploy_to_vps.sh
