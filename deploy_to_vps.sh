@@ -100,7 +100,7 @@ remote_deploy ${HOST_IP} ${SERVER_PORT} ${ZIP_FILE} \
 	${USER_NAME} ${AUTH} "${SSH_KEY}" "${SERVER_PATH}"
 
 echo -e "远程解压缩"
-REMOTE_CMD="unzip -u -o -d pool_checker ${ZIP_FILE}"
+REMOTE_CMD="unzip -u -o -d pool_checker ${ZIP_FILE} >/dev/null"
 remote_exec ${HOST_IP} ${SERVER_PORT} \
 	${USER_NAME} ${AUTH} "${SSH_KEY}" "${REMOTE_CMD}"
 
