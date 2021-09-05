@@ -8,7 +8,7 @@ function zip_file() {
 	-x "bootstrap" \
 	-x "index.sh" \
 	-x "tencent_cf_deploy.sh" \
-	-x "deploy_to_vps.sh" \
+	-x "deploy_to_remote.sh" \
 	-x ".git/*" \
 	-x ".github/*"
 }
