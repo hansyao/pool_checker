@@ -34,6 +34,8 @@ jobs:
         if [[ $(./tencent_cf_deploy.sh ListLayerVersions pool_check_layer | jq -r '.Response.LayerVersions[].Status' | head -n 1) != 'Active' ]]; then 
           ./tencent_cf_deploy.sh PublishLayerVersion pool_check_layer
           sleep 5
+        else
+          echo "层已存在，忽略并让函数绑定最新版本层"
         fi
         export LayerVersion=$(./tencent_cf_deploy.sh ListLayerVersions pool_check_layer | jq -r '.Response.LayerVersions[].LayerVersion' | head -n 1)
         echo "发布函数"
