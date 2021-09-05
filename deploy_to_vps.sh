@@ -77,11 +77,12 @@ update_env
 ZIP_FILE='/tmp/tmp.zip'
 zip_file ${ZIP_FILE} >/dev/null
 
-HOST_IP=132.232.104.22 
-SERVER_PORT=1015
-USER_NAME=root
-PASSWORD=""
-SSH_KEY=$(cat ~/.ssh/tencent)
+HOST_IP=${REMOTE_IP} 
+SERVER_PORT=${REMOTE_PORT}
+USER_NAME=${REMOTE_USER_NAME}
+PASSWORD=${REMOTE_PASSWORD}
+SSH_KEY=${REMOTE_SSH_KEY}
+
 SERVER_PATH='/tmp/'
 
 if [[ -z ${PASSWORD} && -z ${SSH_KEY} ]]; then

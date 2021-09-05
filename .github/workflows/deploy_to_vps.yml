@@ -1,0 +1,29 @@
+name: 发布到VPS
+on: 
+  workflow_dispatch:
+
+jobs: 
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 迁出代码
+      uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.TC_GH_TOKEN }}
+    - name: 设置时区
+      run: |
+        sudo timedatectl set-timezone 'UTC'
+    - name: 发布函数
+      env:
+        TC_GH_REPO: ${{ github.repository }}
+        TC_GH_TOKEN: ${{ secrets.TC_GH_TOKEN }}
+        TC_GH_USER: ${{ secrets.TC_GH_USER }}
+        TC_GH_EMAIL: ${{ secrets.TC_GH_EMAIL }}
+        TC_POOL_URL: ${{ secrets.TC_POOL_URL }}
+        REMOTE_IP: ${{ secrets.REMOTE_IP }}
+        REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+        REMOTE_USER_NAME: ${{ secrets.REMOTE_USER_NAME }}
+        REMOTE_PASSWORD: ${{ secrets.REMOTE_PASSWORD }}
+        REMOTE_SSH_KEY: ${{ secrets.REMOTE_SSH_KEY }}
+      run: |
+        ./deploy_to_vps.sh
