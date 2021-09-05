@@ -17,7 +17,6 @@ jobs:
       env:
         TC_GH_REPO: ${{github.repository}}
         TC_GH_TOKEN: ${{ secrets.TC_GH_TOKEN }}
-        TC_GH_USER: ${GITHUB_ARCTOR}
         TC_SECRET_ID: ${{ secrets.TC_SECRET_ID }}
         TC_SECRET_KEY: ${{ secrets.TC_SECRET_KEY }}
         TC_POOL_URL: ${{ secrets.TC_POOL_URL }}
