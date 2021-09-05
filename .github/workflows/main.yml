@@ -27,7 +27,7 @@ jobs:
         ./start.sh run
     - name: 提交订阅更新
       run: |
-        git config --global user.email "hansyow@gmail.com"
+        git config --global user.email '<>'
         git config --global user.name ${GITHUB_ACTOR}     
         git pull
         git add subscribe/
