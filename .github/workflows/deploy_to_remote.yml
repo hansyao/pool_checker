@@ -17,8 +17,8 @@ jobs:
       env:
         TC_GH_REPO: ${{ github.repository }}
         TC_GH_TOKEN: ${{ secrets.TC_GH_TOKEN }}
-        TC_GH_USER: ${{ secrets.TC_GH_USER }}
-        TC_GH_EMAIL: ${{ secrets.TC_GH_EMAIL }}
+        TC_GH_USER: ${GITHUB_ARTOR}
+        TC_GH_EMAIL: '<>'
         TC_POOL_URL: ${{ secrets.TC_POOL_URL }}
         REMOTE_IP: ${{ secrets.REMOTE_IP }}
         REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
