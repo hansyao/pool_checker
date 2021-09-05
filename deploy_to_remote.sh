@@ -116,6 +116,6 @@ remote_exec ${HOST_IP} ${SERVER_PORT} \
 	${USER_NAME} ${AUTH} "${SSH_KEY}" "${REMOTE_CMD}"
 
 echo -e "为远程服务器配置定时任务"
-REMOTE_CMD='crontab -l | grep pool_checker; if [[ $? -eq 1 ]]; then crontab -l | { cat; echo -e "40 */2 * * *	cd `pwd`/pool_checker && ./start.sh run"; } | crontab -; fi'
+REMOTE_CMD='crontab -l | grep pool_checker; if [[ $? -eq 1 ]]; then crontab -l | { cat; echo -e "40 */2 * * * cd `pwd`/pool_checker && ./start.sh run"; } | crontab -; fi'
 remote_exec ${HOST_IP} ${SERVER_PORT} \
 	${USER_NAME} ${AUTH} "${SSH_KEY}" "${REMOTE_CMD}"
