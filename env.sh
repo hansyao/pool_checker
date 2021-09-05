@@ -1,3 +1,5 @@
+#!/bin/bash
+
 GITHUB='https/github.com'
 OS='linux-amd64'
 USER='Dreamacro'
@@ -53,15 +55,12 @@ fi
 cp -rf `pwd`/share/git-core /tmp/
 cp -rf `pwd`/subconverter /tmp/
 
-sudo bash -c 'cat >> /etc/sysctl.conf <<EOF
-net.ipv4.tcp_fin_timeout = 10
-net.ipv4.tcp_keepalive_time = 10
-net.ipv4.tcp_syncookies = 1
-net.ipv4.tcp_tw_reuse = 1
-net.ipv4.ip_local_port_range = 10000 65000
-net.ipv4.tcp_max_syn_backlog = 8192
-net.ipv4.tcp_max_tw_buckets = 500
-EOF'
-sudo sysctl -p
+sudo bash -c 'echo 10 >/proc/sys/net/ipv4/tcp_fin_timeout'
+sudo bash -c 'echo 10 >/proc/sys/net/ipv4/tcp_keepalive_time'
+sudo bash -c 'echo 1 >/proc/sys/net/ipv4/tcp_syncookies'
+sudo bash -c 'echo 1 >/proc/sys/net/ipv4/tcp_tw_reuse'
+sudo bash -c 'echo 10000 65000 >/proc/sys/net/ipv4/ip_local_port_range'
+sudo bash -c 'echo 8192 >/proc/sys/net/ipv4/tcp_max_syn_backlog'
+sudo bash -c 'echo 500 >/proc/sys/net/ipv4/tcp_max_tw_buckets'
 
 exit 0

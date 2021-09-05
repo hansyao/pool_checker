@@ -1,8 +1,11 @@
 #!/bin/bash
 
 TOKEN="${TC_GH_TOKEN}"
-REPO='hub.fastgit.org/hansyao'
-APP='pool_checker'
+GITHUB=hub.fastgit.org
+USER_NAME=$(echo ${TC_GH_REPO} | cut -d "/" -f1)
+REPO=${GITHUB}/${USER_NAME}
+APP=$(echo ${TC_GH_REPO} | cut -d "/" -f2)
+USER_CODE_ROOT=`pwd`
 
 echo -e "从github克隆仓库"
 
