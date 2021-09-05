@@ -73,6 +73,11 @@ function remote_exec() {
 	${SSH_PWD_CMD} ssh -o "StrictHostKeyChecking no" ${SSH_KEY_CMD} \
 		${USER_NAME}@${HOST_IP} -p ${SERVER_PORT} "${REMOTE_CMD}" \
 		> /dev/null
+	if [[ $? -eq 0 ]]; then
+		echo -e "远程命令执行成功"
+	else
+		echo -e "远程命令执行失败"
+	fi
 }
 update_env
 ZIP_FILE='/tmp/tmp.zip'
@@ -100,12 +105,12 @@ echo -e "推送源码到远程服务器"
 remote_deploy ${HOST_IP} ${SERVER_PORT} ${ZIP_FILE} \
 	${USER_NAME} ${AUTH} "${SSH_KEY}" "${SERVER_PATH}"
 
-echo -e "远程解压缩"
+echo -e "开始远程解压缩"
 REMOTE_CMD="unzip -u -o -d pool_checker ${ZIP_FILE}"
 remote_exec ${HOST_IP} ${SERVER_PORT} \
 	${USER_NAME} ${AUTH} "${SSH_KEY}" "${REMOTE_CMD}"
 
-echo -e "远程应用环境变量"
+echo -e "开始远程应用环境变量"
 REMOTE_CMD="echo 'if [ -f ~/pool_checker/.profile ]; then . ~/pool_checker/.profile; fi' >> ~/.bashrc; . ~/.bashrc"
 remote_exec ${HOST_IP} ${SERVER_PORT} \
 	${USER_NAME} ${AUTH} "${SSH_KEY}" "${REMOTE_CMD}"
