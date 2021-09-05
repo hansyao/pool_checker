@@ -13,7 +13,7 @@ jobs:
     - name: 设置时区
       run: |
         sudo timedatectl set-timezone 'UTC'
-    - name: 发布函数
+    - name: 发布到远程服务器
       env:
         TC_GH_REPO: ${{ github.repository }}
         TC_GH_TOKEN: ${{ secrets.TC_GH_TOKEN }}

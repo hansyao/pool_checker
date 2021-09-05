@@ -71,7 +71,8 @@ function remote_exec() {
 
 	echo -e "远程发送执行命令到服务器"
 	${SSH_PWD_CMD} ssh -o "StrictHostKeyChecking no" ${SSH_KEY_CMD} \
-		${USER_NAME}@${HOST_IP} -p ${SERVER_PORT} "${REMOTE_CMD}"
+		${USER_NAME}@${HOST_IP} -p ${SERVER_PORT} "${REMOTE_CMD}" \
+		> /dev/null
 }
 update_env
 ZIP_FILE='/tmp/tmp.zip'
@@ -100,7 +101,7 @@ remote_deploy ${HOST_IP} ${SERVER_PORT} ${ZIP_FILE} \
 	${USER_NAME} ${AUTH} "${SSH_KEY}" "${SERVER_PATH}"
 
 echo -e "远程解压缩"
-REMOTE_CMD="unzip -u -o -d pool_checker ${ZIP_FILE} >/dev/null"
+REMOTE_CMD="unzip -u -o -d pool_checker ${ZIP_FILE}"
 remote_exec ${HOST_IP} ${SERVER_PORT} \
 	${USER_NAME} ${AUTH} "${SSH_KEY}" "${REMOTE_CMD}"
 
