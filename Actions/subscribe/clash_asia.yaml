@@ -5,52 +5,60 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 HK|中国|香港|980472970|, server: 118.107.244.112, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇭🇰 HK|中国|香港|563679978|, server: 118.107.244.112, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇭🇰 HK|中国|香港|586167747|, server: 118.107.244.114, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 HK|中国|香港|980472970|
+      - 🇭🇰 HK|中国|香港|563679978|
+      - 🇭🇰 HK|中国|香港|586167747|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇭🇰 HK|中国|香港|980472970|
+      - 🇭🇰 HK|中国|香港|563679978|
+      - 🇭🇰 HK|中国|香港|586167747|
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 HK|中国|香港|980472970|
+      - 🇭🇰 HK|中国|香港|563679978|
+      - 🇭🇰 HK|中国|香港|586167747|
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 HK|中国|香港|980472970|
+      - 🇭🇰 HK|中国|香港|563679978|
+      - 🇭🇰 HK|中国|香港|586167747|
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇭🇰 HK|中国|香港|980472970|
+      - 🇭🇰 HK|中国|香港|563679978|
+      - 🇭🇰 HK|中国|香港|586167747|
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇭🇰 HK|中国|香港|980472970|
+      - 🇭🇰 HK|中国|香港|563679978|
+      - 🇭🇰 HK|中国|香港|586167747|
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 HK|中国|香港|980472970|
+      - 🇭🇰 HK|中国|香港|563679978|
+      - 🇭🇰 HK|中国|香港|586167747|
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -66,7 +74,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 HK|中国|香港|980472970|
+      - 🇭🇰 HK|中国|香港|563679978|
+      - 🇭🇰 HK|中国|香港|586167747|
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
