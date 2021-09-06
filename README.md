@@ -50,7 +50,7 @@ REMOTE_USER_NAME	#ssh登录用户名
 
 **部署到腾讯云函数:** 
 
-手工运行Action[部署到腾讯云函数](../../actions/workflows/tencent_cloud.yml)即可，本项目会自动为你在你的腾讯账户中创建一个名称为pool_checker的云函数，并设置一个timer类型默认每2小时运行一次的自动任务。可按需更改[tencent_cloud.yml](../../blob/bf5b08d4de5dda3b0e668582592f928f0d2d8bfd/.github/workflows/tencent_cloud.yml#L42)为自定义参数，或者直接在腾讯云函数后台中按需更改。运行完成后的订阅结果会自动反向提交到你的github仓库[Actions/subscribe](../../tree/master/Actions/subscribe)文件夹里。
+手工运行Action[部署到腾讯云函数](../../actions/workflows/tencent_cloud.yml)即可，本项目会自动为你在你的腾讯账户中创建一个名称为**pool_checker**的云函数，并设置一个**timer**类型默认每2小时运行一次的自动任务。可按需更改[tencent_cloud.yml](../../blob/bf5b08d4de5dda3b0e668582592f928f0d2d8bfd/.github/workflows/tencent_cloud.yml#L42)为自定义参数，或者直接在腾讯云函数后台中按需更改。运行完成后的订阅结果会自动反向提交到你的github仓库[Actions/subscribe](../../tree/master/Actions/subscribe)文件夹里。
 
 如有代码更新， 重新运行一下Action即可，你的远程VPS服务器或者腾讯云函数的代码也会相应得到更新。
 
