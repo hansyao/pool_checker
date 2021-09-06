@@ -46,7 +46,7 @@ REMOTE_USER_NAME	#ssh登录用户名
 
 **部署到远程服务器VPS:** 
 
-手工运行Action[部署到远程服务器](./pool_checker/actions/workflows/deploy_to_remote.yml)即可，本项目会自动提交到你在[第一步](#第一步-Github环境变量设置)中指定的服务器, 并设定计划任务(默认每小时一次, 可按需修改[deploy_to_remote.sh](./blob/5e28ca8215b7260e223c0a75ca6a63a311d69ac9/deploy_to_remote.sh#L119))或者在你的远程服务器上更改crob job. 运行完成后的订阅结果会自动反向提交到你的github仓库[Actions/subscribe](./tree/master/Actions/subscribe)文件夹里。
+手工运行Action[部署到远程服务器](../../pool_checker/actions/workflows/deploy_to_remote.yml)即可，本项目会自动提交到你在[第一步](#第一步-Github环境变量设置)中指定的服务器, 并设定计划任务(默认每小时一次, 可按需修改[deploy_to_remote.sh](./blob/5e28ca8215b7260e223c0a75ca6a63a311d69ac9/deploy_to_remote.sh#L119))或者在你的远程服务器上更改crob job. 运行完成后的订阅结果会自动反向提交到你的github仓库[Actions/subscribe](./tree/master/Actions/subscribe)文件夹里。
 
 **部署到腾讯云函数:** 
 
