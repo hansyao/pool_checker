@@ -42,7 +42,7 @@ REMOTE_USER_NAME	#ssh登录用户名
 
 **直接Github Actions运行:** 
 
-运行Action[代理池验证](./pool_checker/actions/workflows/main.yml) , 默认每6小时运行一次，可按需更改[main.yml](./pool_checker/blob/e59833352b7f5921aeb3dddd6a09bba3fffe89eb/.github/workflows/main.yml#L5)中的cron为自定义运行时间。
+运行Action[代理池验证](../../actions/workflows/main.yml) , 默认每6小时运行一次，可按需更改[main.yml](./pool_checker/blob/e59833352b7f5921aeb3dddd6a09bba3fffe89eb/.github/workflows/main.yml#L5)中的cron为自定义运行时间。
 
 **部署到远程服务器VPS:** 
 
