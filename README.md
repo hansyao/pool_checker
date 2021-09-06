@@ -14,7 +14,7 @@
 在本项目settings->Actions secrets新建几个 **Actions secrets** 如下, 并填入相关参数：
 
 ```bash
-# ******** 必须 ********
+# ******** 必需 ********
 TC_GH_TOKEN		# github密钥 (将上面申请到的Personal access token粘贴进来即可)
 TC_POOL_URL		# 代理池URL地址，仅支持clash yaml格式 (必须)
 
