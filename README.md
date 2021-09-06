@@ -38,7 +38,7 @@ REMOTE_USER_NAME	#ssh登录用户名
 
 ## 第二步 运行Actions
 
-### 直接Github Actions运行（国内访问不建议，因为不能检测被墙节点）:
+### 直接Github Actions运行（国内访问不建议，因为不能检测被墙节点和国内访问的真实延迟率）:
 
 运行Action[代理池验证](../../actions/workflows/main.yml) , 默认每6小时运行一次，可按需更改[main.yml](../../blob/e59833352b7f5921aeb3dddd6a09bba3fffe89eb/.github/workflows/main.yml#L5)中的cron为自定义运行时间。运行完成后的订阅结果会自动反向提交到本项目[subscribe](../../tree/master/subscribe)文件夹里。
 
