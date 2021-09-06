@@ -5,43 +5,27 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|722469677|, server: 27.131.164.85, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|464725652|, server: 27.131.164.85, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|351699096|, server: 27.131.164.85, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|586033114|, server: 27.131.164.85, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|550123025|, server: 27.131.164.85, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|132581729|, server: 27.131.164.85, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇭 TH|泰国|曼谷|曼谷|722469677|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|464725652|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|351699096|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|586033114|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|550123025|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|132581729|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇹🇭 TH|泰国|曼谷|曼谷|722469677|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|464725652|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|351699096|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|586033114|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|550123025|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|132581729|
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇭 TH|泰国|曼谷|曼谷|722469677|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|464725652|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|351699096|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|586033114|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|550123025|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|132581729|
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -52,32 +36,20 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇹🇭 TH|泰国|曼谷|曼谷|722469677|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|464725652|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|351699096|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|586033114|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|550123025|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|132581729|
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇹🇭 TH|泰国|曼谷|曼谷|722469677|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|464725652|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|351699096|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|586033114|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|550123025|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|132581729|
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇭 TH|泰国|曼谷|曼谷|722469677|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|464725652|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|351699096|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|586033114|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|550123025|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|132581729|
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -93,11 +65,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇭 TH|泰国|曼谷|曼谷|722469677|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|464725652|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|351699096|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|586033114|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|550123025|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|132581729|
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
