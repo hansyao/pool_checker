@@ -30,10 +30,7 @@ REMOTE_PASSWORD		#ssh登录密码 (密钥与密码二选一即可)
 REMOTE_USER_NAME	#ssh登录用户名	
 
 ``` 
-
-[代理池URL测试地址1](https://raw.githubusercontent.com/hansyao/pool_checker/master/subscribe/pool_no_cn_verified.yaml)
-
-[代理池URL测试地址2](https://proxy.yugogo.xyz/clash/proxies)
+[代理池URL测试地址](https://proxy.yugogo.xyz/clash/proxies)
 
 强烈建议按照[教程](https://github.com/zu1k/proxypool)搭建一个属于自己的爬虫代理池。
 
