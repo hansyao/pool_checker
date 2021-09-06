@@ -38,5 +38,5 @@ jobs:
         export LayerVersion=$(./tencent_cf_deploy.sh ListLayerVersions pool_check_layer | jq -r '.Response.LayerVersions[].LayerVersion' | head -n 1)
         echo "发布函数"
         ./tencent_cf_deploy.sh CreateFunction pool_checker pool_check_layer ${LayerVersion}
-        echo "创建触发器"
+        echo -e "创建触发器\\n"
         ./tencent_cf_deploy.sh 'CreateTrigger' pool_checker pool_checker "0 10 */2 * * * *"
