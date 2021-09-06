@@ -5,27 +5,27 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|328370195|, server: 27.131.138.176, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|928583678|, server: 13.127.197.3, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇭 TH|泰国|曼谷|曼谷|328370195|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|928583678|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇹🇭 TH|泰国|曼谷|曼谷|328370195|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|928583678|
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇭 TH|泰国|曼谷|曼谷|328370195|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|928583678|
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -36,20 +36,20 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇹🇭 TH|泰国|曼谷|曼谷|328370195|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|928583678|
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇹🇭 TH|泰国|曼谷|曼谷|328370195|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|928583678|
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇭 TH|泰国|曼谷|曼谷|328370195|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|928583678|
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -65,7 +65,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇭 TH|泰国|曼谷|曼谷|328370195|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|928583678|
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
