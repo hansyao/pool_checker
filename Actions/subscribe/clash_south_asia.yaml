@@ -5,31 +5,27 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|420205506|, server: 27.131.164.99, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|141294237|, server: 27.131.164.85, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇸🇬 SG|新加坡|411522998|, server: 172.105.114.4, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇭 TH|泰国|曼谷|曼谷|420205506|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|141294237|
+      - 🇸🇬 SG|新加坡|411522998|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇹🇭 TH|泰国|曼谷|曼谷|420205506|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|141294237|
+      - 🇸🇬 SG|新加坡|411522998|
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇭 TH|泰国|曼谷|曼谷|420205506|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|141294237|
+      - 🇸🇬 SG|新加坡|411522998|
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -40,23 +36,20 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇹🇭 TH|泰国|曼谷|曼谷|420205506|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|141294237|
+      - 🇸🇬 SG|新加坡|411522998|
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇹🇭 TH|泰国|曼谷|曼谷|420205506|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|141294237|
+      - 🇸🇬 SG|新加坡|411522998|
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇭 TH|泰国|曼谷|曼谷|420205506|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|141294237|
+      - 🇸🇬 SG|新加坡|411522998|
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -72,8 +65,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇭 TH|泰国|曼谷|曼谷|420205506|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|141294237|
+      - 🇸🇬 SG|新加坡|411522998|
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
