@@ -34,7 +34,7 @@ REMOTE_USER_NAME	#ssh登录用户名
 
 [代理池URL测试地址2](https://proxy.yugogo.xyz/clash/proxies)
 
-强烈建议按照[教程](../zu1k/proxypool)自己搭建一个爬虫代理池。
+强烈建议按照[教程](../../zu1k/proxypool)自己搭建一个爬虫代理池。
 
 
 
