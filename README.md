@@ -38,11 +38,11 @@ REMOTE_USER_NAME	#ssh登录用户名
 
 ## 第二步 运行Actions
 
-### 直接Github Actions运行:
+### 直接Github Actions运行（国内访问不建议，因为不能检测被墙节点）:
 
 运行Action[代理池验证](../../actions/workflows/main.yml) , 默认每6小时运行一次，可按需更改[main.yml](../../blob/e59833352b7f5921aeb3dddd6a09bba3fffe89eb/.github/workflows/main.yml#L5)中的cron为自定义运行时间。运行完成后的订阅结果会自动反向提交到本项目[subscribe](../../tree/master/subscribe)文件夹里。
 
-### 部署到远程服务器VPS:
+### 部署到远程服务器VPS(推荐):
 
 手工运行Action[部署到远程服务器](../../actions/workflows/deploy_to_remote.yml)即可，本项目会自动提交到你在[第一步](#第一步-Github环境变量设置)中指定的服务器, 并设定计划任务(默认每小时一次, 可按需修改[deploy_to_remote.sh](../../blob/5e28ca8215b7260e223c0a75ca6a63a311d69ac9/deploy_to_remote.sh#L119))或者在你的远程服务器上更改cron job. 运行完成后的订阅结果会自动反向提交到本项目[Actions/subscribe](../../tree/master/Actions/subscribe)文件夹里。
 
