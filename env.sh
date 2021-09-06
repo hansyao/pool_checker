@@ -1,16 +1,16 @@
 #!/bin/bash
 
-GITHUB='https/github.com'
+GITHUB='https://github.com'
 OS='linux-amd64'
 USER='Dreamacro'
 APP='clash'
 REPO=$USER/$APP
 FILE=/tmp/bin/$APP.gz
-PROXY_URL='https://lingering-math-d2ca.hansyow.workers.dev/'
+PROXY_URL='https://ghproxy.com/'
 PLATFORM=2	# 1 - 腾讯云函数	2 - github	3 - 其他
 
 get_latest_release() {
-  curl --silent "${PROXY_URL}https/api.github.com/repos/$1/releases/latest" | # Get latest release from GitHub api
+  curl --silent "https://api.github.com/repos/$1/releases/latest" | # Get latest release from GitHub api
     grep '"tag_name":' |                                            # Get tag line
     sed -E 's/.*"([^"]+)".*/\1/'                                    # Pluck JSON value
 }
