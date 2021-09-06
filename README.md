@@ -19,8 +19,8 @@ TC_GH_TOKEN		# github密钥 (将上面申请到的Personal access token粘贴进
 TC_POOL_URL		# 代理池URL地址，仅支持clash yaml格式 (必须)
 
 # ******** 如果需要部署到腾讯云函数 ********
-TC_SECRET_ID		# 腾讯云SECRET_ID（）
-TC_SECRET_KEY		# 腾讯云SECRET_KEY（如果需要部署到腾讯云函数）
+TC_SECRET_ID		# 腾讯云SECRET_ID
+TC_SECRET_KEY		# 腾讯云SECRET_KEY
 
 # ******** 如果需要部署到远程服务器 ********
 REMOTE_IP		#目标VPS的IP地址或者指向的域名
