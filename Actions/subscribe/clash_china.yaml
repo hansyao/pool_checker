@@ -5,43 +5,39 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 CN|中国|江苏|常州|电信|338750524|, server: 43.248.135.102, port: 27235, type: ssr, cipher: aes-256-cfb, password: BR9ubV, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|731297034|, server: 120.41.41.56, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|905925299|, server: 120.41.41.215, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
-  - {name: 🇨🇳 CN|中国|江苏|常州|电信|739248650|, server: 43.248.135.102, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
-  - {name: 🇨🇳 CN|中国|上海|上海|阿里云|917689164|, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|439767318|, server: 120.41.41.56, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|207489765|, server: 120.41.41.203, port: 27235, type: ssr, cipher: aes-256-cfb, password: BR9ubV, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|189228938|, server: 120.41.41.215, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|540082418|, server: 120.41.41.56, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 CN|中国|江苏|常州|电信|338750524|
-      - 🇨🇳 CN|中国|福建|厦门|电信|731297034|
-      - 🇨🇳 CN|中国|福建|厦门|电信|905925299|
-      - 🇨🇳 CN|中国|江苏|常州|电信|739248650|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|917689164|
+      - 🇨🇳 CN|中国|福建|厦门|电信|439767318|
+      - 🇨🇳 CN|中国|福建|厦门|电信|207489765|
+      - 🇨🇳 CN|中国|福建|厦门|电信|189228938|
+      - 🇨🇳 CN|中国|福建|厦门|电信|540082418|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇨🇳 CN|中国|江苏|常州|电信|338750524|
-      - 🇨🇳 CN|中国|福建|厦门|电信|731297034|
-      - 🇨🇳 CN|中国|福建|厦门|电信|905925299|
-      - 🇨🇳 CN|中国|江苏|常州|电信|739248650|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|917689164|
+      - 🇨🇳 CN|中国|福建|厦门|电信|439767318|
+      - 🇨🇳 CN|中国|福建|厦门|电信|207489765|
+      - 🇨🇳 CN|中国|福建|厦门|电信|189228938|
+      - 🇨🇳 CN|中国|福建|厦门|电信|540082418|
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 CN|中国|江苏|常州|电信|338750524|
-      - 🇨🇳 CN|中国|福建|厦门|电信|731297034|
-      - 🇨🇳 CN|中国|福建|厦门|电信|905925299|
-      - 🇨🇳 CN|中国|江苏|常州|电信|739248650|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|917689164|
+      - 🇨🇳 CN|中国|福建|厦门|电信|439767318|
+      - 🇨🇳 CN|中国|福建|厦门|电信|207489765|
+      - 🇨🇳 CN|中国|福建|厦门|电信|189228938|
+      - 🇨🇳 CN|中国|福建|厦门|电信|540082418|
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -52,32 +48,29 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇨🇳 CN|中国|江苏|常州|电信|338750524|
-      - 🇨🇳 CN|中国|福建|厦门|电信|731297034|
-      - 🇨🇳 CN|中国|福建|厦门|电信|905925299|
-      - 🇨🇳 CN|中国|江苏|常州|电信|739248650|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|917689164|
+      - 🇨🇳 CN|中国|福建|厦门|电信|439767318|
+      - 🇨🇳 CN|中国|福建|厦门|电信|207489765|
+      - 🇨🇳 CN|中国|福建|厦门|电信|189228938|
+      - 🇨🇳 CN|中国|福建|厦门|电信|540082418|
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇨🇳 CN|中国|江苏|常州|电信|338750524|
-      - 🇨🇳 CN|中国|福建|厦门|电信|731297034|
-      - 🇨🇳 CN|中国|福建|厦门|电信|905925299|
-      - 🇨🇳 CN|中国|江苏|常州|电信|739248650|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|917689164|
+      - 🇨🇳 CN|中国|福建|厦门|电信|439767318|
+      - 🇨🇳 CN|中国|福建|厦门|电信|207489765|
+      - 🇨🇳 CN|中国|福建|厦门|电信|189228938|
+      - 🇨🇳 CN|中国|福建|厦门|电信|540082418|
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 CN|中国|江苏|常州|电信|338750524|
-      - 🇨🇳 CN|中国|福建|厦门|电信|731297034|
-      - 🇨🇳 CN|中国|福建|厦门|电信|905925299|
-      - 🇨🇳 CN|中国|江苏|常州|电信|739248650|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|917689164|
+      - 🇨🇳 CN|中国|福建|厦门|电信|439767318|
+      - 🇨🇳 CN|中国|福建|厦门|电信|207489765|
+      - 🇨🇳 CN|中国|福建|厦门|电信|189228938|
+      - 🇨🇳 CN|中国|福建|厦门|电信|540082418|
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -93,11 +86,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 CN|中国|江苏|常州|电信|338750524|
-      - 🇨🇳 CN|中国|福建|厦门|电信|731297034|
-      - 🇨🇳 CN|中国|福建|厦门|电信|905925299|
-      - 🇨🇳 CN|中国|江苏|常州|电信|739248650|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|917689164|
+      - 🇨🇳 CN|中国|福建|厦门|电信|439767318|
+      - 🇨🇳 CN|中国|福建|厦门|电信|207489765|
+      - 🇨🇳 CN|中国|福建|厦门|电信|189228938|
+      - 🇨🇳 CN|中国|福建|厦门|电信|540082418|
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
