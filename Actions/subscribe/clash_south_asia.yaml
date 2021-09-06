@@ -5,27 +5,31 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|009922700|, server: 27.131.138.174, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|046845222|, server: 27.131.138.176, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|448599676|, server: 27.131.138.176, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇭 TH|泰国|曼谷|曼谷|009922700|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|046845222|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|448599676|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇹🇭 TH|泰国|曼谷|曼谷|009922700|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|046845222|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|448599676|
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇭 TH|泰国|曼谷|曼谷|009922700|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|046845222|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|448599676|
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -36,20 +40,23 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇹🇭 TH|泰国|曼谷|曼谷|009922700|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|046845222|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|448599676|
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇹🇭 TH|泰国|曼谷|曼谷|009922700|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|046845222|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|448599676|
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇭 TH|泰国|曼谷|曼谷|009922700|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|046845222|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|448599676|
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -65,7 +72,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇭 TH|泰国|曼谷|曼谷|009922700|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|046845222|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|448599676|
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
