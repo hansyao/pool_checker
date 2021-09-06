@@ -33,8 +33,10 @@ jobs:
           ./tencent_cf_deploy.sh PublishLayerVersion pool_check_layer
           sleep 5
         else
-          echo "层已存在，忽略并让函数绑定最新版本层"
+          echo "层已存在，忽略并让函数绑定最新层版本"
         fi
         export LayerVersion=$(./tencent_cf_deploy.sh ListLayerVersions pool_check_layer | jq -r '.Response.LayerVersions[].LayerVersion' | head -n 1)
         echo "发布函数"
         ./tencent_cf_deploy.sh CreateFunction pool_checker pool_check_layer ${LayerVersion}
+        echo "创建触发器"
+        ./tencent_cf_deploy.sh 'CreateTrigger' pool_checker pool_checker "0 10 */2 * * * *"
