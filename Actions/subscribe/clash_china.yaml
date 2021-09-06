@@ -5,31 +5,31 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|599518929|, server: 120.41.41.215, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|638842066|, server: 120.41.41.56, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|542591486|, server: 120.41.41.215, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
+  - {name: 🇨🇳 CN|中国|上海|上海|阿里云|910803661|, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 CN|中国|福建|厦门|电信|599518929|
-      - 🇨🇳 CN|中国|福建|厦门|电信|638842066|
+      - 🇨🇳 CN|中国|福建|厦门|电信|542591486|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|910803661|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇨🇳 CN|中国|福建|厦门|电信|599518929|
-      - 🇨🇳 CN|中国|福建|厦门|电信|638842066|
+      - 🇨🇳 CN|中国|福建|厦门|电信|542591486|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|910803661|
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 CN|中国|福建|厦门|电信|599518929|
-      - 🇨🇳 CN|中国|福建|厦门|电信|638842066|
+      - 🇨🇳 CN|中国|福建|厦门|电信|542591486|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|910803661|
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -40,23 +40,23 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇨🇳 CN|中国|福建|厦门|电信|599518929|
-      - 🇨🇳 CN|中国|福建|厦门|电信|638842066|
+      - 🇨🇳 CN|中国|福建|厦门|电信|542591486|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|910803661|
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇨🇳 CN|中国|福建|厦门|电信|599518929|
-      - 🇨🇳 CN|中国|福建|厦门|电信|638842066|
+      - 🇨🇳 CN|中国|福建|厦门|电信|542591486|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|910803661|
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 CN|中国|福建|厦门|电信|599518929|
-      - 🇨🇳 CN|中国|福建|厦门|电信|638842066|
+      - 🇨🇳 CN|中国|福建|厦门|电信|542591486|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|910803661|
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -72,8 +72,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 CN|中国|福建|厦门|电信|599518929|
-      - 🇨🇳 CN|中国|福建|厦门|电信|638842066|
+      - 🇨🇳 CN|中国|福建|厦门|电信|542591486|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|910803661|
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
