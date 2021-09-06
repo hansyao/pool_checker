@@ -40,15 +40,15 @@ REMOTE_USER_NAME	#ssh登录用户名
 
 ### 直接Github Actions运行:
 
-运行Action[代理池验证](../../actions/workflows/main.yml) , 默认每6小时运行一次，可按需更改[main.yml](../../blob/e59833352b7f5921aeb3dddd6a09bba3fffe89eb/.github/workflows/main.yml#L5)中的cron为自定义运行时间。
+运行Action[代理池验证](../../actions/workflows/main.yml) , 默认每6小时运行一次，可按需更改[main.yml](../../blob/e59833352b7f5921aeb3dddd6a09bba3fffe89eb/.github/workflows/main.yml#L5)中的cron为自定义运行时间。运行完成后的订阅结果会自动反向提交到本项目[subscribe](../../tree/master/subscribe)文件夹里。
 
 ### 部署到远程服务器VPS:
 
-手工运行Action[部署到远程服务器](../../actions/workflows/deploy_to_remote.yml)即可，本项目会自动提交到你在[第一步](#第一步-Github环境变量设置)中指定的服务器, 并设定计划任务(默认每小时一次, 可按需修改[deploy_to_remote.sh](../../blob/5e28ca8215b7260e223c0a75ca6a63a311d69ac9/deploy_to_remote.sh#L119))或者在你的远程服务器上更改crob job. 运行完成后的订阅结果会自动反向提交到你的github仓库[Actions/subscribe](../../tree/master/Actions/subscribe)文件夹里。
+手工运行Action[部署到远程服务器](../../actions/workflows/deploy_to_remote.yml)即可，本项目会自动提交到你在[第一步](#第一步-Github环境变量设置)中指定的服务器, 并设定计划任务(默认每小时一次, 可按需修改[deploy_to_remote.sh](../../blob/5e28ca8215b7260e223c0a75ca6a63a311d69ac9/deploy_to_remote.sh#L119))或者在你的远程服务器上更改crob job. 运行完成后的订阅结果会自动反向提交到本项目[Actions/subscribe](../../tree/master/Actions/subscribe)文件夹里。
 
 ### 部署到腾讯云函数:
 
-手工运行Action[部署到腾讯云函数](../../actions/workflows/tencent_cloud.yml)即可，本项目会自动为你在你的腾讯账户中创建一个名称为**pool_checker**的云函数，并设置一个**timer**类型默认每2小时运行一次的自动任务。可按需更改[tencent_cloud.yml](../../blob/bf5b08d4de5dda3b0e668582592f928f0d2d8bfd/.github/workflows/tencent_cloud.yml#L42)为自定义参数，或者直接在腾讯云函数后台中按需更改。运行完成后的订阅结果会自动反向提交到你的github仓库[Actions/subscribe](../../tree/master/Actions/subscribe)文件夹里。
+手工运行Action[部署到腾讯云函数](../../actions/workflows/tencent_cloud.yml)即可，本项目会自动为你在你的腾讯账户中创建一个名称为**pool_checker**的云函数，并设置一个**timer**类型默认每2小时运行一次的自动任务。可按需更改[tencent_cloud.yml](../../blob/bf5b08d4de5dda3b0e668582592f928f0d2d8bfd/.github/workflows/tencent_cloud.yml#L42)为自定义参数，或者直接在腾讯云函数后台中按需更改。运行完成后的订阅结果会自动反向提交到本项目[Actions/subscribe](../../tree/master/Actions/subscribe)文件夹里。
 
 如有**代码更新**， 重新运行一下Action即可，你的远程VPS服务器或者腾讯云函数的代码也会相应得到更新。
 
