@@ -1,4 +1,4 @@
-name: 速度测试
+name: 重命名速度测试
 on:
   workflow_dispatch:
 
