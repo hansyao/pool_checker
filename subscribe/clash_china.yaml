@@ -5,71 +5,83 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|654620752|, server: 120.41.41.215, port: 27235, type: ssr, cipher: aes-256-cfb, password: BR9ubV, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|353000406|, server: 120.41.41.56, port: 27235, type: ssr, cipher: aes-256-cfb, password: BR9ubV, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|118686510|, server: 120.41.41.56, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|637332445|, server: 120.41.41.56, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|791875369|, server: 120.41.41.56, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
-  - {name: 🇨🇳 CN|中国|上海|上海|阿里云|504928190|, server: 101.132.192.212, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|984365349|, server: 120.41.41.215, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
-  - {name: 🇨🇳 CN|中国|上海|上海|阿里云|363276956|, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
-  - {name: 🇨🇳 CN|中国|福建|泉州|电信|083425719|, server: 117.28.243.187, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: WWW.YOUNEED.WIN, obfs-param: WWW.YOUNEED.WIN}
-  - {name: 🇨🇳 CN|中国|福建|泉州|电信|544180523|, server: p5.22332e.com, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|530508966|, server: 120.41.41.215, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 🇨🇳 CN|中国|福建|泉州|电信|650783603|, server: p5.22332e.com, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: t.me/SSRSUB, obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|911747293|, server: 120.41.41.56, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
+  - {name: 🇨🇳 CN|中国|上海|上海|阿里云|167833013|, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|427982493|, server: 120.41.41.56, port: 27235, type: ssr, cipher: aes-256-cfb, password: BR9ubV, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|092824349|, server: 117.28.243.187, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|上海|上海|阿里云|763744929|, server: 101.132.192.212, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|765583265|, server: 120.41.41.215, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|538234721|, server: 117.28.243.187, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: WWW.YOUNEED.WIN, obfs-param: WWW.YOUNEED.WIN}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|059785605|, server: 120.41.41.56, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|065766548|, server: 120.41.41.215, port: 27235, type: ssr, cipher: aes-256-cfb, password: BR9ubV, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|594528488|, server: 120.41.41.56, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|033034267|, server: p5.22332e.com, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|670591754|, server: 120.41.41.215, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|270205365|, server: 120.41.41.215, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|933264771|, server: p5.22332e.com, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: t.me/SSRSUB, obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|858783598|, server: 117.28.243.187, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: t.me/SSRSUB, obfs-param: ""}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 CN|中国|福建|厦门|电信|654620752|
-      - 🇨🇳 CN|中国|福建|厦门|电信|353000406|
-      - 🇨🇳 CN|中国|福建|厦门|电信|118686510|
-      - 🇨🇳 CN|中国|福建|厦门|电信|637332445|
-      - 🇨🇳 CN|中国|福建|厦门|电信|791875369|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|504928190|
-      - 🇨🇳 CN|中国|福建|厦门|电信|984365349|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|363276956|
-      - 🇨🇳 CN|中国|福建|泉州|电信|083425719|
-      - 🇨🇳 CN|中国|福建|泉州|电信|544180523|
-      - 🇨🇳 CN|中国|福建|厦门|电信|530508966|
-      - 🇨🇳 CN|中国|福建|泉州|电信|650783603|
+      - 🇨🇳 CN|中国|福建|厦门|电信|911747293|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|167833013|
+      - 🇨🇳 CN|中国|福建|厦门|电信|427982493|
+      - 🇨🇳 CN|中国|福建|泉州|电信|092824349|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|763744929|
+      - 🇨🇳 CN|中国|福建|厦门|电信|765583265|
+      - 🇨🇳 CN|中国|福建|泉州|电信|538234721|
+      - 🇨🇳 CN|中国|福建|厦门|电信|059785605|
+      - 🇨🇳 CN|中国|福建|厦门|电信|065766548|
+      - 🇨🇳 CN|中国|福建|厦门|电信|594528488|
+      - 🇨🇳 CN|中国|福建|泉州|电信|033034267|
+      - 🇨🇳 CN|中国|福建|厦门|电信|670591754|
+      - 🇨🇳 CN|中国|福建|厦门|电信|270205365|
+      - 🇨🇳 CN|中国|福建|泉州|电信|933264771|
+      - 🇨🇳 CN|中国|福建|泉州|电信|858783598|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇨🇳 CN|中国|福建|厦门|电信|654620752|
-      - 🇨🇳 CN|中国|福建|厦门|电信|353000406|
-      - 🇨🇳 CN|中国|福建|厦门|电信|118686510|
-      - 🇨🇳 CN|中国|福建|厦门|电信|637332445|
-      - 🇨🇳 CN|中国|福建|厦门|电信|791875369|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|504928190|
-      - 🇨🇳 CN|中国|福建|厦门|电信|984365349|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|363276956|
-      - 🇨🇳 CN|中国|福建|泉州|电信|083425719|
-      - 🇨🇳 CN|中国|福建|泉州|电信|544180523|
-      - 🇨🇳 CN|中国|福建|厦门|电信|530508966|
-      - 🇨🇳 CN|中国|福建|泉州|电信|650783603|
+      - 🇨🇳 CN|中国|福建|厦门|电信|911747293|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|167833013|
+      - 🇨🇳 CN|中国|福建|厦门|电信|427982493|
+      - 🇨🇳 CN|中国|福建|泉州|电信|092824349|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|763744929|
+      - 🇨🇳 CN|中国|福建|厦门|电信|765583265|
+      - 🇨🇳 CN|中国|福建|泉州|电信|538234721|
+      - 🇨🇳 CN|中国|福建|厦门|电信|059785605|
+      - 🇨🇳 CN|中国|福建|厦门|电信|065766548|
+      - 🇨🇳 CN|中国|福建|厦门|电信|594528488|
+      - 🇨🇳 CN|中国|福建|泉州|电信|033034267|
+      - 🇨🇳 CN|中国|福建|厦门|电信|670591754|
+      - 🇨🇳 CN|中国|福建|厦门|电信|270205365|
+      - 🇨🇳 CN|中国|福建|泉州|电信|933264771|
+      - 🇨🇳 CN|中国|福建|泉州|电信|858783598|
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 CN|中国|福建|厦门|电信|654620752|
-      - 🇨🇳 CN|中国|福建|厦门|电信|353000406|
-      - 🇨🇳 CN|中国|福建|厦门|电信|118686510|
-      - 🇨🇳 CN|中国|福建|厦门|电信|637332445|
-      - 🇨🇳 CN|中国|福建|厦门|电信|791875369|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|504928190|
-      - 🇨🇳 CN|中国|福建|厦门|电信|984365349|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|363276956|
-      - 🇨🇳 CN|中国|福建|泉州|电信|083425719|
-      - 🇨🇳 CN|中国|福建|泉州|电信|544180523|
-      - 🇨🇳 CN|中国|福建|厦门|电信|530508966|
-      - 🇨🇳 CN|中国|福建|泉州|电信|650783603|
+      - 🇨🇳 CN|中国|福建|厦门|电信|911747293|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|167833013|
+      - 🇨🇳 CN|中国|福建|厦门|电信|427982493|
+      - 🇨🇳 CN|中国|福建|泉州|电信|092824349|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|763744929|
+      - 🇨🇳 CN|中国|福建|厦门|电信|765583265|
+      - 🇨🇳 CN|中国|福建|泉州|电信|538234721|
+      - 🇨🇳 CN|中国|福建|厦门|电信|059785605|
+      - 🇨🇳 CN|中国|福建|厦门|电信|065766548|
+      - 🇨🇳 CN|中国|福建|厦门|电信|594528488|
+      - 🇨🇳 CN|中国|福建|泉州|电信|033034267|
+      - 🇨🇳 CN|中国|福建|厦门|电信|670591754|
+      - 🇨🇳 CN|中国|福建|厦门|电信|270205365|
+      - 🇨🇳 CN|中国|福建|泉州|电信|933264771|
+      - 🇨🇳 CN|中国|福建|泉州|电信|858783598|
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -80,53 +92,62 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇨🇳 CN|中国|福建|厦门|电信|654620752|
-      - 🇨🇳 CN|中国|福建|厦门|电信|353000406|
-      - 🇨🇳 CN|中国|福建|厦门|电信|118686510|
-      - 🇨🇳 CN|中国|福建|厦门|电信|637332445|
-      - 🇨🇳 CN|中国|福建|厦门|电信|791875369|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|504928190|
-      - 🇨🇳 CN|中国|福建|厦门|电信|984365349|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|363276956|
-      - 🇨🇳 CN|中国|福建|泉州|电信|083425719|
-      - 🇨🇳 CN|中国|福建|泉州|电信|544180523|
-      - 🇨🇳 CN|中国|福建|厦门|电信|530508966|
-      - 🇨🇳 CN|中国|福建|泉州|电信|650783603|
+      - 🇨🇳 CN|中国|福建|厦门|电信|911747293|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|167833013|
+      - 🇨🇳 CN|中国|福建|厦门|电信|427982493|
+      - 🇨🇳 CN|中国|福建|泉州|电信|092824349|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|763744929|
+      - 🇨🇳 CN|中国|福建|厦门|电信|765583265|
+      - 🇨🇳 CN|中国|福建|泉州|电信|538234721|
+      - 🇨🇳 CN|中国|福建|厦门|电信|059785605|
+      - 🇨🇳 CN|中国|福建|厦门|电信|065766548|
+      - 🇨🇳 CN|中国|福建|厦门|电信|594528488|
+      - 🇨🇳 CN|中国|福建|泉州|电信|033034267|
+      - 🇨🇳 CN|中国|福建|厦门|电信|670591754|
+      - 🇨🇳 CN|中国|福建|厦门|电信|270205365|
+      - 🇨🇳 CN|中国|福建|泉州|电信|933264771|
+      - 🇨🇳 CN|中国|福建|泉州|电信|858783598|
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇨🇳 CN|中国|福建|厦门|电信|654620752|
-      - 🇨🇳 CN|中国|福建|厦门|电信|353000406|
-      - 🇨🇳 CN|中国|福建|厦门|电信|118686510|
-      - 🇨🇳 CN|中国|福建|厦门|电信|637332445|
-      - 🇨🇳 CN|中国|福建|厦门|电信|791875369|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|504928190|
-      - 🇨🇳 CN|中国|福建|厦门|电信|984365349|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|363276956|
-      - 🇨🇳 CN|中国|福建|泉州|电信|083425719|
-      - 🇨🇳 CN|中国|福建|泉州|电信|544180523|
-      - 🇨🇳 CN|中国|福建|厦门|电信|530508966|
-      - 🇨🇳 CN|中国|福建|泉州|电信|650783603|
+      - 🇨🇳 CN|中国|福建|厦门|电信|911747293|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|167833013|
+      - 🇨🇳 CN|中国|福建|厦门|电信|427982493|
+      - 🇨🇳 CN|中国|福建|泉州|电信|092824349|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|763744929|
+      - 🇨🇳 CN|中国|福建|厦门|电信|765583265|
+      - 🇨🇳 CN|中国|福建|泉州|电信|538234721|
+      - 🇨🇳 CN|中国|福建|厦门|电信|059785605|
+      - 🇨🇳 CN|中国|福建|厦门|电信|065766548|
+      - 🇨🇳 CN|中国|福建|厦门|电信|594528488|
+      - 🇨🇳 CN|中国|福建|泉州|电信|033034267|
+      - 🇨🇳 CN|中国|福建|厦门|电信|670591754|
+      - 🇨🇳 CN|中国|福建|厦门|电信|270205365|
+      - 🇨🇳 CN|中国|福建|泉州|电信|933264771|
+      - 🇨🇳 CN|中国|福建|泉州|电信|858783598|
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 CN|中国|福建|厦门|电信|654620752|
-      - 🇨🇳 CN|中国|福建|厦门|电信|353000406|
-      - 🇨🇳 CN|中国|福建|厦门|电信|118686510|
-      - 🇨🇳 CN|中国|福建|厦门|电信|637332445|
-      - 🇨🇳 CN|中国|福建|厦门|电信|791875369|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|504928190|
-      - 🇨🇳 CN|中国|福建|厦门|电信|984365349|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|363276956|
-      - 🇨🇳 CN|中国|福建|泉州|电信|083425719|
-      - 🇨🇳 CN|中国|福建|泉州|电信|544180523|
-      - 🇨🇳 CN|中国|福建|厦门|电信|530508966|
-      - 🇨🇳 CN|中国|福建|泉州|电信|650783603|
+      - 🇨🇳 CN|中国|福建|厦门|电信|911747293|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|167833013|
+      - 🇨🇳 CN|中国|福建|厦门|电信|427982493|
+      - 🇨🇳 CN|中国|福建|泉州|电信|092824349|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|763744929|
+      - 🇨🇳 CN|中国|福建|厦门|电信|765583265|
+      - 🇨🇳 CN|中国|福建|泉州|电信|538234721|
+      - 🇨🇳 CN|中国|福建|厦门|电信|059785605|
+      - 🇨🇳 CN|中国|福建|厦门|电信|065766548|
+      - 🇨🇳 CN|中国|福建|厦门|电信|594528488|
+      - 🇨🇳 CN|中国|福建|泉州|电信|033034267|
+      - 🇨🇳 CN|中国|福建|厦门|电信|670591754|
+      - 🇨🇳 CN|中国|福建|厦门|电信|270205365|
+      - 🇨🇳 CN|中国|福建|泉州|电信|933264771|
+      - 🇨🇳 CN|中国|福建|泉州|电信|858783598|
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -142,18 +163,21 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 CN|中国|福建|厦门|电信|654620752|
-      - 🇨🇳 CN|中国|福建|厦门|电信|353000406|
-      - 🇨🇳 CN|中国|福建|厦门|电信|118686510|
-      - 🇨🇳 CN|中国|福建|厦门|电信|637332445|
-      - 🇨🇳 CN|中国|福建|厦门|电信|791875369|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|504928190|
-      - 🇨🇳 CN|中国|福建|厦门|电信|984365349|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|363276956|
-      - 🇨🇳 CN|中国|福建|泉州|电信|083425719|
-      - 🇨🇳 CN|中国|福建|泉州|电信|544180523|
-      - 🇨🇳 CN|中国|福建|厦门|电信|530508966|
-      - 🇨🇳 CN|中国|福建|泉州|电信|650783603|
+      - 🇨🇳 CN|中国|福建|厦门|电信|911747293|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|167833013|
+      - 🇨🇳 CN|中国|福建|厦门|电信|427982493|
+      - 🇨🇳 CN|中国|福建|泉州|电信|092824349|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|763744929|
+      - 🇨🇳 CN|中国|福建|厦门|电信|765583265|
+      - 🇨🇳 CN|中国|福建|泉州|电信|538234721|
+      - 🇨🇳 CN|中国|福建|厦门|电信|059785605|
+      - 🇨🇳 CN|中国|福建|厦门|电信|065766548|
+      - 🇨🇳 CN|中国|福建|厦门|电信|594528488|
+      - 🇨🇳 CN|中国|福建|泉州|电信|033034267|
+      - 🇨🇳 CN|中国|福建|厦门|电信|670591754|
+      - 🇨🇳 CN|中国|福建|厦门|电信|270205365|
+      - 🇨🇳 CN|中国|福建|泉州|电信|933264771|
+      - 🇨🇳 CN|中国|福建|泉州|电信|858783598|
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
