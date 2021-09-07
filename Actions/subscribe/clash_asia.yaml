@@ -5,60 +5,84 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 HK|中国|香港|563679978|, server: 118.107.244.112, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇭🇰 HK|中国|香港|586167747|, server: 118.107.244.114, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇭🇰 HK|中国|香港|358656394|, server: 212.102.42.201, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇭🇰 HK|中国|香港|273154244|, server: 118.107.244.114, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇭🇰 HK|中国|香港|355233085|, server: 118.107.244.111, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇭🇰 HK|中国|香港|微软|478063106|, server: kaizen-hk-2.cn0.me, port: 443, type: trojan, password: 18e513fe-f7f4-353d-84ca-bc9646fb2528mielink, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK|中国|香港|微软|579295366|, server: kaizen-hk-4.cn0.me, port: 443, type: trojan, password: 18e513fe-f7f4-353d-84ca-bc9646fb2528mielink, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 HK|中国|香港|563679978|
-      - 🇭🇰 HK|中国|香港|586167747|
+      - 🇭🇰 HK|中国|香港|358656394|
+      - 🇭🇰 HK|中国|香港|273154244|
+      - 🇭🇰 HK|中国|香港|355233085|
+      - 🇭🇰 HK|中国|香港|微软|478063106|
+      - 🇭🇰 HK|中国|香港|微软|579295366|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇭🇰 HK|中国|香港|563679978|
-      - 🇭🇰 HK|中国|香港|586167747|
+      - 🇭🇰 HK|中国|香港|358656394|
+      - 🇭🇰 HK|中国|香港|273154244|
+      - 🇭🇰 HK|中国|香港|355233085|
+      - 🇭🇰 HK|中国|香港|微软|478063106|
+      - 🇭🇰 HK|中国|香港|微软|579295366|
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 HK|中国|香港|563679978|
-      - 🇭🇰 HK|中国|香港|586167747|
+      - 🇭🇰 HK|中国|香港|358656394|
+      - 🇭🇰 HK|中国|香港|273154244|
+      - 🇭🇰 HK|中国|香港|355233085|
+      - 🇭🇰 HK|中国|香港|微软|478063106|
+      - 🇭🇰 HK|中国|香港|微软|579295366|
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 HK|中国|香港|563679978|
-      - 🇭🇰 HK|中国|香港|586167747|
+      - 🇭🇰 HK|中国|香港|358656394|
+      - 🇭🇰 HK|中国|香港|273154244|
+      - 🇭🇰 HK|中国|香港|355233085|
+      - 🇭🇰 HK|中国|香港|微软|478063106|
+      - 🇭🇰 HK|中国|香港|微软|579295366|
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇭🇰 HK|中国|香港|563679978|
-      - 🇭🇰 HK|中国|香港|586167747|
+      - 🇭🇰 HK|中国|香港|358656394|
+      - 🇭🇰 HK|中国|香港|273154244|
+      - 🇭🇰 HK|中国|香港|355233085|
+      - 🇭🇰 HK|中国|香港|微软|478063106|
+      - 🇭🇰 HK|中国|香港|微软|579295366|
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇭🇰 HK|中国|香港|563679978|
-      - 🇭🇰 HK|中国|香港|586167747|
+      - 🇭🇰 HK|中国|香港|358656394|
+      - 🇭🇰 HK|中国|香港|273154244|
+      - 🇭🇰 HK|中国|香港|355233085|
+      - 🇭🇰 HK|中国|香港|微软|478063106|
+      - 🇭🇰 HK|中国|香港|微软|579295366|
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 HK|中国|香港|563679978|
-      - 🇭🇰 HK|中国|香港|586167747|
+      - 🇭🇰 HK|中国|香港|358656394|
+      - 🇭🇰 HK|中国|香港|273154244|
+      - 🇭🇰 HK|中国|香港|355233085|
+      - 🇭🇰 HK|中国|香港|微软|478063106|
+      - 🇭🇰 HK|中国|香港|微软|579295366|
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -74,8 +98,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 HK|中国|香港|563679978|
-      - 🇭🇰 HK|中国|香港|586167747|
+      - 🇭🇰 HK|中国|香港|358656394|
+      - 🇭🇰 HK|中国|香港|273154244|
+      - 🇭🇰 HK|中国|香港|355233085|
+      - 🇭🇰 HK|中国|香港|微软|478063106|
+      - 🇭🇰 HK|中国|香港|微软|579295366|
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
