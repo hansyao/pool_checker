@@ -29,6 +29,7 @@ jobs:
         sed -i s/^BLOCK_SIZE\=.*/BLOCK_SIZE\=200/g Actions/pool.sh
         sed -i s/^THREADNUMBER\=.*/THREADNUMBER\=15/g Actions/pool.sh
         sed -i s/^THREADNUMBER2\=.*/THREADNUMBER2\=5/g Actions/pool.sh
+        sed -i s/^UPLOAD_TO_COS\=.*/UPLOAD_TO_COS\=yes/g Actions/pool.sh
         echo "发布函数层依赖"
         if [[ $(./tencent_cf_deploy.sh ListLayerVersions pool_check_layer | jq -r '.Response.LayerVersions[].Status' | head -n 1) != 'Active' ]]; then 
           ./tencent_cf_deploy.sh PublishLayerVersion pool_check_layer

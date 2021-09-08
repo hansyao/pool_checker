@@ -13,6 +13,7 @@ ALGORITHM=3                     #多线程算法:1-队列；2-动态分组; 3-�
 URL=${TC_POOL_URL}              # 代理池URL地址
 PLATFORM=2                      # 1 - 腾讯云函数	2 - github	3 - 其他
 TC_COS_HOST=${TC_COS_HOST}      # 腾讯对象存储HOST地址
+UPLOAD_TO_COS=no                # 是否上传到tencent cos: yes/no
 # ***********************参数初始化完成********************* /
 
 SUSCRIBE_DIR=/tmp/subscribe
@@ -51,7 +52,7 @@ function roundup() {
 
 function upload_tc_cos() {
         # 上传至腾讯对象存储
-        if [[ -n ${TC_COS_HOST} ]]; then
+        if [[ -n ${TC_COS_HOST} && ${UPLOAD_TO_COS} == 'yes' ]]; then
                 # 存储桶不存在则退出
                 RES_STATUS=$(/trigger_cosapi.sh check_bucket "${TC_COS_HOST}")
                 if [[ $[RES_STATUS] -ne 200 ]]; then
