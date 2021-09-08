@@ -54,7 +54,7 @@ function upload_tc_cos() {
         # 上传至腾讯对象存储
         if [[ -n ${TC_COS_HOST} && ${UPLOAD_TO_COS} == 'yes' ]]; then
                 # 存储桶不存在则退出
-                RES_STATUS=$(/trigger_cosapi.sh check_bucket "${TC_COS_HOST}")
+                RES_STATUS=$(./trigger_cosapi.sh check_bucket "${TC_COS_HOST}")
                 if [[ $[RES_STATUS] -ne 200 ]]; then
                         echo -e "存储桶 ${TC_COS_HOST} 不存在!"
                         exit 1
