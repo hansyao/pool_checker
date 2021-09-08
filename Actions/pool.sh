@@ -61,7 +61,7 @@ function upload_tc_cos() {
                 fi
                 
                 # 存储桶存在则开始上传
-                echo -e "开始上传clash规则配置文件"
+                echo -e "开始上传clash规则配置文件 $(timestamp)"
                 local UPLOAD_LIST=$(ls -ahl ${SUSCRIBE_DIR}/clash*.yaml | awk '{print $(NF)}' \
                         | sed "\$a\\${SUSCRIBE_DIR}/${POOL_VERIFIED}")
 
@@ -69,7 +69,7 @@ function upload_tc_cos() {
                 do
                         local OBJ_KEY=$(echo ${LINE} | awk -F "/" '{print $(NF)}')
                         local RES_STATUS=$(./trigger_cosapi.sh upload_file "${TC_COS_HOST}" \
-                                "${LINE}" 'application/x-yaml; charset=utf-8' '/clash/' ${OBJ_KEY})
+                                "${LINE}" 'application/x-yaml;charset=utf-8' '/clash/' ${OBJ_KEY})
                         if [[ $[RES_STATUS] -eq 200 ]]; then
                                 echo -e "${OBJ_KEY} 上传成功, 访问地址： https://${TC_COS_HOST}/clash/${OBJ_KEY}"
                         else
@@ -77,21 +77,24 @@ function upload_tc_cos() {
                         fi
                 done
 
-                echo -e "开始上传surge规则文件"
-                local PWD_DIR=`pwd`
-                cd ${SUSCRIBE_DIR}
-                echo -e "打包surge为压缩文件"
-                local ZIP_FILE='/tmp/surge.zip'
-                zip -r /tmp/surge.zip ./ -i "surge*/*"
-                cd $PWD_DIR
-                local OBJ_KEY=$(echo -e "${ZIP_FILE}" | awk -F "/" '{print $(NF)}')
-                local RES_STATUS=$(./trigger_cosapi.sh upload_file "${TC_COS_HOST}" \
-                        "${ZIP_FILE}" 'application/zip; charset=utf-8' '/' ${OBJ_KEY})
-                if [[ $[RES_STATUS] -eq 200 ]]; then
-                        echo -e "${OBJ_KEY} 上传成功, 访问地址： https://${TC_COS_HOST}/${OBJ_KEY}"
-                else
-                        echo -e "${OBJ_KEY} 上传失败"
-                fi
+                echo -e "开始上传surge规则文件 $(timestamp)"
+                for i in {2..4}
+                do
+                        echo -e "开始上传surge${i}规则文件 $(timestamp)"
+                        local UPLOAD_LIST=$(ls -ahl ${SUSCRIBE_DIR}/surge${i} | awk '{print $(NF)}')
+
+                        echo -e "${UPLOAD_LIST}" | while read LINE && [[ -n ${LINE} ]]
+                        do
+                                local OBJ_KEY=$(echo ${LINE} | awk -F "/" '{print $(NF)}')
+                                local RES_STATUS=$(./trigger_cosapi.sh upload_file "${TC_COS_HOST}" \
+                                        "${LINE}" 'text/plain;charset=utf-8' "/surge${i}/" ${OBJ_KEY})
+                                if [[ $[RES_STATUS] -eq 200 ]]; then
+                                        echo -e "${OBJ_KEY} 上传成功, 访问地址： https://${TC_COS_HOST}/surge${i}/${OBJ_KEY}"
+                                else
+                                        echo -e "${OBJ_KEY} 上传失败"
+                                fi
+                        done
+                done
         fi
 }
 
