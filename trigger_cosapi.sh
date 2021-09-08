@@ -116,7 +116,6 @@ function upload_file() {
 HOST: ${HOST}
 Date: $(date -u -R -d @$[StartTimestamp] | sed s/\+0000/GMT/g)
 Content-MD5: $(openssl md5 -binary "${UPLOAD_FILE}" | base64)
-Content-Disposition: attachment
 x-cos-acl: public-read
 x-cos-storage-class: STANDARD
 Expires: ${SIGN_EXPIRES}

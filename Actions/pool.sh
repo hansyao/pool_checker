@@ -69,7 +69,7 @@ function upload_tc_cos() {
                 do
                         local OBJ_KEY=$(echo ${LINE} | awk -F "/" '{print $(NF)}')
                         local RES_STATUS=$(./trigger_cosapi.sh upload_file "${TC_COS_HOST}" \
-                                "${LINE}" 'application/x-yaml;charset=utf-8' '/clash/' ${OBJ_KEY})
+                                "${LINE}" 'text/yaml;charset=utf-8' '/clash/' ${OBJ_KEY})
                         if [[ $[RES_STATUS] -eq 200 ]]; then
                                 echo -e "${OBJ_KEY} 上传成功, 访问地址： https://${TC_COS_HOST}/clash/${OBJ_KEY}"
                         else
