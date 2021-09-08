@@ -71,7 +71,7 @@ function upload_tc_cos() {
                                 | awk -F "/" '{print $(NF)}'))
                         if [[ $[RES_STATUS] -eq 200 ]]; then
                                 echo -e "上传成功: ${LINE}"
-                } &
+                }&
                 done
                 wait
         fi        
