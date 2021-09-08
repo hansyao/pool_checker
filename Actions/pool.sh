@@ -62,11 +62,12 @@ function upload_tc_cos() {
                 
                 # 存储桶存在则开始上传
                 echo -e "开始上传clash规则配置文件 $(timestamp)"
-                local UPLOAD_LIST=$(ls -ahl ${SUSCRIBE_DIR}/clash*.yaml | awk '{print $(NF)}' \
+                local UPLOAD_LIST=$(ls -ahld ${SUSCRIBE_DIR}/clash*.yaml | awk '{print $(NF)}' \
                         | sed "\$a\\${SUSCRIBE_DIR}/${POOL_VERIFIED}")
 
                 echo -e "${UPLOAD_LIST}" | while read LINE && [[ -n ${LINE} ]]
                 do
+                        if [[ ! -f ${LINE} ]]; then continue; fi
                         local OBJ_KEY=$(echo ${LINE} | awk -F "/" '{print $(NF)}')
                         local RES_STATUS=$(./trigger_cosapi.sh upload_file "${TC_COS_HOST}" \
                                 "${LINE}" 'text/yaml;charset=utf-8' '/clash/' ${OBJ_KEY})
@@ -81,10 +82,10 @@ function upload_tc_cos() {
                 for i in {2..4}
                 do
                         echo -e "开始上传surge${i}规则文件 $(timestamp)"
-                        local UPLOAD_LIST=$(ls -ahl ${SUSCRIBE_DIR}/surge${i} | grep -Ev '^..$|^.$' | awk '{print $(NF)}')
-
+                        local UPLOAD_LIST=$(ls -ahld ${SUSCRIBE_DIR}/surge${i}/* | awk '{print $(NF)}')
                         echo -e "${UPLOAD_LIST}" | while read LINE && [[ -n ${LINE} ]]
                         do
+                                if [[ ! -f ${LINE} ]]; then continue; fi
                                 local OBJ_KEY=$(echo ${LINE} | awk -F "/" '{print $(NF)}')
                                 local RES_STATUS=$(./trigger_cosapi.sh upload_file "${TC_COS_HOST}" \
                                         "${LINE}" 'text/plain;charset=utf-8' "/surge${i}/" ${OBJ_KEY})
