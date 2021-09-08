@@ -83,8 +83,9 @@ function upload_tc_cos() {
                 local ZIP_FILE='/tmp/surge.zip'
                 zip -r /tmp/surge.zip ./ -i "surge*/*"
                 cd $PWD_DIR
+                local OBJ_KEY=$(echo -e "${ZIP_FILE}" | awk -F "/" '{print $(NF)}')
                 local RES_STATUS=$(./trigger_cosapi.sh upload_file "${TC_COS_HOST}" \
-                        "${ZIP_FILE}" 'application/zip; charset=utf-8' '/' 'surge.zip')
+                        "${ZIP_FILE}" 'application/zip; charset=utf-8' '/' ${OBJ_KEY})
                 if [[ $[RES_STATUS] -eq 200 ]]; then
                         echo -e "${OBJ_KEY} 上传成功, 访问地址： https://${TC_COS_HOST}/${OBJ_KEY}"
                 else
