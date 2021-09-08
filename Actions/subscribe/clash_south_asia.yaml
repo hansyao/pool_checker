@@ -5,27 +5,35 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|132072469|, server: 165.231.253.147, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|520254816|, server: 165.231.253.147, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|431603716|, server: 165.231.253.147, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|529338849|, server: 165.231.253.147, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|132072469|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|520254816|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|431603716|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|529338849|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|132072469|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|520254816|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|431603716|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|529338849|
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|132072469|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|520254816|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|431603716|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|529338849|
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -36,20 +44,26 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|132072469|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|520254816|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|431603716|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|529338849|
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|132072469|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|520254816|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|431603716|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|529338849|
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|132072469|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|520254816|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|431603716|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|529338849|
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -65,7 +79,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|132072469|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|520254816|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|431603716|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|529338849|
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
