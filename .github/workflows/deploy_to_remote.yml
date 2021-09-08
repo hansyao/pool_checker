@@ -18,6 +18,7 @@ jobs:
         TC_GH_REPO: ${{ github.repository }}
         TC_GH_TOKEN: ${{ secrets.TC_GH_TOKEN }}
         TC_POOL_URL: ${{ secrets.TC_POOL_URL }}
+        TC_COS_HOST: ${{ secrets.TC_COS_HOST }}
         REMOTE_IP: ${{ secrets.REMOTE_IP }}
         REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
         REMOTE_USER_NAME: ${{ secrets.REMOTE_USER_NAME }}

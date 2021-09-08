@@ -20,6 +20,7 @@ jobs:
         TC_SECRET_ID: ${{ secrets.TC_SECRET_ID }}
         TC_SECRET_KEY: ${{ secrets.TC_SECRET_KEY }}
         TC_POOL_URL: ${{ secrets.TC_POOL_URL }}
+        TC_COS_HOST: ${{ secrets.TC_COS_HOST }}
       run: |
         sed -i s/^PLATFORM\=./PLATFORM\=1/g env.sh
         sed -i s/^PLATFORM\=./PLATFORM\=1/g Actions/pool.sh
