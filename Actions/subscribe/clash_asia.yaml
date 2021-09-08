@@ -5,52 +5,81 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 HK|中国|香港|866904165|, server: 212.102.42.201, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇰🇷 KR|韩国|首尔|首尔|780106379|, server: 61.14.210.232, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇰🇷 KR|韩国|首尔|首尔|178827993|, server: 103.249.31.28, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇰🇷 KR|韩国|首尔|首尔|068962791|, server: 61.14.210.242, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇭🇰 HK|中国|香港|963127526|, server: 118.107.244.114, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇭🇰 HK|中国|香港|082682660|, server: 118.107.244.111, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 HK|中国|香港|866904165|
+      - 🇰🇷 KR|韩国|首尔|首尔|780106379|
+      - 🇰🇷 KR|韩国|首尔|首尔|178827993|
+      - 🇰🇷 KR|韩国|首尔|首尔|068962791|
+      - 🇭🇰 HK|中国|香港|963127526|
+      - 🇭🇰 HK|中国|香港|082682660|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇭🇰 HK|中国|香港|866904165|
+      - 🇰🇷 KR|韩国|首尔|首尔|780106379|
+      - 🇰🇷 KR|韩国|首尔|首尔|178827993|
+      - 🇰🇷 KR|韩国|首尔|首尔|068962791|
+      - 🇭🇰 HK|中国|香港|963127526|
+      - 🇭🇰 HK|中国|香港|082682660|
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 HK|中国|香港|866904165|
+      - 🇰🇷 KR|韩国|首尔|首尔|780106379|
+      - 🇰🇷 KR|韩国|首尔|首尔|178827993|
+      - 🇰🇷 KR|韩国|首尔|首尔|068962791|
+      - 🇭🇰 HK|中国|香港|963127526|
+      - 🇭🇰 HK|中国|香港|082682660|
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 HK|中国|香港|866904165|
+      - 🇭🇰 HK|中国|香港|963127526|
+      - 🇭🇰 HK|中国|香港|082682660|
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇭🇰 HK|中国|香港|866904165|
+      - 🇰🇷 KR|韩国|首尔|首尔|780106379|
+      - 🇰🇷 KR|韩国|首尔|首尔|178827993|
+      - 🇰🇷 KR|韩国|首尔|首尔|068962791|
+      - 🇭🇰 HK|中国|香港|963127526|
+      - 🇭🇰 HK|中国|香港|082682660|
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇭🇰 HK|中国|香港|866904165|
+      - 🇰🇷 KR|韩国|首尔|首尔|780106379|
+      - 🇰🇷 KR|韩国|首尔|首尔|178827993|
+      - 🇰🇷 KR|韩国|首尔|首尔|068962791|
+      - 🇭🇰 HK|中国|香港|963127526|
+      - 🇭🇰 HK|中国|香港|082682660|
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 HK|中国|香港|866904165|
+      - 🇰🇷 KR|韩国|首尔|首尔|780106379|
+      - 🇰🇷 KR|韩国|首尔|首尔|178827993|
+      - 🇰🇷 KR|韩国|首尔|首尔|068962791|
+      - 🇭🇰 HK|中国|香港|963127526|
+      - 🇭🇰 HK|中国|香港|082682660|
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -66,7 +95,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 HK|中国|香港|866904165|
+      - 🇰🇷 KR|韩国|首尔|首尔|780106379|
+      - 🇰🇷 KR|韩国|首尔|首尔|178827993|
+      - 🇰🇷 KR|韩国|首尔|首尔|068962791|
+      - 🇭🇰 HK|中国|香港|963127526|
+      - 🇭🇰 HK|中国|香港|082682660|
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
