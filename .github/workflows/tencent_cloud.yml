@@ -26,7 +26,7 @@ jobs:
         sed -i s/^PLATFORM\=./PLATFORM\=1/g Actions/pool.sh
         sed -i s/^TARGET_NODES\=.*/TARGET_NODES\=200/g Actions/pool.sh
         sed -i s/^TIMEOUT\=.*/TIMEOUT\=1/g Actions/pool.sh
-        sed -i s/^BLOCK_SIZE\=.*/BLOCK_SIZE\=200/g Actions/pool.sh
+        sed -i s/^BLOCK_SIZE\=.*/BLOCK_SIZE\=500/g Actions/pool.sh
         sed -i s/^THREADNUMBER\=.*/THREADNUMBER\=15/g Actions/pool.sh
         sed -i s/^THREADNUMBER2\=.*/THREADNUMBER2\=5/g Actions/pool.sh
         sed -i s/^UPLOAD_TO_COS\=.*/UPLOAD_TO_COS\=yes/g Actions/pool.sh

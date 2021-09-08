@@ -144,7 +144,7 @@ echo -e "等待subconvert准备好 $(timestamp)"
 
 while :
 do
-        netstat -natp | grep subconverter  | grep 25500 >/dev/null 2>&1
+        netstat -natp 2>/dev/null | grep subconverter  | grep 25500
         if [[ $? -eq 0 ]]; then break; fi
         sleep 1
 done
