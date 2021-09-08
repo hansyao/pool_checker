@@ -234,7 +234,7 @@ for i in {2..4}
 do
         echo -e "开始surge${i}规则转换 $(timestamp)"
         if [[ ! -d ${SUSCRIBE_DIR}/surge${i} ]]; then mkdir -p ${SUSCRIBE_DIR}/surge${i}; fi
-        LIST=$(ls -ahl ${SUSCRIBE_DIR}/clash*.yaml | awk '{print $(NF)}')
+        LIST=$(ls -ahl ${SUSCRIBE_DIR}/clash*.yaml | awk -F "/" '{print $(NF)}')
         echo -e "${LIST}" | while read LINE && [[ -n ${LINE} ]]
         do
                 SURGE_CONF=$(echo -e "${LINE}" | sed "s/clash/surge${i}/g" | sed "s/yaml/conf/g")
