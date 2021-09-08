@@ -61,6 +61,7 @@ function upload_tc_cos() {
                 fi
                 
                 # 存储桶存在则开始上传
+                echo -e "开始上传clash规则配置文件"
                 local UPLOAD_LIST=$(ls -ahl ${SUSCRIBE_DIR}/clash*.yaml | awk '{print $(NF)}' \
                         | sed "\$a\\${SUSCRIBE_DIR}/${POOL_VERIFIED}")
 
@@ -75,6 +76,20 @@ function upload_tc_cos() {
                                 echo -e "${OBJ_KEY} 上传失败"
                         fi
                 done
+
+                echo -e "开始上传surge规则文件"
+                local PWD_DIR=`pwd`
+                cd ${SUSCRIBE_DIR}
+                local ZIP_FILE='/tmp/surge.zip'
+                zip -r /tmp/surge.zip ./ -i "surge*/*"
+                cd $PWD_DIR
+                local RES_STATUS=$(./trigger_cosapi.sh upload_file "${TC_COS_HOST}" \
+                        "${ZIP_FILE}" 'application/zip; charset=utf-8' '/' 'surge.zip')
+                if [[ $[RES_STATUS] -eq 200 ]]; then
+                        echo -e "${OBJ_KEY} 上传成功, 访问地址： https://${TC_COS_HOST}/${OBJ_KEY}"
+                else
+                        echo -e "${OBJ_KEY} 上传失败"
+                fi
         fi
 }
 
@@ -213,14 +228,27 @@ curl -s http://127.0.0.1:25500/sub\?target\=clash\&emoji\=true\&exclude=$EXCL\&u
 
 echo -e "clash规则转化完成 $(timestamp)"
 
+for i in {2..4}
+do
+        echo -e "开始surge${i}规则转换 $(timestamp)"
+        if [[ ! -d ${SUSCRIBE_DIR}/surge${i} ]]; then mkdir -p ${SUSCRIBE_DIR}/surge${i}; fi
+        LIST=$(ls -ahl ${SUSCRIBE_DIR}/clash*.yaml | awk '{print $(NF)}')
+        echo -e "${LIST}" | while read LINE && [[ -n ${LINE} ]]
+        do
+                SURGE_CONF=$(echo -e "${LINE}" | sed "s/clash/surge${i}/g" | sed "s/yaml/conf/g")
+                curl -s http://127.0.0.1:25500/sub\?target\=surge${i}\&emoji\=true\&url\=../subscribe/${LINE}  -o "${SUSCRIBE_DIR}/surge${i}/${SURGE_CONF}" >/dev/null 2>&1
+        done
+done
+echo -e "surge规则转化完成 $(timestamp)"
+
 if [[ $[PLATFORM] -ne 2 ]]; then
-        # push到github
+        echo -e "push到github $(timestamp)"
         ./gitpush.sh "${SUSCRIBE_DIR}/${CLASH1}" \
                 "${SUSCRIBE_DIR}/${CLASH2}" "${SUSCRIBE_DIR}/${CLASH3}" \
                 "${SUSCRIBE_DIR}/${CLASH4}" "${SUSCRIBE_DIR}/${CLASH5}" \
                 "${SUSCRIBE_DIR}/${CLASH6}" "${SUSCRIBE_DIR}/${POOL_VERIFIED}"
         
-        # 上传到腾讯对象储存
+        echo -e "上传到腾讯对象储存 $(timestamp)"
         upload_tc_cos
 
         echo -e '清除环境....'
