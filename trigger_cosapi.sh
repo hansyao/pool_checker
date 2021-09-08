@@ -10,7 +10,7 @@ HOST=$2		# tencent cos host名称
 UPLOAD_FILE=$3	# 上传文件路径
 CONTENT_TYPE=$4	# 文件类型
 HTTPURI=$5	# tencent cos文件夹路径
-OBJ_KEY$6	# tencent cos的文件名
+OBJ_KEY=$6	# tencent cos的文件名
 
 function urlencode() {
 	ENCODE_STR=$(echo -E "$1" |sed "s/%/%%/g")
