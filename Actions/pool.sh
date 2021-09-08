@@ -238,9 +238,10 @@ do
         echo -e "${LIST}" | while read LINE && [[ -n ${LINE} ]]
         do
                 SURGE_CONF=$(echo -e "${LINE}" | sed "s/clash/surge${i}/g" | sed "s/yaml/conf/g")
-                curl -s http://127.0.0.1:25500/sub\?target\=surge${i}\&emoji\=true\&url\=../subscribe/${LINE}  -o "${SUSCRIBE_DIR}/surge${i}/${SURGE_CONF}" >/dev/null 2>&1
+                curl -s http://127.0.0.1:25500/sub\?target\=surge\&ver=${i}\&emoji\=true\&url\=../subscribe/${LINE}  -o "${SUSCRIBE_DIR}/surge${i}/${SURGE_CONF}" >/dev/null 2>&1
         done
 done
+
 echo -e "surge规则转化完成 $(timestamp)"
 
 if [[ $[PLATFORM] -ne 2 ]]; then
