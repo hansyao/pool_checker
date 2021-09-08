@@ -65,12 +65,14 @@ function upload_tc_cos() {
 
                 echo -e "${UPLOAD_LIST}" | while read LINE && [[ -n ${LINE} ]]
                 do
+                {
                         RES_STATUS=$(./trigger_cosapi.sh upload_file "${TC_COS_HOST}" \
                                 'application/x-yaml; charset=utf-8' '/clash/' $(echo ${LINE} \
                                 | awk -F "/" '{print $(NF)}'))
                         if [[ $[RES_STATUS] -eq 200 ]]; then
                                 echo -e "上传成功: ${LINE}"
-                done &
+                } &
+                done
                 wait
         fi        
 }
