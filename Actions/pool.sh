@@ -66,19 +66,16 @@ function upload_tc_cos() {
 
                 echo -e "${UPLOAD_LIST}" | while read LINE && [[ -n ${LINE} ]]
                 do
-                {
-                        RES_STATUS=$(./trigger_cosapi.sh upload_file "${TC_COS_HOST}" \
-                                "${LINE}" 'application/x-yaml; charset=utf-8' '/clash/' $(echo ${LINE} \
-                                | awk -F "/" '{print $(NF)}'))
+                        local OBJ_KEY=$(echo ${LINE} | awk -F "/" '{print $(NF)}')
+                        local RES_STATUS=$(./trigger_cosapi.sh upload_file "${TC_COS_HOST}" \
+                                "${LINE}" 'application/x-yaml; charset=utf-8' '/clash/' ${OBJ_KEY})
                         if [[ $[RES_STATUS] -eq 200 ]]; then
-                                echo -e "上传成功: ${LINE}"
+                                echo -e "${OBJ_KEY} 上传成功, 访问地址： https://${TC_COS_HOST}/clash/${OBJ_KEY}"
                         else
-                                echo -e "上传失败： ${LINE}"
+                                echo -e "${OBJ_KEY} 上传失败"
                         fi
-                }&
                 done
-                wait
-        fi        
+        fi
 }
 
 
