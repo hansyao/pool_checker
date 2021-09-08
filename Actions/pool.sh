@@ -81,7 +81,7 @@ function upload_tc_cos() {
                 for i in {2..4}
                 do
                         echo -e "开始上传surge${i}规则文件 $(timestamp)"
-                        local UPLOAD_LIST=$(ls -ahl ${SUSCRIBE_DIR}/surge${i} | awk '{print $(NF)}')
+                        local UPLOAD_LIST=$(ls -ahl ${SUSCRIBE_DIR}/surge${i} | grep -Ev '^..$|^.$' | awk '{print $(NF)}')
 
                         echo -e "${UPLOAD_LIST}" | while read LINE && [[ -n ${LINE} ]]
                         do
