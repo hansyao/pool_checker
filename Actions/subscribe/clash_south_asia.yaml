@@ -5,15 +5,14 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|784874839|, server: 165.231.253.147, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|764639828|, server: 165.231.253.147, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇸🇬 SG|新加坡|775213764|, server: 185.128.24.34, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG|新加坡|684517977|, server: 185.128.24.34, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG|新加坡|亚马逊|865203977|, server: 54.251.230.216, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 🇸🇬 SG|新加坡|673136857|, server: 185.128.24.34, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG|新加坡|772841404|, server: 185.128.24.34, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|177803602|, server: 27.131.164.92, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
-  - {name: 🇹🇷 TR|土耳其|Bursa|471353652|, server: 185.247.138.25, port: 15079, type: vmess, uuid: a1d846ec-9bef-4ffd-e34a-43bb06323ac3, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|483365042|, server: 165.231.253.147, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|383495156|, server: 165.231.253.147, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇸🇬 SG|新加坡|680520913|, server: 185.128.24.34, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|579476780|, server: 185.128.24.34, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|676727633|, server: 185.128.24.34, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|亚马逊|776855523|, server: 54.251.230.216, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|066829989|, server: 27.131.164.92, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
+  - {name: 🇹🇷 TR|土耳其|Bursa|266838355|, server: 185.247.138.25, port: 15079, type: vmess, uuid: a1d846ec-9bef-4ffd-e34a-43bb06323ac3, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -30,30 +29,28 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|784874839|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|764639828|
-      - 🇸🇬 SG|新加坡|775213764|
-      - 🇸🇬 SG|新加坡|684517977|
-      - 🇸🇬 SG|新加坡|亚马逊|865203977|
-      - 🇸🇬 SG|新加坡|673136857|
-      - 🇸🇬 SG|新加坡|772841404|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|177803602|
-      - 🇹🇷 TR|土耳其|Bursa|471353652|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|483365042|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|383495156|
+      - 🇸🇬 SG|新加坡|680520913|
+      - 🇸🇬 SG|新加坡|579476780|
+      - 🇸🇬 SG|新加坡|676727633|
+      - 🇸🇬 SG|新加坡|亚马逊|776855523|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|066829989|
+      - 🇹🇷 TR|土耳其|Bursa|266838355|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|784874839|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|764639828|
-      - 🇸🇬 SG|新加坡|775213764|
-      - 🇸🇬 SG|新加坡|684517977|
-      - 🇸🇬 SG|新加坡|亚马逊|865203977|
-      - 🇸🇬 SG|新加坡|673136857|
-      - 🇸🇬 SG|新加坡|772841404|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|177803602|
-      - 🇹🇷 TR|土耳其|Bursa|471353652|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|483365042|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|383495156|
+      - 🇸🇬 SG|新加坡|680520913|
+      - 🇸🇬 SG|新加坡|579476780|
+      - 🇸🇬 SG|新加坡|676727633|
+      - 🇸🇬 SG|新加坡|亚马逊|776855523|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|066829989|
+      - 🇹🇷 TR|土耳其|Bursa|266838355|
   - name: 📲 电报消息
     type: select
     proxies:
@@ -258,11 +255,10 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 SG|新加坡|775213764|
-      - 🇸🇬 SG|新加坡|684517977|
-      - 🇸🇬 SG|新加坡|亚马逊|865203977|
-      - 🇸🇬 SG|新加坡|673136857|
-      - 🇸🇬 SG|新加坡|772841404|
+      - 🇸🇬 SG|新加坡|680520913|
+      - 🇸🇬 SG|新加坡|579476780|
+      - 🇸🇬 SG|新加坡|676727633|
+      - 🇸🇬 SG|新加坡|亚马逊|776855523|
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204

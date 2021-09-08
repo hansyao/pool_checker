@@ -5,83 +5,64 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|382077566|, server: 120.41.41.215, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|474598745|, server: 120.41.41.56, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|374022390|, server: 120.41.41.215, port: 27235, type: ssr, cipher: aes-256-cfb, password: BR9ubV, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
-  - {name: 🇨🇳 CN|中国|上海|上海|阿里云|386301654|, server: 101.132.192.212, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|469399881|, server: ntemp25.boom.party, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|阿里云|377089125|, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|485202940|, server: nj5.boom.party, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|广东|佛山|移动|463771685|, server: ntemp17.boom.party, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|378577150|, server: n114.boom.party, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|282768310|, server: us5.edge.boom.party, port: 44001, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|274322812|, server: us8.edge.boom.party, port: 47000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|085391251|, server: n05.boom.party, port: 30001, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|774295316|, server: nl1.boom.party, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|广东|佛山|移动|187461983|, server: ntemp20.boom.party, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|376569832|, server: n17.boom.party, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|379721464|, server: n06.boom.party, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|福建|泉州|电信|465806542|, server: p5.22332e.com, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: t.me/SSRSUB, obfs-param: ""}
-  - {name: 🇨🇳 CN|中国|福建|泉州|电信|274485213|, server: 117.28.243.187, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: t.me/SSRSUB, obfs-param: ""}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|273167792|, server: nkd.boom.party, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|广东|佛山|移动|380792576|, server: nn1.boom.party, port: 40000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|广东|佛山|移动|277778919|, server: nn5.boom.party, port: 44000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|382448235|, server: nk1.boom.party, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|387588787|, server: nj7.boom.party, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|472113356|, server: njb.boom.party, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|574476416|, server: opt21.boom.party, port: 31000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|677860846|, server: us6.edge.boom.party, port: 45000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|587289822|, server: n62.boom.party, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|781774505|, server: ntemp08.boom.party, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|广东|佛山|移动|775646021|, server: nn9.boom.party, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|969326016|, server: nmc.boom.party, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|777581830|, server: ntemp09.boom.party, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|778662873|, server: nk8.boom.party, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|875797881|, server: us10.edge.boom.party, port: 49001, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|088067431|, server: nje.boom.party, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|广东|佛山|移动|177715297|, server: n24.boom.party, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|183216867|, server: nmd.boom.party, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|广东|佛山|移动|363571706|, server: n23.boom.party, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|广东|佛山|移动|468229958|, server: nn4.boom.party, port: 43000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|389261058|, server: n110.boom.party, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|388510104|, server: us2.edge.boom.party, port: 41000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|371921802|, server: n111.boom.party, port: 29000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|384466075|, server: opt10.boom.party, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|广东|佛山|移动|385918133|, server: nn11.boom.party, port: 50000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|389161994|, server: nj1.boom.party, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|463694542|, server: ntemp01.boom.party, port: 10000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|386889698|, server: n117.boom.party, port: 31000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|487076146|, server: opt11.boom.party, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|565634217|, server: nm9.boom.party, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|586071133|, server: opt1.boom.party, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|广东|佛山|移动|768978904|, server: nn8.boom.party, port: 47000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|786251477|, server: njc.boom.party, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|768639922|, server: 120.41.41.215, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|580049583|, server: us4.edge.boom.party, port: 43000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|473004299|, server: nl4.boom.party, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|486425023|, server: nk6.boom.party, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|764456375|, server: nkb.boom.party, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|779006616|, server: nk2.boom.party, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|864834265|, server: 120.41.41.56, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 🇨🇳 CN|中国|广东|移动|865995169|, server: nd1.boom.party, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|076141898|, server: nj3.boom.party, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|968754797|, server: nj6.boom.party, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|971411264|, server: nj4.boom.party, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|966646427|, server: 120.41.41.56, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
-  - {name: 🇨🇳 CN|中国|广东|佛山|移动|078179998|, server: nna.boom.party, port: 49000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|181522752|, server: nl2.boom.party, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|185511954|, server: nl3.boom.party, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|367170292|, server: us7.edge.boom.party, port: 46000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|287806575|, server: opt22.boom.party, port: 32000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|371564468|, server: nm7.boom.party, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|382879292|, server: nl5.boom.party, port: 26000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|469221038|, server: us9.edge.boom.party, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|571348441|, server: nl6.boom.party, port: 27000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|488993490|, server: opt25.boom.party, port: 35000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|677238413|, server: nk4.boom.party, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|566175499|, server: 120.41.41.215, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|564187221|, server: nma.boom.party, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|675337083|, server: 120.41.41.56, port: 27235, type: ssr, cipher: aes-256-cfb, password: BR9ubV, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
+  - {name: 🇨🇳 CN|中国|山东|济南|联通|583961734|, server: 119.188.97.30, port: 80, type: vmess, uuid: d51b0f1b-cf5a-454c-bc4c-171491ff5e74, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 004.cdn.8x.cx.hit.edu.cn}}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|081185421|, server: 120.41.41.56, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|182196764|, server: 120.41.41.215, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
+  - {name: 🇨🇳 CN|中国|上海|上海|阿里云|281309216|, server: 101.132.192.212, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
+  - {name: 🇨🇳 CN|中国|上海|上海|阿里云|374112240|, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|482140887|, server: n110.boom.party, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|762342463|, server: p5.22332e.com, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|678839615|, server: n05.boom.party, port: 30001, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|679957317|, server: opt11.boom.party, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|682864326|, server: 117.28.243.187, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: WWW.YOUNEED.WIN, obfs-param: WWW.YOUNEED.WIN}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|577037795|, server: nk8.boom.party, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|576275703|, server: opt10.boom.party, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|移动|566486401|, server: nd1.boom.party, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|679805763|, server: nj6.boom.party, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|868443517|, server: 117.28.243.187, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|972149243|, server: nna.boom.party, port: 49000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|980382421|, server: p5.22332e.com, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: t.me/SSRSUB, obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|077063009|, server: opt22.boom.party, port: 32000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|984914914|, server: nj7.boom.party, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|166514974|, server: ntemp10.boom.party, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|484575836|, server: nn11.boom.party, port: 50000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|移动|584459633|, server: nd6.boom.party, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|563431675|, server: ntemp20.boom.party, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|662547545|, server: nn3.boom.party, port: 42000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|564679765|, server: ntemp18.boom.party, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|577542254|, server: nl3.boom.party, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|674510748|, server: nn4.boom.party, port: 43000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|673452055|, server: nn5.boom.party, port: 44000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|585765443|, server: opt13.boom.party, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|685248682|, server: nl5.boom.party, port: 26000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|661745074|, server: n100.boom.party, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|680910683|, server: ntemp05.boom.party, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|585046894|, server: n32.boom.party, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|682453840|, server: ntemp19.boom.party, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|661952690|, server: nn1.boom.party, port: 40000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|772107767|, server: nkd.boom.party, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|776075885|, server: n77.boom.party, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|677879590|, server: ntemp01.boom.party, port: 10000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|772023860|, server: nma.boom.party, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|868118147|, server: n06.boom.party, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|869644928|, server: n114.boom.party, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|872968744|, server: ntemp15.boom.party, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|移动|871231017|, server: nd3.boom.party, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|866206243|, server: nm7.boom.party, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|778679171|, server: n17.boom.party, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|971751012|, server: nn14.boom.party, port: 53000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|070376920|, server: nn9.boom.party, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|080303575|, server: nn8.boom.party, port: 47000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|162579969|, server: 120.41.41.215, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|284701232|, server: n23.boom.party, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|468508116|, server: 120.41.41.56, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|764967817|, server: 120.41.41.56, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|867465264|, server: 120.41.41.215, port: 27235, type: ssr, cipher: aes-256-cfb, password: BR9ubV, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|881319726|, server: 117.28.243.187, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: t.me/SSRSUB7, obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|063683866|, server: 120.41.41.215, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|264161184|, server: n116.boom.party, port: 33200, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|180689482|, server: ntemp09.boom.party, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|276577902|, server: n62.boom.party, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -98,166 +79,128 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇨🇳 CN|中国|福建|厦门|电信|382077566|
-      - 🇨🇳 CN|中国|福建|厦门|电信|474598745|
-      - 🇨🇳 CN|中国|福建|厦门|电信|374022390|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|386301654|
-      - 🇨🇳 CN|中国|上海|上海|联通|469399881|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|377089125|
-      - 🇨🇳 CN|中国|上海|上海|联通|485202940|
-      - 🇨🇳 CN|中国|广东|佛山|移动|463771685|
-      - 🇨🇳 CN|中国|上海|上海|联通|378577150|
-      - 🇨🇳 CN|中国|上海|上海|联通|282768310|
-      - 🇨🇳 CN|中国|上海|上海|联通|274322812|
-      - 🇨🇳 CN|中国|上海|上海|联通|085391251|
-      - 🇨🇳 CN|中国|上海|上海|联通|774295316|
-      - 🇨🇳 CN|中国|广东|佛山|移动|187461983|
-      - 🇨🇳 CN|中国|上海|上海|联通|376569832|
-      - 🇨🇳 CN|中国|上海|上海|联通|379721464|
-      - 🇨🇳 CN|中国|福建|泉州|电信|465806542|
-      - 🇨🇳 CN|中国|福建|泉州|电信|274485213|
-      - 🇨🇳 CN|中国|上海|上海|联通|273167792|
-      - 🇨🇳 CN|中国|广东|佛山|移动|380792576|
-      - 🇨🇳 CN|中国|广东|佛山|移动|277778919|
-      - 🇨🇳 CN|中国|上海|上海|联通|382448235|
-      - 🇨🇳 CN|中国|上海|上海|联通|387588787|
-      - 🇨🇳 CN|中国|上海|上海|联通|472113356|
-      - 🇨🇳 CN|中国|上海|上海|联通|574476416|
-      - 🇨🇳 CN|中国|上海|上海|联通|677860846|
-      - 🇨🇳 CN|中国|上海|上海|联通|587289822|
-      - 🇨🇳 CN|中国|上海|上海|联通|781774505|
-      - 🇨🇳 CN|中国|广东|佛山|移动|775646021|
-      - 🇨🇳 CN|中国|上海|上海|联通|969326016|
-      - 🇨🇳 CN|中国|上海|上海|联通|777581830|
-      - 🇨🇳 CN|中国|上海|上海|联通|778662873|
-      - 🇨🇳 CN|中国|上海|上海|联通|875797881|
-      - 🇨🇳 CN|中国|上海|上海|联通|088067431|
-      - 🇨🇳 CN|中国|广东|佛山|移动|177715297|
-      - 🇨🇳 CN|中国|上海|上海|联通|183216867|
-      - 🇨🇳 CN|中国|广东|佛山|移动|363571706|
-      - 🇨🇳 CN|中国|广东|佛山|移动|468229958|
-      - 🇨🇳 CN|中国|上海|上海|联通|389261058|
-      - 🇨🇳 CN|中国|上海|上海|联通|388510104|
-      - 🇨🇳 CN|中国|上海|上海|联通|371921802|
-      - 🇨🇳 CN|中国|上海|上海|联通|384466075|
-      - 🇨🇳 CN|中国|广东|佛山|移动|385918133|
-      - 🇨🇳 CN|中国|上海|上海|联通|389161994|
-      - 🇨🇳 CN|中国|上海|上海|联通|463694542|
-      - 🇨🇳 CN|中国|上海|上海|联通|386889698|
-      - 🇨🇳 CN|中国|上海|上海|联通|487076146|
-      - 🇨🇳 CN|中国|上海|上海|联通|565634217|
-      - 🇨🇳 CN|中国|上海|上海|联通|586071133|
-      - 🇨🇳 CN|中国|广东|佛山|移动|768978904|
-      - 🇨🇳 CN|中国|上海|上海|联通|786251477|
-      - 🇨🇳 CN|中国|福建|厦门|电信|768639922|
-      - 🇨🇳 CN|中国|上海|上海|联通|580049583|
-      - 🇨🇳 CN|中国|上海|上海|联通|473004299|
-      - 🇨🇳 CN|中国|上海|上海|联通|486425023|
-      - 🇨🇳 CN|中国|上海|上海|联通|764456375|
-      - 🇨🇳 CN|中国|上海|上海|联通|779006616|
-      - 🇨🇳 CN|中国|福建|厦门|电信|864834265|
-      - 🇨🇳 CN|中国|广东|移动|865995169|
-      - 🇨🇳 CN|中国|上海|上海|联通|076141898|
-      - 🇨🇳 CN|中国|上海|上海|联通|968754797|
-      - 🇨🇳 CN|中国|上海|上海|联通|971411264|
-      - 🇨🇳 CN|中国|福建|厦门|电信|966646427|
-      - 🇨🇳 CN|中国|广东|佛山|移动|078179998|
-      - 🇨🇳 CN|中国|上海|上海|联通|181522752|
-      - 🇨🇳 CN|中国|上海|上海|联通|185511954|
-      - 🇨🇳 CN|中国|上海|上海|联通|367170292|
-      - 🇨🇳 CN|中国|上海|上海|联通|287806575|
-      - 🇨🇳 CN|中国|上海|上海|联通|371564468|
-      - 🇨🇳 CN|中国|上海|上海|联通|382879292|
-      - 🇨🇳 CN|中国|上海|上海|联通|469221038|
-      - 🇨🇳 CN|中国|上海|上海|联通|571348441|
-      - 🇨🇳 CN|中国|上海|上海|联通|488993490|
-      - 🇨🇳 CN|中国|上海|上海|联通|677238413|
-      - 🇨🇳 CN|中国|福建|厦门|电信|566175499|
-      - 🇨🇳 CN|中国|上海|上海|联通|564187221|
-      - 🇨🇳 CN|中国|福建|厦门|电信|675337083|
+      - 🇨🇳 CN|中国|山东|济南|联通|583961734|
+      - 🇨🇳 CN|中国|福建|厦门|电信|081185421|
+      - 🇨🇳 CN|中国|福建|厦门|电信|182196764|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|281309216|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|374112240|
+      - 🇨🇳 CN|中国|上海|上海|联通|482140887|
+      - 🇨🇳 CN|中国|福建|泉州|电信|762342463|
+      - 🇨🇳 CN|中国|上海|上海|联通|678839615|
+      - 🇨🇳 CN|中国|上海|上海|联通|679957317|
+      - 🇨🇳 CN|中国|福建|泉州|电信|682864326|
+      - 🇨🇳 CN|中国|上海|上海|联通|577037795|
+      - 🇨🇳 CN|中国|上海|上海|联通|576275703|
+      - 🇨🇳 CN|中国|广东|移动|566486401|
+      - 🇨🇳 CN|中国|上海|上海|联通|679805763|
+      - 🇨🇳 CN|中国|福建|泉州|电信|868443517|
+      - 🇨🇳 CN|中国|广东|佛山|移动|972149243|
+      - 🇨🇳 CN|中国|福建|泉州|电信|980382421|
+      - 🇨🇳 CN|中国|上海|上海|联通|077063009|
+      - 🇨🇳 CN|中国|上海|上海|联通|984914914|
+      - 🇨🇳 CN|中国|广东|佛山|移动|166514974|
+      - 🇨🇳 CN|中国|广东|佛山|移动|484575836|
+      - 🇨🇳 CN|中国|广东|移动|584459633|
+      - 🇨🇳 CN|中国|广东|佛山|移动|563431675|
+      - 🇨🇳 CN|中国|广东|佛山|移动|662547545|
+      - 🇨🇳 CN|中国|广东|佛山|移动|564679765|
+      - 🇨🇳 CN|中国|上海|上海|联通|577542254|
+      - 🇨🇳 CN|中国|广东|佛山|移动|674510748|
+      - 🇨🇳 CN|中国|广东|佛山|移动|673452055|
+      - 🇨🇳 CN|中国|上海|上海|联通|585765443|
+      - 🇨🇳 CN|中国|上海|上海|联通|685248682|
+      - 🇨🇳 CN|中国|上海|上海|联通|661745074|
+      - 🇨🇳 CN|中国|上海|上海|联通|680910683|
+      - 🇨🇳 CN|中国|广东|佛山|移动|585046894|
+      - 🇨🇳 CN|中国|广东|佛山|移动|682453840|
+      - 🇨🇳 CN|中国|广东|佛山|移动|661952690|
+      - 🇨🇳 CN|中国|上海|上海|联通|772107767|
+      - 🇨🇳 CN|中国|上海|上海|联通|776075885|
+      - 🇨🇳 CN|中国|上海|上海|联通|677879590|
+      - 🇨🇳 CN|中国|上海|上海|联通|772023860|
+      - 🇨🇳 CN|中国|上海|上海|联通|868118147|
+      - 🇨🇳 CN|中国|上海|上海|联通|869644928|
+      - 🇨🇳 CN|中国|广东|佛山|移动|872968744|
+      - 🇨🇳 CN|中国|广东|移动|871231017|
+      - 🇨🇳 CN|中国|上海|上海|联通|866206243|
+      - 🇨🇳 CN|中国|上海|上海|联通|778679171|
+      - 🇨🇳 CN|中国|广东|佛山|移动|971751012|
+      - 🇨🇳 CN|中国|广东|佛山|移动|070376920|
+      - 🇨🇳 CN|中国|广东|佛山|移动|080303575|
+      - 🇨🇳 CN|中国|福建|厦门|电信|162579969|
+      - 🇨🇳 CN|中国|广东|佛山|移动|284701232|
+      - 🇨🇳 CN|中国|福建|厦门|电信|468508116|
+      - 🇨🇳 CN|中国|福建|厦门|电信|764967817|
+      - 🇨🇳 CN|中国|福建|厦门|电信|867465264|
+      - 🇨🇳 CN|中国|福建|泉州|电信|881319726|
+      - 🇨🇳 CN|中国|福建|厦门|电信|063683866|
+      - 🇨🇳 CN|中国|上海|上海|联通|264161184|
+      - 🇨🇳 CN|中国|上海|上海|联通|180689482|
+      - 🇨🇳 CN|中国|上海|上海|联通|276577902|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 CN|中国|福建|厦门|电信|382077566|
-      - 🇨🇳 CN|中国|福建|厦门|电信|474598745|
-      - 🇨🇳 CN|中国|福建|厦门|电信|374022390|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|386301654|
-      - 🇨🇳 CN|中国|上海|上海|联通|469399881|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|377089125|
-      - 🇨🇳 CN|中国|上海|上海|联通|485202940|
-      - 🇨🇳 CN|中国|广东|佛山|移动|463771685|
-      - 🇨🇳 CN|中国|上海|上海|联通|378577150|
-      - 🇨🇳 CN|中国|上海|上海|联通|282768310|
-      - 🇨🇳 CN|中国|上海|上海|联通|274322812|
-      - 🇨🇳 CN|中国|上海|上海|联通|085391251|
-      - 🇨🇳 CN|中国|上海|上海|联通|774295316|
-      - 🇨🇳 CN|中国|广东|佛山|移动|187461983|
-      - 🇨🇳 CN|中国|上海|上海|联通|376569832|
-      - 🇨🇳 CN|中国|上海|上海|联通|379721464|
-      - 🇨🇳 CN|中国|福建|泉州|电信|465806542|
-      - 🇨🇳 CN|中国|福建|泉州|电信|274485213|
-      - 🇨🇳 CN|中国|上海|上海|联通|273167792|
-      - 🇨🇳 CN|中国|广东|佛山|移动|380792576|
-      - 🇨🇳 CN|中国|广东|佛山|移动|277778919|
-      - 🇨🇳 CN|中国|上海|上海|联通|382448235|
-      - 🇨🇳 CN|中国|上海|上海|联通|387588787|
-      - 🇨🇳 CN|中国|上海|上海|联通|472113356|
-      - 🇨🇳 CN|中国|上海|上海|联通|574476416|
-      - 🇨🇳 CN|中国|上海|上海|联通|677860846|
-      - 🇨🇳 CN|中国|上海|上海|联通|587289822|
-      - 🇨🇳 CN|中国|上海|上海|联通|781774505|
-      - 🇨🇳 CN|中国|广东|佛山|移动|775646021|
-      - 🇨🇳 CN|中国|上海|上海|联通|969326016|
-      - 🇨🇳 CN|中国|上海|上海|联通|777581830|
-      - 🇨🇳 CN|中国|上海|上海|联通|778662873|
-      - 🇨🇳 CN|中国|上海|上海|联通|875797881|
-      - 🇨🇳 CN|中国|上海|上海|联通|088067431|
-      - 🇨🇳 CN|中国|广东|佛山|移动|177715297|
-      - 🇨🇳 CN|中国|上海|上海|联通|183216867|
-      - 🇨🇳 CN|中国|广东|佛山|移动|363571706|
-      - 🇨🇳 CN|中国|广东|佛山|移动|468229958|
-      - 🇨🇳 CN|中国|上海|上海|联通|389261058|
-      - 🇨🇳 CN|中国|上海|上海|联通|388510104|
-      - 🇨🇳 CN|中国|上海|上海|联通|371921802|
-      - 🇨🇳 CN|中国|上海|上海|联通|384466075|
-      - 🇨🇳 CN|中国|广东|佛山|移动|385918133|
-      - 🇨🇳 CN|中国|上海|上海|联通|389161994|
-      - 🇨🇳 CN|中国|上海|上海|联通|463694542|
-      - 🇨🇳 CN|中国|上海|上海|联通|386889698|
-      - 🇨🇳 CN|中国|上海|上海|联通|487076146|
-      - 🇨🇳 CN|中国|上海|上海|联通|565634217|
-      - 🇨🇳 CN|中国|上海|上海|联通|586071133|
-      - 🇨🇳 CN|中国|广东|佛山|移动|768978904|
-      - 🇨🇳 CN|中国|上海|上海|联通|786251477|
-      - 🇨🇳 CN|中国|福建|厦门|电信|768639922|
-      - 🇨🇳 CN|中国|上海|上海|联通|580049583|
-      - 🇨🇳 CN|中国|上海|上海|联通|473004299|
-      - 🇨🇳 CN|中国|上海|上海|联通|486425023|
-      - 🇨🇳 CN|中国|上海|上海|联通|764456375|
-      - 🇨🇳 CN|中国|上海|上海|联通|779006616|
-      - 🇨🇳 CN|中国|福建|厦门|电信|864834265|
-      - 🇨🇳 CN|中国|广东|移动|865995169|
-      - 🇨🇳 CN|中国|上海|上海|联通|076141898|
-      - 🇨🇳 CN|中国|上海|上海|联通|968754797|
-      - 🇨🇳 CN|中国|上海|上海|联通|971411264|
-      - 🇨🇳 CN|中国|福建|厦门|电信|966646427|
-      - 🇨🇳 CN|中国|广东|佛山|移动|078179998|
-      - 🇨🇳 CN|中国|上海|上海|联通|181522752|
-      - 🇨🇳 CN|中国|上海|上海|联通|185511954|
-      - 🇨🇳 CN|中国|上海|上海|联通|367170292|
-      - 🇨🇳 CN|中国|上海|上海|联通|287806575|
-      - 🇨🇳 CN|中国|上海|上海|联通|371564468|
-      - 🇨🇳 CN|中国|上海|上海|联通|382879292|
-      - 🇨🇳 CN|中国|上海|上海|联通|469221038|
-      - 🇨🇳 CN|中国|上海|上海|联通|571348441|
-      - 🇨🇳 CN|中国|上海|上海|联通|488993490|
-      - 🇨🇳 CN|中国|上海|上海|联通|677238413|
-      - 🇨🇳 CN|中国|福建|厦门|电信|566175499|
-      - 🇨🇳 CN|中国|上海|上海|联通|564187221|
-      - 🇨🇳 CN|中国|福建|厦门|电信|675337083|
+      - 🇨🇳 CN|中国|山东|济南|联通|583961734|
+      - 🇨🇳 CN|中国|福建|厦门|电信|081185421|
+      - 🇨🇳 CN|中国|福建|厦门|电信|182196764|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|281309216|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|374112240|
+      - 🇨🇳 CN|中国|上海|上海|联通|482140887|
+      - 🇨🇳 CN|中国|福建|泉州|电信|762342463|
+      - 🇨🇳 CN|中国|上海|上海|联通|678839615|
+      - 🇨🇳 CN|中国|上海|上海|联通|679957317|
+      - 🇨🇳 CN|中国|福建|泉州|电信|682864326|
+      - 🇨🇳 CN|中国|上海|上海|联通|577037795|
+      - 🇨🇳 CN|中国|上海|上海|联通|576275703|
+      - 🇨🇳 CN|中国|广东|移动|566486401|
+      - 🇨🇳 CN|中国|上海|上海|联通|679805763|
+      - 🇨🇳 CN|中国|福建|泉州|电信|868443517|
+      - 🇨🇳 CN|中国|广东|佛山|移动|972149243|
+      - 🇨🇳 CN|中国|福建|泉州|电信|980382421|
+      - 🇨🇳 CN|中国|上海|上海|联通|077063009|
+      - 🇨🇳 CN|中国|上海|上海|联通|984914914|
+      - 🇨🇳 CN|中国|广东|佛山|移动|166514974|
+      - 🇨🇳 CN|中国|广东|佛山|移动|484575836|
+      - 🇨🇳 CN|中国|广东|移动|584459633|
+      - 🇨🇳 CN|中国|广东|佛山|移动|563431675|
+      - 🇨🇳 CN|中国|广东|佛山|移动|662547545|
+      - 🇨🇳 CN|中国|广东|佛山|移动|564679765|
+      - 🇨🇳 CN|中国|上海|上海|联通|577542254|
+      - 🇨🇳 CN|中国|广东|佛山|移动|674510748|
+      - 🇨🇳 CN|中国|广东|佛山|移动|673452055|
+      - 🇨🇳 CN|中国|上海|上海|联通|585765443|
+      - 🇨🇳 CN|中国|上海|上海|联通|685248682|
+      - 🇨🇳 CN|中国|上海|上海|联通|661745074|
+      - 🇨🇳 CN|中国|上海|上海|联通|680910683|
+      - 🇨🇳 CN|中国|广东|佛山|移动|585046894|
+      - 🇨🇳 CN|中国|广东|佛山|移动|682453840|
+      - 🇨🇳 CN|中国|广东|佛山|移动|661952690|
+      - 🇨🇳 CN|中国|上海|上海|联通|772107767|
+      - 🇨🇳 CN|中国|上海|上海|联通|776075885|
+      - 🇨🇳 CN|中国|上海|上海|联通|677879590|
+      - 🇨🇳 CN|中国|上海|上海|联通|772023860|
+      - 🇨🇳 CN|中国|上海|上海|联通|868118147|
+      - 🇨🇳 CN|中国|上海|上海|联通|869644928|
+      - 🇨🇳 CN|中国|广东|佛山|移动|872968744|
+      - 🇨🇳 CN|中国|广东|移动|871231017|
+      - 🇨🇳 CN|中国|上海|上海|联通|866206243|
+      - 🇨🇳 CN|中国|上海|上海|联通|778679171|
+      - 🇨🇳 CN|中国|广东|佛山|移动|971751012|
+      - 🇨🇳 CN|中国|广东|佛山|移动|070376920|
+      - 🇨🇳 CN|中国|广东|佛山|移动|080303575|
+      - 🇨🇳 CN|中国|福建|厦门|电信|162579969|
+      - 🇨🇳 CN|中国|广东|佛山|移动|284701232|
+      - 🇨🇳 CN|中国|福建|厦门|电信|468508116|
+      - 🇨🇳 CN|中国|福建|厦门|电信|764967817|
+      - 🇨🇳 CN|中国|福建|厦门|电信|867465264|
+      - 🇨🇳 CN|中国|福建|泉州|电信|881319726|
+      - 🇨🇳 CN|中国|福建|厦门|电信|063683866|
+      - 🇨🇳 CN|中国|上海|上海|联通|264161184|
+      - 🇨🇳 CN|中国|上海|上海|联通|180689482|
+      - 🇨🇳 CN|中国|上海|上海|联通|276577902|
   - name: 📲 电报消息
     type: select
     proxies:
