@@ -12,6 +12,7 @@ THREADNUMBER2=100                 #线程数(节点重命名)：按性能调整
 ALGORITHM=3                     #多线程算法:1-队列；2-动态分组; 3-队列（CLASH API）
 URL=${TC_POOL_URL}              # 代理池URL地址
 PLATFORM=2                      # 1 - 腾讯云函数	2 - github	3 - 其他
+TC_COS_HOST=${TC_COS_HOST}      # 腾讯对象存储HOST地址
 # ***********************参数初始化完成********************* /
 
 SUSCRIBE_DIR=/tmp/subscribe
@@ -47,6 +48,33 @@ function roundup() {
         unset FLOOR
         unset ADD
 }
+
+function upload_tc_cos() {
+        # 上传至腾讯对象存储
+        if [[ -n ${TC_COS_HOST} ]]; then
+                # 存储桶不存在则退出
+                RES_STATUS=$(/trigger_cosapi.sh check_bucket "${TC_COS_HOST}")
+                if [[ $[RES_STATUS] -ne 200 ]]; then
+                        echo -e "存储桶 ${TC_COS_HOST} 不存在!"
+                        exit 1
+                fi
+                
+                # 存储桶存在则开始上传
+                local UPLOAD_LIST=$(ls -ahl ${SUSCRIBE_DIR}/clash*.yaml | awk '{print $(NF)}' \
+                        | sed "\$a\\${SUSCRIBE_DIR}/${POOL_VERIFIED}")
+
+                echo -e "${UPLOAD_LIST}" | while read LINE && [[ -n ${LINE} ]]
+                do
+                        RES_STATUS=$(./trigger_cosapi.sh upload_file "${TC_COS_HOST}" \
+                                'application/x-yaml; charset=utf-8' '/clash/' $(echo ${LINE} \
+                                | awk -F "/" '{print $(NF)}'))
+                        if [[ $[RES_STATUS] -eq 200 ]]; then
+                                echo -e "上传成功: ${LINE}"
+                done &
+                wait
+        fi        
+}
+
 
 echo 0 >/tmp/total_valid_nodes
 START_TIME=$(date +%s)
@@ -183,10 +211,14 @@ curl -s http://127.0.0.1:25500/sub\?target\=clash\&emoji\=true\&exclude=$EXCL\&u
 echo -e "clash规则转化完成 $(timestamp)"
 
 if [[ $[PLATFORM] -ne 2 ]]; then
+        # push到github
         ./gitpush.sh "${SUSCRIBE_DIR}/${CLASH1}" \
                 "${SUSCRIBE_DIR}/${CLASH2}" "${SUSCRIBE_DIR}/${CLASH3}" \
                 "${SUSCRIBE_DIR}/${CLASH4}" "${SUSCRIBE_DIR}/${CLASH5}" \
                 "${SUSCRIBE_DIR}/${CLASH6}" "${SUSCRIBE_DIR}/${POOL_VERIFIED}"
+        
+        # 上传到腾讯对象储存
+        upload_tc_cos
 
         echo -e '清除环境....'
         ./start.sh clean
@@ -195,6 +227,10 @@ if [[ $[PLATFORM] -ne 2 ]]; then
         exit 0
 fi
 
+# github: commit to ./subscribe
 if [[ ! -d subscribe ]]; then mkdir subscribe; fi
 cp -f ${SUSCRIBE_DIR}/clash*.yaml ./subscribe/
 cp -f "${SUSCRIBE_DIR}/${POOL_VERIFIED}" ./subscribe/
+
+# 上传到腾讯对象储存
+upload_tc_cos
