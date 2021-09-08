@@ -80,6 +80,7 @@ function upload_tc_cos() {
                 echo -e "开始上传surge规则文件"
                 local PWD_DIR=`pwd`
                 cd ${SUSCRIBE_DIR}
+                echo -e "打包surge为压缩文件"
                 local ZIP_FILE='/tmp/surge.zip'
                 zip -r /tmp/surge.zip ./ -i "surge*/*"
                 cd $PWD_DIR
