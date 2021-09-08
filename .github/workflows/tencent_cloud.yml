@@ -33,7 +33,7 @@ jobs:
         echo "发布函数层依赖"
         if [[ $(./tencent_cf_deploy.sh ListLayerVersions pool_check_layer | jq -r '.Response.Error.Code') == 'ResourceNotFound.Layer' ]]; then 
           ./tencent_cf_deploy.sh PublishLayerVersion pool_check_layer
-          sleep 5
+          sleep 10
         else
           echo "层已存在，忽略并让函数绑定最新层版本"
         fi
