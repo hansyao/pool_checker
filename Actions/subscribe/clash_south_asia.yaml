@@ -5,13 +5,12 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|418480759|, server: 165.231.253.147, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|518457607|, server: 165.231.253.147, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|697101696|, server: 165.231.253.147, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇸🇬 SG|新加坡|亚马逊|114953519|, server: 54.251.230.216, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 🇸🇬 SG|新加坡|301435955|, server: 185.128.24.34, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|700341496|, server: 27.131.164.92, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
-  - {name: 🇹🇷 TR|土耳其|Bursa|712025757|, server: 185.247.138.25, port: 15079, type: vmess, uuid: a1d846ec-9bef-4ffd-e34a-43bb06323ac3, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|479817739|, server: 165.231.253.147, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
+  - {name: 🇸🇬 SG|新加坡|284116218|, server: 185.128.24.34, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|亚马逊|363366486|, server: 54.251.230.216, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: 🇸🇬 SG|新加坡|271489601|, server: 185.128.24.34, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|283667193|, server: 185.128.24.34, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|266988903|, server: 27.131.164.92, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -28,26 +27,24 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|418480759|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|518457607|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|697101696|
-      - 🇸🇬 SG|新加坡|亚马逊|114953519|
-      - 🇸🇬 SG|新加坡|301435955|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|700341496|
-      - 🇹🇷 TR|土耳其|Bursa|712025757|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|479817739|
+      - 🇸🇬 SG|新加坡|284116218|
+      - 🇸🇬 SG|新加坡|亚马逊|363366486|
+      - 🇸🇬 SG|新加坡|271489601|
+      - 🇸🇬 SG|新加坡|283667193|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|266988903|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|418480759|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|518457607|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|697101696|
-      - 🇸🇬 SG|新加坡|亚马逊|114953519|
-      - 🇸🇬 SG|新加坡|301435955|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|700341496|
-      - 🇹🇷 TR|土耳其|Bursa|712025757|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|479817739|
+      - 🇸🇬 SG|新加坡|284116218|
+      - 🇸🇬 SG|新加坡|亚马逊|363366486|
+      - 🇸🇬 SG|新加坡|271489601|
+      - 🇸🇬 SG|新加坡|283667193|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|266988903|
   - name: 📲 电报消息
     type: select
     proxies:
@@ -252,8 +249,10 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 SG|新加坡|亚马逊|114953519|
-      - 🇸🇬 SG|新加坡|301435955|
+      - 🇸🇬 SG|新加坡|284116218|
+      - 🇸🇬 SG|新加坡|亚马逊|363366486|
+      - 🇸🇬 SG|新加坡|271489601|
+      - 🇸🇬 SG|新加坡|283667193|
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
