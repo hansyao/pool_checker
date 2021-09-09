@@ -263,6 +263,14 @@ do
         do
                 SURGE_CONF=$(echo -e "${LINE}" | sed "s/clash/surge${i}/g" | sed "s/yaml/conf/g")
                 curl -s http://127.0.0.1:25500/sub\?target\=surge\&ver=${i}\&emoji\=true\&url\=../subscribe/${LINE}  -o "${SUBSCRIBE_DIR}/surge${i}/${SURGE_CONF}" >/dev/null 2>&1
+                
+                # 将由于surge4以下版本不支持load-balance负载均衡， 因此将其类型替换为url-test
+                if [[ $[i] -lt 4 ]] then
+                        cat "${SUBSCRIBE_DIR}/surge${i}/${SURGE_CONF}" | sed "s/load\-balance.*$/&,interval=300,tolerance=50/g" | sed "s/load\-balance/url\-test/g" \
+                        > /tmp/tmp.conf
+                mv /tmp/tmp.conf "${SUBSCRIBE_DIR}/surge${i}/${SURGE_CONF}"
+
+                fi
         done
 done
 
