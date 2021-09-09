@@ -267,9 +267,8 @@ do
                 # 将由于surge4以下版本不支持load-balance负载均衡， 因此将其类型替换为url-test
                 if [[ $[i] -lt 4 ]] then
                         cat "${SUBSCRIBE_DIR}/surge${i}/${SURGE_CONF}" | sed "s/load\-balance.*$/&,interval=300,tolerance=50/g" | sed "s/load\-balance/url\-test/g" \
-                        > /tmp/tmp.conf
-                mv /tmp/tmp.conf "${SUBSCRIBE_DIR}/surge${i}/${SURGE_CONF}"
-
+                                > /tmp/tmp.conf
+                        mv /tmp/tmp.conf "${SUBSCRIBE_DIR}/surge${i}/${SURGE_CONF}"
                 fi
         done
 done
