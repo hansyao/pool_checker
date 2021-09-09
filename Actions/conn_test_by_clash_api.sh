@@ -42,11 +42,7 @@ function clash_help() {
 
 function clash_exec() {
 	local LOG=/dev/null
-	if [[ -e /tmp/bin/clash ]]; then 
-		local CLASH='/tmp/bin/clash'
-	else
-		local CLASH="`pwd`/bin/clash"
-	fi
+    local CLASH=clash
 	
 	if [[ $1 == 'start' && -n $2 && -n $3 ]]; then
 		nohup ${CLASH} -f $2 -d /tmp/.config > ${LOG} 2>&1 &
