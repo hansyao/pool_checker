@@ -96,7 +96,7 @@ function is_connected() {
 function is_num() {
     local re='^[0-9]+$'
 
-    if [[ $1 =~ $re ]]; then
+    if [[ $(echo -e $1 | sed "s/^0*//g") =~ $re ]]; then
         echo 'yes'
     else
         echo 'no'
