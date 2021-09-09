@@ -30,6 +30,7 @@ jobs:
         sed -i s/^THREADNUMBER\=.*/THREADNUMBER\=15/g Actions/pool.sh
         sed -i s/^THREADNUMBER2\=.*/THREADNUMBER2\=5/g Actions/pool.sh
         sed -i s/^UPLOAD_TO_COS\=.*/UPLOAD_TO_COS\=yes/g Actions/pool.sh
+        sed -i s/^GIT_PUSH\=.*/GIT_PUSH\=no/g Actions/pool.sh
         echo "发布函数层依赖"
         if [[ $(./tencent_cf_deploy.sh ListLayerVersions pool_check_layer | jq -r '.Response.Error.Code') == 'ResourceNotFound.Layer' ]]; then 
           ./tencent_cf_deploy.sh PublishLayerVersion pool_check_layer

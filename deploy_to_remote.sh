@@ -18,6 +18,7 @@ function update_env() {
         sed -i s/^PLATFORM\=./PLATFORM\=3/g env.sh
         sed -i s/^PLATFORM\=./PLATFORM\=3/g Actions/pool.sh
         sed -i s/^TIMEOUT\=.*/TIMEOUT\=1/g Actions/pool.sh
+	sed -i s/^GIT_PUSH\=.*/GIT_PUSH\=yes/g Actions/pool.sh
 
 	sed -i "s/\/opt\//\`pwd\`\/pool_checker\//g" .profile
 	sed -i "s/^.*HOME\=.*//g" .profile

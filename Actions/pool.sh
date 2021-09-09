@@ -14,7 +14,7 @@ URL=${TC_POOL_URL}              # 代理池URL地址
 PLATFORM=2                      # 1 - 腾讯云函数	2 - github	3 - 其他
 TC_COS_HOST=${TC_COS_HOST}      # 腾讯对象存储HOST地址
 UPLOAD_TO_COS=no                # 是否上传到tencent cos: yes/no
-GIT_PUSH=no                     # 是否push到github: yes/no
+GIT_PUSH=yes                     # 是否push到github: yes/no
 # ***********************参数初始化完成********************* /
 
 SUBSCRIBE_DIR=/tmp/subscribe
@@ -184,7 +184,7 @@ if [[ ${RENAME} == 'no' ]]; then
                 ./gitpush.sh "${SUBSCRIBE_DIR}/${CLASH1}"
                 exit 0
         fi
-        
+
         echo -e "上传到腾讯对象储存 $(timestamp)"
         upload_tc_cos
         echo -e "完成上传到腾讯对象储存 $(timestamp)"
