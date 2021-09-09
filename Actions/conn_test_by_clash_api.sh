@@ -185,9 +185,9 @@ function connetion_test() {
 
     echo "开始规则转换"
     local EXCL=$(cat /tmp/subconverter/pref.ini | grep "^custom_proxy_group" \
-        | awk -F "=" '{print $2}' | awk -F "\`" '{print $1}' |sed 's/,/\n/g'\
-        |tr -s '\n' "|" | sed "s/^.*$/(&DIRECT|REJECT)/g") 
-    local LIST=$(curl -s ${CONTROLLER}/proxies | jq -r ".proxies.GLOBAL.all[]" | egrep -v ${EXCL})
+        | awk -F "=" '{print $2}' | awk -F "\`" '{print $1}' |sed 's/,/\n/g' \
+        | tr -s '\n' "|" | sed "s/^.*$/(&DIRECT|REJECT)/g")
+    local LIST=$(curl -s "${CONTROLLER}"/proxies | jq -r ".proxies.GLOBAL.all[]" | egrep -v "${EXCL}")
     local START_TIME=$(date +%s)
 
     echo "规则转换完成"
