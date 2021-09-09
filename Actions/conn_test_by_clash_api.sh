@@ -42,7 +42,7 @@ function clash_help() {
 
 function clash_exec() {
 	local LOG=/dev/null
-    local CLASH=clash
+    local CLASH=/tmp/bin/clash
 	
 	if [[ $1 == 'start' && -n $2 && -n $3 ]]; then
 		nohup ${CLASH} -f $2 -d /tmp/.config > ${LOG} 2>&1 &

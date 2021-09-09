@@ -26,6 +26,7 @@ get_clash() {
 	if [[ -e ${CLASH} ]]; then
 		if [[ $(${CLASH} -v | awk '{print $2}') == $(get_latest_release $REPO) ]]; then
 		echo -e "${CLASH} 是最新版本"
+		cp -f ${CLASH} /tmp/bin/
 		return
 		fi
 	fi
