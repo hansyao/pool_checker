@@ -5,20 +5,38 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 CN|中国|福建|泉州|电信|610241502|, server: 117.28.243.187, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: t.me/SSRSUB, obfs-param: ""}
-  - {name: 🇨🇳 CN|中国|上海|上海|阿里云|413865735|, server: 101.132.192.212, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|093147296|, server: 120.41.41.215, port: 27235, type: ssr, cipher: aes-256-cfb, password: BR9ubV, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|934321476|, server: 120.41.41.56, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|464651477|, server: opt24.boom.party, port: 34000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|754570006|, server: 120.41.41.56, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 🇨🇳 CN|中国|福建|泉州|电信|707122310|, server: p5.22332e.com, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|270249535|, server: njc.boom.party, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|阿里云|460046516|, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|960808119|, server: 120.41.41.215, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
-  - {name: 🇨🇳 CN|中国|福建|厦门|电信|829493639|, server: 120.41.41.215, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 🇨🇳 CN|中国|广东|佛山|移动|539393142|, server: nn9.boom.party, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|上海|上海|联通|726700607|, server: n37.boom.party, port: 33300, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
-  - {name: 🇨🇳 CN|中国|福建|泉州|电信|926251317|, server: 117.28.243.187, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: WWW.YOUNEED.WIN, obfs-param: WWW.YOUNEED.WIN}
+  - {name: 🇨🇳 CN|中国|天津|天津|电信|465379578|, server: 42.81.8.1, port: 80, type: vmess, uuid: d51b0f1b-cf5a-454c-bc4c-171491ff5e74, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 007.cdn.8x.cx.hit.edu.cn}}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|783618617|, server: 117.28.243.187, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: t.me/SSRSUB7, obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|934979553|, server: 120.41.41.215, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|834907572|, server: 120.41.41.215, port: 27235, type: ssr, cipher: aes-256-cfb, password: BR9ubV, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|821479884|, server: 120.41.41.56, port: 27235, type: ssr, cipher: aes-256-cfb, password: BR9ubV, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|214721100|, server: 120.41.41.215, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|793617140|, server: p5.22332e.com, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|上海|上海|阿里云|755831150|, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
+  - {name: 🇨🇳 CN|中国|上海|上海|阿里云|404591989|, server: 101.132.192.212, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
+  - {name: 🇨🇳 CN|中国|湖南|长沙|联通|360233596|, server: cu.newhost.cc, port: 10691, type: ssr, cipher: aes-256-cfb, password: tFlIIS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 11752:CbQhlx, obfs-param: .www.bing.com}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|352969562|, server: 120.41.41.56, port: 27235, type: ss, cipher: aes-256-cfb, password: BR9ubV}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|914134965|, server: nkd.boom.party, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|佛山|移动|432549801|, server: nn9.boom.party, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|移动|334904460|, server: gy1-120.lhcloud.xyz, port: 40058, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|311199428|, server: 120.41.41.56, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|471827082|, server: 120.41.41.56, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: t.me/vpnhat, obfs-param: t.me/vpnpool}
+  - {name: 🇨🇳 CN|中国|广东|广州|移动|523263083|, server: ahyd1.kexueddns.club, port: 48072, type: vmess, uuid: 235fae45-6747-4611-bc27-48402b674131, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /videos, ws-headers: {Host: ahyd1.kexueddns.club}}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|096572662|, server: opt24.boom.party, port: 34000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|656095999|, server: 117.28.243.187, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|392807201|, server: 117.28.243.171, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|广东|广州|移动|074935403|, server: gzyd1.kexueddns.club, port: 43784, type: vmess, uuid: 235fae45-6747-4611-bc27-48402b674131, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /videos, ws-headers: {Host: gzyd1.kexueddns.club}}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|905466470|, server: 117.28.243.187, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: WWW.YOUNEED.WIN, obfs-param: WWW.YOUNEED.WIN}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|739989808|, server: 117.28.243.187, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: t.me/SSRSUB, obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|福建|厦门|电信|687533037|, server: 120.41.41.215, port: 43552, type: ssr, cipher: aes-256-cfb, password: GUTGQJ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|上海|上海|联通|602703815|, server: n37.boom.party, port: 33300, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 254637:Ol4zZv, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 CN|中国|广东|移动|698485525|, server: gy1-120.lhcloud.xyz, port: 40001, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|358871547|, server: p5.22332e.com, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: t.me/SSRSUB, obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|广东|移动|174244984|, server: gy1-120.lhcloud.xyz, port: 40065, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇨🇳 CN|中国|福建|泉州|电信|293867642|, server: p8.22332e.com, port: 8333, type: ssr, cipher: rc4-md5, password: passfw2xs4e!, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇳 CN|中国|广东|移动|332235982|, server: gy1-120.lhcloud.xyz, port: 40003, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇨🇳 CN|中国|广东|移动|236470841|, server: gy1-120.lhcloud.xyz, port: 40059, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
+  - {name: 🇨🇳 CN|中国|广东|移动|244696621|, server: gy1-120.lhcloud.xyz, port: 40056, type: vmess, uuid: 554ea5c7-4040-4a70-9467-83a8dc6fc7f9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gy1-120.lhcloud.xyz}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -40,57 +58,111 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 🇨🇳 CN|中国|福建|泉州|电信|610241502|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|413865735|
-      - 🇨🇳 CN|中国|福建|厦门|电信|093147296|
-      - 🇨🇳 CN|中国|福建|厦门|电信|934321476|
-      - 🇨🇳 CN|中国|上海|上海|联通|464651477|
-      - 🇨🇳 CN|中国|福建|厦门|电信|754570006|
-      - 🇨🇳 CN|中国|福建|泉州|电信|707122310|
-      - 🇨🇳 CN|中国|上海|上海|联通|270249535|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|460046516|
-      - 🇨🇳 CN|中国|福建|厦门|电信|960808119|
-      - 🇨🇳 CN|中国|福建|厦门|电信|829493639|
-      - 🇨🇳 CN|中国|广东|佛山|移动|539393142|
-      - 🇨🇳 CN|中国|上海|上海|联通|726700607|
-      - 🇨🇳 CN|中国|福建|泉州|电信|926251317|
+      - 🇨🇳 CN|中国|天津|天津|电信|465379578|
+      - 🇨🇳 CN|中国|福建|泉州|电信|783618617|
+      - 🇨🇳 CN|中国|福建|厦门|电信|934979553|
+      - 🇨🇳 CN|中国|福建|厦门|电信|834907572|
+      - 🇨🇳 CN|中国|福建|厦门|电信|821479884|
+      - 🇨🇳 CN|中国|福建|厦门|电信|214721100|
+      - 🇨🇳 CN|中国|福建|泉州|电信|793617140|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|755831150|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|404591989|
+      - 🇨🇳 CN|中国|湖南|长沙|联通|360233596|
+      - 🇨🇳 CN|中国|福建|厦门|电信|352969562|
+      - 🇨🇳 CN|中国|上海|上海|联通|914134965|
+      - 🇨🇳 CN|中国|广东|佛山|移动|432549801|
+      - 🇨🇳 CN|中国|广东|移动|334904460|
+      - 🇨🇳 CN|中国|福建|厦门|电信|311199428|
+      - 🇨🇳 CN|中国|福建|厦门|电信|471827082|
+      - 🇨🇳 CN|中国|广东|广州|移动|523263083|
+      - 🇨🇳 CN|中国|上海|上海|联通|096572662|
+      - 🇨🇳 CN|中国|福建|泉州|电信|656095999|
+      - 🇨🇳 CN|中国|福建|泉州|电信|392807201|
+      - 🇨🇳 CN|中国|广东|广州|移动|074935403|
+      - 🇨🇳 CN|中国|福建|泉州|电信|905466470|
+      - 🇨🇳 CN|中国|福建|泉州|电信|739989808|
+      - 🇨🇳 CN|中国|福建|厦门|电信|687533037|
+      - 🇨🇳 CN|中国|上海|上海|联通|602703815|
+      - 🇨🇳 CN|中国|广东|移动|698485525|
+      - 🇨🇳 CN|中国|福建|泉州|电信|358871547|
+      - 🇨🇳 CN|中国|广东|移动|174244984|
+      - 🇨🇳 CN|中国|福建|泉州|电信|293867642|
+      - 🇨🇳 CN|中国|广东|移动|332235982|
+      - 🇨🇳 CN|中国|广东|移动|236470841|
+      - 🇨🇳 CN|中国|广东|移动|244696621|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 CN|中国|福建|泉州|电信|610241502|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|413865735|
-      - 🇨🇳 CN|中国|福建|厦门|电信|093147296|
-      - 🇨🇳 CN|中国|福建|厦门|电信|934321476|
-      - 🇨🇳 CN|中国|上海|上海|联通|464651477|
-      - 🇨🇳 CN|中国|福建|厦门|电信|754570006|
-      - 🇨🇳 CN|中国|福建|泉州|电信|707122310|
-      - 🇨🇳 CN|中国|上海|上海|联通|270249535|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|460046516|
-      - 🇨🇳 CN|中国|福建|厦门|电信|960808119|
-      - 🇨🇳 CN|中国|福建|厦门|电信|829493639|
-      - 🇨🇳 CN|中国|广东|佛山|移动|539393142|
-      - 🇨🇳 CN|中国|上海|上海|联通|726700607|
-      - 🇨🇳 CN|中国|福建|泉州|电信|926251317|
+      - 🇨🇳 CN|中国|天津|天津|电信|465379578|
+      - 🇨🇳 CN|中国|福建|泉州|电信|783618617|
+      - 🇨🇳 CN|中国|福建|厦门|电信|934979553|
+      - 🇨🇳 CN|中国|福建|厦门|电信|834907572|
+      - 🇨🇳 CN|中国|福建|厦门|电信|821479884|
+      - 🇨🇳 CN|中国|福建|厦门|电信|214721100|
+      - 🇨🇳 CN|中国|福建|泉州|电信|793617140|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|755831150|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|404591989|
+      - 🇨🇳 CN|中国|湖南|长沙|联通|360233596|
+      - 🇨🇳 CN|中国|福建|厦门|电信|352969562|
+      - 🇨🇳 CN|中国|上海|上海|联通|914134965|
+      - 🇨🇳 CN|中国|广东|佛山|移动|432549801|
+      - 🇨🇳 CN|中国|广东|移动|334904460|
+      - 🇨🇳 CN|中国|福建|厦门|电信|311199428|
+      - 🇨🇳 CN|中国|福建|厦门|电信|471827082|
+      - 🇨🇳 CN|中国|广东|广州|移动|523263083|
+      - 🇨🇳 CN|中国|上海|上海|联通|096572662|
+      - 🇨🇳 CN|中国|福建|泉州|电信|656095999|
+      - 🇨🇳 CN|中国|福建|泉州|电信|392807201|
+      - 🇨🇳 CN|中国|广东|广州|移动|074935403|
+      - 🇨🇳 CN|中国|福建|泉州|电信|905466470|
+      - 🇨🇳 CN|中国|福建|泉州|电信|739989808|
+      - 🇨🇳 CN|中国|福建|厦门|电信|687533037|
+      - 🇨🇳 CN|中国|上海|上海|联通|602703815|
+      - 🇨🇳 CN|中国|广东|移动|698485525|
+      - 🇨🇳 CN|中国|福建|泉州|电信|358871547|
+      - 🇨🇳 CN|中国|广东|移动|174244984|
+      - 🇨🇳 CN|中国|福建|泉州|电信|293867642|
+      - 🇨🇳 CN|中国|广东|移动|332235982|
+      - 🇨🇳 CN|中国|广东|移动|236470841|
+      - 🇨🇳 CN|中国|广东|移动|244696621|
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇨🇳 CN|中国|福建|泉州|电信|610241502|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|413865735|
-      - 🇨🇳 CN|中国|福建|厦门|电信|093147296|
-      - 🇨🇳 CN|中国|福建|厦门|电信|934321476|
-      - 🇨🇳 CN|中国|上海|上海|联通|464651477|
-      - 🇨🇳 CN|中国|福建|厦门|电信|754570006|
-      - 🇨🇳 CN|中国|福建|泉州|电信|707122310|
-      - 🇨🇳 CN|中国|上海|上海|联通|270249535|
-      - 🇨🇳 CN|中国|上海|上海|阿里云|460046516|
-      - 🇨🇳 CN|中国|福建|厦门|电信|960808119|
-      - 🇨🇳 CN|中国|福建|厦门|电信|829493639|
-      - 🇨🇳 CN|中国|广东|佛山|移动|539393142|
-      - 🇨🇳 CN|中国|上海|上海|联通|726700607|
-      - 🇨🇳 CN|中国|福建|泉州|电信|926251317|
+      - 🇨🇳 CN|中国|天津|天津|电信|465379578|
+      - 🇨🇳 CN|中国|福建|泉州|电信|783618617|
+      - 🇨🇳 CN|中国|福建|厦门|电信|934979553|
+      - 🇨🇳 CN|中国|福建|厦门|电信|834907572|
+      - 🇨🇳 CN|中国|福建|厦门|电信|821479884|
+      - 🇨🇳 CN|中国|福建|厦门|电信|214721100|
+      - 🇨🇳 CN|中国|福建|泉州|电信|793617140|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|755831150|
+      - 🇨🇳 CN|中国|上海|上海|阿里云|404591989|
+      - 🇨🇳 CN|中国|湖南|长沙|联通|360233596|
+      - 🇨🇳 CN|中国|福建|厦门|电信|352969562|
+      - 🇨🇳 CN|中国|上海|上海|联通|914134965|
+      - 🇨🇳 CN|中国|广东|佛山|移动|432549801|
+      - 🇨🇳 CN|中国|广东|移动|334904460|
+      - 🇨🇳 CN|中国|福建|厦门|电信|311199428|
+      - 🇨🇳 CN|中国|福建|厦门|电信|471827082|
+      - 🇨🇳 CN|中国|广东|广州|移动|523263083|
+      - 🇨🇳 CN|中国|上海|上海|联通|096572662|
+      - 🇨🇳 CN|中国|福建|泉州|电信|656095999|
+      - 🇨🇳 CN|中国|福建|泉州|电信|392807201|
+      - 🇨🇳 CN|中国|广东|广州|移动|074935403|
+      - 🇨🇳 CN|中国|福建|泉州|电信|905466470|
+      - 🇨🇳 CN|中国|福建|泉州|电信|739989808|
+      - 🇨🇳 CN|中国|福建|厦门|电信|687533037|
+      - 🇨🇳 CN|中国|上海|上海|联通|602703815|
+      - 🇨🇳 CN|中国|广东|移动|698485525|
+      - 🇨🇳 CN|中国|福建|泉州|电信|358871547|
+      - 🇨🇳 CN|中国|广东|移动|174244984|
+      - 🇨🇳 CN|中国|福建|泉州|电信|293867642|
+      - 🇨🇳 CN|中国|广东|移动|332235982|
+      - 🇨🇳 CN|中国|广东|移动|236470841|
+      - 🇨🇳 CN|中国|广东|移动|244696621|
   - name: 📲 电报消息
     type: select
     proxies:
@@ -2059,6 +2131,44 @@ rules:
  - IP-CIDR,173.194.175.188/32,📢 谷歌FCM,no-resolve
  - IP-CIDR,173.194.218.188/32,📢 谷歌FCM,no-resolve
  - IP-CIDR,209.85.233.188/32,📢 谷歌FCM,no-resolve
+ - DOMAIN-SUFFIX,265.com,🎯 全球直连
+ - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
+ - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,alt2-mtalk.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,alt3-mtalk.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,alt4-mtalk.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,alt5-mtalk.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,alt6-mtalk.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,alt7-mtalk.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,alt8-mtalk.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,app-measurement.com,🎯 全球直连
+ - DOMAIN-SUFFIX,c.android.clients.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,cache.pack.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,clickserve.dartsearch.net,🎯 全球直连
+ - DOMAIN-SUFFIX,clientservices.googleapis.com,🎯 全球直连
+ - DOMAIN-SUFFIX,crl.pki.goog,🎯 全球直连
+ - DOMAIN-SUFFIX,dl.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,dl.l.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,fonts.googleapis.com,🎯 全球直连
+ - DOMAIN-SUFFIX,fonts.gstatic.com,🎯 全球直连
+ - DOMAIN-SUFFIX,googletagmanager.com,🎯 全球直连
+ - DOMAIN-SUFFIX,googletagservices.com,🎯 全球直连
+ - DOMAIN-SUFFIX,gtm.oasisfeng.com,🎯 全球直连
+ - DOMAIN-SUFFIX,imasdk.googleapis.com,🎯 全球直连
+ - DOMAIN-SUFFIX,mtalk.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,ocsp.pki.goog,🎯 全球直连
+ - DOMAIN-SUFFIX,recaptcha.net,🎯 全球直连
+ - DOMAIN-SUFFIX,safebrowsing-cache.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,safebrowsing.googleapis.com,🎯 全球直连
+ - DOMAIN-SUFFIX,settings.crashlytics.com,🎯 全球直连
+ - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,ssl.gstatic.com,🎯 全球直连
+ - DOMAIN-SUFFIX,toolbarqueries.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,update.googleapis.com,🎯 全球直连
+ - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,www.gstatic.com,🎯 全球直连
  - PROCESS-NAME,OneDrive,Ⓜ️ 微软云盘
  - PROCESS-NAME,OneDriveUpdater,Ⓜ️ 微软云盘
  - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软云盘
