@@ -5,288 +5,352 @@ mode: Rule
 log-level: silent
 external-controller: :9090
 proxies:
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|095077144|, server: 103.156.51.43, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|973642984|, server: 103.156.51.16, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|835115579|, server: 103.156.51.47, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|785148916|, server: 27.131.138.174, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|596625573|, server: 27.131.164.83, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|480631851|, server: 27.131.164.99, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|888387025|, server: 27.131.164.101, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|543430118|, server: 103.148.242.163, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|450546121|, server: 103.148.242.163, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|226897736|, server: 103.148.242.163, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|131096032|, server: 103.148.242.163, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|497484302|, server: 103.148.242.163, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|098764437|, server: 103.148.242.163, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|710094242|, server: 103.148.242.163, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|109838865|, server: 103.148.242.163, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|503415189|, server: 103.148.242.163, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|651874214|, server: 103.148.242.163, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|018470328|, server: 103.148.242.163, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|793583003|, server: 103.148.242.163, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|385167222|, server: 103.148.242.163, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|945710335|, server: 103.148.242.163, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|037501114|, server: 103.148.242.163, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|457252974|, server: 103.148.242.163, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|919959006|, server: 103.148.242.163, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|870944040|, server: 103.148.242.163, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|879888275|, server: 103.148.242.163, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|772650445|, server: 103.148.242.163, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|875119310|, server: 103.148.242.163, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|982825672|, server: 103.148.242.163, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|487085317|, server: 103.148.242.163, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|484468898|, server: 103.148.242.163, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|727056739|, server: 103.94.27.229, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|932267475|, server: 103.94.27.229, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|857485511|, server: 137.59.52.109, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|395001522|, server: 103.94.27.99, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|259484302|, server: 165.231.253.165, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|477607707|, server: 103.94.27.229, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|307571509|, server: 103.94.27.115, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|195801844|, server: 103.108.117.149, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇮🇳 IN|印度|611492346|, server: 103.73.189.61, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|291888820|, server: 103.94.27.179, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|390180716|, server: 137.59.52.109, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|437109100|, server: 165.231.253.147, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|991337256|, server: 103.94.27.179, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|466731528|, server: 103.94.27.99, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|084746493|, server: 165.231.253.163, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|891935758|, server: 137.59.52.109, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|492157506|, server: 165.231.253.147, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|896422437|, server: 103.94.27.179, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|375789004|, server: 103.94.27.179, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇳 IN|印度|680192200|, server: 103.73.189.61, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|797689520|, server: 103.94.27.179, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|902332748|, server: 137.59.52.109, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|753570126|, server: 103.94.27.179, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|184420431|, server: 165.231.253.147, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|481273172|, server: 103.94.27.179, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
-  - {name: 🇮🇳 IN|印度|154279368|, server: 103.73.189.61, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|496034326|, server: 137.59.52.109, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|752491804|, server: 103.94.27.179, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|639169652|, server: 103.39.132.189, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|001085925|, server: 103.108.117.147, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇮🇳 IN|印度|213202974|, server: 103.73.189.61, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|927806771|, server: 103.39.132.189, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|934796336|, server: 103.94.27.101, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|809345578|, server: 103.108.117.149, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|287704209|, server: 103.108.117.118, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|008095268|, server: 165.231.253.165, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|004420975|, server: 103.94.27.101, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|082765296|, server: 103.94.27.229, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|267579874|, server: 103.108.117.149, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|812413538|, server: 134.209.155.247, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|972979243|, server: 137.59.52.109, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|708032000|, server: 165.231.253.147, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|957568182|, server: 103.39.132.187, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|851254480|, server: 103.94.27.229, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|544793294|, server: 103.94.27.179, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|936324986|, server: 103.94.27.179, port: 45948, type: ss, cipher: aes-256-gcm, password: j76EXqJcQhuQTr3EvUf7xaK9}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|734866854|, server: 165.231.253.149, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|931090020|, server: 103.39.132.187, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|934615649|, server: 134.209.155.247, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|345378381|, server: 103.94.27.179, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|494576208|, server: 103.94.27.179, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|083678067|, server: 165.231.253.147, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|473245715|, server: 103.94.27.229, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|604935486|, server: 103.108.117.147, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇳 IN|印度|689317562|, server: 103.73.189.61, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|040882669|, server: 103.94.27.179, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|471777741|, server: 165.231.253.165, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|441774236|, server: 103.94.27.229, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|680123316|, server: 134.209.155.247, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|989572958|, server: 103.94.27.115, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|387344712|, server: 137.59.52.109, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|734966749|, server: 103.39.132.189, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|033197251|, server: 137.59.52.109, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|087067888|, server: 103.94.27.179, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: 🇮🇳 IN|印度|700279601|, server: 103.73.189.61, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|998661593|, server: 103.108.117.118, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇮🇳 IN|印度|407365414|, server: 103.73.189.61, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|963227437|, server: 165.231.253.147, port: 35200, type: ss, cipher: aes-256-gcm, password: WBLAbN6AwtV5avBx73hFRLB3}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|229232116|, server: 137.59.52.109, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|316688262|, server: 103.94.27.179, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|707289395|, server: 103.94.27.229, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|599813451|, server: 103.39.132.189, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|033042251|, server: 103.94.27.181, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|200045489|, server: 103.94.27.115, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|532289551|, server: 103.94.27.101, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|624729721|, server: 137.59.52.109, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|963252659|, server: 103.108.117.118, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: 🇮🇳 IN|印度|318792038|, server: 103.73.189.61, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|711346394|, server: 103.108.117.149, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|985342363|, server: 103.73.189.61, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
-  - {name: 🇮🇳 IN|印度|183894989|, server: 103.73.189.61, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|843961003|, server: 103.94.27.179, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|847368796|, server: 103.94.27.179, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|196492123|, server: 103.39.132.189, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|739008206|, server: 103.94.27.229, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|286093351|, server: 103.94.27.179, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|461420146|, server: 103.108.117.147, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|869246836|, server: 103.94.27.179, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇮🇳 IN|印度|890976053|, server: 103.73.189.61, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|089944605|, server: 134.209.155.247, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|017542704|, server: 103.94.27.179, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: 🇮🇳 IN|印度|400330440|, server: 103.73.189.61, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|889794413|, server: 103.94.27.229, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|380548328|, server: 13.127.168.127, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|953984941|, server: 103.39.132.189, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇮🇳 IN|印度|222136293|, server: 103.73.189.61, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: 🇮🇳 IN|印度|460309060|, server: 103.73.189.61, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|967038487|, server: 103.94.27.115, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|638358971|, server: 134.209.155.247, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|970775512|, server: 137.59.52.109, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: 🇮🇳 IN|印度|243952765|, server: 103.73.189.61, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|482449089|, server: 103.94.27.115, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|819782961|, server: 134.209.155.247, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|260285601|, server: 103.94.27.179, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|357310646|, server: 165.231.253.165, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|665248583|, server: 103.94.27.115, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|088205146|, server: 35.154.201.59, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|164699670|, server: 134.209.155.247, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|117118440|, server: 103.94.27.229, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|349100625|, server: 103.39.132.189, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|071424381|, server: 103.39.132.189, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|260877848|, server: 134.209.155.247, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|883777287|, server: 165.231.253.165, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇳 IN|印度|983850701|, server: 103.73.189.61, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|395682951|, server: 103.94.27.179, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|756337678|, server: 103.39.132.189, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|984672236|, server: 103.94.27.115, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|371684153|, server: 103.39.132.189, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|842993201|, server: 137.59.52.107, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|346523550|, server: 13.127.197.3, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|871144993|, server: 103.94.27.179, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|526780885|, server: 103.94.27.179, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇮🇳 IN|印度|042409256|, server: 103.73.189.61, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|614402044|, server: 103.94.27.117, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|183438455|, server: 103.73.189.61, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇮🇳 IN|印度|中央邦|印多尔|758886169|, server: 103.39.132.189, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|679916263|, server: in1-1.noojat.com, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 IN|印度|852979799|, server: 103.73.189.61, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇸🇬 SG|新加坡|387423841|, server: 89.187.163.197, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇸🇬 SG|新加坡|868202984|, server: 89.187.162.186, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇸🇬 SG|新加坡|610605531|, server: 89.187.162.186, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇸🇬 SG|新加坡|019266441|, server: 89.187.163.197, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇸🇬 SG|新加坡|167815894|, server: 89.187.163.130, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇸🇬 SG|新加坡|030923382|, server: 81.90.189.152, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG|新加坡|247540283|, server: 185.128.24.34, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG|新加坡|308216654|, server: 81.90.189.229, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG|新加坡|893352812|, server: 185.128.24.34, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG|新加坡|463383953|, server: 89.187.163.212, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇸🇬 SG|新加坡|664948403|, server: 89.187.163.210, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 🇸🇬 SG|新加坡|852751831|, server: 89.187.163.202, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇸🇬 SG|新加坡|017958193|, server: 89.187.162.186, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 🇸🇬 SG|新加坡|337279028|, server: 89.187.162.186, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: 🇸🇬 SG|新加坡|729590582|, server: 89.187.162.184, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇸🇬 SG|新加坡|887922615|, server: 89.187.162.186, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 🇸🇬 SG|新加坡|039761051|, server: 89.187.162.186, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: 🇸🇬 SG|新加坡|471245525|, server: 89.187.163.132, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇸🇬 SG|新加坡|525910414|, server: 89.187.162.186, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇸🇬 SG|新加坡|968293636|, server: 89.187.162.186, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇸🇬 SG|新加坡|781451019|, server: 89.187.162.186, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇸🇬 SG|新加坡|140297021|, server: 89.187.163.132, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
-  - {name: 🇸🇬 SG|新加坡|089437653|, server: 89.187.162.186, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: 🇸🇬 SG|新加坡|569415661|, server: 89.187.162.186, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 🇸🇬 SG|新加坡|294800912|, server: 89.187.162.186, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: 🇸🇬 SG|新加坡|064865364|, server: 89.187.162.186, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇸🇬 SG|新加坡|599054929|, server: 89.187.162.186, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: 🇸🇬 SG|新加坡|093371782|, server: 89.187.163.132, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇸🇬 SG|新加坡|703714081|, server: 89.187.162.186, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 🇸🇬 SG|新加坡|148411012|, server: 89.187.162.186, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: 🇸🇬 SG|新加坡|207039336|, server: 89.187.163.132, port: 40220, type: ss, cipher: aes-256-gcm, password: ugyBkSEFxVEmUYSHyvxmWNj9}
-  - {name: 🇸🇬 SG|新加坡|428968906|, server: 89.187.162.186, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
-  - {name: 🇸🇬 SG|新加坡|291271147|, server: 89.187.163.132, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇸🇬 SG|新加坡|050209295|, server: 89.187.162.186, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇸🇬 SG|新加坡|101447308|, server: 89.187.162.186, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇸🇬 SG|新加坡|861890213|, server: 89.187.162.186, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: 🇸🇬 SG|新加坡|402803640|, server: 89.187.163.132, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇸🇬 SG|新加坡|716800609|, server: 89.187.163.132, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
-  - {name: 🇸🇬 SG|新加坡|165216170|, server: 89.187.163.132, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: 🇸🇬 SG|新加坡|411796833|, server: 89.187.163.132, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: 🇸🇬 SG|新加坡|713420374|, server: 89.187.162.186, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: 🇸🇬 SG|新加坡|097024360|, server: 89.187.162.186, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
-  - {name: 🇸🇬 SG|新加坡|471836865|, server: 89.187.162.186, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇸🇬 SG|新加坡|778884332|, server: 185.128.24.34, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG|新加坡|929289394|, server: 89.187.162.186, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: 🇸🇬 SG|新加坡|740767457|, server: 89.187.162.186, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
-  - {name: 🇸🇬 SG|新加坡|939567353|, server: 89.187.162.186, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇸🇬 SG|新加坡|499815718|, server: 89.187.162.186, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: 🇸🇬 SG|新加坡|亚马逊|991808414|, server: 54.251.230.216, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: 🇸🇬 SG|新加坡|292268728|, server: 81.90.189.152, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG|新加坡|247043951|, server: 81.90.189.152, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 SG|新加坡|965113238|, server: 172.105.114.4, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇸🇬 SG|新加坡|500005171|, server: 89.187.163.132, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇸🇬 SG|新加坡|935651524|, server: 89.187.163.212, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇸🇬 SG|新加坡|803624652|, server: 89.187.162.186, port: 42185, type: ss, cipher: aes-256-gcm, password: FaTG4zALZru72gxjgSHQ7Jdh}
-  - {name: 🇸🇬 SG|新加坡|762779081|, server: 89.187.163.217, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 🇸🇬 SG|新加坡|亚马逊|893594620|, server: 18.139.115.167, port: 65443, type: vmess, uuid: cfa5af22-57fc-419a-aa30-baca9a2f283b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /fc1bdaa376/, ws-headers: {Host: 18.139.115.167}}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|207584600|, server: 27.131.164.85, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|940246820|, server: 27.131.164.85, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|928472881|, server: 27.131.138.176, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|084786858|, server: 27.131.164.85, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|892645087|, server: 27.131.164.85, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|415403954|, server: 27.131.138.176, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇹🇷 TR|土耳其|905384591|, server: 185.17.113.234, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|810506431|, server: 27.131.138.176, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|763546203|, server: 27.131.164.85, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|022845054|, server: 202.143.110.29, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|184700390|, server: 202.143.110.32, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|724095397|, server: 202.143.110.29, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|143174771|, server: 202.143.110.32, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|476686294|, server: 202.143.110.32, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|809584161|, server: 202.143.110.29, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|043872390|, server: 202.143.110.36, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|655020901|, server: 202.143.110.36, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|863487237|, server: 202.143.110.32, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|138762137|, server: 202.143.110.29, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|773249151|, server: 202.143.110.32, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|536683763|, server: 202.143.110.32, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|909519910|, server: 202.143.110.32, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|316221498|, server: 202.143.110.29, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|142617214|, server: 202.143.110.32, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|694202087|, server: 202.143.110.32, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|587433103|, server: 202.143.110.29, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|869138437|, server: 202.143.110.32, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|789609269|, server: 202.143.110.32, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|070785184|, server: 202.143.110.32, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|542086867|, server: 202.143.110.32, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|826077943|, server: 202.143.110.32, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|255292694|, server: 202.143.110.29, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|642639817|, server: 202.143.110.29, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇻🇳 VN|越南|胡志明|胡志明|587833542|, server: 202.143.110.29, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|708071061|, server: 103.156.50.119, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|451085470|, server: 103.156.50.93, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|047019752|, server: 103.156.51.22, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|866638139|, server: 103.156.50.117, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|560692248|, server: 103.156.50.95, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|748423120|, server: 103.156.50.95, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|323107896|, server: 103.156.50.111, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|260501430|, server: 103.156.50.99, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|419739384|, server: 103.156.50.95, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|827283703|, server: 103.156.50.99, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|278406713|, server: 103.156.50.109, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|349623563|, server: 103.156.50.95, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|153617838|, server: 103.156.50.95, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|120516902|, server: 103.156.51.2, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|672992504|, server: 103.156.50.97, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|874656774|, server: 103.156.50.105, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|514941851|, server: 103.156.50.113, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|575874633|, server: 103.156.51.35, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|026740502|, server: 103.156.50.101, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|050479161|, server: 103.156.51.35, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|565281096|, server: 103.156.51.35, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|332891046|, server: 103.156.51.35, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|416060010|, server: 103.156.51.35, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|745383570|, server: 103.156.50.95, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|469387274|, server: 103.156.51.35, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|600398945|, server: 103.156.51.35, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|852696075|, server: 103.156.51.35, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|889490594|, server: 103.156.51.35, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|927486594|, server: 103.156.51.43, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|655633667|, server: 103.156.51.35, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|086727905|, server: 103.156.51.8, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|771735997|, server: 103.156.51.4, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|248627088|, server: 103.156.51.10, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|501056834|, server: 103.156.51.49, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|083896617|, server: 103.156.51.66, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|886398367|, server: 103.156.51.61, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|897046136|, server: 103.156.51.55, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|846791172|, server: 103.156.51.26, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|785523380|, server: 103.156.51.12, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|417145710|, server: 27.131.164.83, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|722697601|, server: 27.131.164.99, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|891185540|, server: 27.131.164.101, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|043066404|, server: 27.131.138.174, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|032072411|, server: 27.131.138.174, port: 39556, type: ss, cipher: aes-256-gcm, password: g4AfpNELpdYEeLYhM8XCX9se}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|807829957|, server: 103.148.242.175, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|106657850|, server: 103.148.242.170, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|483855156|, server: 103.148.242.168, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇸🇬 SG|新加坡|290083567|, server: 139.99.69.5, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|700719292|, server: 51.79.177.107, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|014814538|, server: 51.79.176.102, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|155737050|, server: 103.148.242.163, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|342131358|, server: 103.148.242.163, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|228844957|, server: 103.148.242.163, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|678374936|, server: 103.148.242.163, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|294619035|, server: 103.148.242.163, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|166724466|, server: 103.148.242.163, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|088396775|, server: 103.148.242.163, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|875165581|, server: 103.148.242.163, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|786730832|, server: 103.148.242.163, port: 49396, type: ss, cipher: aes-256-gcm, password: BdRWC38L5JUDMTYNNxJGcUwB}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|031946288|, server: 103.148.242.163, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|061656173|, server: 103.148.242.163, port: 49202, type: ss, cipher: aes-256-gcm, password: btzEYXKZxnR7g6H2vFTQK5TD}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|511783433|, server: 103.148.242.163, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|235484049|, server: 103.148.242.163, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|059842248|, server: 103.148.242.163, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|126709368|, server: 103.148.242.163, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|253245529|, server: 103.148.242.163, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|215966747|, server: 103.148.242.163, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|973227649|, server: 103.148.242.163, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|323236347|, server: 103.148.242.163, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|375434393|, server: 103.148.242.163, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|893196373|, server: 103.148.242.170, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|474076769|, server: 103.148.242.163, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|095062509|, server: 103.148.242.163, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|670937188|, server: 103.148.242.163, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|349951661|, server: 103.148.242.163, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|087748064|, server: 103.148.242.163, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
+  - {name: 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|590386525|, server: 103.148.242.163, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|515278790|, server: 103.39.132.187, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|437492079|, server: 165.231.253.147, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|820487944|, server: 134.209.155.247, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|059023560|, server: 103.39.132.187, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|176185435|, server: 165.231.253.165, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|238169501|, server: 165.231.253.147, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|352098655|, server: 134.209.155.247, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|553019349|, server: 103.94.27.179, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|818055740|, server: 103.108.117.149, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|407273726|, server: 103.94.27.101, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|263032654|, server: 165.231.253.149, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|054623123|, server: 165.231.253.149, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|752542508|, server: 165.231.253.163, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|455418497|, server: 103.73.189.61, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇮🇳 IN|印度|179402713|, server: 103.73.189.61, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|859428681|, server: 165.231.253.165, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|690525587|, server: 103.94.27.179, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|429919308|, server: 103.94.27.229, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|176257537|, server: 103.94.27.179, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|948395788|, server: 103.108.117.116, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|499996140|, server: 103.108.117.149, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|018709761|, server: 103.94.27.229, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|527399347|, server: 103.94.27.179, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|738626950|, server: 103.39.132.189, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|014072411|, server: 137.59.52.109, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|147995846|, server: 137.59.52.109, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|883496725|, server: 103.94.27.179, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|229572256|, server: 137.59.52.109, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|757325151|, server: 137.59.52.109, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|502743734|, server: 103.94.27.115, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|506990830|, server: 134.209.155.247, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|981661049|, server: 103.108.117.118, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|851645384|, server: 165.231.253.147, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|376213099|, server: 103.73.189.61, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|348213121|, server: 137.59.52.109, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|056056823|, server: 134.209.155.247, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|584082875|, server: 165.231.253.165, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|059909631|, server: 103.108.117.116, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|414768121|, server: 103.94.27.179, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 🇮🇳 IN|印度|773105123|, server: 103.73.189.61, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|939348748|, server: 137.59.52.109, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|665060627|, server: 103.94.27.179, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|199334844|, server: 103.94.27.229, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|984242721|, server: 103.108.117.118, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇮🇳 IN|印度|415450873|, server: 103.73.189.61, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇮🇳 IN|印度|032169766|, server: 103.73.189.61, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|110392334|, server: 103.108.117.147, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|087438585|, server: 137.59.52.109, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|631735213|, server: 103.94.27.229, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|040306883|, server: 103.39.132.189, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|717096702|, server: 134.209.155.247, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|052777364|, server: 103.94.27.229, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|478918782|, server: 134.209.155.247, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|107149375|, server: 13.127.197.3, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|237988221|, server: 103.39.132.187, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|616915618|, server: 103.39.132.189, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|462405107|, server: 103.39.132.189, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|506934227|, server: 103.94.27.115, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|106740581|, server: 13.127.168.127, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|717137263|, server: 134.209.155.247, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|123457223|, server: 103.94.27.117, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|896931691|, server: 103.94.27.179, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|564019019|, server: 165.231.253.165, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|819843145|, server: 165.231.253.149, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|836628538|, server: 103.39.132.189, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|022850845|, server: 103.108.117.149, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|399994171|, server: 137.59.52.109, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|216283215|, server: 137.59.52.109, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|763512847|, server: 103.94.27.115, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|329051992|, server: 165.231.253.163, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|446586783|, server: 103.94.27.179, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|165538192|, server: 165.231.253.165, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|403341184|, server: 103.94.27.229, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|854965687|, server: 103.39.132.189, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|859840995|, server: 103.39.132.189, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇮🇳 IN|印度|310852176|, server: 103.73.189.61, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|734062583|, server: 103.94.27.115, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|426766483|, server: 134.209.155.247, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|997014187|, server: 103.94.27.229, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|942932596|, server: 103.94.27.179, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|568003392|, server: 13.127.197.3, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇮🇳 IN|印度|048081814|, server: 103.73.189.61, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|070617199|, server: 103.94.27.179, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|603380730|, server: 165.231.253.147, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇮🇳 IN|印度|150769089|, server: 103.73.189.61, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|607115242|, server: 103.94.27.179, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|921550113|, server: 165.231.253.147, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|514258349|, server: 103.39.132.189, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|872907628|, server: 13.127.197.3, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇮🇳 IN|印度|304952472|, server: 103.73.189.61, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: 🇮🇳 IN|印度|369866617|, server: 103.73.189.61, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|982072042|, server: 103.94.27.179, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|479999790|, server: 137.59.52.109, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|012373541|, server: 103.94.27.179, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|780749563|, server: 35.154.201.59, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇮🇳 IN|印度|926884537|, server: 103.73.189.61, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|291692759|, server: 103.94.27.115, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|683482215|, server: 103.94.27.179, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇮🇳 IN|印度|856528219|, server: 103.73.189.61, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|252799840|, server: 103.94.27.179, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|483079949|, server: 103.94.27.179, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|071821512|, server: 103.94.27.229, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
+  - {name: 🇮🇳 IN|印度|498758257|, server: 103.73.189.61, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|705146482|, server: 103.94.27.179, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|956836759|, server: 103.94.27.115, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇮🇳 IN|印度|238030693|, server: 103.73.189.61, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: 🇮🇳 IN|印度|924485539|, server: 103.73.189.61, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 🇮🇳 IN|印度|631487536|, server: 103.73.189.61, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|807481554|, server: 103.94.27.229, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|499805289|, server: 103.94.27.179, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇮🇳 IN|印度|777705021|, server: 103.73.189.61, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|193308545|, server: 103.94.27.229, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇮🇳 IN|印度|653487122|, server: 103.73.189.61, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|203815624|, server: 52.66.200.183, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇮🇳 IN|印度|334645130|, server: 103.73.189.61, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇮🇳 IN|印度|卡纳塔克|班加罗尔|826717131|, server: in1-1.noojat.com, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|200437769|, server: 137.59.52.107, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|267664195|, server: 103.94.27.99, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|523526530|, server: 103.94.27.179, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|270757222|, server: 103.39.132.189, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|767649726|, server: 103.94.27.229, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|967376710|, server: 103.94.27.229, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|162437362|, server: 165.231.253.147, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
+  - {name: 🇮🇳 IN|印度|269296506|, server: 103.73.189.61, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|908438795|, server: 103.94.27.229, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇮🇳 IN|印度|000416144|, server: 103.73.189.61, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|431090160|, server: 103.94.27.117, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|791694494|, server: 103.94.27.179, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|746713304|, server: 103.94.27.229, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|孟买|692892465|, server: 165.231.253.147, port: 31757, type: ss, cipher: aes-256-gcm, password: wj7nDCuNARchSeKNCN8VFK62}
+  - {name: 🇮🇳 IN|印度|中央邦|印多尔|204746731|, server: 103.94.27.99, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇸🇬 SG|新加坡|578799996|, server: 89.187.163.200, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇸🇬 SG|新加坡|740418608|, server: 89.187.163.217, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 🇸🇬 SG|新加坡|520313087|, server: 185.128.24.34, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|990874937|, server: 89.187.162.186, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇸🇬 SG|新加坡|435356456|, server: 89.187.162.186, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇸🇬 SG|新加坡|909728938|, server: 89.187.162.186, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇸🇬 SG|新加坡|170876475|, server: 89.187.162.186, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: 🇸🇬 SG|新加坡|686697096|, server: 89.187.162.186, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇸🇬 SG|新加坡|113194984|, server: 89.187.162.186, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇸🇬 SG|新加坡|862275967|, server: 89.187.163.132, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇸🇬 SG|新加坡|251215039|, server: 89.187.163.132, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇸🇬 SG|新加坡|812591714|, server: 89.187.162.186, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇸🇬 SG|新加坡|282798469|, server: 89.187.162.186, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇸🇬 SG|新加坡|246752835|, server: 89.187.162.186, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 🇸🇬 SG|新加坡|770578208|, server: 185.128.24.34, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|402845874|, server: 89.187.163.200, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇸🇬 SG|新加坡|948976093|, server: 89.187.162.186, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: 🇸🇬 SG|新加坡|443478096|, server: 89.187.162.186, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇸🇬 SG|新加坡|671920486|, server: 81.90.189.229, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|848419247|, server: 89.187.163.132, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: 🇸🇬 SG|新加坡|146918766|, server: 89.187.162.186, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: 🇸🇬 SG|新加坡|531697588|, server: 89.187.162.186, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇸🇬 SG|新加坡|341708996|, server: 89.187.162.186, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇸🇬 SG|新加坡|839434263|, server: 89.187.163.132, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 🇸🇬 SG|新加坡|249972156|, server: 89.187.162.186, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 🇸🇬 SG|新加坡|698994058|, server: 89.187.162.186, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇸🇬 SG|新加坡|020996404|, server: 89.187.162.186, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇸🇬 SG|新加坡|826914762|, server: 89.187.163.217, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇸🇬 SG|新加坡|207616439|, server: 89.187.162.186, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇸🇬 SG|新加坡|064418068|, server: 89.187.162.186, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇸🇬 SG|新加坡|968978155|, server: 89.187.163.210, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇸🇬 SG|新加坡|154065862|, server: 89.187.162.186, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: 🇸🇬 SG|新加坡|702787292|, server: 89.187.163.132, port: 32558, type: ss, cipher: aes-256-gcm, password: gJYzm3TLbdL495ryQptaJXQk}
+  - {name: 🇸🇬 SG|新加坡|051000350|, server: 89.187.163.132, port: 32843, type: ss, cipher: aes-256-gcm, password: G35YSR2LFNEM9bq2dkjmKQRr}
+  - {name: 🇸🇬 SG|新加坡|617518237|, server: 89.187.162.186, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: 🇸🇬 SG|新加坡|亚马逊|326819730|, server: 3.0.145.225, port: 32095, type: ss, cipher: aes-256-cfb, password: lanluojing320}
+  - {name: 🇸🇬 SG|新加坡|457282413|, server: 89.187.163.132, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇸🇬 SG|新加坡|534640837|, server: 81.90.189.152, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|859705728|, server: 89.187.162.186, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇸🇬 SG|新加坡|934720264|, server: 185.128.24.34, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|398803747|, server: 89.187.162.186, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇸🇬 SG|新加坡|755086779|, server: 89.187.163.132, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇸🇬 SG|新加坡|173362964|, server: 89.187.163.217, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇸🇬 SG|新加坡|151120466|, server: 89.187.162.186, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇸🇬 SG|新加坡|733887227|, server: 89.187.162.186, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇸🇬 SG|新加坡|445713366|, server: 89.187.163.217, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇸🇬 SG|新加坡|073510092|, server: 89.187.163.217, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇸🇬 SG|新加坡|220954683|, server: 89.187.163.217, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇸🇬 SG|新加坡|581327136|, server: 89.187.163.200, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇸🇬 SG|新加坡|082175910|, server: 81.90.189.152, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|614841930|, server: 89.187.162.186, port: 42185, type: ss, cipher: aes-256-gcm, password: FaTG4zALZru72gxjgSHQ7Jdh}
+  - {name: 🇸🇬 SG|新加坡|906632789|, server: 89.187.163.207, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇸🇬 SG|新加坡|003511214|, server: 81.90.189.152, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|601689409|, server: 89.187.163.212, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇸🇬 SG|新加坡|294543694|, server: 185.128.24.34, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|970606212|, server: 172.105.114.4, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇸🇬 SG|新加坡|668388313|, server: 89.187.163.132, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇸🇬 SG|新加坡|706723916|, server: 89.187.163.212, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇸🇬 SG|新加坡|222170480|, server: 89.187.162.184, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇸🇬 SG|新加坡|669068850|, server: 185.128.24.34, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|550172690|, server: 81.90.189.152, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|175294939|, server: 89.187.163.217, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: 🇸🇬 SG|新加坡|580199133|, server: 81.90.189.29, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG|新加坡|326926849|, server: 81.90.189.184, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|091943488|, server: 27.131.164.85, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|707180205|, server: 27.131.164.85, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|112224794|, server: 27.131.164.85, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|025423161|, server: 27.131.164.85, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|523644407|, server: 27.131.164.85, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|879742096|, server: 27.131.164.85, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|918135140|, server: 27.131.164.85, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|768556689|, server: 27.131.164.92, port: 50232, type: ss, cipher: aes-256-gcm, password: CjchzpwdSjRtDjezYMwx9BKM}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|450986839|, server: 27.131.138.176, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|026655353|, server: 27.131.164.85, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|724143527|, server: 27.131.138.176, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|172280209|, server: 27.131.138.176, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|264908815|, server: 27.131.164.85, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|889037002|, server: 27.131.164.85, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|072503286|, server: 27.131.138.176, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|603818563|, server: 27.131.164.85, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|955675749|, server: 27.131.164.85, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|739951184|, server: 27.131.164.85, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|075460472|, server: 27.131.164.85, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇹🇷 TR|土耳其|Bursa|139024523|, server: 185.40.87.42, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇹🇭 TH|泰国|曼谷|曼谷|283901219|, server: 27.131.138.176, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇹🇷 TR|土耳其|650819419|, server: 5.188.36.11, port: 50002, type: ss, cipher: aes-256-cfb, password: !<str> 9280247878}
+  - {name: 🇹🇷 TR|土耳其|127215142|, server: 185.17.113.234, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|518629034|, server: 202.143.110.32, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|705960652|, server: 202.143.110.32, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|967237096|, server: 202.143.110.29, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|420877157|, server: 202.143.110.32, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|804474068|, server: 202.143.110.29, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|896617378|, server: 202.143.110.32, port: 42185, type: ss, cipher: aes-256-gcm, password: FaTG4zALZru72gxjgSHQ7Jdh}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|313311011|, server: 202.143.110.32, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|528575312|, server: 202.143.110.36, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|802837644|, server: 202.143.110.32, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|105226278|, server: 202.143.110.32, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|614927430|, server: 202.143.110.32, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|178019982|, server: 202.143.110.32, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|490790970|, server: 202.143.110.29, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|112010686|, server: 202.143.110.29, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|348898736|, server: 202.143.110.32, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|609734180|, server: 202.143.110.32, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|511400167|, server: 202.143.110.32, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|276956005|, server: 202.143.110.32, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|276186033|, server: 202.143.110.32, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|521329567|, server: 202.143.110.32, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|617750968|, server: 202.143.110.29, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|826933735|, server: 202.143.110.32, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|353304038|, server: 202.143.110.32, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|014853258|, server: 202.143.110.32, port: 41676, type: ss, cipher: aes-256-gcm, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|107644523|, server: 202.143.110.32, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|888820723|, server: 202.143.110.32, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|995675913|, server: 202.143.110.36, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|374514739|, server: 202.143.110.32, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇻🇳 VN|越南|胡志明|胡志明|424579240|, server: 202.143.110.29, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|596080665|, server: 103.156.51.35, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|516937652|, server: 103.156.51.35, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|217749937|, server: 103.156.51.35, port: 49126, type: ss, cipher: aes-256-gcm, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|919117334|, server: 103.156.51.35, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|377284622|, server: 103.156.51.35, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|677539242|, server: 103.156.51.35, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|076628432|, server: 103.156.51.35, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|720454565|, server: 103.156.51.35, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|989233747|, server: 103.156.51.35, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|295237343|, server: 103.156.51.35, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|865169287|, server: 103.156.51.35, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|733267812|, server: 103.156.51.35, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|489535021|, server: 103.156.51.35, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|399314598|, server: 103.156.51.35, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|407395765|, server: 103.156.51.35, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|613352420|, server: 103.156.51.35, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|622807088|, server: 103.156.51.35, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|015686095|, server: 103.156.51.35, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|766237828|, server: 103.156.51.35, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|829448956|, server: 103.156.51.10, port: 36460, type: ss, cipher: aes-256-gcm, password: yUXad7DGF8L5cTShEpnp2N6z}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|955065203|, server: 103.156.50.95, port: 45746, type: ss, cipher: aes-256-gcm, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|876390350|, server: 103.156.51.53, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|724067099|, server: 103.156.50.103, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|187374212|, server: 103.156.50.97, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|560565899|, server: 103.156.50.95, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|057319473|, server: 103.156.50.95, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|789429585|, server: 103.156.50.109, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|733406741|, server: 103.156.51.68, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|888648818|, server: 103.156.50.91, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|842740990|, server: 103.156.50.87, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|089453501|, server: 103.156.50.95, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|498459162|, server: 103.156.50.115, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|001958497|, server: 103.156.50.95, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|782864562|, server: 103.156.50.95, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|578836966|, server: 103.156.50.99, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|780875791|, server: 103.156.50.107, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|206156856|, server: 103.156.50.95, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|008865045|, server: 103.156.50.89, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|909176064|, server: 103.156.51.2, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|424733877|, server: 103.156.50.95, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|035514404|, server: 103.156.50.99, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|656453974|, server: 103.156.50.95, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|141658937|, server: 103.156.50.111, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|590756486|, server: 103.156.50.95, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇮🇳 IN|印度|马哈拉施特拉|浦那|107027250|, server: 103.156.50.95, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
+      - 🥁 负载均衡
       - ♻️ 自动选择
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -294,577 +358,1052 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
+      - 🇰🇷 欧洲节点
       - 🚀 手动切换
       - DIRECT
-  - name: 🚀 手动切换
-    type: select
+  - name: 🥁 负载均衡
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 100
     proxies:
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|095077144|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|973642984|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|835115579|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|785148916|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|596625573|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|480631851|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|888387025|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|543430118|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|450546121|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|226897736|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|131096032|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|497484302|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|098764437|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|710094242|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|109838865|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|503415189|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|651874214|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|018470328|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|793583003|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|385167222|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|945710335|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|037501114|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|457252974|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|919959006|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|870944040|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|879888275|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|772650445|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|875119310|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|982825672|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|487085317|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|484468898|
-      - 🇮🇳 IN|印度|中央邦|印多尔|727056739|
-      - 🇮🇳 IN|印度|中央邦|印多尔|932267475|
-      - 🇮🇳 IN|印度|中央邦|印多尔|857485511|
-      - 🇮🇳 IN|印度|中央邦|印多尔|395001522|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|259484302|
-      - 🇮🇳 IN|印度|中央邦|印多尔|477607707|
-      - 🇮🇳 IN|印度|中央邦|印多尔|307571509|
-      - 🇮🇳 IN|印度|中央邦|印多尔|195801844|
-      - 🇮🇳 IN|印度|611492346|
-      - 🇮🇳 IN|印度|中央邦|印多尔|291888820|
-      - 🇮🇳 IN|印度|中央邦|印多尔|390180716|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|437109100|
-      - 🇮🇳 IN|印度|中央邦|印多尔|991337256|
-      - 🇮🇳 IN|印度|中央邦|印多尔|466731528|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|084746493|
-      - 🇮🇳 IN|印度|中央邦|印多尔|891935758|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|492157506|
-      - 🇮🇳 IN|印度|中央邦|印多尔|896422437|
-      - 🇮🇳 IN|印度|中央邦|印多尔|375789004|
-      - 🇮🇳 IN|印度|680192200|
-      - 🇮🇳 IN|印度|中央邦|印多尔|797689520|
-      - 🇮🇳 IN|印度|中央邦|印多尔|902332748|
-      - 🇮🇳 IN|印度|中央邦|印多尔|753570126|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|184420431|
-      - 🇮🇳 IN|印度|中央邦|印多尔|481273172|
-      - 🇮🇳 IN|印度|154279368|
-      - 🇮🇳 IN|印度|中央邦|印多尔|496034326|
-      - 🇮🇳 IN|印度|中央邦|印多尔|752491804|
-      - 🇮🇳 IN|印度|中央邦|印多尔|639169652|
-      - 🇮🇳 IN|印度|中央邦|印多尔|001085925|
-      - 🇮🇳 IN|印度|213202974|
-      - 🇮🇳 IN|印度|中央邦|印多尔|927806771|
-      - 🇮🇳 IN|印度|中央邦|印多尔|934796336|
-      - 🇮🇳 IN|印度|中央邦|印多尔|809345578|
-      - 🇮🇳 IN|印度|中央邦|印多尔|287704209|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|008095268|
-      - 🇮🇳 IN|印度|中央邦|印多尔|004420975|
-      - 🇮🇳 IN|印度|中央邦|印多尔|082765296|
-      - 🇮🇳 IN|印度|中央邦|印多尔|267579874|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|812413538|
-      - 🇮🇳 IN|印度|中央邦|印多尔|972979243|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|708032000|
-      - 🇮🇳 IN|印度|中央邦|印多尔|957568182|
-      - 🇮🇳 IN|印度|中央邦|印多尔|851254480|
-      - 🇮🇳 IN|印度|中央邦|印多尔|544793294|
-      - 🇮🇳 IN|印度|中央邦|印多尔|936324986|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|734866854|
-      - 🇮🇳 IN|印度|中央邦|印多尔|931090020|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|934615649|
-      - 🇮🇳 IN|印度|中央邦|印多尔|345378381|
-      - 🇮🇳 IN|印度|中央邦|印多尔|494576208|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|083678067|
-      - 🇮🇳 IN|印度|中央邦|印多尔|473245715|
-      - 🇮🇳 IN|印度|中央邦|印多尔|604935486|
-      - 🇮🇳 IN|印度|689317562|
-      - 🇮🇳 IN|印度|中央邦|印多尔|040882669|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|471777741|
-      - 🇮🇳 IN|印度|中央邦|印多尔|441774236|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|680123316|
-      - 🇮🇳 IN|印度|中央邦|印多尔|989572958|
-      - 🇮🇳 IN|印度|中央邦|印多尔|387344712|
-      - 🇮🇳 IN|印度|中央邦|印多尔|734966749|
-      - 🇮🇳 IN|印度|中央邦|印多尔|033197251|
-      - 🇮🇳 IN|印度|中央邦|印多尔|087067888|
-      - 🇮🇳 IN|印度|700279601|
-      - 🇮🇳 IN|印度|中央邦|印多尔|998661593|
-      - 🇮🇳 IN|印度|407365414|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|963227437|
-      - 🇮🇳 IN|印度|中央邦|印多尔|229232116|
-      - 🇮🇳 IN|印度|中央邦|印多尔|316688262|
-      - 🇮🇳 IN|印度|中央邦|印多尔|707289395|
-      - 🇮🇳 IN|印度|中央邦|印多尔|599813451|
-      - 🇮🇳 IN|印度|中央邦|印多尔|033042251|
-      - 🇮🇳 IN|印度|中央邦|印多尔|200045489|
-      - 🇮🇳 IN|印度|中央邦|印多尔|532289551|
-      - 🇮🇳 IN|印度|中央邦|印多尔|624729721|
-      - 🇮🇳 IN|印度|中央邦|印多尔|963252659|
-      - 🇮🇳 IN|印度|318792038|
-      - 🇮🇳 IN|印度|中央邦|印多尔|711346394|
-      - 🇮🇳 IN|印度|985342363|
-      - 🇮🇳 IN|印度|183894989|
-      - 🇮🇳 IN|印度|中央邦|印多尔|843961003|
-      - 🇮🇳 IN|印度|中央邦|印多尔|847368796|
-      - 🇮🇳 IN|印度|中央邦|印多尔|196492123|
-      - 🇮🇳 IN|印度|中央邦|印多尔|739008206|
-      - 🇮🇳 IN|印度|中央邦|印多尔|286093351|
-      - 🇮🇳 IN|印度|中央邦|印多尔|461420146|
-      - 🇮🇳 IN|印度|中央邦|印多尔|869246836|
-      - 🇮🇳 IN|印度|890976053|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|089944605|
-      - 🇮🇳 IN|印度|中央邦|印多尔|017542704|
-      - 🇮🇳 IN|印度|400330440|
-      - 🇮🇳 IN|印度|中央邦|印多尔|889794413|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|380548328|
-      - 🇮🇳 IN|印度|中央邦|印多尔|953984941|
-      - 🇮🇳 IN|印度|222136293|
-      - 🇮🇳 IN|印度|460309060|
-      - 🇮🇳 IN|印度|中央邦|印多尔|967038487|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|638358971|
-      - 🇮🇳 IN|印度|中央邦|印多尔|970775512|
-      - 🇮🇳 IN|印度|243952765|
-      - 🇮🇳 IN|印度|中央邦|印多尔|482449089|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|819782961|
-      - 🇮🇳 IN|印度|中央邦|印多尔|260285601|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|357310646|
-      - 🇮🇳 IN|印度|中央邦|印多尔|665248583|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|088205146|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|164699670|
-      - 🇮🇳 IN|印度|中央邦|印多尔|117118440|
-      - 🇮🇳 IN|印度|中央邦|印多尔|349100625|
-      - 🇮🇳 IN|印度|中央邦|印多尔|071424381|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|260877848|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|883777287|
-      - 🇮🇳 IN|印度|983850701|
-      - 🇮🇳 IN|印度|中央邦|印多尔|395682951|
-      - 🇮🇳 IN|印度|中央邦|印多尔|756337678|
-      - 🇮🇳 IN|印度|中央邦|印多尔|984672236|
-      - 🇮🇳 IN|印度|中央邦|印多尔|371684153|
-      - 🇮🇳 IN|印度|中央邦|印多尔|842993201|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|346523550|
-      - 🇮🇳 IN|印度|中央邦|印多尔|871144993|
-      - 🇮🇳 IN|印度|中央邦|印多尔|526780885|
-      - 🇮🇳 IN|印度|042409256|
-      - 🇮🇳 IN|印度|中央邦|印多尔|614402044|
-      - 🇮🇳 IN|印度|183438455|
-      - 🇮🇳 IN|印度|中央邦|印多尔|758886169|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|679916263|
-      - 🇮🇳 IN|印度|852979799|
-      - 🇸🇬 SG|新加坡|387423841|
-      - 🇸🇬 SG|新加坡|868202984|
-      - 🇸🇬 SG|新加坡|610605531|
-      - 🇸🇬 SG|新加坡|019266441|
-      - 🇸🇬 SG|新加坡|167815894|
-      - 🇸🇬 SG|新加坡|030923382|
-      - 🇸🇬 SG|新加坡|247540283|
-      - 🇸🇬 SG|新加坡|308216654|
-      - 🇸🇬 SG|新加坡|893352812|
-      - 🇸🇬 SG|新加坡|463383953|
-      - 🇸🇬 SG|新加坡|664948403|
-      - 🇸🇬 SG|新加坡|852751831|
-      - 🇸🇬 SG|新加坡|017958193|
-      - 🇸🇬 SG|新加坡|337279028|
-      - 🇸🇬 SG|新加坡|729590582|
-      - 🇸🇬 SG|新加坡|887922615|
-      - 🇸🇬 SG|新加坡|039761051|
-      - 🇸🇬 SG|新加坡|471245525|
-      - 🇸🇬 SG|新加坡|525910414|
-      - 🇸🇬 SG|新加坡|968293636|
-      - 🇸🇬 SG|新加坡|781451019|
-      - 🇸🇬 SG|新加坡|140297021|
-      - 🇸🇬 SG|新加坡|089437653|
-      - 🇸🇬 SG|新加坡|569415661|
-      - 🇸🇬 SG|新加坡|294800912|
-      - 🇸🇬 SG|新加坡|064865364|
-      - 🇸🇬 SG|新加坡|599054929|
-      - 🇸🇬 SG|新加坡|093371782|
-      - 🇸🇬 SG|新加坡|703714081|
-      - 🇸🇬 SG|新加坡|148411012|
-      - 🇸🇬 SG|新加坡|207039336|
-      - 🇸🇬 SG|新加坡|428968906|
-      - 🇸🇬 SG|新加坡|291271147|
-      - 🇸🇬 SG|新加坡|050209295|
-      - 🇸🇬 SG|新加坡|101447308|
-      - 🇸🇬 SG|新加坡|861890213|
-      - 🇸🇬 SG|新加坡|402803640|
-      - 🇸🇬 SG|新加坡|716800609|
-      - 🇸🇬 SG|新加坡|165216170|
-      - 🇸🇬 SG|新加坡|411796833|
-      - 🇸🇬 SG|新加坡|713420374|
-      - 🇸🇬 SG|新加坡|097024360|
-      - 🇸🇬 SG|新加坡|471836865|
-      - 🇸🇬 SG|新加坡|778884332|
-      - 🇸🇬 SG|新加坡|929289394|
-      - 🇸🇬 SG|新加坡|740767457|
-      - 🇸🇬 SG|新加坡|939567353|
-      - 🇸🇬 SG|新加坡|499815718|
-      - 🇸🇬 SG|新加坡|亚马逊|991808414|
-      - 🇸🇬 SG|新加坡|292268728|
-      - 🇸🇬 SG|新加坡|247043951|
-      - 🇸🇬 SG|新加坡|965113238|
-      - 🇸🇬 SG|新加坡|500005171|
-      - 🇸🇬 SG|新加坡|935651524|
-      - 🇸🇬 SG|新加坡|803624652|
-      - 🇸🇬 SG|新加坡|762779081|
-      - 🇸🇬 SG|新加坡|亚马逊|893594620|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|207584600|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|940246820|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|928472881|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|084786858|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|892645087|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|415403954|
-      - 🇹🇷 TR|土耳其|905384591|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|810506431|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|763546203|
-      - 🇻🇳 VN|越南|胡志明|胡志明|022845054|
-      - 🇻🇳 VN|越南|胡志明|胡志明|184700390|
-      - 🇻🇳 VN|越南|胡志明|胡志明|724095397|
-      - 🇻🇳 VN|越南|胡志明|胡志明|143174771|
-      - 🇻🇳 VN|越南|胡志明|胡志明|476686294|
-      - 🇻🇳 VN|越南|胡志明|胡志明|809584161|
-      - 🇻🇳 VN|越南|胡志明|胡志明|043872390|
-      - 🇻🇳 VN|越南|胡志明|胡志明|655020901|
-      - 🇻🇳 VN|越南|胡志明|胡志明|863487237|
-      - 🇻🇳 VN|越南|胡志明|胡志明|138762137|
-      - 🇻🇳 VN|越南|胡志明|胡志明|773249151|
-      - 🇻🇳 VN|越南|胡志明|胡志明|536683763|
-      - 🇻🇳 VN|越南|胡志明|胡志明|909519910|
-      - 🇻🇳 VN|越南|胡志明|胡志明|316221498|
-      - 🇻🇳 VN|越南|胡志明|胡志明|142617214|
-      - 🇻🇳 VN|越南|胡志明|胡志明|694202087|
-      - 🇻🇳 VN|越南|胡志明|胡志明|587433103|
-      - 🇻🇳 VN|越南|胡志明|胡志明|869138437|
-      - 🇻🇳 VN|越南|胡志明|胡志明|789609269|
-      - 🇻🇳 VN|越南|胡志明|胡志明|070785184|
-      - 🇻🇳 VN|越南|胡志明|胡志明|542086867|
-      - 🇻🇳 VN|越南|胡志明|胡志明|826077943|
-      - 🇻🇳 VN|越南|胡志明|胡志明|255292694|
-      - 🇻🇳 VN|越南|胡志明|胡志明|642639817|
-      - 🇻🇳 VN|越南|胡志明|胡志明|587833542|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|708071061|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|451085470|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|047019752|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|866638139|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|560692248|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|748423120|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|323107896|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|260501430|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|419739384|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|827283703|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|278406713|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|349623563|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|153617838|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|120516902|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|672992504|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|874656774|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|514941851|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|575874633|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|026740502|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|050479161|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|565281096|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|332891046|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|416060010|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|745383570|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|469387274|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|600398945|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|852696075|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|889490594|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|927486594|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|655633667|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|086727905|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|771735997|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|248627088|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|501056834|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|083896617|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|886398367|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|897046136|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|846791172|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|785523380|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|417145710|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|722697601|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|891185540|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|043066404|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|032072411|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|807829957|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|106657850|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|483855156|
+      - 🇸🇬 SG|新加坡|290083567|
+      - 🇸🇬 SG|新加坡|700719292|
+      - 🇸🇬 SG|新加坡|014814538|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|155737050|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|342131358|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|228844957|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|678374936|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|294619035|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|166724466|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|088396775|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|875165581|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|786730832|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|031946288|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|061656173|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|511783433|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|235484049|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|059842248|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|126709368|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|253245529|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|215966747|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|973227649|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|323236347|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|375434393|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|893196373|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|474076769|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|095062509|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|670937188|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|349951661|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|087748064|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|590386525|
+      - 🇮🇳 IN|印度|中央邦|印多尔|515278790|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|437492079|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|820487944|
+      - 🇮🇳 IN|印度|中央邦|印多尔|059023560|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|176185435|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|238169501|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|352098655|
+      - 🇮🇳 IN|印度|中央邦|印多尔|553019349|
+      - 🇮🇳 IN|印度|中央邦|印多尔|818055740|
+      - 🇮🇳 IN|印度|中央邦|印多尔|407273726|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|263032654|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|054623123|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|752542508|
+      - 🇮🇳 IN|印度|455418497|
+      - 🇮🇳 IN|印度|179402713|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|859428681|
+      - 🇮🇳 IN|印度|中央邦|印多尔|690525587|
+      - 🇮🇳 IN|印度|中央邦|印多尔|429919308|
+      - 🇮🇳 IN|印度|中央邦|印多尔|176257537|
+      - 🇮🇳 IN|印度|中央邦|印多尔|948395788|
+      - 🇮🇳 IN|印度|中央邦|印多尔|499996140|
+      - 🇮🇳 IN|印度|中央邦|印多尔|018709761|
+      - 🇮🇳 IN|印度|中央邦|印多尔|527399347|
+      - 🇮🇳 IN|印度|中央邦|印多尔|738626950|
+      - 🇮🇳 IN|印度|中央邦|印多尔|014072411|
+      - 🇮🇳 IN|印度|中央邦|印多尔|147995846|
+      - 🇮🇳 IN|印度|中央邦|印多尔|883496725|
+      - 🇮🇳 IN|印度|中央邦|印多尔|229572256|
+      - 🇮🇳 IN|印度|中央邦|印多尔|757325151|
+      - 🇮🇳 IN|印度|中央邦|印多尔|502743734|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|506990830|
+      - 🇮🇳 IN|印度|中央邦|印多尔|981661049|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|851645384|
+      - 🇮🇳 IN|印度|376213099|
+      - 🇮🇳 IN|印度|中央邦|印多尔|348213121|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|056056823|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|584082875|
+      - 🇮🇳 IN|印度|中央邦|印多尔|059909631|
+      - 🇮🇳 IN|印度|中央邦|印多尔|414768121|
+      - 🇮🇳 IN|印度|773105123|
+      - 🇮🇳 IN|印度|中央邦|印多尔|939348748|
+      - 🇮🇳 IN|印度|中央邦|印多尔|665060627|
+      - 🇮🇳 IN|印度|中央邦|印多尔|199334844|
+      - 🇮🇳 IN|印度|中央邦|印多尔|984242721|
+      - 🇮🇳 IN|印度|415450873|
+      - 🇮🇳 IN|印度|032169766|
+      - 🇮🇳 IN|印度|中央邦|印多尔|110392334|
+      - 🇮🇳 IN|印度|中央邦|印多尔|087438585|
+      - 🇮🇳 IN|印度|中央邦|印多尔|631735213|
+      - 🇮🇳 IN|印度|中央邦|印多尔|040306883|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|717096702|
+      - 🇮🇳 IN|印度|中央邦|印多尔|052777364|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|478918782|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|107149375|
+      - 🇮🇳 IN|印度|中央邦|印多尔|237988221|
+      - 🇮🇳 IN|印度|中央邦|印多尔|616915618|
+      - 🇮🇳 IN|印度|中央邦|印多尔|462405107|
+      - 🇮🇳 IN|印度|中央邦|印多尔|506934227|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|106740581|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|717137263|
+      - 🇮🇳 IN|印度|中央邦|印多尔|123457223|
+      - 🇮🇳 IN|印度|中央邦|印多尔|896931691|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|564019019|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|819843145|
+      - 🇮🇳 IN|印度|中央邦|印多尔|836628538|
+      - 🇮🇳 IN|印度|中央邦|印多尔|022850845|
+      - 🇮🇳 IN|印度|中央邦|印多尔|399994171|
+      - 🇮🇳 IN|印度|中央邦|印多尔|216283215|
+      - 🇮🇳 IN|印度|中央邦|印多尔|763512847|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|329051992|
+      - 🇮🇳 IN|印度|中央邦|印多尔|446586783|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|165538192|
+      - 🇮🇳 IN|印度|中央邦|印多尔|403341184|
+      - 🇮🇳 IN|印度|中央邦|印多尔|854965687|
+      - 🇮🇳 IN|印度|中央邦|印多尔|859840995|
+      - 🇮🇳 IN|印度|310852176|
+      - 🇮🇳 IN|印度|中央邦|印多尔|734062583|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|426766483|
+      - 🇮🇳 IN|印度|中央邦|印多尔|997014187|
+      - 🇮🇳 IN|印度|中央邦|印多尔|942932596|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|568003392|
+      - 🇮🇳 IN|印度|048081814|
+      - 🇮🇳 IN|印度|中央邦|印多尔|070617199|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|603380730|
+      - 🇮🇳 IN|印度|150769089|
+      - 🇮🇳 IN|印度|中央邦|印多尔|607115242|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|921550113|
+      - 🇮🇳 IN|印度|中央邦|印多尔|514258349|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|872907628|
+      - 🇮🇳 IN|印度|304952472|
+      - 🇮🇳 IN|印度|369866617|
+      - 🇮🇳 IN|印度|中央邦|印多尔|982072042|
+      - 🇮🇳 IN|印度|中央邦|印多尔|479999790|
+      - 🇮🇳 IN|印度|中央邦|印多尔|012373541|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|780749563|
+      - 🇮🇳 IN|印度|926884537|
+      - 🇮🇳 IN|印度|中央邦|印多尔|291692759|
+      - 🇮🇳 IN|印度|中央邦|印多尔|683482215|
+      - 🇮🇳 IN|印度|856528219|
+      - 🇮🇳 IN|印度|中央邦|印多尔|252799840|
+      - 🇮🇳 IN|印度|中央邦|印多尔|483079949|
+      - 🇮🇳 IN|印度|中央邦|印多尔|071821512|
+      - 🇮🇳 IN|印度|498758257|
+      - 🇮🇳 IN|印度|中央邦|印多尔|705146482|
+      - 🇮🇳 IN|印度|中央邦|印多尔|956836759|
+      - 🇮🇳 IN|印度|238030693|
+      - 🇮🇳 IN|印度|924485539|
+      - 🇮🇳 IN|印度|631487536|
+      - 🇮🇳 IN|印度|中央邦|印多尔|807481554|
+      - 🇮🇳 IN|印度|中央邦|印多尔|499805289|
+      - 🇮🇳 IN|印度|777705021|
+      - 🇮🇳 IN|印度|中央邦|印多尔|193308545|
+      - 🇮🇳 IN|印度|653487122|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|203815624|
+      - 🇮🇳 IN|印度|334645130|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|826717131|
+      - 🇮🇳 IN|印度|中央邦|印多尔|200437769|
+      - 🇮🇳 IN|印度|中央邦|印多尔|267664195|
+      - 🇮🇳 IN|印度|中央邦|印多尔|523526530|
+      - 🇮🇳 IN|印度|中央邦|印多尔|270757222|
+      - 🇮🇳 IN|印度|中央邦|印多尔|767649726|
+      - 🇮🇳 IN|印度|中央邦|印多尔|967376710|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|162437362|
+      - 🇮🇳 IN|印度|269296506|
+      - 🇮🇳 IN|印度|中央邦|印多尔|908438795|
+      - 🇮🇳 IN|印度|000416144|
+      - 🇮🇳 IN|印度|中央邦|印多尔|431090160|
+      - 🇮🇳 IN|印度|中央邦|印多尔|791694494|
+      - 🇮🇳 IN|印度|中央邦|印多尔|746713304|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|692892465|
+      - 🇮🇳 IN|印度|中央邦|印多尔|204746731|
+      - 🇸🇬 SG|新加坡|578799996|
+      - 🇸🇬 SG|新加坡|740418608|
+      - 🇸🇬 SG|新加坡|520313087|
+      - 🇸🇬 SG|新加坡|990874937|
+      - 🇸🇬 SG|新加坡|435356456|
+      - 🇸🇬 SG|新加坡|909728938|
+      - 🇸🇬 SG|新加坡|170876475|
+      - 🇸🇬 SG|新加坡|686697096|
+      - 🇸🇬 SG|新加坡|113194984|
+      - 🇸🇬 SG|新加坡|862275967|
+      - 🇸🇬 SG|新加坡|251215039|
+      - 🇸🇬 SG|新加坡|812591714|
+      - 🇸🇬 SG|新加坡|282798469|
+      - 🇸🇬 SG|新加坡|246752835|
+      - 🇸🇬 SG|新加坡|770578208|
+      - 🇸🇬 SG|新加坡|402845874|
+      - 🇸🇬 SG|新加坡|948976093|
+      - 🇸🇬 SG|新加坡|443478096|
+      - 🇸🇬 SG|新加坡|671920486|
+      - 🇸🇬 SG|新加坡|848419247|
+      - 🇸🇬 SG|新加坡|146918766|
+      - 🇸🇬 SG|新加坡|531697588|
+      - 🇸🇬 SG|新加坡|341708996|
+      - 🇸🇬 SG|新加坡|839434263|
+      - 🇸🇬 SG|新加坡|249972156|
+      - 🇸🇬 SG|新加坡|698994058|
+      - 🇸🇬 SG|新加坡|020996404|
+      - 🇸🇬 SG|新加坡|826914762|
+      - 🇸🇬 SG|新加坡|207616439|
+      - 🇸🇬 SG|新加坡|064418068|
+      - 🇸🇬 SG|新加坡|968978155|
+      - 🇸🇬 SG|新加坡|154065862|
+      - 🇸🇬 SG|新加坡|702787292|
+      - 🇸🇬 SG|新加坡|051000350|
+      - 🇸🇬 SG|新加坡|617518237|
+      - 🇸🇬 SG|新加坡|亚马逊|326819730|
+      - 🇸🇬 SG|新加坡|457282413|
+      - 🇸🇬 SG|新加坡|534640837|
+      - 🇸🇬 SG|新加坡|859705728|
+      - 🇸🇬 SG|新加坡|934720264|
+      - 🇸🇬 SG|新加坡|398803747|
+      - 🇸🇬 SG|新加坡|755086779|
+      - 🇸🇬 SG|新加坡|173362964|
+      - 🇸🇬 SG|新加坡|151120466|
+      - 🇸🇬 SG|新加坡|733887227|
+      - 🇸🇬 SG|新加坡|445713366|
+      - 🇸🇬 SG|新加坡|073510092|
+      - 🇸🇬 SG|新加坡|220954683|
+      - 🇸🇬 SG|新加坡|581327136|
+      - 🇸🇬 SG|新加坡|082175910|
+      - 🇸🇬 SG|新加坡|614841930|
+      - 🇸🇬 SG|新加坡|906632789|
+      - 🇸🇬 SG|新加坡|003511214|
+      - 🇸🇬 SG|新加坡|601689409|
+      - 🇸🇬 SG|新加坡|294543694|
+      - 🇸🇬 SG|新加坡|970606212|
+      - 🇸🇬 SG|新加坡|668388313|
+      - 🇸🇬 SG|新加坡|706723916|
+      - 🇸🇬 SG|新加坡|222170480|
+      - 🇸🇬 SG|新加坡|669068850|
+      - 🇸🇬 SG|新加坡|550172690|
+      - 🇸🇬 SG|新加坡|175294939|
+      - 🇸🇬 SG|新加坡|580199133|
+      - 🇸🇬 SG|新加坡|326926849|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|091943488|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|707180205|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|112224794|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|025423161|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|523644407|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|879742096|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|918135140|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|768556689|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|450986839|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|026655353|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|724143527|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|172280209|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|264908815|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|889037002|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|072503286|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|603818563|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|955675749|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|739951184|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|075460472|
+      - 🇹🇷 TR|土耳其|Bursa|139024523|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|283901219|
+      - 🇹🇷 TR|土耳其|650819419|
+      - 🇹🇷 TR|土耳其|127215142|
+      - 🇻🇳 VN|越南|胡志明|胡志明|518629034|
+      - 🇻🇳 VN|越南|胡志明|胡志明|705960652|
+      - 🇻🇳 VN|越南|胡志明|胡志明|967237096|
+      - 🇻🇳 VN|越南|胡志明|胡志明|420877157|
+      - 🇻🇳 VN|越南|胡志明|胡志明|804474068|
+      - 🇻🇳 VN|越南|胡志明|胡志明|896617378|
+      - 🇻🇳 VN|越南|胡志明|胡志明|313311011|
+      - 🇻🇳 VN|越南|胡志明|胡志明|528575312|
+      - 🇻🇳 VN|越南|胡志明|胡志明|802837644|
+      - 🇻🇳 VN|越南|胡志明|胡志明|105226278|
+      - 🇻🇳 VN|越南|胡志明|胡志明|614927430|
+      - 🇻🇳 VN|越南|胡志明|胡志明|178019982|
+      - 🇻🇳 VN|越南|胡志明|胡志明|490790970|
+      - 🇻🇳 VN|越南|胡志明|胡志明|112010686|
+      - 🇻🇳 VN|越南|胡志明|胡志明|348898736|
+      - 🇻🇳 VN|越南|胡志明|胡志明|609734180|
+      - 🇻🇳 VN|越南|胡志明|胡志明|511400167|
+      - 🇻🇳 VN|越南|胡志明|胡志明|276956005|
+      - 🇻🇳 VN|越南|胡志明|胡志明|276186033|
+      - 🇻🇳 VN|越南|胡志明|胡志明|521329567|
+      - 🇻🇳 VN|越南|胡志明|胡志明|617750968|
+      - 🇻🇳 VN|越南|胡志明|胡志明|826933735|
+      - 🇻🇳 VN|越南|胡志明|胡志明|353304038|
+      - 🇻🇳 VN|越南|胡志明|胡志明|014853258|
+      - 🇻🇳 VN|越南|胡志明|胡志明|107644523|
+      - 🇻🇳 VN|越南|胡志明|胡志明|888820723|
+      - 🇻🇳 VN|越南|胡志明|胡志明|995675913|
+      - 🇻🇳 VN|越南|胡志明|胡志明|374514739|
+      - 🇻🇳 VN|越南|胡志明|胡志明|424579240|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|596080665|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|516937652|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|217749937|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|919117334|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|377284622|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|677539242|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|076628432|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|720454565|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|989233747|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|295237343|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|865169287|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|733267812|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|489535021|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|399314598|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|407395765|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|613352420|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|622807088|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|015686095|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|766237828|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|829448956|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|955065203|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|876390350|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|724067099|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|187374212|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|560565899|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|057319473|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|789429585|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|733406741|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|888648818|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|842740990|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|089453501|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|498459162|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|001958497|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|782864562|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|578836966|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|780875791|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|206156856|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|008865045|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|909176064|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|424733877|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|035514404|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|656453974|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|141658937|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|590756486|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|107027250|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|095077144|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|973642984|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|835115579|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|785148916|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|596625573|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|480631851|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|888387025|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|543430118|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|450546121|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|226897736|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|131096032|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|497484302|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|098764437|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|710094242|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|109838865|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|503415189|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|651874214|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|018470328|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|793583003|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|385167222|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|945710335|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|037501114|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|457252974|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|919959006|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|870944040|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|879888275|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|772650445|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|875119310|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|982825672|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|487085317|
-      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|484468898|
-      - 🇮🇳 IN|印度|中央邦|印多尔|727056739|
-      - 🇮🇳 IN|印度|中央邦|印多尔|932267475|
-      - 🇮🇳 IN|印度|中央邦|印多尔|857485511|
-      - 🇮🇳 IN|印度|中央邦|印多尔|395001522|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|259484302|
-      - 🇮🇳 IN|印度|中央邦|印多尔|477607707|
-      - 🇮🇳 IN|印度|中央邦|印多尔|307571509|
-      - 🇮🇳 IN|印度|中央邦|印多尔|195801844|
-      - 🇮🇳 IN|印度|611492346|
-      - 🇮🇳 IN|印度|中央邦|印多尔|291888820|
-      - 🇮🇳 IN|印度|中央邦|印多尔|390180716|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|437109100|
-      - 🇮🇳 IN|印度|中央邦|印多尔|991337256|
-      - 🇮🇳 IN|印度|中央邦|印多尔|466731528|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|084746493|
-      - 🇮🇳 IN|印度|中央邦|印多尔|891935758|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|492157506|
-      - 🇮🇳 IN|印度|中央邦|印多尔|896422437|
-      - 🇮🇳 IN|印度|中央邦|印多尔|375789004|
-      - 🇮🇳 IN|印度|680192200|
-      - 🇮🇳 IN|印度|中央邦|印多尔|797689520|
-      - 🇮🇳 IN|印度|中央邦|印多尔|902332748|
-      - 🇮🇳 IN|印度|中央邦|印多尔|753570126|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|184420431|
-      - 🇮🇳 IN|印度|中央邦|印多尔|481273172|
-      - 🇮🇳 IN|印度|154279368|
-      - 🇮🇳 IN|印度|中央邦|印多尔|496034326|
-      - 🇮🇳 IN|印度|中央邦|印多尔|752491804|
-      - 🇮🇳 IN|印度|中央邦|印多尔|639169652|
-      - 🇮🇳 IN|印度|中央邦|印多尔|001085925|
-      - 🇮🇳 IN|印度|213202974|
-      - 🇮🇳 IN|印度|中央邦|印多尔|927806771|
-      - 🇮🇳 IN|印度|中央邦|印多尔|934796336|
-      - 🇮🇳 IN|印度|中央邦|印多尔|809345578|
-      - 🇮🇳 IN|印度|中央邦|印多尔|287704209|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|008095268|
-      - 🇮🇳 IN|印度|中央邦|印多尔|004420975|
-      - 🇮🇳 IN|印度|中央邦|印多尔|082765296|
-      - 🇮🇳 IN|印度|中央邦|印多尔|267579874|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|812413538|
-      - 🇮🇳 IN|印度|中央邦|印多尔|972979243|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|708032000|
-      - 🇮🇳 IN|印度|中央邦|印多尔|957568182|
-      - 🇮🇳 IN|印度|中央邦|印多尔|851254480|
-      - 🇮🇳 IN|印度|中央邦|印多尔|544793294|
-      - 🇮🇳 IN|印度|中央邦|印多尔|936324986|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|734866854|
-      - 🇮🇳 IN|印度|中央邦|印多尔|931090020|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|934615649|
-      - 🇮🇳 IN|印度|中央邦|印多尔|345378381|
-      - 🇮🇳 IN|印度|中央邦|印多尔|494576208|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|083678067|
-      - 🇮🇳 IN|印度|中央邦|印多尔|473245715|
-      - 🇮🇳 IN|印度|中央邦|印多尔|604935486|
-      - 🇮🇳 IN|印度|689317562|
-      - 🇮🇳 IN|印度|中央邦|印多尔|040882669|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|471777741|
-      - 🇮🇳 IN|印度|中央邦|印多尔|441774236|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|680123316|
-      - 🇮🇳 IN|印度|中央邦|印多尔|989572958|
-      - 🇮🇳 IN|印度|中央邦|印多尔|387344712|
-      - 🇮🇳 IN|印度|中央邦|印多尔|734966749|
-      - 🇮🇳 IN|印度|中央邦|印多尔|033197251|
-      - 🇮🇳 IN|印度|中央邦|印多尔|087067888|
-      - 🇮🇳 IN|印度|700279601|
-      - 🇮🇳 IN|印度|中央邦|印多尔|998661593|
-      - 🇮🇳 IN|印度|407365414|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|963227437|
-      - 🇮🇳 IN|印度|中央邦|印多尔|229232116|
-      - 🇮🇳 IN|印度|中央邦|印多尔|316688262|
-      - 🇮🇳 IN|印度|中央邦|印多尔|707289395|
-      - 🇮🇳 IN|印度|中央邦|印多尔|599813451|
-      - 🇮🇳 IN|印度|中央邦|印多尔|033042251|
-      - 🇮🇳 IN|印度|中央邦|印多尔|200045489|
-      - 🇮🇳 IN|印度|中央邦|印多尔|532289551|
-      - 🇮🇳 IN|印度|中央邦|印多尔|624729721|
-      - 🇮🇳 IN|印度|中央邦|印多尔|963252659|
-      - 🇮🇳 IN|印度|318792038|
-      - 🇮🇳 IN|印度|中央邦|印多尔|711346394|
-      - 🇮🇳 IN|印度|985342363|
-      - 🇮🇳 IN|印度|183894989|
-      - 🇮🇳 IN|印度|中央邦|印多尔|843961003|
-      - 🇮🇳 IN|印度|中央邦|印多尔|847368796|
-      - 🇮🇳 IN|印度|中央邦|印多尔|196492123|
-      - 🇮🇳 IN|印度|中央邦|印多尔|739008206|
-      - 🇮🇳 IN|印度|中央邦|印多尔|286093351|
-      - 🇮🇳 IN|印度|中央邦|印多尔|461420146|
-      - 🇮🇳 IN|印度|中央邦|印多尔|869246836|
-      - 🇮🇳 IN|印度|890976053|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|089944605|
-      - 🇮🇳 IN|印度|中央邦|印多尔|017542704|
-      - 🇮🇳 IN|印度|400330440|
-      - 🇮🇳 IN|印度|中央邦|印多尔|889794413|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|380548328|
-      - 🇮🇳 IN|印度|中央邦|印多尔|953984941|
-      - 🇮🇳 IN|印度|222136293|
-      - 🇮🇳 IN|印度|460309060|
-      - 🇮🇳 IN|印度|中央邦|印多尔|967038487|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|638358971|
-      - 🇮🇳 IN|印度|中央邦|印多尔|970775512|
-      - 🇮🇳 IN|印度|243952765|
-      - 🇮🇳 IN|印度|中央邦|印多尔|482449089|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|819782961|
-      - 🇮🇳 IN|印度|中央邦|印多尔|260285601|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|357310646|
-      - 🇮🇳 IN|印度|中央邦|印多尔|665248583|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|088205146|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|164699670|
-      - 🇮🇳 IN|印度|中央邦|印多尔|117118440|
-      - 🇮🇳 IN|印度|中央邦|印多尔|349100625|
-      - 🇮🇳 IN|印度|中央邦|印多尔|071424381|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|260877848|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|883777287|
-      - 🇮🇳 IN|印度|983850701|
-      - 🇮🇳 IN|印度|中央邦|印多尔|395682951|
-      - 🇮🇳 IN|印度|中央邦|印多尔|756337678|
-      - 🇮🇳 IN|印度|中央邦|印多尔|984672236|
-      - 🇮🇳 IN|印度|中央邦|印多尔|371684153|
-      - 🇮🇳 IN|印度|中央邦|印多尔|842993201|
-      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|346523550|
-      - 🇮🇳 IN|印度|中央邦|印多尔|871144993|
-      - 🇮🇳 IN|印度|中央邦|印多尔|526780885|
-      - 🇮🇳 IN|印度|042409256|
-      - 🇮🇳 IN|印度|中央邦|印多尔|614402044|
-      - 🇮🇳 IN|印度|183438455|
-      - 🇮🇳 IN|印度|中央邦|印多尔|758886169|
-      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|679916263|
-      - 🇮🇳 IN|印度|852979799|
-      - 🇸🇬 SG|新加坡|387423841|
-      - 🇸🇬 SG|新加坡|868202984|
-      - 🇸🇬 SG|新加坡|610605531|
-      - 🇸🇬 SG|新加坡|019266441|
-      - 🇸🇬 SG|新加坡|167815894|
-      - 🇸🇬 SG|新加坡|030923382|
-      - 🇸🇬 SG|新加坡|247540283|
-      - 🇸🇬 SG|新加坡|308216654|
-      - 🇸🇬 SG|新加坡|893352812|
-      - 🇸🇬 SG|新加坡|463383953|
-      - 🇸🇬 SG|新加坡|664948403|
-      - 🇸🇬 SG|新加坡|852751831|
-      - 🇸🇬 SG|新加坡|017958193|
-      - 🇸🇬 SG|新加坡|337279028|
-      - 🇸🇬 SG|新加坡|729590582|
-      - 🇸🇬 SG|新加坡|887922615|
-      - 🇸🇬 SG|新加坡|039761051|
-      - 🇸🇬 SG|新加坡|471245525|
-      - 🇸🇬 SG|新加坡|525910414|
-      - 🇸🇬 SG|新加坡|968293636|
-      - 🇸🇬 SG|新加坡|781451019|
-      - 🇸🇬 SG|新加坡|140297021|
-      - 🇸🇬 SG|新加坡|089437653|
-      - 🇸🇬 SG|新加坡|569415661|
-      - 🇸🇬 SG|新加坡|294800912|
-      - 🇸🇬 SG|新加坡|064865364|
-      - 🇸🇬 SG|新加坡|599054929|
-      - 🇸🇬 SG|新加坡|093371782|
-      - 🇸🇬 SG|新加坡|703714081|
-      - 🇸🇬 SG|新加坡|148411012|
-      - 🇸🇬 SG|新加坡|207039336|
-      - 🇸🇬 SG|新加坡|428968906|
-      - 🇸🇬 SG|新加坡|291271147|
-      - 🇸🇬 SG|新加坡|050209295|
-      - 🇸🇬 SG|新加坡|101447308|
-      - 🇸🇬 SG|新加坡|861890213|
-      - 🇸🇬 SG|新加坡|402803640|
-      - 🇸🇬 SG|新加坡|716800609|
-      - 🇸🇬 SG|新加坡|165216170|
-      - 🇸🇬 SG|新加坡|411796833|
-      - 🇸🇬 SG|新加坡|713420374|
-      - 🇸🇬 SG|新加坡|097024360|
-      - 🇸🇬 SG|新加坡|471836865|
-      - 🇸🇬 SG|新加坡|778884332|
-      - 🇸🇬 SG|新加坡|929289394|
-      - 🇸🇬 SG|新加坡|740767457|
-      - 🇸🇬 SG|新加坡|939567353|
-      - 🇸🇬 SG|新加坡|499815718|
-      - 🇸🇬 SG|新加坡|亚马逊|991808414|
-      - 🇸🇬 SG|新加坡|292268728|
-      - 🇸🇬 SG|新加坡|247043951|
-      - 🇸🇬 SG|新加坡|965113238|
-      - 🇸🇬 SG|新加坡|500005171|
-      - 🇸🇬 SG|新加坡|935651524|
-      - 🇸🇬 SG|新加坡|803624652|
-      - 🇸🇬 SG|新加坡|762779081|
-      - 🇸🇬 SG|新加坡|亚马逊|893594620|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|207584600|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|940246820|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|928472881|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|084786858|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|892645087|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|415403954|
-      - 🇹🇷 TR|土耳其|905384591|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|810506431|
-      - 🇹🇭 TH|泰国|曼谷|曼谷|763546203|
-      - 🇻🇳 VN|越南|胡志明|胡志明|022845054|
-      - 🇻🇳 VN|越南|胡志明|胡志明|184700390|
-      - 🇻🇳 VN|越南|胡志明|胡志明|724095397|
-      - 🇻🇳 VN|越南|胡志明|胡志明|143174771|
-      - 🇻🇳 VN|越南|胡志明|胡志明|476686294|
-      - 🇻🇳 VN|越南|胡志明|胡志明|809584161|
-      - 🇻🇳 VN|越南|胡志明|胡志明|043872390|
-      - 🇻🇳 VN|越南|胡志明|胡志明|655020901|
-      - 🇻🇳 VN|越南|胡志明|胡志明|863487237|
-      - 🇻🇳 VN|越南|胡志明|胡志明|138762137|
-      - 🇻🇳 VN|越南|胡志明|胡志明|773249151|
-      - 🇻🇳 VN|越南|胡志明|胡志明|536683763|
-      - 🇻🇳 VN|越南|胡志明|胡志明|909519910|
-      - 🇻🇳 VN|越南|胡志明|胡志明|316221498|
-      - 🇻🇳 VN|越南|胡志明|胡志明|142617214|
-      - 🇻🇳 VN|越南|胡志明|胡志明|694202087|
-      - 🇻🇳 VN|越南|胡志明|胡志明|587433103|
-      - 🇻🇳 VN|越南|胡志明|胡志明|869138437|
-      - 🇻🇳 VN|越南|胡志明|胡志明|789609269|
-      - 🇻🇳 VN|越南|胡志明|胡志明|070785184|
-      - 🇻🇳 VN|越南|胡志明|胡志明|542086867|
-      - 🇻🇳 VN|越南|胡志明|胡志明|826077943|
-      - 🇻🇳 VN|越南|胡志明|胡志明|255292694|
-      - 🇻🇳 VN|越南|胡志明|胡志明|642639817|
-      - 🇻🇳 VN|越南|胡志明|胡志明|587833542|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|708071061|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|451085470|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|047019752|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|866638139|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|560692248|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|748423120|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|323107896|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|260501430|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|419739384|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|827283703|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|278406713|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|349623563|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|153617838|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|120516902|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|672992504|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|874656774|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|514941851|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|575874633|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|026740502|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|050479161|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|565281096|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|332891046|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|416060010|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|745383570|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|469387274|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|600398945|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|852696075|
-      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|889490594|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|927486594|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|655633667|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|086727905|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|771735997|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|248627088|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|501056834|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|083896617|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|886398367|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|897046136|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|846791172|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|785523380|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|417145710|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|722697601|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|891185540|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|043066404|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|032072411|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|807829957|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|106657850|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|483855156|
+      - 🇸🇬 SG|新加坡|290083567|
+      - 🇸🇬 SG|新加坡|700719292|
+      - 🇸🇬 SG|新加坡|014814538|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|155737050|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|342131358|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|228844957|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|678374936|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|294619035|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|166724466|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|088396775|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|875165581|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|786730832|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|031946288|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|061656173|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|511783433|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|235484049|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|059842248|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|126709368|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|253245529|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|215966747|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|973227649|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|323236347|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|375434393|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|893196373|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|474076769|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|095062509|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|670937188|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|349951661|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|087748064|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|590386525|
+      - 🇮🇳 IN|印度|中央邦|印多尔|515278790|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|437492079|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|820487944|
+      - 🇮🇳 IN|印度|中央邦|印多尔|059023560|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|176185435|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|238169501|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|352098655|
+      - 🇮🇳 IN|印度|中央邦|印多尔|553019349|
+      - 🇮🇳 IN|印度|中央邦|印多尔|818055740|
+      - 🇮🇳 IN|印度|中央邦|印多尔|407273726|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|263032654|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|054623123|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|752542508|
+      - 🇮🇳 IN|印度|455418497|
+      - 🇮🇳 IN|印度|179402713|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|859428681|
+      - 🇮🇳 IN|印度|中央邦|印多尔|690525587|
+      - 🇮🇳 IN|印度|中央邦|印多尔|429919308|
+      - 🇮🇳 IN|印度|中央邦|印多尔|176257537|
+      - 🇮🇳 IN|印度|中央邦|印多尔|948395788|
+      - 🇮🇳 IN|印度|中央邦|印多尔|499996140|
+      - 🇮🇳 IN|印度|中央邦|印多尔|018709761|
+      - 🇮🇳 IN|印度|中央邦|印多尔|527399347|
+      - 🇮🇳 IN|印度|中央邦|印多尔|738626950|
+      - 🇮🇳 IN|印度|中央邦|印多尔|014072411|
+      - 🇮🇳 IN|印度|中央邦|印多尔|147995846|
+      - 🇮🇳 IN|印度|中央邦|印多尔|883496725|
+      - 🇮🇳 IN|印度|中央邦|印多尔|229572256|
+      - 🇮🇳 IN|印度|中央邦|印多尔|757325151|
+      - 🇮🇳 IN|印度|中央邦|印多尔|502743734|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|506990830|
+      - 🇮🇳 IN|印度|中央邦|印多尔|981661049|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|851645384|
+      - 🇮🇳 IN|印度|376213099|
+      - 🇮🇳 IN|印度|中央邦|印多尔|348213121|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|056056823|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|584082875|
+      - 🇮🇳 IN|印度|中央邦|印多尔|059909631|
+      - 🇮🇳 IN|印度|中央邦|印多尔|414768121|
+      - 🇮🇳 IN|印度|773105123|
+      - 🇮🇳 IN|印度|中央邦|印多尔|939348748|
+      - 🇮🇳 IN|印度|中央邦|印多尔|665060627|
+      - 🇮🇳 IN|印度|中央邦|印多尔|199334844|
+      - 🇮🇳 IN|印度|中央邦|印多尔|984242721|
+      - 🇮🇳 IN|印度|415450873|
+      - 🇮🇳 IN|印度|032169766|
+      - 🇮🇳 IN|印度|中央邦|印多尔|110392334|
+      - 🇮🇳 IN|印度|中央邦|印多尔|087438585|
+      - 🇮🇳 IN|印度|中央邦|印多尔|631735213|
+      - 🇮🇳 IN|印度|中央邦|印多尔|040306883|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|717096702|
+      - 🇮🇳 IN|印度|中央邦|印多尔|052777364|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|478918782|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|107149375|
+      - 🇮🇳 IN|印度|中央邦|印多尔|237988221|
+      - 🇮🇳 IN|印度|中央邦|印多尔|616915618|
+      - 🇮🇳 IN|印度|中央邦|印多尔|462405107|
+      - 🇮🇳 IN|印度|中央邦|印多尔|506934227|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|106740581|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|717137263|
+      - 🇮🇳 IN|印度|中央邦|印多尔|123457223|
+      - 🇮🇳 IN|印度|中央邦|印多尔|896931691|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|564019019|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|819843145|
+      - 🇮🇳 IN|印度|中央邦|印多尔|836628538|
+      - 🇮🇳 IN|印度|中央邦|印多尔|022850845|
+      - 🇮🇳 IN|印度|中央邦|印多尔|399994171|
+      - 🇮🇳 IN|印度|中央邦|印多尔|216283215|
+      - 🇮🇳 IN|印度|中央邦|印多尔|763512847|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|329051992|
+      - 🇮🇳 IN|印度|中央邦|印多尔|446586783|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|165538192|
+      - 🇮🇳 IN|印度|中央邦|印多尔|403341184|
+      - 🇮🇳 IN|印度|中央邦|印多尔|854965687|
+      - 🇮🇳 IN|印度|中央邦|印多尔|859840995|
+      - 🇮🇳 IN|印度|310852176|
+      - 🇮🇳 IN|印度|中央邦|印多尔|734062583|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|426766483|
+      - 🇮🇳 IN|印度|中央邦|印多尔|997014187|
+      - 🇮🇳 IN|印度|中央邦|印多尔|942932596|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|568003392|
+      - 🇮🇳 IN|印度|048081814|
+      - 🇮🇳 IN|印度|中央邦|印多尔|070617199|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|603380730|
+      - 🇮🇳 IN|印度|150769089|
+      - 🇮🇳 IN|印度|中央邦|印多尔|607115242|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|921550113|
+      - 🇮🇳 IN|印度|中央邦|印多尔|514258349|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|872907628|
+      - 🇮🇳 IN|印度|304952472|
+      - 🇮🇳 IN|印度|369866617|
+      - 🇮🇳 IN|印度|中央邦|印多尔|982072042|
+      - 🇮🇳 IN|印度|中央邦|印多尔|479999790|
+      - 🇮🇳 IN|印度|中央邦|印多尔|012373541|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|780749563|
+      - 🇮🇳 IN|印度|926884537|
+      - 🇮🇳 IN|印度|中央邦|印多尔|291692759|
+      - 🇮🇳 IN|印度|中央邦|印多尔|683482215|
+      - 🇮🇳 IN|印度|856528219|
+      - 🇮🇳 IN|印度|中央邦|印多尔|252799840|
+      - 🇮🇳 IN|印度|中央邦|印多尔|483079949|
+      - 🇮🇳 IN|印度|中央邦|印多尔|071821512|
+      - 🇮🇳 IN|印度|498758257|
+      - 🇮🇳 IN|印度|中央邦|印多尔|705146482|
+      - 🇮🇳 IN|印度|中央邦|印多尔|956836759|
+      - 🇮🇳 IN|印度|238030693|
+      - 🇮🇳 IN|印度|924485539|
+      - 🇮🇳 IN|印度|631487536|
+      - 🇮🇳 IN|印度|中央邦|印多尔|807481554|
+      - 🇮🇳 IN|印度|中央邦|印多尔|499805289|
+      - 🇮🇳 IN|印度|777705021|
+      - 🇮🇳 IN|印度|中央邦|印多尔|193308545|
+      - 🇮🇳 IN|印度|653487122|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|203815624|
+      - 🇮🇳 IN|印度|334645130|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|826717131|
+      - 🇮🇳 IN|印度|中央邦|印多尔|200437769|
+      - 🇮🇳 IN|印度|中央邦|印多尔|267664195|
+      - 🇮🇳 IN|印度|中央邦|印多尔|523526530|
+      - 🇮🇳 IN|印度|中央邦|印多尔|270757222|
+      - 🇮🇳 IN|印度|中央邦|印多尔|767649726|
+      - 🇮🇳 IN|印度|中央邦|印多尔|967376710|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|162437362|
+      - 🇮🇳 IN|印度|269296506|
+      - 🇮🇳 IN|印度|中央邦|印多尔|908438795|
+      - 🇮🇳 IN|印度|000416144|
+      - 🇮🇳 IN|印度|中央邦|印多尔|431090160|
+      - 🇮🇳 IN|印度|中央邦|印多尔|791694494|
+      - 🇮🇳 IN|印度|中央邦|印多尔|746713304|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|692892465|
+      - 🇮🇳 IN|印度|中央邦|印多尔|204746731|
+      - 🇸🇬 SG|新加坡|578799996|
+      - 🇸🇬 SG|新加坡|740418608|
+      - 🇸🇬 SG|新加坡|520313087|
+      - 🇸🇬 SG|新加坡|990874937|
+      - 🇸🇬 SG|新加坡|435356456|
+      - 🇸🇬 SG|新加坡|909728938|
+      - 🇸🇬 SG|新加坡|170876475|
+      - 🇸🇬 SG|新加坡|686697096|
+      - 🇸🇬 SG|新加坡|113194984|
+      - 🇸🇬 SG|新加坡|862275967|
+      - 🇸🇬 SG|新加坡|251215039|
+      - 🇸🇬 SG|新加坡|812591714|
+      - 🇸🇬 SG|新加坡|282798469|
+      - 🇸🇬 SG|新加坡|246752835|
+      - 🇸🇬 SG|新加坡|770578208|
+      - 🇸🇬 SG|新加坡|402845874|
+      - 🇸🇬 SG|新加坡|948976093|
+      - 🇸🇬 SG|新加坡|443478096|
+      - 🇸🇬 SG|新加坡|671920486|
+      - 🇸🇬 SG|新加坡|848419247|
+      - 🇸🇬 SG|新加坡|146918766|
+      - 🇸🇬 SG|新加坡|531697588|
+      - 🇸🇬 SG|新加坡|341708996|
+      - 🇸🇬 SG|新加坡|839434263|
+      - 🇸🇬 SG|新加坡|249972156|
+      - 🇸🇬 SG|新加坡|698994058|
+      - 🇸🇬 SG|新加坡|020996404|
+      - 🇸🇬 SG|新加坡|826914762|
+      - 🇸🇬 SG|新加坡|207616439|
+      - 🇸🇬 SG|新加坡|064418068|
+      - 🇸🇬 SG|新加坡|968978155|
+      - 🇸🇬 SG|新加坡|154065862|
+      - 🇸🇬 SG|新加坡|702787292|
+      - 🇸🇬 SG|新加坡|051000350|
+      - 🇸🇬 SG|新加坡|617518237|
+      - 🇸🇬 SG|新加坡|亚马逊|326819730|
+      - 🇸🇬 SG|新加坡|457282413|
+      - 🇸🇬 SG|新加坡|534640837|
+      - 🇸🇬 SG|新加坡|859705728|
+      - 🇸🇬 SG|新加坡|934720264|
+      - 🇸🇬 SG|新加坡|398803747|
+      - 🇸🇬 SG|新加坡|755086779|
+      - 🇸🇬 SG|新加坡|173362964|
+      - 🇸🇬 SG|新加坡|151120466|
+      - 🇸🇬 SG|新加坡|733887227|
+      - 🇸🇬 SG|新加坡|445713366|
+      - 🇸🇬 SG|新加坡|073510092|
+      - 🇸🇬 SG|新加坡|220954683|
+      - 🇸🇬 SG|新加坡|581327136|
+      - 🇸🇬 SG|新加坡|082175910|
+      - 🇸🇬 SG|新加坡|614841930|
+      - 🇸🇬 SG|新加坡|906632789|
+      - 🇸🇬 SG|新加坡|003511214|
+      - 🇸🇬 SG|新加坡|601689409|
+      - 🇸🇬 SG|新加坡|294543694|
+      - 🇸🇬 SG|新加坡|970606212|
+      - 🇸🇬 SG|新加坡|668388313|
+      - 🇸🇬 SG|新加坡|706723916|
+      - 🇸🇬 SG|新加坡|222170480|
+      - 🇸🇬 SG|新加坡|669068850|
+      - 🇸🇬 SG|新加坡|550172690|
+      - 🇸🇬 SG|新加坡|175294939|
+      - 🇸🇬 SG|新加坡|580199133|
+      - 🇸🇬 SG|新加坡|326926849|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|091943488|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|707180205|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|112224794|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|025423161|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|523644407|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|879742096|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|918135140|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|768556689|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|450986839|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|026655353|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|724143527|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|172280209|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|264908815|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|889037002|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|072503286|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|603818563|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|955675749|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|739951184|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|075460472|
+      - 🇹🇷 TR|土耳其|Bursa|139024523|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|283901219|
+      - 🇹🇷 TR|土耳其|650819419|
+      - 🇹🇷 TR|土耳其|127215142|
+      - 🇻🇳 VN|越南|胡志明|胡志明|518629034|
+      - 🇻🇳 VN|越南|胡志明|胡志明|705960652|
+      - 🇻🇳 VN|越南|胡志明|胡志明|967237096|
+      - 🇻🇳 VN|越南|胡志明|胡志明|420877157|
+      - 🇻🇳 VN|越南|胡志明|胡志明|804474068|
+      - 🇻🇳 VN|越南|胡志明|胡志明|896617378|
+      - 🇻🇳 VN|越南|胡志明|胡志明|313311011|
+      - 🇻🇳 VN|越南|胡志明|胡志明|528575312|
+      - 🇻🇳 VN|越南|胡志明|胡志明|802837644|
+      - 🇻🇳 VN|越南|胡志明|胡志明|105226278|
+      - 🇻🇳 VN|越南|胡志明|胡志明|614927430|
+      - 🇻🇳 VN|越南|胡志明|胡志明|178019982|
+      - 🇻🇳 VN|越南|胡志明|胡志明|490790970|
+      - 🇻🇳 VN|越南|胡志明|胡志明|112010686|
+      - 🇻🇳 VN|越南|胡志明|胡志明|348898736|
+      - 🇻🇳 VN|越南|胡志明|胡志明|609734180|
+      - 🇻🇳 VN|越南|胡志明|胡志明|511400167|
+      - 🇻🇳 VN|越南|胡志明|胡志明|276956005|
+      - 🇻🇳 VN|越南|胡志明|胡志明|276186033|
+      - 🇻🇳 VN|越南|胡志明|胡志明|521329567|
+      - 🇻🇳 VN|越南|胡志明|胡志明|617750968|
+      - 🇻🇳 VN|越南|胡志明|胡志明|826933735|
+      - 🇻🇳 VN|越南|胡志明|胡志明|353304038|
+      - 🇻🇳 VN|越南|胡志明|胡志明|014853258|
+      - 🇻🇳 VN|越南|胡志明|胡志明|107644523|
+      - 🇻🇳 VN|越南|胡志明|胡志明|888820723|
+      - 🇻🇳 VN|越南|胡志明|胡志明|995675913|
+      - 🇻🇳 VN|越南|胡志明|胡志明|374514739|
+      - 🇻🇳 VN|越南|胡志明|胡志明|424579240|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|596080665|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|516937652|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|217749937|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|919117334|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|377284622|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|677539242|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|076628432|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|720454565|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|989233747|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|295237343|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|865169287|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|733267812|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|489535021|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|399314598|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|407395765|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|613352420|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|622807088|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|015686095|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|766237828|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|829448956|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|955065203|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|876390350|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|724067099|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|187374212|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|560565899|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|057319473|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|789429585|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|733406741|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|888648818|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|842740990|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|089453501|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|498459162|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|001958497|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|782864562|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|578836966|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|780875791|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|206156856|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|008865045|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|909176064|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|424733877|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|035514404|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|656453974|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|141658937|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|590756486|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|107027250|
+  - name: 🚀 手动切换
+    type: select
+    proxies:
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|927486594|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|655633667|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|086727905|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|771735997|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|248627088|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|501056834|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|083896617|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|886398367|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|897046136|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|846791172|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|785523380|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|417145710|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|722697601|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|891185540|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|043066404|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|032072411|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|807829957|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|106657850|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|483855156|
+      - 🇸🇬 SG|新加坡|290083567|
+      - 🇸🇬 SG|新加坡|700719292|
+      - 🇸🇬 SG|新加坡|014814538|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|155737050|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|342131358|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|228844957|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|678374936|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|294619035|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|166724466|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|088396775|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|875165581|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|786730832|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|031946288|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|061656173|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|511783433|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|235484049|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|059842248|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|126709368|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|253245529|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|215966747|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|973227649|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|323236347|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|375434393|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|893196373|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|474076769|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|095062509|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|670937188|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|349951661|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|087748064|
+      - 🇮🇩 ID|印度尼西亚|大雅加达|雅加达|590386525|
+      - 🇮🇳 IN|印度|中央邦|印多尔|515278790|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|437492079|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|820487944|
+      - 🇮🇳 IN|印度|中央邦|印多尔|059023560|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|176185435|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|238169501|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|352098655|
+      - 🇮🇳 IN|印度|中央邦|印多尔|553019349|
+      - 🇮🇳 IN|印度|中央邦|印多尔|818055740|
+      - 🇮🇳 IN|印度|中央邦|印多尔|407273726|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|263032654|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|054623123|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|752542508|
+      - 🇮🇳 IN|印度|455418497|
+      - 🇮🇳 IN|印度|179402713|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|859428681|
+      - 🇮🇳 IN|印度|中央邦|印多尔|690525587|
+      - 🇮🇳 IN|印度|中央邦|印多尔|429919308|
+      - 🇮🇳 IN|印度|中央邦|印多尔|176257537|
+      - 🇮🇳 IN|印度|中央邦|印多尔|948395788|
+      - 🇮🇳 IN|印度|中央邦|印多尔|499996140|
+      - 🇮🇳 IN|印度|中央邦|印多尔|018709761|
+      - 🇮🇳 IN|印度|中央邦|印多尔|527399347|
+      - 🇮🇳 IN|印度|中央邦|印多尔|738626950|
+      - 🇮🇳 IN|印度|中央邦|印多尔|014072411|
+      - 🇮🇳 IN|印度|中央邦|印多尔|147995846|
+      - 🇮🇳 IN|印度|中央邦|印多尔|883496725|
+      - 🇮🇳 IN|印度|中央邦|印多尔|229572256|
+      - 🇮🇳 IN|印度|中央邦|印多尔|757325151|
+      - 🇮🇳 IN|印度|中央邦|印多尔|502743734|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|506990830|
+      - 🇮🇳 IN|印度|中央邦|印多尔|981661049|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|851645384|
+      - 🇮🇳 IN|印度|376213099|
+      - 🇮🇳 IN|印度|中央邦|印多尔|348213121|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|056056823|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|584082875|
+      - 🇮🇳 IN|印度|中央邦|印多尔|059909631|
+      - 🇮🇳 IN|印度|中央邦|印多尔|414768121|
+      - 🇮🇳 IN|印度|773105123|
+      - 🇮🇳 IN|印度|中央邦|印多尔|939348748|
+      - 🇮🇳 IN|印度|中央邦|印多尔|665060627|
+      - 🇮🇳 IN|印度|中央邦|印多尔|199334844|
+      - 🇮🇳 IN|印度|中央邦|印多尔|984242721|
+      - 🇮🇳 IN|印度|415450873|
+      - 🇮🇳 IN|印度|032169766|
+      - 🇮🇳 IN|印度|中央邦|印多尔|110392334|
+      - 🇮🇳 IN|印度|中央邦|印多尔|087438585|
+      - 🇮🇳 IN|印度|中央邦|印多尔|631735213|
+      - 🇮🇳 IN|印度|中央邦|印多尔|040306883|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|717096702|
+      - 🇮🇳 IN|印度|中央邦|印多尔|052777364|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|478918782|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|107149375|
+      - 🇮🇳 IN|印度|中央邦|印多尔|237988221|
+      - 🇮🇳 IN|印度|中央邦|印多尔|616915618|
+      - 🇮🇳 IN|印度|中央邦|印多尔|462405107|
+      - 🇮🇳 IN|印度|中央邦|印多尔|506934227|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|106740581|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|717137263|
+      - 🇮🇳 IN|印度|中央邦|印多尔|123457223|
+      - 🇮🇳 IN|印度|中央邦|印多尔|896931691|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|564019019|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|819843145|
+      - 🇮🇳 IN|印度|中央邦|印多尔|836628538|
+      - 🇮🇳 IN|印度|中央邦|印多尔|022850845|
+      - 🇮🇳 IN|印度|中央邦|印多尔|399994171|
+      - 🇮🇳 IN|印度|中央邦|印多尔|216283215|
+      - 🇮🇳 IN|印度|中央邦|印多尔|763512847|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|329051992|
+      - 🇮🇳 IN|印度|中央邦|印多尔|446586783|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|165538192|
+      - 🇮🇳 IN|印度|中央邦|印多尔|403341184|
+      - 🇮🇳 IN|印度|中央邦|印多尔|854965687|
+      - 🇮🇳 IN|印度|中央邦|印多尔|859840995|
+      - 🇮🇳 IN|印度|310852176|
+      - 🇮🇳 IN|印度|中央邦|印多尔|734062583|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|426766483|
+      - 🇮🇳 IN|印度|中央邦|印多尔|997014187|
+      - 🇮🇳 IN|印度|中央邦|印多尔|942932596|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|568003392|
+      - 🇮🇳 IN|印度|048081814|
+      - 🇮🇳 IN|印度|中央邦|印多尔|070617199|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|603380730|
+      - 🇮🇳 IN|印度|150769089|
+      - 🇮🇳 IN|印度|中央邦|印多尔|607115242|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|921550113|
+      - 🇮🇳 IN|印度|中央邦|印多尔|514258349|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|872907628|
+      - 🇮🇳 IN|印度|304952472|
+      - 🇮🇳 IN|印度|369866617|
+      - 🇮🇳 IN|印度|中央邦|印多尔|982072042|
+      - 🇮🇳 IN|印度|中央邦|印多尔|479999790|
+      - 🇮🇳 IN|印度|中央邦|印多尔|012373541|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|780749563|
+      - 🇮🇳 IN|印度|926884537|
+      - 🇮🇳 IN|印度|中央邦|印多尔|291692759|
+      - 🇮🇳 IN|印度|中央邦|印多尔|683482215|
+      - 🇮🇳 IN|印度|856528219|
+      - 🇮🇳 IN|印度|中央邦|印多尔|252799840|
+      - 🇮🇳 IN|印度|中央邦|印多尔|483079949|
+      - 🇮🇳 IN|印度|中央邦|印多尔|071821512|
+      - 🇮🇳 IN|印度|498758257|
+      - 🇮🇳 IN|印度|中央邦|印多尔|705146482|
+      - 🇮🇳 IN|印度|中央邦|印多尔|956836759|
+      - 🇮🇳 IN|印度|238030693|
+      - 🇮🇳 IN|印度|924485539|
+      - 🇮🇳 IN|印度|631487536|
+      - 🇮🇳 IN|印度|中央邦|印多尔|807481554|
+      - 🇮🇳 IN|印度|中央邦|印多尔|499805289|
+      - 🇮🇳 IN|印度|777705021|
+      - 🇮🇳 IN|印度|中央邦|印多尔|193308545|
+      - 🇮🇳 IN|印度|653487122|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|亚马逊|203815624|
+      - 🇮🇳 IN|印度|334645130|
+      - 🇮🇳 IN|印度|卡纳塔克|班加罗尔|826717131|
+      - 🇮🇳 IN|印度|中央邦|印多尔|200437769|
+      - 🇮🇳 IN|印度|中央邦|印多尔|267664195|
+      - 🇮🇳 IN|印度|中央邦|印多尔|523526530|
+      - 🇮🇳 IN|印度|中央邦|印多尔|270757222|
+      - 🇮🇳 IN|印度|中央邦|印多尔|767649726|
+      - 🇮🇳 IN|印度|中央邦|印多尔|967376710|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|162437362|
+      - 🇮🇳 IN|印度|269296506|
+      - 🇮🇳 IN|印度|中央邦|印多尔|908438795|
+      - 🇮🇳 IN|印度|000416144|
+      - 🇮🇳 IN|印度|中央邦|印多尔|431090160|
+      - 🇮🇳 IN|印度|中央邦|印多尔|791694494|
+      - 🇮🇳 IN|印度|中央邦|印多尔|746713304|
+      - 🇮🇳 IN|印度|马哈拉施特拉|孟买|692892465|
+      - 🇮🇳 IN|印度|中央邦|印多尔|204746731|
+      - 🇸🇬 SG|新加坡|578799996|
+      - 🇸🇬 SG|新加坡|740418608|
+      - 🇸🇬 SG|新加坡|520313087|
+      - 🇸🇬 SG|新加坡|990874937|
+      - 🇸🇬 SG|新加坡|435356456|
+      - 🇸🇬 SG|新加坡|909728938|
+      - 🇸🇬 SG|新加坡|170876475|
+      - 🇸🇬 SG|新加坡|686697096|
+      - 🇸🇬 SG|新加坡|113194984|
+      - 🇸🇬 SG|新加坡|862275967|
+      - 🇸🇬 SG|新加坡|251215039|
+      - 🇸🇬 SG|新加坡|812591714|
+      - 🇸🇬 SG|新加坡|282798469|
+      - 🇸🇬 SG|新加坡|246752835|
+      - 🇸🇬 SG|新加坡|770578208|
+      - 🇸🇬 SG|新加坡|402845874|
+      - 🇸🇬 SG|新加坡|948976093|
+      - 🇸🇬 SG|新加坡|443478096|
+      - 🇸🇬 SG|新加坡|671920486|
+      - 🇸🇬 SG|新加坡|848419247|
+      - 🇸🇬 SG|新加坡|146918766|
+      - 🇸🇬 SG|新加坡|531697588|
+      - 🇸🇬 SG|新加坡|341708996|
+      - 🇸🇬 SG|新加坡|839434263|
+      - 🇸🇬 SG|新加坡|249972156|
+      - 🇸🇬 SG|新加坡|698994058|
+      - 🇸🇬 SG|新加坡|020996404|
+      - 🇸🇬 SG|新加坡|826914762|
+      - 🇸🇬 SG|新加坡|207616439|
+      - 🇸🇬 SG|新加坡|064418068|
+      - 🇸🇬 SG|新加坡|968978155|
+      - 🇸🇬 SG|新加坡|154065862|
+      - 🇸🇬 SG|新加坡|702787292|
+      - 🇸🇬 SG|新加坡|051000350|
+      - 🇸🇬 SG|新加坡|617518237|
+      - 🇸🇬 SG|新加坡|亚马逊|326819730|
+      - 🇸🇬 SG|新加坡|457282413|
+      - 🇸🇬 SG|新加坡|534640837|
+      - 🇸🇬 SG|新加坡|859705728|
+      - 🇸🇬 SG|新加坡|934720264|
+      - 🇸🇬 SG|新加坡|398803747|
+      - 🇸🇬 SG|新加坡|755086779|
+      - 🇸🇬 SG|新加坡|173362964|
+      - 🇸🇬 SG|新加坡|151120466|
+      - 🇸🇬 SG|新加坡|733887227|
+      - 🇸🇬 SG|新加坡|445713366|
+      - 🇸🇬 SG|新加坡|073510092|
+      - 🇸🇬 SG|新加坡|220954683|
+      - 🇸🇬 SG|新加坡|581327136|
+      - 🇸🇬 SG|新加坡|082175910|
+      - 🇸🇬 SG|新加坡|614841930|
+      - 🇸🇬 SG|新加坡|906632789|
+      - 🇸🇬 SG|新加坡|003511214|
+      - 🇸🇬 SG|新加坡|601689409|
+      - 🇸🇬 SG|新加坡|294543694|
+      - 🇸🇬 SG|新加坡|970606212|
+      - 🇸🇬 SG|新加坡|668388313|
+      - 🇸🇬 SG|新加坡|706723916|
+      - 🇸🇬 SG|新加坡|222170480|
+      - 🇸🇬 SG|新加坡|669068850|
+      - 🇸🇬 SG|新加坡|550172690|
+      - 🇸🇬 SG|新加坡|175294939|
+      - 🇸🇬 SG|新加坡|580199133|
+      - 🇸🇬 SG|新加坡|326926849|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|091943488|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|707180205|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|112224794|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|025423161|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|523644407|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|879742096|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|918135140|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|768556689|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|450986839|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|026655353|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|724143527|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|172280209|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|264908815|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|889037002|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|072503286|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|603818563|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|955675749|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|739951184|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|075460472|
+      - 🇹🇷 TR|土耳其|Bursa|139024523|
+      - 🇹🇭 TH|泰国|曼谷|曼谷|283901219|
+      - 🇹🇷 TR|土耳其|650819419|
+      - 🇹🇷 TR|土耳其|127215142|
+      - 🇻🇳 VN|越南|胡志明|胡志明|518629034|
+      - 🇻🇳 VN|越南|胡志明|胡志明|705960652|
+      - 🇻🇳 VN|越南|胡志明|胡志明|967237096|
+      - 🇻🇳 VN|越南|胡志明|胡志明|420877157|
+      - 🇻🇳 VN|越南|胡志明|胡志明|804474068|
+      - 🇻🇳 VN|越南|胡志明|胡志明|896617378|
+      - 🇻🇳 VN|越南|胡志明|胡志明|313311011|
+      - 🇻🇳 VN|越南|胡志明|胡志明|528575312|
+      - 🇻🇳 VN|越南|胡志明|胡志明|802837644|
+      - 🇻🇳 VN|越南|胡志明|胡志明|105226278|
+      - 🇻🇳 VN|越南|胡志明|胡志明|614927430|
+      - 🇻🇳 VN|越南|胡志明|胡志明|178019982|
+      - 🇻🇳 VN|越南|胡志明|胡志明|490790970|
+      - 🇻🇳 VN|越南|胡志明|胡志明|112010686|
+      - 🇻🇳 VN|越南|胡志明|胡志明|348898736|
+      - 🇻🇳 VN|越南|胡志明|胡志明|609734180|
+      - 🇻🇳 VN|越南|胡志明|胡志明|511400167|
+      - 🇻🇳 VN|越南|胡志明|胡志明|276956005|
+      - 🇻🇳 VN|越南|胡志明|胡志明|276186033|
+      - 🇻🇳 VN|越南|胡志明|胡志明|521329567|
+      - 🇻🇳 VN|越南|胡志明|胡志明|617750968|
+      - 🇻🇳 VN|越南|胡志明|胡志明|826933735|
+      - 🇻🇳 VN|越南|胡志明|胡志明|353304038|
+      - 🇻🇳 VN|越南|胡志明|胡志明|014853258|
+      - 🇻🇳 VN|越南|胡志明|胡志明|107644523|
+      - 🇻🇳 VN|越南|胡志明|胡志明|888820723|
+      - 🇻🇳 VN|越南|胡志明|胡志明|995675913|
+      - 🇻🇳 VN|越南|胡志明|胡志明|374514739|
+      - 🇻🇳 VN|越南|胡志明|胡志明|424579240|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|596080665|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|516937652|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|217749937|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|919117334|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|377284622|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|677539242|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|076628432|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|720454565|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|989233747|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|295237343|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|865169287|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|733267812|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|489535021|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|399314598|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|407395765|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|613352420|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|622807088|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|015686095|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|766237828|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|829448956|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|955065203|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|876390350|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|724067099|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|187374212|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|560565899|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|057319473|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|789429585|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|733406741|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|888648818|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|842740990|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|089453501|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|498459162|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|001958497|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|782864562|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|578836966|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|780875791|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|206156856|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|008865045|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|909176064|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|424733877|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|035514404|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|656453974|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|141658937|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|590756486|
+      - 🇮🇳 IN|印度|马哈拉施特拉|浦那|107027250|
   - name: 📲 电报消息
     type: select
     proxies:
       - 🚀 节点选择
+      - 🥁 负载均衡
       - ♻️ 自动选择
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
@@ -872,12 +1411,14 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
+      - 🇰🇷 欧洲节点
       - 🚀 手动切换
       - DIRECT
   - name: 📹 油管视频
     type: select
     proxies:
       - 🚀 节点选择
+      - 🥁 负载均衡
       - ♻️ 自动选择
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
@@ -885,12 +1426,14 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
+      - 🇰🇷 欧洲节点
       - 🚀 手动切换
       - DIRECT
   - name: 🎥 奈飞视频
     type: select
     proxies:
       - 🎥 奈飞节点
+      - 🥁 负载均衡
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🇸🇬 狮城节点
@@ -899,12 +1442,14 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
+      - 🇰🇷 欧洲节点
       - 🚀 手动切换
       - DIRECT
   - name: 📺 巴哈姆特
     type: select
     proxies:
       - 🇨🇳 台湾节点
+      - 🥁 负载均衡
       - 🚀 节点选择
       - 🚀 手动切换
       - DIRECT
@@ -918,6 +1463,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
+      - 🥁 负载均衡
       - ♻️ 自动选择
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -925,6 +1471,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
+      - 🇰🇷 欧洲节点
       - 🚀 手动切换
       - DIRECT
   - name: 🌏 国内媒体
@@ -947,6 +1494,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
+      - 🇰🇷 欧洲节点
       - 🚀 手动切换
   - name: Ⓜ️ 微软云盘
     type: select
@@ -959,6 +1507,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
+      - 🇰🇷 欧洲节点
       - 🚀 手动切换
   - name: Ⓜ️ 微软服务
     type: select
@@ -971,6 +1520,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
+      - 🇰🇷 欧洲节点
       - 🚀 手动切换
   - name: 🍎 苹果服务
     type: select
@@ -983,6 +1533,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
+      - 🇰🇷 欧洲节点
       - 🚀 手动切换
   - name: 🎮 游戏平台
     type: select
@@ -995,18 +1546,21 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
+      - 🇰🇷 欧洲节点
       - 🚀 手动切换
   - name: 🎶 网易音乐
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - 🥁 负载均衡
       - ♻️ 自动选择
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - 🥁 负载均衡
       - ♻️ 自动选择
   - name: 🛑 广告拦截
     type: select
@@ -1022,6 +1576,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
+      - 🥁 负载均衡
       - ♻️ 自动选择
       - DIRECT
       - 🇭🇰 香港节点
@@ -1030,105 +1585,125 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
+      - 🇰🇷 欧洲节点
       - 🚀 手动切换
   - name: 🇭🇰 香港节点
-    type: url-test
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 100
     proxies:
       - DIRECT
   - name: 🇯🇵 日本节点
-    type: url-test
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 100
     proxies:
       - DIRECT
   - name: 🇺🇲 美国节点
-    type: url-test
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     proxies:
       - DIRECT
   - name: 🇨🇳 台湾节点
-    type: url-test
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 100
     proxies:
       - DIRECT
   - name: 🇸🇬 狮城节点
-    type: url-test
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 100
     proxies:
-      - 🇸🇬 SG|新加坡|387423841|
-      - 🇸🇬 SG|新加坡|868202984|
-      - 🇸🇬 SG|新加坡|610605531|
-      - 🇸🇬 SG|新加坡|019266441|
-      - 🇸🇬 SG|新加坡|167815894|
-      - 🇸🇬 SG|新加坡|030923382|
-      - 🇸🇬 SG|新加坡|247540283|
-      - 🇸🇬 SG|新加坡|308216654|
-      - 🇸🇬 SG|新加坡|893352812|
-      - 🇸🇬 SG|新加坡|463383953|
-      - 🇸🇬 SG|新加坡|664948403|
-      - 🇸🇬 SG|新加坡|852751831|
-      - 🇸🇬 SG|新加坡|017958193|
-      - 🇸🇬 SG|新加坡|337279028|
-      - 🇸🇬 SG|新加坡|729590582|
-      - 🇸🇬 SG|新加坡|887922615|
-      - 🇸🇬 SG|新加坡|039761051|
-      - 🇸🇬 SG|新加坡|471245525|
-      - 🇸🇬 SG|新加坡|525910414|
-      - 🇸🇬 SG|新加坡|968293636|
-      - 🇸🇬 SG|新加坡|781451019|
-      - 🇸🇬 SG|新加坡|140297021|
-      - 🇸🇬 SG|新加坡|089437653|
-      - 🇸🇬 SG|新加坡|569415661|
-      - 🇸🇬 SG|新加坡|294800912|
-      - 🇸🇬 SG|新加坡|064865364|
-      - 🇸🇬 SG|新加坡|599054929|
-      - 🇸🇬 SG|新加坡|093371782|
-      - 🇸🇬 SG|新加坡|703714081|
-      - 🇸🇬 SG|新加坡|148411012|
-      - 🇸🇬 SG|新加坡|207039336|
-      - 🇸🇬 SG|新加坡|428968906|
-      - 🇸🇬 SG|新加坡|291271147|
-      - 🇸🇬 SG|新加坡|050209295|
-      - 🇸🇬 SG|新加坡|101447308|
-      - 🇸🇬 SG|新加坡|861890213|
-      - 🇸🇬 SG|新加坡|402803640|
-      - 🇸🇬 SG|新加坡|716800609|
-      - 🇸🇬 SG|新加坡|165216170|
-      - 🇸🇬 SG|新加坡|411796833|
-      - 🇸🇬 SG|新加坡|713420374|
-      - 🇸🇬 SG|新加坡|097024360|
-      - 🇸🇬 SG|新加坡|471836865|
-      - 🇸🇬 SG|新加坡|778884332|
-      - 🇸🇬 SG|新加坡|929289394|
-      - 🇸🇬 SG|新加坡|740767457|
-      - 🇸🇬 SG|新加坡|939567353|
-      - 🇸🇬 SG|新加坡|499815718|
-      - 🇸🇬 SG|新加坡|亚马逊|991808414|
-      - 🇸🇬 SG|新加坡|292268728|
-      - 🇸🇬 SG|新加坡|247043951|
-      - 🇸🇬 SG|新加坡|965113238|
-      - 🇸🇬 SG|新加坡|500005171|
-      - 🇸🇬 SG|新加坡|935651524|
-      - 🇸🇬 SG|新加坡|803624652|
-      - 🇸🇬 SG|新加坡|762779081|
-      - 🇸🇬 SG|新加坡|亚马逊|893594620|
+      - 🇸🇬 SG|新加坡|290083567|
+      - 🇸🇬 SG|新加坡|700719292|
+      - 🇸🇬 SG|新加坡|014814538|
+      - 🇸🇬 SG|新加坡|578799996|
+      - 🇸🇬 SG|新加坡|740418608|
+      - 🇸🇬 SG|新加坡|520313087|
+      - 🇸🇬 SG|新加坡|990874937|
+      - 🇸🇬 SG|新加坡|435356456|
+      - 🇸🇬 SG|新加坡|909728938|
+      - 🇸🇬 SG|新加坡|170876475|
+      - 🇸🇬 SG|新加坡|686697096|
+      - 🇸🇬 SG|新加坡|113194984|
+      - 🇸🇬 SG|新加坡|862275967|
+      - 🇸🇬 SG|新加坡|251215039|
+      - 🇸🇬 SG|新加坡|812591714|
+      - 🇸🇬 SG|新加坡|282798469|
+      - 🇸🇬 SG|新加坡|246752835|
+      - 🇸🇬 SG|新加坡|770578208|
+      - 🇸🇬 SG|新加坡|402845874|
+      - 🇸🇬 SG|新加坡|948976093|
+      - 🇸🇬 SG|新加坡|443478096|
+      - 🇸🇬 SG|新加坡|671920486|
+      - 🇸🇬 SG|新加坡|848419247|
+      - 🇸🇬 SG|新加坡|146918766|
+      - 🇸🇬 SG|新加坡|531697588|
+      - 🇸🇬 SG|新加坡|341708996|
+      - 🇸🇬 SG|新加坡|839434263|
+      - 🇸🇬 SG|新加坡|249972156|
+      - 🇸🇬 SG|新加坡|698994058|
+      - 🇸🇬 SG|新加坡|020996404|
+      - 🇸🇬 SG|新加坡|826914762|
+      - 🇸🇬 SG|新加坡|207616439|
+      - 🇸🇬 SG|新加坡|064418068|
+      - 🇸🇬 SG|新加坡|968978155|
+      - 🇸🇬 SG|新加坡|154065862|
+      - 🇸🇬 SG|新加坡|702787292|
+      - 🇸🇬 SG|新加坡|051000350|
+      - 🇸🇬 SG|新加坡|617518237|
+      - 🇸🇬 SG|新加坡|亚马逊|326819730|
+      - 🇸🇬 SG|新加坡|457282413|
+      - 🇸🇬 SG|新加坡|534640837|
+      - 🇸🇬 SG|新加坡|859705728|
+      - 🇸🇬 SG|新加坡|934720264|
+      - 🇸🇬 SG|新加坡|398803747|
+      - 🇸🇬 SG|新加坡|755086779|
+      - 🇸🇬 SG|新加坡|173362964|
+      - 🇸🇬 SG|新加坡|151120466|
+      - 🇸🇬 SG|新加坡|733887227|
+      - 🇸🇬 SG|新加坡|445713366|
+      - 🇸🇬 SG|新加坡|073510092|
+      - 🇸🇬 SG|新加坡|220954683|
+      - 🇸🇬 SG|新加坡|581327136|
+      - 🇸🇬 SG|新加坡|082175910|
+      - 🇸🇬 SG|新加坡|614841930|
+      - 🇸🇬 SG|新加坡|906632789|
+      - 🇸🇬 SG|新加坡|003511214|
+      - 🇸🇬 SG|新加坡|601689409|
+      - 🇸🇬 SG|新加坡|294543694|
+      - 🇸🇬 SG|新加坡|970606212|
+      - 🇸🇬 SG|新加坡|668388313|
+      - 🇸🇬 SG|新加坡|706723916|
+      - 🇸🇬 SG|新加坡|222170480|
+      - 🇸🇬 SG|新加坡|669068850|
+      - 🇸🇬 SG|新加坡|550172690|
+      - 🇸🇬 SG|新加坡|175294939|
+      - 🇸🇬 SG|新加坡|580199133|
+      - 🇸🇬 SG|新加坡|326926849|
   - name: 🇰🇷 韩国节点
-    type: url-test
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 100
     proxies:
       - DIRECT
+  - name: 🇰🇷 欧洲节点
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - 🇹🇷 TR|土耳其|Bursa|139024523|
+      - 🇹🇷 TR|土耳其|650819419|
+      - 🇹🇷 TR|土耳其|127215142|
   - name: 🎥 奈飞节点
     type: select
     proxies:
