@@ -50,7 +50,7 @@ if [[ $[PLATFORM] -eq 1 ]]; then
 	cp -rf /opt/share/git-core /tmp/
 	cp -rf /opt/subconverter /tmp/
 	cp -f `pwd`/Actions/emoji.txt /tmp/subconverter/snippets/
-	cf -f `pwd`/Actions/pref.ini /tmp/subconverter/
+	cp -f `pwd`/Actions/pref.ini /tmp/subconverter/
 	exit 0
 fi
 
