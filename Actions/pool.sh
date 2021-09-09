@@ -14,6 +14,7 @@ URL=${TC_POOL_URL}              # 代理池URL地址
 PLATFORM=2                      # 1 - 腾讯云函数	2 - github	3 - 其他
 TC_COS_HOST=${TC_COS_HOST}      # 腾讯对象存储HOST地址
 UPLOAD_TO_COS=no                # 是否上传到tencent cos: yes/no
+GIT_PUSH=no                     # 是否push到github: yes/no
 # ***********************参数初始化完成********************* /
 
 SUBSCRIBE_DIR=/tmp/subscribe
@@ -179,8 +180,18 @@ if [[ ${RENAME} == 'no' ]]; then
         else
                 cp -r "${SUBSCRIBE_DIR}/${VALID_POOL}" "${SUBSCRIBE_DIR}/${CLASH1}"
         fi
-        ./gitpush.sh "${SUBSCRIBE_DIR}/${CLASH1}"
-        exit 0
+        if [[ ${GIT_PUSH} == 'yes' ]]; then
+                ./gitpush.sh "${SUBSCRIBE_DIR}/${CLASH1}"
+                exit 0
+        fi
+        
+        echo -e "上传到腾讯对象储存 $(timestamp)"
+        upload_tc_cos
+        echo -e "完成上传到腾讯对象储存 $(timestamp)"
+        echo -e '清除环境....'
+        ./start.sh clean
+
+        echo -e '清除环境完成，结束任务退出....'
 fi
 
 echo -e "开始地域查询与转换 $(timestamp)"
@@ -258,12 +269,13 @@ done
 echo -e "surge规则转化完成 $(timestamp)"
 
 if [[ $[PLATFORM] -ne 2 ]]; then
-        echo -e "push到github $(timestamp)"
-        ./gitpush.sh "${SUBSCRIBE_DIR}/${CLASH1}" \
-                "${SUBSCRIBE_DIR}/${CLASH2}" "${SUBSCRIBE_DIR}/${CLASH3}" \
-                "${SUBSCRIBE_DIR}/${CLASH4}" "${SUBSCRIBE_DIR}/${CLASH5}" \
-                "${SUBSCRIBE_DIR}/${CLASH6}" "${SUBSCRIBE_DIR}/${POOL_VERIFIED}"
-        
+        if [[ ${GIT_PUSH} == 'yes' ]]; then
+                echo -e "push到github $(timestamp)"
+                ./gitpush.sh "${SUBSCRIBE_DIR}/${CLASH1}" \
+                        "${SUBSCRIBE_DIR}/${CLASH2}" "${SUBSCRIBE_DIR}/${CLASH3}" \
+                        "${SUBSCRIBE_DIR}/${CLASH4}" "${SUBSCRIBE_DIR}/${CLASH5}" \
+                        "${SUBSCRIBE_DIR}/${CLASH6}" "${SUBSCRIBE_DIR}/${POOL_VERIFIED}"
+        fi
         echo -e "上传到腾讯对象储存 $(timestamp)"
         upload_tc_cos
         echo -e "完成上传到腾讯对象储存 $(timestamp)"
