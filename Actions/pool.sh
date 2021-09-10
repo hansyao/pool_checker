@@ -304,6 +304,8 @@ cp -f ${SUBSCRIBE_DIR}/clash*.yaml ./subscribe/
 cp -f "${SUBSCRIBE_DIR}/${POOL_VERIFIED}" ./subscribe/
 
 # 上传到腾讯对象储存
-echo -e "上传到腾讯对象储存 $(timestamp)"
-upload_tc_cos
-echo -e "完成上传到腾讯对象储存 $(timestamp)"
+if [[ ${UPLOAD_TO_COS} == 'yes'  ]]; then
+        echo -e "上传到腾讯对象储存 $(timestamp)"
+        upload_tc_cos
+        echo -e "完成上传到腾讯对象储存 $(timestamp)"
+fi
