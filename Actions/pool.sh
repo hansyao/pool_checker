@@ -268,13 +268,12 @@ do
                 if [[ $[i] -lt 4 ]]; then
                         cat "${SUBSCRIBE_DIR}/surge${i}/${SURGE_CONF}" | sed "s/load\-balance.*$/&,interval=300,tolerance=50/g" | sed "s/load\-balance/url\-test/g" \
                                 > /tmp/tmp.conf
-                        
-                        # surge2版本依赖SSEncrypt.module
-                        if [[ $[i] -eq 2 ]]; then
-                                sed -i "s/https:.*SSEncrypt.module/https:\/\/hans\-1253744379.cos.ap\-shanghai.myqcloud.com\/surge2\/SSEncrypt.module/g" /tmp/tmp.conf
-                        fi
-                        mv /tmp/tmp.conf "${SUBSCRIBE_DIR}/surge${i}/${SURGE_CONF}"
                 fi
+                # surge2版本依赖SSEncrypt.module
+                if [[ $[i] -eq 2 && -n $(cat "${SUBSCRIBE_DIR}/surge${i}/${SURGE_CONF}" | grep SSEncrypt.module) ]]; then
+                        sed -i "s/https:.*SSEncrypt.module/https:\/\/hans\-1253744379.cos.ap\-shanghai.myqcloud.com\/surge2\/SSEncrypt.module/g" /tmp/tmp.conf
+                fi
+                mv /tmp/tmp.conf "${SUBSCRIBE_DIR}/surge${i}/${SURGE_CONF}"
         done
 done
 
