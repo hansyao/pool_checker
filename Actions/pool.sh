@@ -267,13 +267,13 @@ do
                 # 将由于surge 4以下版本不支持load-balance负载均衡， 因此将其类型替换为url-test
                 if [[ $[i] -lt 4 ]]; then
                         cat "${SUBSCRIBE_DIR}/surge${i}/${SURGE_CONF}" | sed "s/load\-balance.*$/&,interval=300,tolerance=50/g" | sed "s/load\-balance/url\-test/g" \
-                                > /tmp/tmp.conf
+                                >/tmp/tmp.conf
+                        cp -f /tmp/tmp.conf "${SUBSCRIBE_DIR}/surge${i}/${SURGE_CONF}"
                 fi
                 # surge2版本依赖SSEncrypt.module
                 if [[ $[i] -eq 2 && -n $(cat "${SUBSCRIBE_DIR}/surge${i}/${SURGE_CONF}" | grep SSEncrypt.module) ]]; then
-                        sed -i "s/https:.*SSEncrypt.module/https:\/\/hans\-1253744379.cos.ap\-shanghai.myqcloud.com\/surge2\/SSEncrypt.module/g" /tmp/tmp.conf
+                        sed -i "s/https:.*SSEncrypt.module/https:\/\/hans\-1253744379.cos.ap\-shanghai.myqcloud.com\/surge2\/SSEncrypt.module/g" "${SUBSCRIBE_DIR}/surge${i}/${SURGE_CONF}"
                 fi
-                mv /tmp/tmp.conf "${SUBSCRIBE_DIR}/surge${i}/${SURGE_CONF}"
         done
 done
 
