@@ -60,7 +60,7 @@ cp -rf `pwd`/share/git-core /tmp/
 cp -rf `pwd`/subconverter /tmp/
 cp -f `pwd`/Actions/emoji.txt /tmp/subconverter/snippets/
 cp -f `pwd`/Actions/pref.ini /tmp/subconverter/
-cp -f 'pwd'/Actions/all_base.tpl /tmp/subconverter/base/all_base.tpl
+cp -f `pwd`/Actions/all_base.tpl /tmp/subconverter/base/all_base.tpl
 
 sudo bash -c 'echo 10 >/proc/sys/net/ipv4/tcp_fin_timeout'
 sudo bash -c 'echo 10 >/proc/sys/net/ipv4/tcp_keepalive_time'
