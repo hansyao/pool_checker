@@ -1,8 +1,8 @@
 name: 代理池验证
 on: 
   workflow_dispatch:
-#   schedule:
-#   - cron: '30 */6 * * *'
+  schedule:
+  - cron: '30 */6 * * *'
 jobs: 
   deploy:
     runs-on: ubuntu-latest
