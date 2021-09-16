@@ -123,7 +123,6 @@ static=🍎 苹果服务, direct, img-url=https://ghproxy.com/https://raw.github
 static=🎯 全球直连, direct, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Direct.png
 static=🛑 全球拦截, direct, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Advertising.png
 static=🐟 漏网之鱼, direct, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
-https://ghproxy.com/
 [server_remote]
 
 [filter_remote]
