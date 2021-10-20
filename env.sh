@@ -2,10 +2,10 @@
 
 GITHUB='https://github.com'
 OS='linux-amd64'
-USER='Dreamacro'
-APP='clash'
+USER='ClashDotNetFramework'
+APP='experimental-clash'
 REPO=$USER/$APP
-FILE=/tmp/bin/$APP.gz
+FILE=/tmp/bin/clash.gz
 PROXY_URL='https://ghproxy.com/'
 PLATFORM=2	# 1 - 腾讯云函数	2 - github	3 - 其他
 
@@ -33,9 +33,9 @@ get_clash() {
 
 	echo -e "开始更新和安装clash"
 	VERSION=$(get_latest_release ${REPO})
-	curl -L -s ${PROXY_URL}${GITHUB}/${USER}/${APP}/releases/download/${VERSION}/${APP}-${OS}-${VERSION}.gz -o ${FILE}
+	curl -L -s ${PROXY_URL}${GITHUB}/${USER}/${APP}/releases/download/${VERSION}/clash-${OS}-${VERSION}.gz -o ${FILE}
 	gzip -f -d ${FILE}
-	chmod 755 -R /tmp/bin/${APP}
+	chmod 755 -R /tmp/bin/clash
 	unset VERSION
 }
 
