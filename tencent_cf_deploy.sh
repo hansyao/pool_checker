@@ -363,7 +363,7 @@ else
 fi
 
 # echo -e "\\n清理临时文件"
-rm -f ${ZIP_FILE}
+# rm -f ${ZIP_FILE}
 rm -f ${HEADER}
 rm -f ${BODY_JSON}
 
